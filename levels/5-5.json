@@ -1,0 +1,375 @@
+{
+  "id": "5-5",
+  "topic": "虚拟语气",
+  "emoji": "🌀",
+  "goal": "说与事实相反的假设：从句往过去退一步，be 动词一律用 were",
+  "rounds": [
+    {
+      "id": "5-5-r1",
+      "cn": "如果我是你，我就去。",
+      "tip": "虚拟语气里 be 动词一律用 were",
+      "groups": [
+        {
+          "id": "main",
+          "label": "主句"
+        },
+        {
+          "id": "sub",
+          "label": "虚拟条件从句",
+          "clause": true
+        }
+      ],
+      "blocks": [
+        {
+          "text": "I",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "main"
+        },
+        {
+          "text": "would",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "main"
+        },
+        {
+          "text": "go",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "main"
+        },
+        {
+          "text": "if",
+          "pos": "conj",
+          "role": "连接词",
+          "group": "sub"
+        },
+        {
+          "text": "I",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "sub"
+        },
+        {
+          "text": "were",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "sub"
+        },
+        {
+          "text": "you",
+          "pos": "pronoun",
+          "role": "表语",
+          "group": "sub"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "was",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "sub"
+        }
+      ],
+      "explain": "虚拟语气表示「与事实相反的假设」。if 从句里 be 动词一律用 were，不管主语是谁 —— If I were you，不能用 was。这是虚拟语气最标志性的一条。",
+      "example": "I would go if I were you. / If I were you, I would go.",
+      "win": "虚拟语气里，be 动词只有 were 一个形态。"
+    },
+    {
+      "id": "5-5-r2",
+      "cn": "如果我有时间，我就会帮你。",
+      "tip": "与现在事实相反：从句用过去式",
+      "groups": [
+        {
+          "id": "main",
+          "label": "主句"
+        },
+        {
+          "id": "sub",
+          "label": "虚拟条件从句",
+          "clause": true
+        }
+      ],
+      "blocks": [
+        {
+          "text": "I",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "main"
+        },
+        {
+          "text": "would",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "main"
+        },
+        {
+          "text": "help",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "main"
+        },
+        {
+          "text": "you",
+          "pos": "pronoun",
+          "role": "宾语",
+          "group": "main"
+        },
+        {
+          "text": "if",
+          "pos": "conj",
+          "role": "连接词",
+          "group": "sub"
+        },
+        {
+          "text": "I",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "sub"
+        },
+        {
+          "text": "had",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "sub"
+        },
+        {
+          "text": "time",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "sub"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "have",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "sub"
+        }
+      ],
+      "explain": "与现在事实相反：从句的动词往过去退一步（have → had），主句用 would + 动词原形。意思是「我现在没时间，所以帮不了你」。",
+      "example": "I would help you if I had time. / I don't have time.",
+      "win": "从句退一步用过去式，主句用 would。"
+    },
+    {
+      "id": "5-5-r3",
+      "cn": "真希望我更高一点。",
+      "tip": "wish 后面的从句也用虚拟语气",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "cl",
+          "label": "宾语从句（虚拟）",
+          "clause": true,
+          "parent": "vp"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "I",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "wish",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "I",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "cl"
+        },
+        {
+          "text": "were",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "cl"
+        },
+        {
+          "text": "taller",
+          "pos": "adj",
+          "role": "表语",
+          "group": "cl"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "was",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "cl"
+        }
+      ],
+      "explain": "wish 后面的从句要用虚拟语气，表示「真希望……（可惜不是）」。be 动词照样用 were：wish I were taller。",
+      "example": "I wish I were taller. / I am not tall.",
+      "win": "wish 后面也要用虚拟。"
+    },
+    {
+      "id": "5-5-r4",
+      "cn": "真希望我知道答案。",
+      "tip": "改错：wish 后面用过去式",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "cl",
+          "label": "宾语从句（虚拟）",
+          "clause": true,
+          "parent": "vp"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "I",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "wish",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "I",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "cl"
+        },
+        {
+          "text": "knew",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "cl"
+        },
+        {
+          "text": "the",
+          "pos": "article",
+          "role": "限定词",
+          "group": "cl"
+        },
+        {
+          "text": "answer",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "cl"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "know",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "cl"
+        }
+      ],
+      "prefill": [
+        "I",
+        "wish",
+        "I",
+        "know",
+        "the",
+        "answer"
+      ],
+      "explain": "wish 后面的从句要用过去式表示与现在相反：wish I knew（可惜我不知道）。用现在时 know 就变成「希望我知道」这种现实陈述了。",
+      "example": "I wish I knew the answer. / I don't know the answer.",
+      "win": "wish 后面用过去式，表示现在的遗憾。"
+    },
+    {
+      "id": "5-5-r5",
+      "cn": "如果我早知道，我就会来了。",
+      "tip": "与过去事实相反：had + 过去分词",
+      "groups": [
+        {
+          "id": "main",
+          "label": "主句"
+        },
+        {
+          "id": "sub",
+          "label": "虚拟条件从句",
+          "clause": true
+        }
+      ],
+      "blocks": [
+        {
+          "text": "I",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "main"
+        },
+        {
+          "text": "would",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "main"
+        },
+        {
+          "text": "have",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "main"
+        },
+        {
+          "text": "come",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "main"
+        },
+        {
+          "text": "if",
+          "pos": "conj",
+          "role": "连接词",
+          "group": "sub"
+        },
+        {
+          "text": "I",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "sub"
+        },
+        {
+          "text": "had",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "sub"
+        },
+        {
+          "text": "known",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "sub"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "knew",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "sub"
+        }
+      ],
+      "explain": "与过去事实相反：从句用 had + 过去分词，主句用 would have + 过去分词。意思是「我当时不知道，所以我没来」。",
+      "example": "I would have come if I had known. / I didn't know, so I didn't come.",
+      "win": "过去的虚拟要往后退一格：had done / would have done。"
+    }
+  ]
+}

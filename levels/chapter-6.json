@@ -1,0 +1,3419 @@
+{
+  "name": "第六章 · 写作工坊",
+  "emoji": "✍️",
+  "subtitle": "语篇衔接",
+  "levels": [
+    {
+      "id": "6-1",
+      "topic": "转折与递进",
+      "emoji": "↔️",
+      "goal": "however 不是 but：它是副词，要另起一句，而且后面得跟逗号",
+      "rounds": [
+        {
+          "id": "6-1-r1",
+          "cn": "他学习很努力。然而，他考试没及格。",
+          "tip": "however 表示转折，前后意思相反",
+          "rootLabel": "句群",
+          "marks": {
+            "2": ".",
+            "3": ","
+          },
+          "groups": [
+            {
+              "id": "s1",
+              "label": "第一句"
+            },
+            {
+              "id": "s2",
+              "label": "第二句（转折）",
+              "clause": true
+            }
+          ],
+          "blocks": [
+            {
+              "text": "He",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "s1"
+            },
+            {
+              "text": "studied",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "s1"
+            },
+            {
+              "text": "hard",
+              "pos": "adv",
+              "role": "状语",
+              "group": "s1"
+            },
+            {
+              "text": "However",
+              "pos": "adv",
+              "role": "衔接词",
+              "group": "s2"
+            },
+            {
+              "text": "he",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "s2"
+            },
+            {
+              "text": "failed",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "s2"
+            },
+            {
+              "text": "the",
+              "pos": "article",
+              "role": "限定词",
+              "group": "s2"
+            },
+            {
+              "text": "exam",
+              "pos": "noun",
+              "role": "宾语",
+              "group": "s2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "Therefore",
+              "pos": "adv",
+              "role": "衔接词",
+              "group": "s2"
+            }
+          ],
+          "explain": "however 表示转折，前后两句意思相反。注意它是副词，不是连词 —— 不能像 but 那样把两句连在一个句子里，必须用句号断开，另起一句，而且在它后面加逗号。",
+          "example": "He studied hard. However, he failed the exam. / He studied hard, but he failed the exam.",
+          "win": "however 是副词，要另起一句。"
+        },
+        {
+          "id": "6-1-r2",
+          "cn": "她很累。而且，她还头疼。",
+          "tip": "in addition 是递进，方向一致",
+          "rootLabel": "句群",
+          "marks": {
+            "2": ".",
+            "3": ","
+          },
+          "groups": [
+            {
+              "id": "s1",
+              "label": "第一句"
+            },
+            {
+              "id": "s2",
+              "label": "第二句（递进）",
+              "clause": true
+            }
+          ],
+          "blocks": [
+            {
+              "text": "She",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "s1"
+            },
+            {
+              "text": "was",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "s1"
+            },
+            {
+              "text": "tired",
+              "pos": "adj",
+              "role": "表语",
+              "group": "s1"
+            },
+            {
+              "text": "In addition",
+              "pos": "adv",
+              "role": "衔接词",
+              "group": "s2"
+            },
+            {
+              "text": "she",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "s2"
+            },
+            {
+              "text": "had",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "s2"
+            },
+            {
+              "text": "a",
+              "pos": "article",
+              "role": "限定词",
+              "group": "s2"
+            },
+            {
+              "text": "headache",
+              "pos": "noun",
+              "role": "宾语",
+              "group": "s2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "However",
+              "pos": "adv",
+              "role": "衔接词",
+              "group": "s2"
+            }
+          ],
+          "explain": "in addition / moreover / what's more 表示「而且」，是递进关系：前后两句话的方向是一致的（都很糟）。用 However 就成了转折，逻辑不通。",
+          "example": "She was tired. In addition, she had a headache.",
+          "win": "递进用 in addition，转折用 however。"
+        },
+        {
+          "id": "6-1-r3",
+          "cn": "这个方案很便宜。而且，它效果很好。",
+          "tip": "moreover 比 in addition 更书面",
+          "rootLabel": "句群",
+          "marks": {
+            "3": ".",
+            "4": ","
+          },
+          "groups": [
+            {
+              "id": "s1",
+              "label": "第一句"
+            },
+            {
+              "id": "s2",
+              "label": "第二句（递进）",
+              "clause": true
+            }
+          ],
+          "blocks": [
+            {
+              "text": "The",
+              "pos": "article",
+              "role": "限定词",
+              "group": "s1"
+            },
+            {
+              "text": "plan",
+              "pos": "noun",
+              "role": "主语",
+              "group": "s1"
+            },
+            {
+              "text": "is",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "s1"
+            },
+            {
+              "text": "cheap",
+              "pos": "adj",
+              "role": "表语",
+              "group": "s1"
+            },
+            {
+              "text": "Moreover",
+              "pos": "adv",
+              "role": "衔接词",
+              "group": "s2"
+            },
+            {
+              "text": "it",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "s2"
+            },
+            {
+              "text": "works",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "s2"
+            },
+            {
+              "text": "well",
+              "pos": "adv",
+              "role": "状语",
+              "group": "s2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "Therefore",
+              "pos": "adv",
+              "role": "衔接词",
+              "group": "s2"
+            }
+          ],
+          "explain": "moreover 和 in addition 意思一样，只是更书面。这里第二句是在补充优点，不是结果，所以不能用 Therefore。",
+          "example": "The plan is cheap. Moreover, it works well.",
+          "win": "补充同类信息，用 moreover。"
+        },
+        {
+          "id": "6-1-r4",
+          "cn": "他学习很努力。然而，他考试没及格。",
+          "tip": "改错：这里是转折还是因果",
+          "rootLabel": "句群",
+          "marks": {
+            "2": ".",
+            "3": ","
+          },
+          "groups": [
+            {
+              "id": "s1",
+              "label": "第一句"
+            },
+            {
+              "id": "s2",
+              "label": "第二句（转折）",
+              "clause": true
+            }
+          ],
+          "blocks": [
+            {
+              "text": "He",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "s1"
+            },
+            {
+              "text": "studied",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "s1"
+            },
+            {
+              "text": "hard",
+              "pos": "adv",
+              "role": "状语",
+              "group": "s1"
+            },
+            {
+              "text": "However",
+              "pos": "adv",
+              "role": "衔接词",
+              "group": "s2"
+            },
+            {
+              "text": "he",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "s2"
+            },
+            {
+              "text": "failed",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "s2"
+            },
+            {
+              "text": "the",
+              "pos": "article",
+              "role": "限定词",
+              "group": "s2"
+            },
+            {
+              "text": "exam",
+              "pos": "noun",
+              "role": "宾语",
+              "group": "s2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "Therefore",
+              "pos": "adv",
+              "role": "衔接词",
+              "group": "s2"
+            }
+          ],
+          "prefill": [
+            "He",
+            "studied",
+            "hard",
+            "Therefore",
+            "he",
+            "failed",
+            "the",
+            "exam"
+          ],
+          "explain": "努力了却没过，这是转折关系，不是「因为努力所以没过」。Therefore 表示结果，用在这里逻辑正好反了。",
+          "example": "He studied hard. However, he failed the exam.",
+          "win": "先想清楚两句是什么关系，再选衔接词。"
+        },
+        {
+          "id": "6-1-r5",
+          "cn": "这份工作薪水不错。另一方面，它很累人。",
+          "tip": "on the other hand 用来看同一件事的两面",
+          "rootLabel": "句群",
+          "marks": {
+            "3": ".",
+            "4": ","
+          },
+          "groups": [
+            {
+              "id": "s1",
+              "label": "第一句"
+            },
+            {
+              "id": "s2",
+              "label": "第二句（另一面）",
+              "clause": true
+            }
+          ],
+          "blocks": [
+            {
+              "text": "It",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "s1"
+            },
+            {
+              "text": "is",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "s1"
+            },
+            {
+              "text": "well",
+              "pos": "adv",
+              "role": "状语",
+              "group": "s1"
+            },
+            {
+              "text": "paid",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "s1"
+            },
+            {
+              "text": "On the other hand",
+              "pos": "adv",
+              "role": "衔接词",
+              "group": "s2"
+            },
+            {
+              "text": "it",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "s2"
+            },
+            {
+              "text": "is",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "s2"
+            },
+            {
+              "text": "tiring",
+              "pos": "adj",
+              "role": "表语",
+              "group": "s2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "Moreover",
+              "pos": "adv",
+              "role": "衔接词",
+              "group": "s2"
+            }
+          ],
+          "explain": "on the other hand 表示「另一方面」，专门用来权衡同一件事的两面（好处 vs 坏处）。Moreover 只是「而且」，体现不出这种对比。",
+          "example": "It is well paid. On the other hand, it is tiring.",
+          "win": "权衡利弊，用 on the other hand。"
+        }
+      ]
+    },
+    {
+      "id": "6-2",
+      "topic": "因果衔接",
+      "emoji": "➡️",
+      "goal": "as a result / therefore / because of：先说原因，再接结果",
+      "rounds": [
+        {
+          "id": "6-2-r1",
+          "cn": "雨下得很大。结果，比赛取消了。",
+          "tip": "as a result 引出结果",
+          "rootLabel": "句群",
+          "marks": {
+            "2": ".",
+            "3": ","
+          },
+          "groups": [
+            {
+              "id": "s1",
+              "label": "第一句（原因）"
+            },
+            {
+              "id": "s2",
+              "label": "第二句（结果）",
+              "clause": true
+            }
+          ],
+          "blocks": [
+            {
+              "text": "It",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "s1"
+            },
+            {
+              "text": "rained",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "s1"
+            },
+            {
+              "text": "heavily",
+              "pos": "adv",
+              "role": "状语",
+              "group": "s1"
+            },
+            {
+              "text": "As a result",
+              "pos": "adv",
+              "role": "衔接词",
+              "group": "s2"
+            },
+            {
+              "text": "the",
+              "pos": "article",
+              "role": "限定词",
+              "group": "s2"
+            },
+            {
+              "text": "match",
+              "pos": "noun",
+              "role": "主语",
+              "group": "s2"
+            },
+            {
+              "text": "was",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "s2"
+            },
+            {
+              "text": "canceled",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "s2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "However",
+              "pos": "adv",
+              "role": "衔接词",
+              "group": "s2"
+            }
+          ],
+          "explain": "as a result 表示「结果」：前面说原因，后面说结果。它和 therefore 意思接近，都是副词，要另起一句。",
+          "example": "It rained heavily. As a result, the match was canceled.",
+          "win": "原因在前，结果在后，中间用 as a result。"
+        },
+        {
+          "id": "6-2-r2",
+          "cn": "他迟到了。因此，他错过了火车。",
+          "tip": "therefore 是最常用的「因此」",
+          "rootLabel": "句群",
+          "marks": {
+            "2": ".",
+            "3": ","
+          },
+          "groups": [
+            {
+              "id": "s1",
+              "label": "第一句（原因）"
+            },
+            {
+              "id": "s2",
+              "label": "第二句（结果）",
+              "clause": true
+            }
+          ],
+          "blocks": [
+            {
+              "text": "He",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "s1"
+            },
+            {
+              "text": "was",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "s1"
+            },
+            {
+              "text": "late",
+              "pos": "adj",
+              "role": "表语",
+              "group": "s1"
+            },
+            {
+              "text": "Therefore",
+              "pos": "adv",
+              "role": "衔接词",
+              "group": "s2"
+            },
+            {
+              "text": "he",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "s2"
+            },
+            {
+              "text": "missed",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "s2"
+            },
+            {
+              "text": "the",
+              "pos": "article",
+              "role": "限定词",
+              "group": "s2"
+            },
+            {
+              "text": "train",
+              "pos": "noun",
+              "role": "宾语",
+              "group": "s2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "Moreover",
+              "pos": "adv",
+              "role": "衔接词",
+              "group": "s2"
+            }
+          ],
+          "explain": "therefore 表示「因此」，是最常用的因果衔接词，比 so 正式，适合写作。",
+          "example": "He was late. Therefore, he missed the train. / He was late, so he missed the train.",
+          "win": "写作里用 therefore 替代口语的 so。"
+        },
+        {
+          "id": "6-2-r3",
+          "cn": "她病了。因为这个，她待在家里。",
+          "tip": "because of 后面跟名词，because 后面跟句子",
+          "rootLabel": "句群",
+          "marks": {
+            "2": ".",
+            "3": ","
+          },
+          "groups": [
+            {
+              "id": "s1",
+              "label": "第一句"
+            },
+            {
+              "id": "s2",
+              "label": "第二句（因果）",
+              "clause": true
+            }
+          ],
+          "blocks": [
+            {
+              "text": "She",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "s1"
+            },
+            {
+              "text": "was",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "s1"
+            },
+            {
+              "text": "ill",
+              "pos": "adj",
+              "role": "表语",
+              "group": "s1"
+            },
+            {
+              "text": "Because of this",
+              "pos": "adv",
+              "role": "衔接词",
+              "group": "s2"
+            },
+            {
+              "text": "she",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "s2"
+            },
+            {
+              "text": "stayed",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "s2"
+            },
+            {
+              "text": "home",
+              "pos": "adv",
+              "role": "状语",
+              "group": "s2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "Although",
+              "pos": "conj",
+              "role": "衔接词",
+              "group": "s2"
+            }
+          ],
+          "explain": "because of 后面跟名词或代词（这里的 this 指代前面「她病了」这件事）。如果把 because 直接放句首，后面就必须跟一个完整句子：Because she was ill, she stayed home.",
+          "example": "She was ill. Because of this, she stayed home. / Because she was ill, she stayed home.",
+          "win": "because of + 名词，because + 句子。"
+        },
+        {
+          "id": "6-2-r4",
+          "cn": "他很努力。结果，他通过了。",
+          "tip": "改错：这里是因果还是转折",
+          "rootLabel": "句群",
+          "marks": {
+            "2": ".",
+            "3": ","
+          },
+          "groups": [
+            {
+              "id": "s1",
+              "label": "第一句（原因）"
+            },
+            {
+              "id": "s2",
+              "label": "第二句（结果）",
+              "clause": true
+            }
+          ],
+          "blocks": [
+            {
+              "text": "He",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "s1"
+            },
+            {
+              "text": "worked",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "s1"
+            },
+            {
+              "text": "hard",
+              "pos": "adv",
+              "role": "状语",
+              "group": "s1"
+            },
+            {
+              "text": "As a result",
+              "pos": "adv",
+              "role": "衔接词",
+              "group": "s2"
+            },
+            {
+              "text": "he",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "s2"
+            },
+            {
+              "text": "passed",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "s2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "However",
+              "pos": "adv",
+              "role": "衔接词",
+              "group": "s2"
+            }
+          ],
+          "prefill": [
+            "He",
+            "worked",
+            "hard",
+            "However",
+            "he",
+            "passed"
+          ],
+          "explain": "努力和通过是顺理成章的因果关系，用 as a result。However 表示转折，用在这里等于说「努力了，然而通过了」，逻辑不对。",
+          "example": "He worked hard. As a result, he passed.",
+          "win": "两句方向一致就是因果，相反才是转折。"
+        },
+        {
+          "id": "6-2-r5",
+          "cn": "他从不练习。因此，他输了比赛。",
+          "tip": "consequently 更正式",
+          "rootLabel": "句群",
+          "marks": {
+            "2": ".",
+            "3": ","
+          },
+          "groups": [
+            {
+              "id": "s1",
+              "label": "第一句（原因）"
+            },
+            {
+              "id": "s2",
+              "label": "第二句（结果）",
+              "clause": true
+            }
+          ],
+          "blocks": [
+            {
+              "text": "He",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "s1"
+            },
+            {
+              "text": "never",
+              "pos": "adv",
+              "role": "状语",
+              "group": "s1"
+            },
+            {
+              "text": "practiced",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "s1"
+            },
+            {
+              "text": "Consequently",
+              "pos": "adv",
+              "role": "衔接词",
+              "group": "s2"
+            },
+            {
+              "text": "he",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "s2"
+            },
+            {
+              "text": "lost",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "s2"
+            },
+            {
+              "text": "the",
+              "pos": "article",
+              "role": "限定词",
+              "group": "s2"
+            },
+            {
+              "text": "game",
+              "pos": "noun",
+              "role": "宾语",
+              "group": "s2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "However",
+              "pos": "adv",
+              "role": "衔接词",
+              "group": "s2"
+            }
+          ],
+          "explain": "consequently 也是「因此」，比 therefore 更正式一些，常用在议论文里。",
+          "example": "He never practiced. Consequently, he lost the game.",
+          "win": "therefore / consequently / as a result 可以换着用，别老用一个。"
+        }
+      ]
+    },
+    {
+      "id": "6-3",
+      "topic": "举例与列举",
+      "emoji": "📋",
+      "goal": "for example 后面跟句子，such as 后面只能跟名词",
+      "rounds": [
+        {
+          "id": "6-3-r1",
+          "cn": "有些运动很便宜。比如，跑步不花钱。",
+          "tip": "先给概括，再给例子",
+          "rootLabel": "句群",
+          "marks": {
+            "3": ".",
+            "4": ","
+          },
+          "groups": [
+            {
+              "id": "s1",
+              "label": "第一句（概括）"
+            },
+            {
+              "id": "s2",
+              "label": "第二句（举例）",
+              "clause": true
+            }
+          ],
+          "blocks": [
+            {
+              "text": "Some",
+              "pos": "pronoun",
+              "role": "限定词",
+              "group": "s1"
+            },
+            {
+              "text": "sports",
+              "pos": "noun",
+              "role": "主语",
+              "group": "s1"
+            },
+            {
+              "text": "are",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "s1"
+            },
+            {
+              "text": "cheap",
+              "pos": "adj",
+              "role": "表语",
+              "group": "s1"
+            },
+            {
+              "text": "For example",
+              "pos": "adv",
+              "role": "衔接词",
+              "group": "s2"
+            },
+            {
+              "text": "running",
+              "pos": "verb",
+              "role": "动名词",
+              "group": "s2",
+              "nonfinite": true
+            },
+            {
+              "text": "costs",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "s2"
+            },
+            {
+              "text": "nothing",
+              "pos": "pronoun",
+              "role": "宾语",
+              "group": "s2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "In conclusion",
+              "pos": "adv",
+              "role": "衔接词",
+              "group": "s2"
+            }
+          ],
+          "explain": "举例的写法是「先概括，再举例」：先说 Some sports are cheap 这个概括，再用 For example 引出具体例子。In conclusion 是总结用的，位置在段落末尾。",
+          "example": "Some sports are cheap. For example, running costs nothing.",
+          "win": "概括在前，例子在后。"
+        },
+        {
+          "id": "6-3-r2",
+          "cn": "她会说好几种语言。比如，她会说法语。",
+          "tip": "for instance 和 for example 一样",
+          "rootLabel": "句群",
+          "marks": {
+            "3": ".",
+            "4": ","
+          },
+          "groups": [
+            {
+              "id": "s1",
+              "label": "第一句（概括）"
+            },
+            {
+              "id": "s2",
+              "label": "第二句（举例）",
+              "clause": true
+            }
+          ],
+          "blocks": [
+            {
+              "text": "She",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "s1"
+            },
+            {
+              "text": "speaks",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "s1"
+            },
+            {
+              "text": "several",
+              "pos": "adj",
+              "role": "定语",
+              "group": "s1"
+            },
+            {
+              "text": "languages",
+              "pos": "noun",
+              "role": "宾语",
+              "group": "s1"
+            },
+            {
+              "text": "For instance",
+              "pos": "adv",
+              "role": "衔接词",
+              "group": "s2"
+            },
+            {
+              "text": "she",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "s2"
+            },
+            {
+              "text": "speaks",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "s2"
+            },
+            {
+              "text": "French",
+              "pos": "noun",
+              "role": "宾语",
+              "group": "s2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "As a result",
+              "pos": "adv",
+              "role": "衔接词",
+              "group": "s2"
+            }
+          ],
+          "explain": "for instance 和 for example 意思完全一样，换着用可以让文章不单调。",
+          "example": "She speaks several languages. For instance, she speaks French.",
+          "win": "for example / for instance 可以互换。"
+        },
+        {
+          "id": "6-3-r3",
+          "cn": "首先，把米洗一洗。然后，把它煮熟。",
+          "tip": "first / then / finally 用来排顺序",
+          "rootLabel": "句群",
+          "marks": {
+            "0": ",",
+            "3": ".",
+            "4": ","
+          },
+          "groups": [
+            {
+              "id": "s1",
+              "label": "第一步"
+            },
+            {
+              "id": "s2",
+              "label": "第二步",
+              "clause": true
+            }
+          ],
+          "blocks": [
+            {
+              "text": "First",
+              "pos": "adv",
+              "role": "衔接词",
+              "group": "s1"
+            },
+            {
+              "text": "wash",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "s1"
+            },
+            {
+              "text": "the",
+              "pos": "article",
+              "role": "限定词",
+              "group": "s1"
+            },
+            {
+              "text": "rice",
+              "pos": "noun",
+              "role": "宾语",
+              "group": "s1"
+            },
+            {
+              "text": "Then",
+              "pos": "adv",
+              "role": "衔接词",
+              "group": "s2"
+            },
+            {
+              "text": "cook",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "s2"
+            },
+            {
+              "text": "it",
+              "pos": "pronoun",
+              "role": "宾语",
+              "group": "s2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "For example",
+              "pos": "adv",
+              "role": "衔接词",
+              "group": "s2"
+            }
+          ],
+          "explain": "说明步骤时用 first / then / next / finally。它们后面通常加逗号，和后面的句子分开。",
+          "example": "First, wash the rice. Then, cook it.",
+          "win": "排顺序用 first / then / finally。"
+        },
+        {
+          "id": "6-3-r4",
+          "cn": "有些运动很便宜。比如，跑步不花钱。",
+          "tip": "改错：such as 后面不能跟句子",
+          "rootLabel": "句群",
+          "marks": {
+            "3": ".",
+            "4": ","
+          },
+          "groups": [
+            {
+              "id": "s1",
+              "label": "第一句（概括）"
+            },
+            {
+              "id": "s2",
+              "label": "第二句（举例）",
+              "clause": true
+            }
+          ],
+          "blocks": [
+            {
+              "text": "Some",
+              "pos": "pronoun",
+              "role": "限定词",
+              "group": "s1"
+            },
+            {
+              "text": "sports",
+              "pos": "noun",
+              "role": "主语",
+              "group": "s1"
+            },
+            {
+              "text": "are",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "s1"
+            },
+            {
+              "text": "cheap",
+              "pos": "adj",
+              "role": "表语",
+              "group": "s1"
+            },
+            {
+              "text": "For example",
+              "pos": "adv",
+              "role": "衔接词",
+              "group": "s2"
+            },
+            {
+              "text": "running",
+              "pos": "verb",
+              "role": "动名词",
+              "group": "s2",
+              "nonfinite": true
+            },
+            {
+              "text": "costs",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "s2"
+            },
+            {
+              "text": "nothing",
+              "pos": "pronoun",
+              "role": "宾语",
+              "group": "s2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "Such as",
+              "pos": "adv",
+              "role": "衔接词",
+              "group": "s2"
+            }
+          ],
+          "prefill": [
+            "Some",
+            "sports",
+            "are",
+            "cheap",
+            "Such as",
+            "running",
+            "costs",
+            "nothing"
+          ],
+          "explain": "such as 后面只能跟名词或名词短语（some sports, such as running），不能跟一个完整的句子。要引出整句例子，用 for example。",
+          "example": "Some sports are cheap. For example, running costs nothing. / Some sports, such as running, are cheap.",
+          "win": "such as + 名词，for example + 句子。"
+        },
+        {
+          "id": "6-3-r5",
+          "cn": "阅读很有用。比如，它能扩大你的词汇量。",
+          "tip": "例子的位置跟着概括走",
+          "rootLabel": "句群",
+          "marks": {
+            "2": ".",
+            "3": ","
+          },
+          "groups": [
+            {
+              "id": "s1",
+              "label": "第一句（概括）"
+            },
+            {
+              "id": "s2",
+              "label": "第二句（举例）",
+              "clause": true
+            }
+          ],
+          "blocks": [
+            {
+              "text": "Reading",
+              "pos": "verb",
+              "role": "动名词",
+              "group": "s1",
+              "nonfinite": true
+            },
+            {
+              "text": "is",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "s1"
+            },
+            {
+              "text": "useful",
+              "pos": "adj",
+              "role": "表语",
+              "group": "s1"
+            },
+            {
+              "text": "For example",
+              "pos": "adv",
+              "role": "衔接词",
+              "group": "s2"
+            },
+            {
+              "text": "it",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "s2"
+            },
+            {
+              "text": "builds",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "s2"
+            },
+            {
+              "text": "your",
+              "pos": "pronoun",
+              "role": "限定词",
+              "group": "s2"
+            },
+            {
+              "text": "vocabulary",
+              "pos": "noun",
+              "role": "宾语",
+              "group": "s2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "In conclusion",
+              "pos": "adv",
+              "role": "衔接词",
+              "group": "s2"
+            }
+          ],
+          "explain": "举例子也可以举一整件事：it builds your vocabulary 就是 Reading is useful 的一个具体表现。",
+          "example": "Reading is useful. For example, it builds your vocabulary.",
+          "win": "例子可以是具体的事，也可以是一整句话。"
+        }
+      ]
+    },
+    {
+      "id": "6-4",
+      "topic": "让步与对比",
+      "emoji": "⚖️",
+      "goal": "although 后面跟句子，despite 后面只能跟名词",
+      "rounds": [
+        {
+          "id": "6-4-r1",
+          "cn": "虽然在下雨，我们还是出去了。",
+          "tip": "although 后面是完整的句子",
+          "groups": [
+            {
+              "id": "main",
+              "label": "主句"
+            },
+            {
+              "id": "sub",
+              "label": "让步状语从句",
+              "clause": true
+            }
+          ],
+          "blocks": [
+            {
+              "text": "We",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "main"
+            },
+            {
+              "text": "went",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "main"
+            },
+            {
+              "text": "out",
+              "pos": "adv",
+              "role": "状语",
+              "group": "main"
+            },
+            {
+              "text": "although",
+              "pos": "conj",
+              "role": "连接词",
+              "group": "sub"
+            },
+            {
+              "text": "it",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "sub"
+            },
+            {
+              "text": "was",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "sub"
+            },
+            {
+              "text": "raining",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "sub"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "despite",
+              "pos": "prep",
+              "role": "介词",
+              "group": "sub"
+            }
+          ],
+          "explain": "although 是连词，后面跟一个完整的句子（有主语有谓语）：although it was raining。despite 是介词，后面只能跟名词，用了它后面就不能有 it was。",
+          "example": "We went out although it was raining. / We went out despite the rain.",
+          "win": "although + 句子，despite + 名词。"
+        },
+        {
+          "id": "6-4-r2",
+          "cn": "尽管下雨，我们还是出去了。",
+          "tip": "despite 后面跟名词短语",
+          "groups": [
+            {
+              "id": "main",
+              "label": "主句"
+            },
+            {
+              "id": "sub",
+              "label": "让步短语（名词）",
+              "clause": true
+            }
+          ],
+          "blocks": [
+            {
+              "text": "We",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "main"
+            },
+            {
+              "text": "went",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "main"
+            },
+            {
+              "text": "out",
+              "pos": "adv",
+              "role": "状语",
+              "group": "main"
+            },
+            {
+              "text": "despite",
+              "pos": "prep",
+              "role": "介词",
+              "group": "sub"
+            },
+            {
+              "text": "the",
+              "pos": "article",
+              "role": "限定词",
+              "group": "sub"
+            },
+            {
+              "text": "rain",
+              "pos": "noun",
+              "role": "介词宾语",
+              "group": "sub"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "although",
+              "pos": "conj",
+              "role": "连接词",
+              "group": "sub"
+            }
+          ],
+          "explain": "despite 后面跟名词短语 the rain。如果要用 although，就得把它变成句子：although it was raining。这一条是写作中最常出错的地方之一。",
+          "example": "We went out despite the rain. / We went out although it was raining.",
+          "win": "despite / in spite of 后面永远跟名词。"
+        },
+        {
+          "id": "6-4-r3",
+          "cn": "Tom 很高，而他弟弟很矮。",
+          "tip": "while 用来对比两件相反的事实",
+          "groups": [
+            {
+              "id": "s1",
+              "label": "第一分句"
+            },
+            {
+              "id": "s2",
+              "label": "对比分句",
+              "clause": true
+            }
+          ],
+          "blocks": [
+            {
+              "text": "Tom",
+              "pos": "noun",
+              "role": "主语",
+              "group": "s1"
+            },
+            {
+              "text": "is",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "s1"
+            },
+            {
+              "text": "tall",
+              "pos": "adj",
+              "role": "表语",
+              "group": "s1"
+            },
+            {
+              "text": "while",
+              "pos": "conj",
+              "role": "连接词",
+              "group": "s2"
+            },
+            {
+              "text": "his",
+              "pos": "pronoun",
+              "role": "限定词",
+              "group": "s2"
+            },
+            {
+              "text": "brother",
+              "pos": "noun",
+              "role": "主语",
+              "group": "s2"
+            },
+            {
+              "text": "is",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "s2"
+            },
+            {
+              "text": "short",
+              "pos": "adj",
+              "role": "表语",
+              "group": "s2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "although",
+              "pos": "conj",
+              "role": "连接词",
+              "group": "s2"
+            }
+          ],
+          "explain": "while 在这里表示「而」，用来对比两个相反的事实。although 是「虽然」，表示让步，用在这里意思不通。",
+          "example": "Tom is tall while his brother is short.",
+          "win": "对比用 while，让步用 although。"
+        },
+        {
+          "id": "6-4-r4",
+          "cn": "虽然在下雨，我们还是出去了。",
+          "tip": "改错：despite 后面不能跟句子",
+          "groups": [
+            {
+              "id": "main",
+              "label": "主句"
+            },
+            {
+              "id": "sub",
+              "label": "让步状语从句",
+              "clause": true
+            }
+          ],
+          "blocks": [
+            {
+              "text": "We",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "main"
+            },
+            {
+              "text": "went",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "main"
+            },
+            {
+              "text": "out",
+              "pos": "adv",
+              "role": "状语",
+              "group": "main"
+            },
+            {
+              "text": "although",
+              "pos": "conj",
+              "role": "连接词",
+              "group": "sub"
+            },
+            {
+              "text": "it",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "sub"
+            },
+            {
+              "text": "was",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "sub"
+            },
+            {
+              "text": "raining",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "sub"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "despite",
+              "pos": "prep",
+              "role": "介词",
+              "group": "sub"
+            }
+          ],
+          "prefill": [
+            "We",
+            "went",
+            "out",
+            "despite",
+            "it",
+            "was",
+            "raining"
+          ],
+          "explain": "despite 后面不能跟句子。既然后面是 it was raining（有主语有谓语），就必须换成 although。要保留 despite，就把它后面的内容改成名词：despite the rain。",
+          "example": "We went out although it was raining. / We went out despite the rain.",
+          "win": "后面是句子就用 although，是名词就用 despite。"
+        },
+        {
+          "id": "6-4-r5",
+          "cn": "尽管他很年轻，他非常有经验。",
+          "tip": "even though 比 although 语气更强",
+          "groups": [
+            {
+              "id": "main",
+              "label": "主句"
+            },
+            {
+              "id": "sub",
+              "label": "让步状语从句",
+              "clause": true
+            }
+          ],
+          "blocks": [
+            {
+              "text": "He",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "main"
+            },
+            {
+              "text": "is",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "main"
+            },
+            {
+              "text": "very",
+              "pos": "adv",
+              "role": "状语",
+              "group": "main"
+            },
+            {
+              "text": "experienced",
+              "pos": "adj",
+              "role": "表语",
+              "group": "main"
+            },
+            {
+              "text": "even though",
+              "pos": "conj",
+              "role": "连接词",
+              "group": "sub"
+            },
+            {
+              "text": "he",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "sub"
+            },
+            {
+              "text": "is",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "sub"
+            },
+            {
+              "text": "young",
+              "pos": "adj",
+              "role": "表语",
+              "group": "sub"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "despite",
+              "pos": "prep",
+              "role": "介词",
+              "group": "sub"
+            }
+          ],
+          "explain": "even though 也是连词，后面照样跟完整句子，只是语气比 although 更强，表示「尽管（而且还挺意外的）」。",
+          "example": "He is very experienced even though he is young.",
+          "win": "even though 语气更强，用法和 although 一样。"
+        }
+      ]
+    },
+    {
+      "id": "6-5",
+      "topic": "指代衔接",
+      "emoji": "🔁",
+      "goal": "第一次提用 a，再提用 the；一整件事用 this 指代",
+      "rounds": [
+        {
+          "id": "6-5-r1",
+          "cn": "我昨天买了一本书。那本书很有意思。",
+          "tip": "第一次用 a，第二次用 the",
+          "rootLabel": "句群",
+          "marks": {
+            "4": "."
+          },
+          "groups": [
+            {
+              "id": "s1",
+              "label": "第一句"
+            },
+            {
+              "id": "s2",
+              "label": "第二句（回指）",
+              "clause": true
+            }
+          ],
+          "blocks": [
+            {
+              "text": "I",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "s1"
+            },
+            {
+              "text": "bought",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "s1"
+            },
+            {
+              "text": "a",
+              "pos": "article",
+              "role": "限定词",
+              "group": "s1"
+            },
+            {
+              "text": "book",
+              "pos": "noun",
+              "role": "宾语",
+              "group": "s1"
+            },
+            {
+              "text": "yesterday",
+              "pos": "adv",
+              "role": "状语",
+              "group": "s1"
+            },
+            {
+              "text": "The",
+              "pos": "article",
+              "role": "限定词",
+              "group": "s2"
+            },
+            {
+              "text": "book",
+              "pos": "noun",
+              "role": "主语",
+              "group": "s2"
+            },
+            {
+              "text": "is",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "s2"
+            },
+            {
+              "text": "very",
+              "pos": "adv",
+              "role": "状语",
+              "group": "s2"
+            },
+            {
+              "text": "interesting",
+              "pos": "adj",
+              "role": "表语",
+              "group": "s2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "A",
+              "pos": "article",
+              "role": "限定词",
+              "group": "s2"
+            }
+          ],
+          "explain": "第一次提到某个不确定的东西用 a book；第二次提到同一个东西，读者已经知道是哪个了，就要用 the book。这就是冠词在语篇里的作用 —— 它标记「这个信息之前出现过」。",
+          "example": "I bought a book yesterday. The book is very interesting.",
+          "win": "a 引出新信息，the 回指旧信息。"
+        },
+        {
+          "id": "6-5-r2",
+          "cn": "她考试没通过。这件事让她很难过。",
+          "tip": "this 可以指代一整句话",
+          "rootLabel": "句群",
+          "marks": {
+            "3": "."
+          },
+          "groups": [
+            {
+              "id": "s1",
+              "label": "第一句"
+            },
+            {
+              "id": "s2",
+              "label": "第二句（指代整件事）",
+              "clause": true
+            }
+          ],
+          "blocks": [
+            {
+              "text": "She",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "s1"
+            },
+            {
+              "text": "failed",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "s1"
+            },
+            {
+              "text": "the",
+              "pos": "article",
+              "role": "限定词",
+              "group": "s1"
+            },
+            {
+              "text": "exam",
+              "pos": "noun",
+              "role": "宾语",
+              "group": "s1"
+            },
+            {
+              "text": "This",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "s2"
+            },
+            {
+              "text": "made",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "s2"
+            },
+            {
+              "text": "her",
+              "pos": "pronoun",
+              "role": "宾语",
+              "group": "s2"
+            },
+            {
+              "text": "very",
+              "pos": "adv",
+              "role": "状语",
+              "group": "s2"
+            },
+            {
+              "text": "sad",
+              "pos": "adj",
+              "role": "宾补",
+              "group": "s2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "These",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "s2"
+            }
+          ],
+          "explain": "this 可以指代前面**整个句子**（她考试没通过这件事）。指代一整件事只能用 this，不能用 these —— these 指代的是复数名词。",
+          "example": "She failed the exam. This made her very sad.",
+          "win": "指代一整件事，用 this。"
+        },
+        {
+          "id": "6-5-r3",
+          "cn": "他有两个儿子。他们俩都是医生。",
+          "tip": "指代复数用 them",
+          "rootLabel": "句群",
+          "marks": {
+            "3": "."
+          },
+          "groups": [
+            {
+              "id": "s1",
+              "label": "第一句"
+            },
+            {
+              "id": "s2",
+              "label": "第二句（回指）",
+              "clause": true
+            }
+          ],
+          "blocks": [
+            {
+              "text": "He",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "s1"
+            },
+            {
+              "text": "has",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "s1"
+            },
+            {
+              "text": "two",
+              "pos": "adj",
+              "role": "定语",
+              "group": "s1"
+            },
+            {
+              "text": "sons",
+              "pos": "noun",
+              "role": "宾语",
+              "group": "s1"
+            },
+            {
+              "text": "Both of them",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "s2"
+            },
+            {
+              "text": "are",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "s2"
+            },
+            {
+              "text": "doctors",
+              "pos": "noun",
+              "role": "表语",
+              "group": "s2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "Both of it",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "s2"
+            }
+          ],
+          "explain": "both of them 指代前面的 two sons。指代两个以上的人要用 them，不能用 it。",
+          "example": "He has two sons. Both of them are doctors.",
+          "win": "复数指代用 them。"
+        },
+        {
+          "id": "6-5-r4",
+          "cn": "我买了一本书。那本书很有意思。",
+          "tip": "改错：第二次提到要用 the",
+          "rootLabel": "句群",
+          "marks": {
+            "3": "."
+          },
+          "groups": [
+            {
+              "id": "s1",
+              "label": "第一句"
+            },
+            {
+              "id": "s2",
+              "label": "第二句（回指）",
+              "clause": true
+            }
+          ],
+          "blocks": [
+            {
+              "text": "I",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "s1"
+            },
+            {
+              "text": "bought",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "s1"
+            },
+            {
+              "text": "a",
+              "pos": "article",
+              "role": "限定词",
+              "group": "s1"
+            },
+            {
+              "text": "book",
+              "pos": "noun",
+              "role": "宾语",
+              "group": "s1"
+            },
+            {
+              "text": "The",
+              "pos": "article",
+              "role": "限定词",
+              "group": "s2"
+            },
+            {
+              "text": "book",
+              "pos": "noun",
+              "role": "主语",
+              "group": "s2"
+            },
+            {
+              "text": "is",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "s2"
+            },
+            {
+              "text": "interesting",
+              "pos": "adj",
+              "role": "表语",
+              "group": "s2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "A",
+              "pos": "article",
+              "role": "限定词",
+              "group": "s2"
+            }
+          ],
+          "prefill": [
+            "I",
+            "bought",
+            "a",
+            "book",
+            "A",
+            "book",
+            "is",
+            "interesting"
+          ],
+          "explain": "第二次提到同一本书，要用 The book。用 A book 会让读者以为你又买了一本新的。",
+          "example": "I bought a book. The book is interesting.",
+          "win": "a 是「有一个」，the 是「就那个」。"
+        },
+        {
+          "id": "6-5-r5",
+          "cn": "这里有很多书。其中一些是旧的。",
+          "tip": "some of them 指代复数名词",
+          "rootLabel": "句群",
+          "marks": {
+            "4": "."
+          },
+          "groups": [
+            {
+              "id": "s1",
+              "label": "第一句"
+            },
+            {
+              "id": "s2",
+              "label": "第二句（回指一部分）",
+              "clause": true
+            }
+          ],
+          "blocks": [
+            {
+              "text": "There",
+              "pos": "adv",
+              "role": "引导词",
+              "group": "s1"
+            },
+            {
+              "text": "are",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "s1"
+            },
+            {
+              "text": "many",
+              "pos": "adj",
+              "role": "定语",
+              "group": "s1"
+            },
+            {
+              "text": "books",
+              "pos": "noun",
+              "role": "主语",
+              "group": "s1"
+            },
+            {
+              "text": "here",
+              "pos": "adv",
+              "role": "状语",
+              "group": "s1"
+            },
+            {
+              "text": "Some of them",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "s2"
+            },
+            {
+              "text": "are",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "s2"
+            },
+            {
+              "text": "old",
+              "pos": "adj",
+              "role": "表语",
+              "group": "s2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "Some of it",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "s2"
+            }
+          ],
+          "explain": "some of them 指代前面的 books（复数）。用 it 就变成指代单数，和 books 对不上。",
+          "example": "There are many books here. Some of them are old.",
+          "win": "指代一部分时，人称和单复数都要跟前面一致。"
+        }
+      ]
+    },
+    {
+      "id": "6-6",
+      "topic": "段落开路与收尾",
+      "emoji": "🚩",
+      "goal": "开头点题、中间补充、最后总结 —— 每个位置有它自己的词",
+      "rounds": [
+        {
+          "id": "6-6-r1",
+          "cn": "首先，在线学习很方便。而且，它很便宜。",
+          "tip": "段落的开头：先用 first of all 提出第一点",
+          "rootLabel": "句群",
+          "marks": {
+            "0": ",",
+            "4": ".",
+            "5": ","
+          },
+          "groups": [
+            {
+              "id": "s1",
+              "label": "第一点"
+            },
+            {
+              "id": "s2",
+              "label": "补充（递进）",
+              "clause": true
+            }
+          ],
+          "blocks": [
+            {
+              "text": "First of all",
+              "pos": "adv",
+              "role": "衔接词",
+              "group": "s1"
+            },
+            {
+              "text": "online",
+              "pos": "adj",
+              "role": "定语",
+              "group": "s1"
+            },
+            {
+              "text": "learning",
+              "pos": "verb",
+              "role": "动名词",
+              "group": "s1",
+              "nonfinite": true
+            },
+            {
+              "text": "is",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "s1"
+            },
+            {
+              "text": "convenient",
+              "pos": "adj",
+              "role": "表语",
+              "group": "s1"
+            },
+            {
+              "text": "Moreover",
+              "pos": "adv",
+              "role": "衔接词",
+              "group": "s2"
+            },
+            {
+              "text": "it",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "s2"
+            },
+            {
+              "text": "is",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "s2"
+            },
+            {
+              "text": "cheap",
+              "pos": "adj",
+              "role": "表语",
+              "group": "s2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "In conclusion",
+              "pos": "adv",
+              "role": "衔接词",
+              "group": "s2"
+            }
+          ],
+          "explain": "段落常见的写法：First of all 提出第一点，Moreover 补第二点。In conclusion 只能用在段落最后总结，放在这里太早了。",
+          "example": "First of all, online learning is convenient. Moreover, it is cheap.",
+          "win": "开头提第一点，用 first of all。"
+        },
+        {
+          "id": "6-6-r2",
+          "cn": "这些是我的理由。总之，它值得一试。",
+          "tip": "段落的收尾：in conclusion",
+          "rootLabel": "句群",
+          "marks": {
+            "3": ".",
+            "4": ","
+          },
+          "groups": [
+            {
+              "id": "s1",
+              "label": "小结上一段"
+            },
+            {
+              "id": "s2",
+              "label": "总结句",
+              "clause": true
+            }
+          ],
+          "blocks": [
+            {
+              "text": "These",
+              "pos": "pronoun",
+              "role": "限定词",
+              "group": "s1"
+            },
+            {
+              "text": "are",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "s1"
+            },
+            {
+              "text": "my",
+              "pos": "pronoun",
+              "role": "限定词",
+              "group": "s1"
+            },
+            {
+              "text": "reasons",
+              "pos": "noun",
+              "role": "表语",
+              "group": "s1"
+            },
+            {
+              "text": "In conclusion",
+              "pos": "adv",
+              "role": "衔接词",
+              "group": "s2"
+            },
+            {
+              "text": "it",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "s2"
+            },
+            {
+              "text": "is",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "s2"
+            },
+            {
+              "text": "worth",
+              "pos": "adj",
+              "role": "表语",
+              "group": "s2"
+            },
+            {
+              "text": "trying",
+              "pos": "verb",
+              "role": "动名词",
+              "group": "s2",
+              "nonfinite": true
+            }
+          ],
+          "distractors": [
+            {
+              "text": "First of all",
+              "pos": "adv",
+              "role": "衔接词",
+              "group": "s2"
+            }
+          ],
+          "explain": "In conclusion / To sum up 用来收尾，把前面说的理由收拢成一个结论。它后面通常跟逗号。",
+          "example": "These are my reasons. In conclusion, it is worth trying.",
+          "win": "收尾用 in conclusion / to sum up。"
+        },
+        {
+          "id": "6-6-r3",
+          "cn": "首先，它便宜。而且，它方便。",
+          "tip": "改错：还在列举中间，不能用 In conclusion",
+          "rootLabel": "句群",
+          "marks": {
+            "0": ",",
+            "3": ".",
+            "4": ","
+          },
+          "groups": [
+            {
+              "id": "s1",
+              "label": "第一点"
+            },
+            {
+              "id": "s2",
+              "label": "第二点",
+              "clause": true
+            }
+          ],
+          "blocks": [
+            {
+              "text": "First of all",
+              "pos": "adv",
+              "role": "衔接词",
+              "group": "s1"
+            },
+            {
+              "text": "it",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "s1"
+            },
+            {
+              "text": "is",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "s1"
+            },
+            {
+              "text": "cheap",
+              "pos": "adj",
+              "role": "表语",
+              "group": "s1"
+            },
+            {
+              "text": "Moreover",
+              "pos": "adv",
+              "role": "衔接词",
+              "group": "s2"
+            },
+            {
+              "text": "it",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "s2"
+            },
+            {
+              "text": "is",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "s2"
+            },
+            {
+              "text": "convenient",
+              "pos": "adj",
+              "role": "表语",
+              "group": "s2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "In conclusion",
+              "pos": "adv",
+              "role": "衔接词",
+              "group": "s2"
+            }
+          ],
+          "prefill": [
+            "First of all",
+            "it",
+            "is",
+            "cheap",
+            "In conclusion",
+            "it",
+            "is",
+            "convenient"
+          ],
+          "explain": "这是列举的第二点，不是结尾，所以不能用 In conclusion。补充第二点要用 Moreover 或 In addition。",
+          "example": "First of all, it is cheap. Moreover, it is convenient.",
+          "win": "总结词只能出现在段落的最后一句。"
+        },
+        {
+          "id": "6-6-r4",
+          "cn": "一方面它省时间。另一方面它省钱。",
+          "tip": "for one thing ... for another 是固定搭配",
+          "rootLabel": "句群",
+          "marks": {
+            "3": ".",
+            "4": ","
+          },
+          "groups": [
+            {
+              "id": "s1",
+              "label": "一方面"
+            },
+            {
+              "id": "s2",
+              "label": "另一方面",
+              "clause": true
+            }
+          ],
+          "blocks": [
+            {
+              "text": "For one thing",
+              "pos": "adv",
+              "role": "衔接词",
+              "group": "s1"
+            },
+            {
+              "text": "it",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "s1"
+            },
+            {
+              "text": "saves",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "s1"
+            },
+            {
+              "text": "time",
+              "pos": "noun",
+              "role": "宾语",
+              "group": "s1"
+            },
+            {
+              "text": "For another",
+              "pos": "adv",
+              "role": "衔接词",
+              "group": "s2"
+            },
+            {
+              "text": "it",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "s2"
+            },
+            {
+              "text": "saves",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "s2"
+            },
+            {
+              "text": "money",
+              "pos": "noun",
+              "role": "宾语",
+              "group": "s2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "In conclusion",
+              "pos": "adv",
+              "role": "衔接词",
+              "group": "s2"
+            }
+          ],
+          "explain": "for one thing ... for another 是固定搭配，专门用来说两个理由。注意第二个是 for another，不是 for the other thing。",
+          "example": "For one thing, it saves time. For another, it saves money.",
+          "win": "两个理由成套用 for one thing / for another。"
+        },
+        {
+          "id": "6-6-r5",
+          "cn": "练习很重要。总之，我们应该每天练习。",
+          "tip": "to sum up 和 in conclusion 一个意思",
+          "rootLabel": "句群",
+          "marks": {
+            "2": ".",
+            "3": ","
+          },
+          "groups": [
+            {
+              "id": "s1",
+              "label": "提出观点"
+            },
+            {
+              "id": "s2",
+              "label": "总结句",
+              "clause": true
+            }
+          ],
+          "blocks": [
+            {
+              "text": "Practice",
+              "pos": "verb",
+              "role": "动名词",
+              "group": "s1",
+              "nonfinite": true
+            },
+            {
+              "text": "is",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "s1"
+            },
+            {
+              "text": "important",
+              "pos": "adj",
+              "role": "表语",
+              "group": "s1"
+            },
+            {
+              "text": "To sum up",
+              "pos": "adv",
+              "role": "衔接词",
+              "group": "s2"
+            },
+            {
+              "text": "we",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "s2"
+            },
+            {
+              "text": "should",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "s2"
+            },
+            {
+              "text": "practice",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "s2"
+            },
+            {
+              "text": "every",
+              "pos": "adj",
+              "role": "定语",
+              "group": "s2"
+            },
+            {
+              "text": "day",
+              "pos": "noun",
+              "role": "状语",
+              "group": "s2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "For example",
+              "pos": "adv",
+              "role": "衔接词",
+              "group": "s2"
+            }
+          ],
+          "explain": "to sum up 和 in conclusion 意思一样，都是「总之」。总结句通常回到文章开头提出的观点，做一个收束。",
+          "example": "Practice is important. To sum up, we should practice every day.",
+          "win": "总结句呼应开头，文章就闭合了。"
+        }
+      ]
+    },
+    {
+      "id": "6-7",
+      "topic": "衔接词与标点",
+      "emoji": "❕",
+      "goal": "衔接词放句首时后面要加逗号 —— 不加读起来就不是那个意思",
+      "rounds": [
+        {
+          "id": "6-7-r1",
+          "cn": "在我看来，在线学习省时间。",
+          "tip": "句首的衔接词后面加逗号",
+          "marks": {
+            "0": ","
+          },
+          "groups": [
+            {
+              "id": "s1",
+              "label": "整句"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "In my opinion",
+              "pos": "adv",
+              "role": "衔接词",
+              "group": "s1"
+            },
+            {
+              "text": "online",
+              "pos": "adj",
+              "role": "定语",
+              "group": "s1"
+            },
+            {
+              "text": "learning",
+              "pos": "verb",
+              "role": "动名词",
+              "group": "s1",
+              "nonfinite": true
+            },
+            {
+              "text": "saves",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "s1"
+            },
+            {
+              "text": "time",
+              "pos": "noun",
+              "role": "宾语",
+              "group": "s1"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "In conclusion",
+              "pos": "adv",
+              "role": "衔接词",
+              "group": "s1"
+            }
+          ],
+          "explain": "In my opinion 放在句首表明看法，后面要加逗号。像这样插在句子最前面的成分，英语里叫状语，逗号是把它和主句隔开的标志。",
+          "example": "In my opinion, online learning saves time.",
+          "win": "句首状语后面加逗号。"
+        },
+        {
+          "id": "6-7-r2",
+          "cn": "在线学习很方便。然而，它也有一些问题。",
+          "tip": "however 的位置：句首，后面跟逗号",
+          "rootLabel": "句群",
+          "marks": {
+            "3": ".",
+            "4": ","
+          },
+          "groups": [
+            {
+              "id": "s1",
+              "label": "第一句"
+            },
+            {
+              "id": "s2",
+              "label": "第二句（转折）",
+              "clause": true
+            }
+          ],
+          "blocks": [
+            {
+              "text": "Online",
+              "pos": "adj",
+              "role": "定语",
+              "group": "s1"
+            },
+            {
+              "text": "learning",
+              "pos": "verb",
+              "role": "动名词",
+              "group": "s1",
+              "nonfinite": true
+            },
+            {
+              "text": "is",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "s1"
+            },
+            {
+              "text": "convenient",
+              "pos": "adj",
+              "role": "表语",
+              "group": "s1"
+            },
+            {
+              "text": "However",
+              "pos": "adv",
+              "role": "衔接词",
+              "group": "s2"
+            },
+            {
+              "text": "it",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "s2"
+            },
+            {
+              "text": "has",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "s2"
+            },
+            {
+              "text": "some",
+              "pos": "pronoun",
+              "role": "限定词",
+              "group": "s2"
+            },
+            {
+              "text": "problems",
+              "pos": "noun",
+              "role": "宾语",
+              "group": "s2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "Therefore",
+              "pos": "adv",
+              "role": "衔接词",
+              "group": "s2"
+            }
+          ],
+          "explain": "however 也可以放在句子中间（Online learning, however, has problems.），这时前后各一个逗号。放在句首最常见，后面要跟逗号。",
+          "example": "Online learning is convenient. However, it has some problems.",
+          "win": "however 前后都要有标点把它隔开。"
+        },
+        {
+          "id": "6-7-r3",
+          "cn": "第一，它省时间。第二，它省钱。",
+          "tip": "First, / Second, 后面跟逗号",
+          "rootLabel": "句群",
+          "marks": {
+            "0": ",",
+            "3": ".",
+            "4": ","
+          },
+          "groups": [
+            {
+              "id": "s1",
+              "label": "第一点"
+            },
+            {
+              "id": "s2",
+              "label": "第二点",
+              "clause": true
+            }
+          ],
+          "blocks": [
+            {
+              "text": "First",
+              "pos": "adv",
+              "role": "衔接词",
+              "group": "s1"
+            },
+            {
+              "text": "it",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "s1"
+            },
+            {
+              "text": "saves",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "s1"
+            },
+            {
+              "text": "time",
+              "pos": "noun",
+              "role": "宾语",
+              "group": "s1"
+            },
+            {
+              "text": "Second",
+              "pos": "adv",
+              "role": "衔接词",
+              "group": "s2"
+            },
+            {
+              "text": "it",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "s2"
+            },
+            {
+              "text": "saves",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "s2"
+            },
+            {
+              "text": "money",
+              "pos": "noun",
+              "role": "宾语",
+              "group": "s2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "Third",
+              "pos": "adv",
+              "role": "衔接词",
+              "group": "s2"
+            }
+          ],
+          "explain": "列举时 First, / Second, / Third, 后面都跟逗号。写作文时这几个词能让结构一眼可见。",
+          "example": "First, it saves time. Second, it saves money.",
+          "win": "列举词后面都有逗号。"
+        },
+        {
+          "id": "6-7-r4",
+          "cn": "在我看来，在线学习省时间。",
+          "tip": "改错：总结词不能用在这里",
+          "marks": {
+            "0": ","
+          },
+          "groups": [
+            {
+              "id": "s1",
+              "label": "整句"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "In my opinion",
+              "pos": "adv",
+              "role": "衔接词",
+              "group": "s1"
+            },
+            {
+              "text": "online",
+              "pos": "adj",
+              "role": "定语",
+              "group": "s1"
+            },
+            {
+              "text": "learning",
+              "pos": "verb",
+              "role": "动名词",
+              "group": "s1",
+              "nonfinite": true
+            },
+            {
+              "text": "saves",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "s1"
+            },
+            {
+              "text": "time",
+              "pos": "noun",
+              "role": "宾语",
+              "group": "s1"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "In conclusion",
+              "pos": "adv",
+              "role": "衔接词",
+              "group": "s1"
+            }
+          ],
+          "prefill": [
+            "In conclusion",
+            "online",
+            "learning",
+            "saves",
+            "time"
+          ],
+          "explain": "In conclusion 只能用在段落结尾做总结。这里是在文章开头表明自己的看法，要用 In my opinion。",
+          "example": "In my opinion, online learning saves time.",
+          "win": "先判断这句在段落里的位置。"
+        },
+        {
+          "id": "6-7-r5",
+          "cn": "据我所知，这个方法非常有效。",
+          "tip": "as far as I know 也是句首状语",
+          "marks": {
+            "0": ","
+          },
+          "groups": [
+            {
+              "id": "s1",
+              "label": "整句"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "As far as I know",
+              "pos": "adv",
+              "role": "衔接词",
+              "group": "s1"
+            },
+            {
+              "text": "this",
+              "pos": "pronoun",
+              "role": "限定词",
+              "group": "s1"
+            },
+            {
+              "text": "method",
+              "pos": "noun",
+              "role": "主语",
+              "group": "s1"
+            },
+            {
+              "text": "is",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "s1"
+            },
+            {
+              "text": "very",
+              "pos": "adv",
+              "role": "状语",
+              "group": "s1"
+            },
+            {
+              "text": "effective",
+              "pos": "adj",
+              "role": "表语",
+              "group": "s1"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "In my opinion",
+              "pos": "adv",
+              "role": "衔接词",
+              "group": "s1"
+            }
+          ],
+          "explain": "as far as I know 表示「据我所知」，是把话说得留有余地的一种表达。它和 in my opinion 一样，放句首后面跟逗号。",
+          "example": "As far as I know, this method is very effective.",
+          "win": "不确定的语气，也要用衔接词标出来。"
+        }
+      ]
+    },
+    {
+      "id": "6-8",
+      "topic": "篇章 · Boss",
+      "emoji": "👑",
+      "boss": true,
+      "goal": "转折、因果、指代、让步、举例、总结混着来 —— 限时挑战",
+      "rounds": [
+        {
+          "id": "6-8-r1",
+          "cn": "任务很难。然而，我们完成了。",
+          "tip": "转折衔接",
+          "timeLimit": 50,
+          "rootLabel": "句群",
+          "marks": {
+            "3": ".",
+            "4": ","
+          },
+          "groups": [
+            {
+              "id": "s1",
+              "label": "第一句"
+            },
+            {
+              "id": "s2",
+              "label": "第二句（转折）",
+              "clause": true
+            }
+          ],
+          "blocks": [
+            {
+              "text": "The",
+              "pos": "article",
+              "role": "限定词",
+              "group": "s1"
+            },
+            {
+              "text": "task",
+              "pos": "noun",
+              "role": "主语",
+              "group": "s1"
+            },
+            {
+              "text": "was",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "s1"
+            },
+            {
+              "text": "hard",
+              "pos": "adj",
+              "role": "表语",
+              "group": "s1"
+            },
+            {
+              "text": "However",
+              "pos": "adv",
+              "role": "衔接词",
+              "group": "s2"
+            },
+            {
+              "text": "we",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "s2"
+            },
+            {
+              "text": "finished",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "s2"
+            },
+            {
+              "text": "it",
+              "pos": "pronoun",
+              "role": "宾语",
+              "group": "s2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "Therefore",
+              "pos": "adv",
+              "role": "衔接词",
+              "group": "s2"
+            }
+          ],
+          "explain": "难却完成了，是转折，用 However。",
+          "example": "The task was hard. However, we finished it.",
+          "win": "转向相反的一面，用 however。"
+        },
+        {
+          "id": "6-8-r2",
+          "cn": "她每天练习。结果，她得了奖。",
+          "tip": "因果衔接",
+          "timeLimit": 50,
+          "rootLabel": "句群",
+          "marks": {
+            "3": ".",
+            "4": ","
+          },
+          "groups": [
+            {
+              "id": "s1",
+              "label": "第一句（原因）"
+            },
+            {
+              "id": "s2",
+              "label": "第二句（结果）",
+              "clause": true
+            }
+          ],
+          "blocks": [
+            {
+              "text": "She",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "s1"
+            },
+            {
+              "text": "practiced",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "s1"
+            },
+            {
+              "text": "every",
+              "pos": "adj",
+              "role": "定语",
+              "group": "s1"
+            },
+            {
+              "text": "day",
+              "pos": "noun",
+              "role": "状语",
+              "group": "s1"
+            },
+            {
+              "text": "As a result",
+              "pos": "adv",
+              "role": "衔接词",
+              "group": "s2"
+            },
+            {
+              "text": "she",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "s2"
+            },
+            {
+              "text": "won",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "s2"
+            },
+            {
+              "text": "the",
+              "pos": "article",
+              "role": "限定词",
+              "group": "s2"
+            },
+            {
+              "text": "prize",
+              "pos": "noun",
+              "role": "宾语",
+              "group": "s2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "However",
+              "pos": "adv",
+              "role": "衔接词",
+              "group": "s2"
+            }
+          ],
+          "explain": "练习和得奖是因果关系，用 As a result。",
+          "example": "She practiced every day. As a result, she won the prize.",
+          "win": "顺理成章往下走，用 as a result。"
+        },
+        {
+          "id": "6-8-r3",
+          "cn": "他买了一辆车。那辆车很快。",
+          "tip": "回指衔接",
+          "timeLimit": 45,
+          "rootLabel": "句群",
+          "marks": {
+            "3": "."
+          },
+          "groups": [
+            {
+              "id": "s1",
+              "label": "第一句"
+            },
+            {
+              "id": "s2",
+              "label": "第二句（回指）",
+              "clause": true
+            }
+          ],
+          "blocks": [
+            {
+              "text": "He",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "s1"
+            },
+            {
+              "text": "bought",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "s1"
+            },
+            {
+              "text": "a",
+              "pos": "article",
+              "role": "限定词",
+              "group": "s1"
+            },
+            {
+              "text": "car",
+              "pos": "noun",
+              "role": "宾语",
+              "group": "s1"
+            },
+            {
+              "text": "The",
+              "pos": "article",
+              "role": "限定词",
+              "group": "s2"
+            },
+            {
+              "text": "car",
+              "pos": "noun",
+              "role": "主语",
+              "group": "s2"
+            },
+            {
+              "text": "is",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "s2"
+            },
+            {
+              "text": "very",
+              "pos": "adv",
+              "role": "状语",
+              "group": "s2"
+            },
+            {
+              "text": "fast",
+              "pos": "adj",
+              "role": "表语",
+              "group": "s2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "A",
+              "pos": "article",
+              "role": "限定词",
+              "group": "s2"
+            }
+          ],
+          "explain": "第二次提到同一辆车，用 The car 回指。",
+          "example": "He bought a car. The car is very fast.",
+          "win": "a 在前，the 在后。"
+        },
+        {
+          "id": "6-8-r4",
+          "cn": "尽管很晚了，我们还在继续工作。",
+          "tip": "让步衔接",
+          "timeLimit": 45,
+          "groups": [
+            {
+              "id": "main",
+              "label": "主句"
+            },
+            {
+              "id": "sub",
+              "label": "让步状语从句",
+              "clause": true
+            }
+          ],
+          "blocks": [
+            {
+              "text": "We",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "main"
+            },
+            {
+              "text": "kept",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "main"
+            },
+            {
+              "text": "working",
+              "pos": "verb",
+              "role": "现在分词",
+              "group": "main",
+              "nonfinite": true
+            },
+            {
+              "text": "although",
+              "pos": "conj",
+              "role": "连接词",
+              "group": "sub"
+            },
+            {
+              "text": "it",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "sub"
+            },
+            {
+              "text": "was",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "sub"
+            },
+            {
+              "text": "late",
+              "pos": "adj",
+              "role": "表语",
+              "group": "sub"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "despite",
+              "pos": "prep",
+              "role": "介词",
+              "group": "sub"
+            }
+          ],
+          "explain": "although 后面是完整句子（it was late）。keep doing 表示「一直在做」。",
+          "example": "We kept working although it was late.",
+          "win": "后面是句子，就用 although。"
+        },
+        {
+          "id": "6-8-r5",
+          "cn": "有些人喜欢喝茶。比如，我爸爸就是。",
+          "tip": "举例衔接",
+          "timeLimit": 50,
+          "rootLabel": "句群",
+          "marks": {
+            "3": ".",
+            "4": ","
+          },
+          "groups": [
+            {
+              "id": "s1",
+              "label": "第一句（概括）"
+            },
+            {
+              "id": "s2",
+              "label": "第二句（举例）",
+              "clause": true
+            }
+          ],
+          "blocks": [
+            {
+              "text": "Some",
+              "pos": "pronoun",
+              "role": "限定词",
+              "group": "s1"
+            },
+            {
+              "text": "people",
+              "pos": "noun",
+              "role": "主语",
+              "group": "s1"
+            },
+            {
+              "text": "like",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "s1"
+            },
+            {
+              "text": "tea",
+              "pos": "noun",
+              "role": "宾语",
+              "group": "s1"
+            },
+            {
+              "text": "For example",
+              "pos": "adv",
+              "role": "衔接词",
+              "group": "s2"
+            },
+            {
+              "text": "my",
+              "pos": "pronoun",
+              "role": "限定词",
+              "group": "s2"
+            },
+            {
+              "text": "father",
+              "pos": "noun",
+              "role": "主语",
+              "group": "s2"
+            },
+            {
+              "text": "does",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "s2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "Such as",
+              "pos": "adv",
+              "role": "衔接词",
+              "group": "s2"
+            }
+          ],
+          "explain": "后面跟的是完整句子（my father does），所以用 for example，不能用 such as。",
+          "example": "Some people like tea. For example, my father does.",
+          "win": "句子的例子用 for example。"
+        },
+        {
+          "id": "6-8-r6",
+          "cn": "路很长。总之，我们永远不该放弃。",
+          "tip": "总结衔接",
+          "timeLimit": 45,
+          "rootLabel": "句群",
+          "marks": {
+            "3": ".",
+            "4": ","
+          },
+          "groups": [
+            {
+              "id": "s1",
+              "label": "铺垫"
+            },
+            {
+              "id": "s2",
+              "label": "总结句",
+              "clause": true
+            }
+          ],
+          "blocks": [
+            {
+              "text": "The",
+              "pos": "article",
+              "role": "限定词",
+              "group": "s1"
+            },
+            {
+              "text": "road",
+              "pos": "noun",
+              "role": "主语",
+              "group": "s1"
+            },
+            {
+              "text": "was",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "s1"
+            },
+            {
+              "text": "long",
+              "pos": "adj",
+              "role": "表语",
+              "group": "s1"
+            },
+            {
+              "text": "To sum up",
+              "pos": "adv",
+              "role": "衔接词",
+              "group": "s2"
+            },
+            {
+              "text": "we",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "s2"
+            },
+            {
+              "text": "should",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "s2"
+            },
+            {
+              "text": "never",
+              "pos": "adv",
+              "role": "状语",
+              "group": "s2"
+            },
+            {
+              "text": "give",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "s2"
+            },
+            {
+              "text": "up",
+              "pos": "adv",
+              "role": "状语",
+              "group": "s2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "For example",
+              "pos": "adv",
+              "role": "衔接词",
+              "group": "s2"
+            }
+          ],
+          "explain": "To sum up 用来收尾，把整段话收成一个结论。For example 是举例，放在结尾就变成了「比如，我们永远不该放弃」，逻辑不通。",
+          "example": "The road was long. To sum up, we should never give up.",
+          "win": "结尾给一句能记住的总结。"
+        }
+      ]
+    }
+  ]
+}

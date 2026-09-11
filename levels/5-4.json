@@ -1,0 +1,378 @@
+{
+  "id": "5-4",
+  "topic": "过去分词",
+  "emoji": "🔴",
+  "goal": "-ed 分词表示被动或完成，同样能当形容词用",
+  "rounds": [
+    {
+      "id": "5-4-r1",
+      "cn": "那扇破窗户很危险。",
+      "tip": "过去分词放名词前面",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "part",
+          "label": "过去分词（定语）",
+          "clause": true,
+          "parent": "np1"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "The",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np1"
+        },
+        {
+          "text": "broken",
+          "pos": "verb",
+          "role": "过去分词",
+          "group": "part",
+          "nonfinite": true
+        },
+        {
+          "text": "window",
+          "pos": "noun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "dangerous",
+          "pos": "adj",
+          "role": "表语",
+          "group": "vp"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "break",
+          "pos": "verb",
+          "role": "过去分词",
+          "group": "part"
+        }
+      ],
+      "explain": "过去分词放在名词前面，表示被动的状态：broken window 就是「被打破的窗户」。它和现在分词位置一样，区别在意思是「被……」还是「正在……」。",
+      "example": "The broken window is dangerous. / The breaking news is important.",
+      "win": "过去分词表示被动或完成。"
+    },
+    {
+      "id": "5-4-r2",
+      "cn": "我找到了丢失的钥匙。",
+      "tip": "lose 的过去分词是 lost",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "宾语 NP"
+        },
+        {
+          "id": "part",
+          "label": "过去分词（定语）",
+          "clause": true,
+          "parent": "np2"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "I",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "found",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "the",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np2"
+        },
+        {
+          "text": "lost",
+          "pos": "verb",
+          "role": "过去分词",
+          "group": "part",
+          "nonfinite": true
+        },
+        {
+          "text": "key",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "np2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "lose",
+          "pos": "verb",
+          "role": "过去分词",
+          "group": "part"
+        }
+      ],
+      "explain": "lose 的过去分词是 lost，放在名词前面表示「丢失的」。注意它表示的是被动/完成状态，不是正在进行。",
+      "example": "I found the lost key. / The key was lost.",
+      "win": "过去分词当形容词，意思偏被动。"
+    },
+    {
+      "id": "5-4-r3",
+      "cn": "他写的那本书很有名。",
+      "tip": "过去分词短语放名词后面 = 被动语态的定语从句",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "part",
+          "label": "过去分词短语（定语）",
+          "clause": true,
+          "parent": "np1"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "The",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np1"
+        },
+        {
+          "text": "book",
+          "pos": "noun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "written",
+          "pos": "verb",
+          "role": "过去分词",
+          "group": "part",
+          "nonfinite": true
+        },
+        {
+          "text": "by",
+          "pos": "prep",
+          "role": "介词",
+          "group": "part"
+        },
+        {
+          "text": "him",
+          "pos": "pronoun",
+          "role": "介词宾语",
+          "group": "part"
+        },
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "famous",
+          "pos": "adj",
+          "role": "表语",
+          "group": "vp"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "wrote",
+          "pos": "verb",
+          "role": "过去分词",
+          "group": "part"
+        }
+      ],
+      "explain": "过去分词短语放在名词后面，相当于一个被动语态的定语从句：the book written by him = the book which was written by him。注意用过去分词 written，不是过去式 wrote。",
+      "example": "The book written by him is famous. / The book which was written by him is famous.",
+      "win": "过去分词短语 = 被动版的定语从句。"
+    },
+    {
+      "id": "5-4-r4",
+      "cn": "那把丢失的钥匙是我找到的。",
+      "tip": "改错：be 后面用过去分词",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "part",
+          "label": "过去分词（定语）",
+          "clause": true,
+          "parent": "np1"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP（被动）"
+        },
+        {
+          "id": "pp",
+          "label": "施动者 PP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "The",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np1"
+        },
+        {
+          "text": "lost",
+          "pos": "verb",
+          "role": "过去分词",
+          "group": "part",
+          "nonfinite": true
+        },
+        {
+          "text": "key",
+          "pos": "noun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "was",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "vp"
+        },
+        {
+          "text": "found",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "by",
+          "pos": "prep",
+          "role": "介词",
+          "group": "pp"
+        },
+        {
+          "text": "me",
+          "pos": "pronoun",
+          "role": "介词宾语",
+          "group": "pp"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "find",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        }
+      ],
+      "prefill": [
+        "The",
+        "lost",
+        "key",
+        "was",
+        "find",
+        "by",
+        "me"
+      ],
+      "explain": "这一句里有两个过去分词：lost 作定语修饰 key，found 和 was 一起构成被动语态。be 动词后面要用过去分词，不是原形 find。",
+      "example": "The lost key was found by me.",
+      "win": "同一个句子里，过去分词可以当定语，也可以当谓语的一部分。"
+    },
+    {
+      "id": "5-4-r5",
+      "cn": "我看见窗户被打破了。",
+      "tip": "see + 宾语 + 过去分词",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "宾语 NP"
+        },
+        {
+          "id": "part",
+          "label": "过去分词（宾语补足语）",
+          "clause": true,
+          "parent": "np2"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "I",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "saw",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "the",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np2"
+        },
+        {
+          "text": "window",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "np2"
+        },
+        {
+          "text": "broken",
+          "pos": "verb",
+          "role": "过去分词",
+          "group": "part",
+          "nonfinite": true
+        }
+      ],
+      "distractors": [
+        {
+          "text": "broke",
+          "pos": "verb",
+          "role": "过去分词",
+          "group": "part"
+        }
+      ],
+      "explain": "see + 宾语 + 过去分词，表示「看见某物被……」。broken 说明窗户是被打破的状态 —— 用过去分词是因为窗户不会自己破，它是被打破的。",
+      "example": "I saw the window broken. / I saw him breaking the window.",
+      "win": "宾补用现在分词表示主动，用过去分词表示被动。"
+    }
+  ]
+}

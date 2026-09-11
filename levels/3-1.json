@@ -1,0 +1,355 @@
+{
+  "id": "3-1",
+  "topic": "一般现在",
+  "emoji": "🔁",
+  "goal": "什么时候用一般现在：习惯、事实、时刻表，以及否定怎么加",
+  "rounds": [
+    {
+      "id": "3-1-r1",
+      "cn": "她通常走路上学。",
+      "tip": "频度副词放在动词前面",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "adv",
+          "label": "频度状语"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "pp",
+          "label": "介词短语 PP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "She",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "usually",
+          "pos": "adv",
+          "role": "频度状语",
+          "group": "adv"
+        },
+        {
+          "text": "walks",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "to",
+          "pos": "prep",
+          "role": "介词",
+          "group": "pp"
+        },
+        {
+          "text": "school",
+          "pos": "noun",
+          "role": "介词宾语",
+          "group": "pp"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "walk",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "usual",
+          "pos": "adj",
+          "role": "频度状语",
+          "group": "adv"
+        }
+      ],
+      "explain": "一般现在时表示「习惯做的事」。usually 这类频度副词（always / often / sometimes / never）要放在动词前面，不是后面。主语 She 是三单，动词用 walks。",
+      "example": "She usually walks to school. / She always walks to school.",
+      "win": "频度副词站动词前面。"
+    },
+    {
+      "id": "3-1-r2",
+      "cn": "地球绕着太阳转。",
+      "tip": "客观事实也用一般现在",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "pp",
+          "label": "介词短语 PP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "The",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np1"
+        },
+        {
+          "text": "earth",
+          "pos": "noun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "goes",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "around",
+          "pos": "prep",
+          "role": "介词",
+          "group": "pp"
+        },
+        {
+          "text": "the",
+          "pos": "article",
+          "role": "限定词",
+          "group": "pp"
+        },
+        {
+          "text": "sun",
+          "pos": "noun",
+          "role": "介词宾语",
+          "group": "pp"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "go",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        }
+      ],
+      "explain": "一般现在时还用来讲「客观事实」—— 不管什么时候说都成立。主语 The earth 是单数，动词用 goes。",
+      "example": "The earth goes around the sun. / The earth is round.",
+      "win": "永远成立的事，用一般现在。"
+    },
+    {
+      "id": "3-1-r3",
+      "cn": "他不喜欢咖啡。",
+      "tip": "否定要在动词前加 don't / doesn't",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "助动词"
+        },
+        {
+          "id": "vp2",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "宾语 NP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "He",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "doesn't",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "vp"
+        },
+        {
+          "text": "like",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp2"
+        },
+        {
+          "text": "coffee",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "np2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "don't",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "vp"
+        },
+        {
+          "text": "likes",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp2"
+        }
+      ],
+      "explain": "一般现在时的否定要在动词前加 don't 或 doesn't。主语 He 是第三人称单数，用 doesn't；而且那个 s 的活已经由 doesn't 干了，后面动词要还原成原形 like。",
+      "example": "He doesn't like coffee. / He likes coffee.",
+      "win": "doesn't 出现后，动词回到原形。"
+    },
+    {
+      "id": "3-1-r4",
+      "cn": "我弟弟不吃肉。",
+      "tip": "改错：don't 还是 doesn't",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "助动词"
+        },
+        {
+          "id": "vp2",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "宾语 NP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "My",
+          "pos": "pronoun",
+          "role": "限定词",
+          "group": "np1"
+        },
+        {
+          "text": "brother",
+          "pos": "noun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "doesn't",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "vp"
+        },
+        {
+          "text": "eat",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp2"
+        },
+        {
+          "text": "meat",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "np2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "don't",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "vp"
+        },
+        {
+          "text": "eats",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp2"
+        }
+      ],
+      "prefill": [
+        "My",
+        "brother",
+        "don't",
+        "eat",
+        "meat"
+      ],
+      "explain": "主语 My brother 是第三人称单数，否定要用 doesn't。don't 只能配 I / you / we / they。",
+      "example": "My brother doesn't eat meat. / My brothers don't eat meat.",
+      "win": "don't 和 doesn't，看主语是谁。"
+    },
+    {
+      "id": "3-1-r5",
+      "cn": "火车中午出发。",
+      "tip": "时刻表用一般现在",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "pp",
+          "label": "时间状语 PP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "The",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np1"
+        },
+        {
+          "text": "train",
+          "pos": "noun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "leaves",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "at",
+          "pos": "prep",
+          "role": "介词",
+          "group": "pp"
+        },
+        {
+          "text": "noon",
+          "pos": "noun",
+          "role": "介词宾语",
+          "group": "pp"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "leave",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        }
+      ],
+      "explain": "时刻表、班次这类「按计划会发生」的事，也用一般现在时，哪怕说的是将来的事。at noon 是时间点。",
+      "example": "The train leaves at noon. / The train left at noon.",
+      "win": "计划好的时间表，用一般现在。"
+    }
+  ]
+}

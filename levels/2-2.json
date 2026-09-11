@@ -1,0 +1,304 @@
+{
+  "id": "2-2",
+  "topic": "主谓宾",
+  "emoji": "🎯",
+  "goal": "动词后面得有个东西接住它，句子意思才完整",
+  "rounds": [
+    {
+      "id": "2-2-r1",
+      "cn": "她写故事。",
+      "tip": "「写」后面得说清楚写的是什么",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "宾语 NP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "She",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "writes",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "stories",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "np2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "story",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "np2"
+        },
+        {
+          "text": "write",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        }
+      ],
+      "explain": "write 后面必须说清楚「写什么」，这个被写的东西就是宾语。泛指一类东西时，名词用复数 stories。",
+      "example": "She writes stories. / She writes a story.",
+      "win": "动词后面要有宾语，句子才完整。"
+    },
+    {
+      "id": "2-2-r2",
+      "cn": "我妈妈做晚饭。",
+      "tip": "主语单数 → 动词加 s；dinner 不可数",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "宾语 NP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "My",
+          "pos": "pronoun",
+          "role": "限定词",
+          "group": "np1"
+        },
+        {
+          "text": "mother",
+          "pos": "noun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "makes",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "dinner",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "np2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "make",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        }
+      ],
+      "explain": "主语 My mother 是单数 → makes；dinner 是「一餐饭」，属于不可数名词，不加 s。",
+      "example": "My mother makes dinner. / My parents make dinner.",
+      "win": "三单加 s，同时记住宾语是不可数名词。"
+    },
+    {
+      "id": "2-2-r3",
+      "cn": "我们需要更多时间。",
+      "tip": "宾语也能带形容词",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "宾语 NP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "We",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "need",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "more",
+          "pos": "adj",
+          "role": "定语",
+          "group": "np2"
+        },
+        {
+          "text": "time",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "np2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "times",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "np2"
+        }
+      ],
+      "explain": "need 后面跟「需要的东西」。time 表示「时间」时不可数，没有 times 这种写法。形容词 more 放在名词前面，顺序还是「形容词 + 名词」。",
+      "example": "We need more time. / We need two hours.",
+      "win": "宾语可以带形容词，顺序还是形容词在前。"
+    },
+    {
+      "id": "2-2-r4",
+      "cn": "她打开门。",
+      "tip": "改错：主语是单数，动词得加 s",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "宾语 NP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "She",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "opens",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "the",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np2"
+        },
+        {
+          "text": "door",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "np2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "open",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        }
+      ],
+      "prefill": [
+        "She",
+        "open",
+        "the",
+        "door"
+      ],
+      "explain": "主语 She 是第三人称单数，动词要加 s：opens。",
+      "example": "She opens the door. / They open the door.",
+      "win": "主语是单数，动词就得加 s。"
+    },
+    {
+      "id": "2-2-r5",
+      "cn": "Tom 放学后打篮球。",
+      "tip": "主谓宾后面还能再加信息",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "宾语 NP"
+        },
+        {
+          "id": "pp",
+          "label": "介词短语 PP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "Tom",
+          "pos": "noun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "plays",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "basketball",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "np2"
+        },
+        {
+          "text": "after",
+          "pos": "prep",
+          "role": "介词",
+          "group": "pp"
+        },
+        {
+          "text": "school",
+          "pos": "noun",
+          "role": "介词宾语",
+          "group": "pp"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "play",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        }
+      ],
+      "explain": "主语 Tom 是单数 → plays；basketball 是宾语；after school 是介词短语，补充说明时间。",
+      "example": "Tom plays basketball after school. / Tom plays basketball every day.",
+      "win": "主谓宾是骨架，后面还能挂上时间地点。"
+    }
+  ]
+}

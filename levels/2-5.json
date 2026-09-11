@@ -1,0 +1,319 @@
+{
+  "id": "2-5",
+  "topic": "宾补",
+  "emoji": "🧩",
+  "goal": "宾语后面再补一句说明它 —— 少了这块，意思就不完整",
+  "rounds": [
+    {
+      "id": "2-5-r1",
+      "cn": "我们叫他 Tom。",
+      "tip": "call + 人 + 叫他什么",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "宾语 + 宾补"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "We",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "call",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "him",
+          "pos": "pronoun",
+          "role": "宾语",
+          "group": "np2"
+        },
+        {
+          "text": "Tom",
+          "pos": "noun",
+          "role": "宾补",
+          "group": "np2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "he",
+          "pos": "pronoun",
+          "role": "宾语",
+          "group": "np2"
+        }
+      ],
+      "explain": "call 后面先跟「谁」（him），再跟「叫他什么」（Tom）。后面这个 Tom 就是宾语补足语 —— 少了它，句子的意思就不完整了。宾语位置要用宾格 him。",
+      "example": "We call him Tom. / We call the dog Lucky.",
+      "win": "宾语后面再补一句说明它，就是宾补。"
+    },
+    {
+      "id": "2-5-r2",
+      "cn": "这个消息让我很开心。",
+      "tip": "宾补说明宾语的状态，用形容词",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "宾语 + 宾补"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "The",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np1"
+        },
+        {
+          "text": "news",
+          "pos": "noun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "makes",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "me",
+          "pos": "pronoun",
+          "role": "宾语",
+          "group": "np2"
+        },
+        {
+          "text": "happy",
+          "pos": "adj",
+          "role": "宾补",
+          "group": "np2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "happily",
+          "pos": "adv",
+          "role": "宾补",
+          "group": "np2"
+        }
+      ],
+      "explain": "make 后面先跟「让谁」（me），再跟「怎么样」（happy）。补足语说的是 me 的状态，所以用形容词 happy，不是副词 happily。",
+      "example": "The news makes me happy. / The news makes us sad.",
+      "win": "宾补用形容词，说明宾语的状态。"
+    },
+    {
+      "id": "2-5-r3",
+      "cn": "他们保持房间干净。",
+      "tip": "keep + 宾语 + 状态",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "宾语 + 宾补"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "They",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "keep",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "the",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np2"
+        },
+        {
+          "text": "room",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "np2"
+        },
+        {
+          "text": "clean",
+          "pos": "adj",
+          "role": "宾补",
+          "group": "np2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "cleanly",
+          "pos": "adv",
+          "role": "宾补",
+          "group": "np2"
+        }
+      ],
+      "explain": "keep 后面说「让某样东西保持什么状态」，说明的是 room 的状态，用形容词 clean。",
+      "example": "They keep the room clean. / Keep your desk tidy.",
+      "win": "形容词说明宾语的状态，副词说明动作的方式。"
+    },
+    {
+      "id": "2-5-r4",
+      "cn": "我觉得这本书很无聊。",
+      "tip": "boring 形容东西，bored 形容人",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "宾语 + 宾补"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "I",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "find",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "the",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np2"
+        },
+        {
+          "text": "book",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "np2"
+        },
+        {
+          "text": "boring",
+          "pos": "adj",
+          "role": "宾补",
+          "group": "np2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "bored",
+          "pos": "adj",
+          "role": "宾补",
+          "group": "np2"
+        }
+      ],
+      "explain": "boring 是「让人无聊」，形容东西；bored 是「感到无聊」，形容人的感受。这里说的是书，所以用 boring。",
+      "example": "I find the book boring. / I am bored.",
+      "win": "-ing 形容东西，-ed 形容人的感受。"
+    },
+    {
+      "id": "2-5-r5",
+      "cn": "这音乐让我很开心。",
+      "tip": "改错：宾补用形容词还是副词",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "宾语 + 宾补"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "The",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np1"
+        },
+        {
+          "text": "music",
+          "pos": "noun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "makes",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "me",
+          "pos": "pronoun",
+          "role": "宾语",
+          "group": "np2"
+        },
+        {
+          "text": "happy",
+          "pos": "adj",
+          "role": "宾补",
+          "group": "np2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "happily",
+          "pos": "adv",
+          "role": "宾补",
+          "group": "np2"
+        }
+      ],
+      "prefill": [
+        "The",
+        "music",
+        "makes",
+        "me",
+        "happily"
+      ],
+      "explain": "补足语说明的是 me 的状态，要用形容词 happy。happily 是副词，只能修饰动作，修饰不了「人变成什么样」。",
+      "example": "The music makes me happy. / She looks happy.",
+      "win": "宾语补足语用形容词。"
+    }
+  ]
+}

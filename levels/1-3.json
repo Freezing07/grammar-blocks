@@ -1,0 +1,279 @@
+{
+  "id": "1-3",
+  "topic": "动词",
+  "emoji": "⚙️",
+  "goal": "找到句子的发动机，看清楚它跟着主语怎么变",
+  "rounds": [
+    {
+      "id": "1-3-r1",
+      "cn": "鸟儿唱歌。",
+      "tip": "复数主语配动词原形",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "Birds",
+          "pos": "noun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "sing",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "sings",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        }
+      ],
+      "explain": "主语 Birds 是复数，动词用原形 sing。sings 只能配单数主语：A bird sings。",
+      "example": "Birds sing. / A bird sings.",
+      "win": "复数主语配动词原形。"
+    },
+    {
+      "id": "1-3-r2",
+      "cn": "我爸爸在一家医院工作。",
+      "tip": "第三人称单数 → 动词加 s",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "pp",
+          "label": "介词短语 PP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "My",
+          "pos": "pronoun",
+          "role": "限定词",
+          "group": "np1"
+        },
+        {
+          "text": "father",
+          "pos": "noun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "works",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "in",
+          "pos": "prep",
+          "role": "介词",
+          "group": "pp"
+        },
+        {
+          "text": "a",
+          "pos": "article",
+          "role": "限定词",
+          "group": "pp"
+        },
+        {
+          "text": "hospital",
+          "pos": "noun",
+          "role": "介词宾语",
+          "group": "pp"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "work",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        }
+      ],
+      "explain": "主语 My father 是「一个人」，属于第三人称单数，动词必须加 s：works。主语换成复数（My parents）才用原形 work。",
+      "example": "My father works in a hospital. / My parents work in a hospital.",
+      "win": "第三人称单数 → 动词加 s。"
+    },
+    {
+      "id": "1-3-r3",
+      "cn": "他们是学生。",
+      "tip": "be 动词跟着主语变：am / is / are",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "表语 NP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "They",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "are",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "students",
+          "pos": "noun",
+          "role": "表语",
+          "group": "np2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "am",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        }
+      ],
+      "explain": "be 动词是英语里最不老实的一个，它跟着主语变：I am、he/she/it is、you/we/they are。主语 They 要用 are。",
+      "example": "They are students. / He is a student. / I am a student.",
+      "win": "be 动词 am / is / are，看主语是谁。"
+    },
+    {
+      "id": "1-3-r4",
+      "cn": "我们热爱音乐。",
+      "tip": "动词后面跟宾语，句子才完整",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "宾语 NP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "We",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "love",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "music",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "np2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "loves",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "musics",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "np2"
+        }
+      ],
+      "explain": "主语 We 是复数，动词用 love；loves 是留给单数主语的（She loves music）。另外 music 是不可数名词，没有 musics 这种写法。",
+      "example": "We love music. / She loves music.",
+      "win": "动词后面跟宾语，句子才完整。"
+    },
+    {
+      "id": "1-3-r5",
+      "cn": "婴儿在哭。",
+      "tip": "改错：cry 遇到单数主语该怎么变",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "The",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np1"
+        },
+        {
+          "text": "baby",
+          "pos": "noun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "cries",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "cry",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        }
+      ],
+      "prefill": [
+        "The",
+        "baby",
+        "cry"
+      ],
+      "explain": "主语 The baby 是单数，动词要加 s。但 cry 结尾是「辅音字母 + y」，加 s 时不能直接加，要先把 y 变成 i，再加 es：cries。",
+      "example": "The baby cries. / The babies cry.",
+      "win": "辅音字母 + y 结尾，加 s 要变 ies。"
+    }
+  ]
+}

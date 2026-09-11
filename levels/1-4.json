@@ -1,0 +1,313 @@
+{
+  "id": "1-4",
+  "topic": "形容词",
+  "emoji": "🎨",
+  "goal": "让形容词贴住名词，或者站在 be 动词后面 —— 别让它乱跑",
+  "rounds": [
+    {
+      "id": "1-4-r1",
+      "cn": "她留着长头发。",
+      "tip": "形容词放名词前面",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "宾语 NP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "She",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "has",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "long",
+          "pos": "adj",
+          "role": "定语",
+          "group": "np2"
+        },
+        {
+          "text": "hair",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "np2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "longs",
+          "pos": "adj",
+          "role": "定语",
+          "group": "np2"
+        },
+        {
+          "text": "hairs",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "np2"
+        }
+      ],
+      "explain": "形容词 long 的任务就是修饰名词，位置就在名词前面：long hair。形容词没有复数形式，longs 不存在；hair 指「头发」整体时不可数，也不加 s。",
+      "example": "She has long hair. / Her hair is long.",
+      "win": "形容词放名词前面，而且不加 s。"
+    },
+    {
+      "id": "1-4-r2",
+      "cn": "这汤很烫。",
+      "tip": "形容词的第二个位置：be 动词后面",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "表语 NP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "The",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np1"
+        },
+        {
+          "text": "soup",
+          "pos": "noun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "hot",
+          "pos": "adj",
+          "role": "表语",
+          "group": "np2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "hotly",
+          "pos": "adv",
+          "role": "表语",
+          "group": "np2"
+        }
+      ],
+      "explain": "形容词还有一个位置：放在 be 动词后面作表语，说明主语怎么样。hotly 是副词，副词不能跟在 is 后面。",
+      "example": "The soup is hot. / It is a hot soup.",
+      "win": "形容词可以站两个位置：名词前、be 动词后。"
+    },
+    {
+      "id": "1-4-r3",
+      "cn": "我有一辆红色的自行车。",
+      "tip": "顺序是「冠词 + 形容词 + 名词」",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "宾语 NP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "I",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "have",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "a",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np2"
+        },
+        {
+          "text": "red",
+          "pos": "adj",
+          "role": "定语",
+          "group": "np2"
+        },
+        {
+          "text": "bike",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "np2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "redly",
+          "pos": "adv",
+          "role": "定语",
+          "group": "np2"
+        }
+      ],
+      "explain": "名词 bike 前面先放冠词 a，再放形容词 red：a red bike。形容词不能用 -ly 结尾 —— 见到 -ly 就要怀疑它是副词，副词修饰名词是越权。",
+      "example": "I have a red bike. / I have two red bikes.",
+      "win": "顺序是「冠词 + 形容词 + 名词」。"
+    },
+    {
+      "id": "1-4-r4",
+      "cn": "这些花很漂亮。",
+      "tip": "be 动词后面用形容词，不是副词",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "表语 NP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "These",
+          "pos": "pronoun",
+          "role": "限定词",
+          "group": "np1"
+        },
+        {
+          "text": "flowers",
+          "pos": "noun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "are",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "beautiful",
+          "pos": "adj",
+          "role": "表语",
+          "group": "np2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "beautifully",
+          "pos": "adv",
+          "role": "表语",
+          "group": "np2"
+        }
+      ],
+      "explain": "be 动词后面用形容词 beautiful，说的是花本身怎么样。beautifully 是副词，副词的任务是修饰动词，不能跟在 are 后面。",
+      "example": "The flowers are beautiful. / She sings beautifully.",
+      "win": "be 动词后面用形容词。"
+    },
+    {
+      "id": "1-4-r5",
+      "cn": "这是一栋大房子。",
+      "tip": "改错：形容词跑到名词后面去了",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "表语 NP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "It",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "a",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np2"
+        },
+        {
+          "text": "big",
+          "pos": "adj",
+          "role": "定语",
+          "group": "np2"
+        },
+        {
+          "text": "house",
+          "pos": "noun",
+          "role": "表语",
+          "group": "np2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "bigly",
+          "pos": "adv",
+          "role": "定语",
+          "group": "np2"
+        }
+      ],
+      "prefill": [
+        "It",
+        "is",
+        "a",
+        "house",
+        "big"
+      ],
+      "explain": "英语里形容词只能站在名词前面：a big house。汉语说「一栋房子大的」不通，英语也一样，a house big 是错的。",
+      "example": "It is a big house. / The house is big.",
+      "win": "形容词和名词的顺序不能反。"
+    }
+  ]
+}

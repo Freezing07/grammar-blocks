@@ -1,0 +1,476 @@
+{
+  "id": "5-8",
+  "topic": "高级 · Boss",
+  "emoji": "👑",
+  "boss": true,
+  "goal": "非谓语、虚拟、倒装、强调混着来 —— 限时挑战，最高难度",
+  "rounds": [
+    {
+      "id": "5-8-r1",
+      "cn": "她想成为歌手。",
+      "tip": "不定式",
+      "timeLimit": 45,
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "inf",
+          "label": "不定式短语（作宾语）",
+          "parent": "vp"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "She",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "wants",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "to",
+          "pos": "inf",
+          "role": "不定式符号",
+          "group": "inf"
+        },
+        {
+          "text": "become",
+          "pos": "verb",
+          "role": "动词",
+          "group": "inf",
+          "nonfinite": true
+        },
+        {
+          "text": "a",
+          "pos": "article",
+          "role": "限定词",
+          "group": "inf"
+        },
+        {
+          "text": "singer",
+          "pos": "noun",
+          "role": "表语",
+          "group": "inf"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "becomes",
+          "pos": "verb",
+          "role": "动词",
+          "group": "inf"
+        }
+      ],
+      "explain": "主句动词 wants 跟着主语 She 变三单；不定式里的 become 保持原形。",
+      "example": "She wants to become a singer.",
+      "win": "变形停在主句，不定式不动。"
+    },
+    {
+      "id": "5-8-r2",
+      "cn": "阅读帮我放松。",
+      "tip": "动名词作主语",
+      "timeLimit": 40,
+      "groups": [
+        {
+          "id": "ger",
+          "label": "动名词作主语",
+          "clause": true
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "宾语 + 宾补"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "Reading",
+          "pos": "verb",
+          "role": "动名词",
+          "group": "ger",
+          "nonfinite": true
+        },
+        {
+          "text": "helps",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "me",
+          "pos": "pronoun",
+          "role": "宾语",
+          "group": "np2"
+        },
+        {
+          "text": "relax",
+          "pos": "verb",
+          "role": "宾补",
+          "group": "np2",
+          "nonfinite": true
+        }
+      ],
+      "distractors": [
+        {
+          "text": "Read",
+          "pos": "verb",
+          "role": "动名词",
+          "group": "ger"
+        }
+      ],
+      "explain": "动名词 Reading 当主语，算单数，动词用 helps。relax 是宾语补足语，说明 me 会怎么样。",
+      "example": "Reading helps me relax. / Reading is helpful.",
+      "win": "动名词作主语，动词用单数。"
+    },
+    {
+      "id": "5-8-r3",
+      "cn": "站在那里的那个人是我爸爸。",
+      "tip": "现在分词短语作定语",
+      "timeLimit": 45,
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "part",
+          "label": "现在分词短语（定语）",
+          "clause": true,
+          "parent": "np1"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "表语 NP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "The",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np1"
+        },
+        {
+          "text": "man",
+          "pos": "noun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "standing",
+          "pos": "verb",
+          "role": "现在分词",
+          "group": "part",
+          "nonfinite": true
+        },
+        {
+          "text": "there",
+          "pos": "adv",
+          "role": "状语",
+          "group": "part"
+        },
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "my",
+          "pos": "pronoun",
+          "role": "限定词",
+          "group": "np2"
+        },
+        {
+          "text": "father",
+          "pos": "noun",
+          "role": "表语",
+          "group": "np2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "stand",
+          "pos": "verb",
+          "role": "现在分词",
+          "group": "part"
+        }
+      ],
+      "explain": "现在分词短语放在名词后面修饰它，等于省略了 who is。主句骨架是 The man is my father。",
+      "example": "The man standing there is my father. / The man who is standing there is my father.",
+      "win": "分词短语插在名词后面，主句骨架不能丢。"
+    },
+    {
+      "id": "5-8-r4",
+      "cn": "如果我是你，我会更努力学习。",
+      "tip": "虚拟语气",
+      "timeLimit": 50,
+      "groups": [
+        {
+          "id": "main",
+          "label": "主句"
+        },
+        {
+          "id": "sub",
+          "label": "虚拟条件从句",
+          "clause": true
+        }
+      ],
+      "blocks": [
+        {
+          "text": "I",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "main"
+        },
+        {
+          "text": "would",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "main"
+        },
+        {
+          "text": "study",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "main"
+        },
+        {
+          "text": "harder",
+          "pos": "adv",
+          "role": "状语",
+          "group": "main"
+        },
+        {
+          "text": "if",
+          "pos": "conj",
+          "role": "连接词",
+          "group": "sub"
+        },
+        {
+          "text": "I",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "sub"
+        },
+        {
+          "text": "were",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "sub"
+        },
+        {
+          "text": "you",
+          "pos": "pronoun",
+          "role": "表语",
+          "group": "sub"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "was",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "sub"
+        }
+      ],
+      "explain": "虚拟语气：从句 be 动词用 were，主句用 would + 原形。harder 是 hard 的比较级，修饰 study。",
+      "example": "I would study harder if I were you.",
+      "win": "were + would 是虚拟语气的标志。"
+    },
+    {
+      "id": "5-8-r5",
+      "cn": "我从没见过这么美的城市。",
+      "tip": "倒装",
+      "timeLimit": 50,
+      "groups": [
+        {
+          "id": "q",
+          "label": "否定词（提前）"
+        },
+        {
+          "id": "vp",
+          "label": "助动词"
+        },
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp2",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "宾语 NP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "Never",
+          "pos": "adv",
+          "role": "否定词",
+          "group": "q"
+        },
+        {
+          "text": "have",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "vp"
+        },
+        {
+          "text": "I",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "seen",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp2"
+        },
+        {
+          "text": "such",
+          "pos": "pronoun",
+          "role": "限定词",
+          "group": "np2"
+        },
+        {
+          "text": "a",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np2"
+        },
+        {
+          "text": "beautiful",
+          "pos": "adj",
+          "role": "定语",
+          "group": "np2"
+        },
+        {
+          "text": "city",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "np2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "saw",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp2"
+        }
+      ],
+      "explain": "否定词 Never 提前，助动词 have 和主语 I 交换位置。seen 是过去分词，和 have 一起构成现在完成时。",
+      "example": "Never have I seen such a beautiful city. / I have never seen such a beautiful city.",
+      "win": "倒装 + 现在完成，两件事一起。"
+    },
+    {
+      "id": "5-8-r6",
+      "cn": "是我妈妈教会我的。",
+      "tip": "强调句",
+      "timeLimit": 45,
+      "groups": [
+        {
+          "id": "np1",
+          "label": "It（形式主语）"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "被强调的部分"
+        },
+        {
+          "id": "cl",
+          "label": "句子的其余部分",
+          "clause": true,
+          "parent": "np2"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "It",
+          "pos": "pronoun",
+          "role": "形式主语",
+          "group": "np1"
+        },
+        {
+          "text": "was",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "my",
+          "pos": "pronoun",
+          "role": "限定词",
+          "group": "np2"
+        },
+        {
+          "text": "mother",
+          "pos": "noun",
+          "role": "被强调部分",
+          "group": "np2"
+        },
+        {
+          "text": "that",
+          "pos": "pronoun",
+          "role": "关系词",
+          "group": "cl"
+        },
+        {
+          "text": "taught",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "cl"
+        },
+        {
+          "text": "me",
+          "pos": "pronoun",
+          "role": "宾语",
+          "group": "cl"
+        },
+        {
+          "text": "this",
+          "pos": "pronoun",
+          "role": "宾语",
+          "group": "cl"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "teaches",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "cl"
+        }
+      ],
+      "explain": "强调句：It was + 被强调的部分 + that + 其余部分。因为整句是过去的事，所以用 was 和 taught。",
+      "example": "It was my mother that taught me this. / My mother taught me this.",
+      "win": "强调句的时态跟着原句走。"
+    }
+  ]
+}

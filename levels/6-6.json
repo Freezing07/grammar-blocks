@@ -1,0 +1,451 @@
+{
+  "id": "6-6",
+  "topic": "段落开路与收尾",
+  "emoji": "🚩",
+  "goal": "开头点题、中间补充、最后总结 —— 每个位置有它自己的词",
+  "rounds": [
+    {
+      "id": "6-6-r1",
+      "cn": "首先，在线学习很方便。而且，它很便宜。",
+      "tip": "段落的开头：先用 first of all 提出第一点",
+      "rootLabel": "句群",
+      "marks": {
+        "0": ",",
+        "4": ".",
+        "5": ","
+      },
+      "groups": [
+        {
+          "id": "s1",
+          "label": "第一点"
+        },
+        {
+          "id": "s2",
+          "label": "补充（递进）",
+          "clause": true
+        }
+      ],
+      "blocks": [
+        {
+          "text": "First of all",
+          "pos": "adv",
+          "role": "衔接词",
+          "group": "s1"
+        },
+        {
+          "text": "online",
+          "pos": "adj",
+          "role": "定语",
+          "group": "s1"
+        },
+        {
+          "text": "learning",
+          "pos": "verb",
+          "role": "动名词",
+          "group": "s1",
+          "nonfinite": true
+        },
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "s1"
+        },
+        {
+          "text": "convenient",
+          "pos": "adj",
+          "role": "表语",
+          "group": "s1"
+        },
+        {
+          "text": "Moreover",
+          "pos": "adv",
+          "role": "衔接词",
+          "group": "s2"
+        },
+        {
+          "text": "it",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "s2"
+        },
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "s2"
+        },
+        {
+          "text": "cheap",
+          "pos": "adj",
+          "role": "表语",
+          "group": "s2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "In conclusion",
+          "pos": "adv",
+          "role": "衔接词",
+          "group": "s2"
+        }
+      ],
+      "explain": "段落常见的写法：First of all 提出第一点，Moreover 补第二点。In conclusion 只能用在段落最后总结，放在这里太早了。",
+      "example": "First of all, online learning is convenient. Moreover, it is cheap.",
+      "win": "开头提第一点，用 first of all。"
+    },
+    {
+      "id": "6-6-r2",
+      "cn": "这些是我的理由。总之，它值得一试。",
+      "tip": "段落的收尾：in conclusion",
+      "rootLabel": "句群",
+      "marks": {
+        "3": ".",
+        "4": ","
+      },
+      "groups": [
+        {
+          "id": "s1",
+          "label": "小结上一段"
+        },
+        {
+          "id": "s2",
+          "label": "总结句",
+          "clause": true
+        }
+      ],
+      "blocks": [
+        {
+          "text": "These",
+          "pos": "pronoun",
+          "role": "限定词",
+          "group": "s1"
+        },
+        {
+          "text": "are",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "s1"
+        },
+        {
+          "text": "my",
+          "pos": "pronoun",
+          "role": "限定词",
+          "group": "s1"
+        },
+        {
+          "text": "reasons",
+          "pos": "noun",
+          "role": "表语",
+          "group": "s1"
+        },
+        {
+          "text": "In conclusion",
+          "pos": "adv",
+          "role": "衔接词",
+          "group": "s2"
+        },
+        {
+          "text": "it",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "s2"
+        },
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "s2"
+        },
+        {
+          "text": "worth",
+          "pos": "adj",
+          "role": "表语",
+          "group": "s2"
+        },
+        {
+          "text": "trying",
+          "pos": "verb",
+          "role": "动名词",
+          "group": "s2",
+          "nonfinite": true
+        }
+      ],
+      "distractors": [
+        {
+          "text": "First of all",
+          "pos": "adv",
+          "role": "衔接词",
+          "group": "s2"
+        }
+      ],
+      "explain": "In conclusion / To sum up 用来收尾，把前面说的理由收拢成一个结论。它后面通常跟逗号。",
+      "example": "These are my reasons. In conclusion, it is worth trying.",
+      "win": "收尾用 in conclusion / to sum up。"
+    },
+    {
+      "id": "6-6-r3",
+      "cn": "首先，它便宜。而且，它方便。",
+      "tip": "改错：还在列举中间，不能用 In conclusion",
+      "rootLabel": "句群",
+      "marks": {
+        "0": ",",
+        "3": ".",
+        "4": ","
+      },
+      "groups": [
+        {
+          "id": "s1",
+          "label": "第一点"
+        },
+        {
+          "id": "s2",
+          "label": "第二点",
+          "clause": true
+        }
+      ],
+      "blocks": [
+        {
+          "text": "First of all",
+          "pos": "adv",
+          "role": "衔接词",
+          "group": "s1"
+        },
+        {
+          "text": "it",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "s1"
+        },
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "s1"
+        },
+        {
+          "text": "cheap",
+          "pos": "adj",
+          "role": "表语",
+          "group": "s1"
+        },
+        {
+          "text": "Moreover",
+          "pos": "adv",
+          "role": "衔接词",
+          "group": "s2"
+        },
+        {
+          "text": "it",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "s2"
+        },
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "s2"
+        },
+        {
+          "text": "convenient",
+          "pos": "adj",
+          "role": "表语",
+          "group": "s2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "In conclusion",
+          "pos": "adv",
+          "role": "衔接词",
+          "group": "s2"
+        }
+      ],
+      "prefill": [
+        "First of all",
+        "it",
+        "is",
+        "cheap",
+        "In conclusion",
+        "it",
+        "is",
+        "convenient"
+      ],
+      "explain": "这是列举的第二点，不是结尾，所以不能用 In conclusion。补充第二点要用 Moreover 或 In addition。",
+      "example": "First of all, it is cheap. Moreover, it is convenient.",
+      "win": "总结词只能出现在段落的最后一句。"
+    },
+    {
+      "id": "6-6-r4",
+      "cn": "一方面它省时间。另一方面它省钱。",
+      "tip": "for one thing ... for another 是固定搭配",
+      "rootLabel": "句群",
+      "marks": {
+        "3": ".",
+        "4": ","
+      },
+      "groups": [
+        {
+          "id": "s1",
+          "label": "一方面"
+        },
+        {
+          "id": "s2",
+          "label": "另一方面",
+          "clause": true
+        }
+      ],
+      "blocks": [
+        {
+          "text": "For one thing",
+          "pos": "adv",
+          "role": "衔接词",
+          "group": "s1"
+        },
+        {
+          "text": "it",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "s1"
+        },
+        {
+          "text": "saves",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "s1"
+        },
+        {
+          "text": "time",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "s1"
+        },
+        {
+          "text": "For another",
+          "pos": "adv",
+          "role": "衔接词",
+          "group": "s2"
+        },
+        {
+          "text": "it",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "s2"
+        },
+        {
+          "text": "saves",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "s2"
+        },
+        {
+          "text": "money",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "s2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "In conclusion",
+          "pos": "adv",
+          "role": "衔接词",
+          "group": "s2"
+        }
+      ],
+      "explain": "for one thing ... for another 是固定搭配，专门用来说两个理由。注意第二个是 for another，不是 for the other thing。",
+      "example": "For one thing, it saves time. For another, it saves money.",
+      "win": "两个理由成套用 for one thing / for another。"
+    },
+    {
+      "id": "6-6-r5",
+      "cn": "练习很重要。总之，我们应该每天练习。",
+      "tip": "to sum up 和 in conclusion 一个意思",
+      "rootLabel": "句群",
+      "marks": {
+        "2": ".",
+        "3": ","
+      },
+      "groups": [
+        {
+          "id": "s1",
+          "label": "提出观点"
+        },
+        {
+          "id": "s2",
+          "label": "总结句",
+          "clause": true
+        }
+      ],
+      "blocks": [
+        {
+          "text": "Practice",
+          "pos": "verb",
+          "role": "动名词",
+          "group": "s1",
+          "nonfinite": true
+        },
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "s1"
+        },
+        {
+          "text": "important",
+          "pos": "adj",
+          "role": "表语",
+          "group": "s1"
+        },
+        {
+          "text": "To sum up",
+          "pos": "adv",
+          "role": "衔接词",
+          "group": "s2"
+        },
+        {
+          "text": "we",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "s2"
+        },
+        {
+          "text": "should",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "s2"
+        },
+        {
+          "text": "practice",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "s2"
+        },
+        {
+          "text": "every",
+          "pos": "adj",
+          "role": "定语",
+          "group": "s2"
+        },
+        {
+          "text": "day",
+          "pos": "noun",
+          "role": "状语",
+          "group": "s2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "For example",
+          "pos": "adv",
+          "role": "衔接词",
+          "group": "s2"
+        }
+      ],
+      "explain": "to sum up 和 in conclusion 意思一样，都是「总之」。总结句通常回到文章开头提出的观点，做一个收束。",
+      "example": "Practice is important. To sum up, we should practice every day.",
+      "win": "总结句呼应开头，文章就闭合了。"
+    }
+  ]
+}

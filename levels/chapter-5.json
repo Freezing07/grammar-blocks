@@ -1,0 +1,3078 @@
+{
+  "name": "第五章 · 高级秘境",
+  "emoji": "🗻",
+  "subtitle": "非谓语 / 虚拟 / 倒装 / 强调",
+  "levels": [
+    {
+      "id": "5-1",
+      "topic": "不定式",
+      "emoji": "➡️",
+      "goal": "to + 动词原形：动词变身去当名词，还能当宾语、主语、表语",
+      "rounds": [
+        {
+          "id": "5-1-r1",
+          "cn": "我想回家。",
+          "tip": "to 是不定式符号，后面永远跟原形",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "inf",
+              "label": "不定式短语（作宾语）",
+              "parent": "vp"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "I",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "want",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "to",
+              "pos": "inf",
+              "role": "不定式符号",
+              "group": "inf"
+            },
+            {
+              "text": "go",
+              "pos": "verb",
+              "role": "动词",
+              "group": "inf",
+              "nonfinite": true
+            },
+            {
+              "text": "home",
+              "pos": "adv",
+              "role": "状语",
+              "group": "inf"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "going",
+              "pos": "verb",
+              "role": "动词",
+              "group": "inf"
+            }
+          ],
+          "explain": "不定式是「to + 动词原形」，跟在 want 后面当宾语。这里的 to 是不定式符号，不是介词 —— 后面永远跟动词原形，不加 s、不加 ing。",
+          "example": "I want to go home. / I want to go.",
+          "win": "to 后面永远跟动词原形。"
+        },
+        {
+          "id": "5-1-r2",
+          "cn": "她想当医生。",
+          "tip": "不定式里用 be，不用 is",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "inf",
+              "label": "不定式短语（作宾语）",
+              "parent": "vp"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "She",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "wants",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "to",
+              "pos": "inf",
+              "role": "不定式符号",
+              "group": "inf"
+            },
+            {
+              "text": "be",
+              "pos": "verb",
+              "role": "动词",
+              "group": "inf",
+              "nonfinite": true
+            },
+            {
+              "text": "a",
+              "pos": "article",
+              "role": "限定词",
+              "group": "inf"
+            },
+            {
+              "text": "doctor",
+              "pos": "noun",
+              "role": "表语",
+              "group": "inf"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "is",
+              "pos": "verb",
+              "role": "动词",
+              "group": "inf"
+            },
+            {
+              "text": "being",
+              "pos": "verb",
+              "role": "动词",
+              "group": "inf"
+            }
+          ],
+          "explain": "主语 She 是三单，主句动词加 s 变成 wants；但不定式里必须用原形 be，不能用 is。时态和人称的变化只发生在主句动词上。",
+          "example": "She wants to be a doctor. / She is a doctor.",
+          "win": "主句动词变形，不定式不变。"
+        },
+        {
+          "id": "5-1-r3",
+          "cn": "学英语很重要。",
+          "tip": "it 是形式主语，真正的主语是不定式",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "形式主语 It"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "np2",
+              "label": "表语 NP"
+            },
+            {
+              "id": "inf",
+              "label": "真正的主语：不定式",
+              "clause": true
+            }
+          ],
+          "blocks": [
+            {
+              "text": "It",
+              "pos": "pronoun",
+              "role": "形式主语",
+              "group": "np1"
+            },
+            {
+              "text": "is",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "important",
+              "pos": "adj",
+              "role": "表语",
+              "group": "np2"
+            },
+            {
+              "text": "to",
+              "pos": "inf",
+              "role": "不定式符号",
+              "group": "inf"
+            },
+            {
+              "text": "learn",
+              "pos": "verb",
+              "role": "动词",
+              "group": "inf",
+              "nonfinite": true
+            },
+            {
+              "text": "English",
+              "pos": "noun",
+              "role": "宾语",
+              "group": "inf"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "learning",
+              "pos": "verb",
+              "role": "动词",
+              "group": "inf"
+            }
+          ],
+          "explain": "it 是形式主语，真正的主语是后面的不定式 to learn English。不定式照样用原形 learn。",
+          "example": "It is important to learn English. / To learn English is important.",
+          "win": "不定式也能当主语，长的时候用 it 占位。"
+        },
+        {
+          "id": "5-1-r4",
+          "cn": "他决定出国留学。",
+          "tip": "改错：to 后面不能用 ing",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "inf",
+              "label": "不定式短语（作宾语）",
+              "parent": "vp"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "He",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "decided",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "to",
+              "pos": "inf",
+              "role": "不定式符号",
+              "group": "inf"
+            },
+            {
+              "text": "study",
+              "pos": "verb",
+              "role": "动词",
+              "group": "inf",
+              "nonfinite": true
+            },
+            {
+              "text": "abroad",
+              "pos": "adv",
+              "role": "状语",
+              "group": "inf"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "studying",
+              "pos": "verb",
+              "role": "动词",
+              "group": "inf"
+            }
+          ],
+          "prefill": [
+            "He",
+            "decided",
+            "to",
+            "studying",
+            "abroad"
+          ],
+          "explain": "decide 后面接不定式，to 后面必须用动词原形 study。加了 ing 就变成了动名词，不能跟在 to 后面。",
+          "example": "He decided to study abroad. / He enjoys studying abroad.",
+          "win": "to 后面永远跟原形。"
+        },
+        {
+          "id": "5-1-r5",
+          "cn": "我的梦想是环游世界。",
+          "tip": "不定式也能放在 be 动词后面",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "inf",
+              "label": "不定式短语（作表语）",
+              "parent": "vp"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "My",
+              "pos": "pronoun",
+              "role": "限定词",
+              "group": "np1"
+            },
+            {
+              "text": "dream",
+              "pos": "noun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "is",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "to",
+              "pos": "inf",
+              "role": "不定式符号",
+              "group": "inf"
+            },
+            {
+              "text": "travel",
+              "pos": "verb",
+              "role": "动词",
+              "group": "inf",
+              "nonfinite": true
+            },
+            {
+              "text": "the",
+              "pos": "article",
+              "role": "限定词",
+              "group": "inf"
+            },
+            {
+              "text": "world",
+              "pos": "noun",
+              "role": "宾语",
+              "group": "inf"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "traveling",
+              "pos": "verb",
+              "role": "动词",
+              "group": "inf"
+            }
+          ],
+          "explain": "不定式放在 be 动词后面当表语，说明主语「是什么」。这里 my dream 是什么？是 to travel the world。",
+          "example": "My dream is to travel the world.",
+          "win": "不定式一身三职：主语、宾语、表语。"
+        }
+      ]
+    },
+    {
+      "id": "5-2",
+      "topic": "动名词",
+      "emoji": "🔵",
+      "goal": "动词加 ing 变成名词 —— 它就能当主语、宾语、介词宾语",
+      "rounds": [
+        {
+          "id": "5-2-r1",
+          "cn": "游泳对你有好处。",
+          "tip": "动名词当主语时算单数",
+          "groups": [
+            {
+              "id": "ger",
+              "label": "动名词作主语",
+              "clause": true
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "pp",
+              "label": "介词短语 PP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "Swimming",
+              "pos": "verb",
+              "role": "动名词",
+              "group": "ger",
+              "nonfinite": true
+            },
+            {
+              "text": "is",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "good",
+              "pos": "adj",
+              "role": "表语",
+              "group": "vp"
+            },
+            {
+              "text": "for",
+              "pos": "prep",
+              "role": "介词",
+              "group": "pp"
+            },
+            {
+              "text": "you",
+              "pos": "pronoun",
+              "role": "介词宾语",
+              "group": "pp"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "Swim",
+              "pos": "verb",
+              "role": "动名词",
+              "group": "ger"
+            }
+          ],
+          "explain": "动词加 ing 之后就不是动词了，变成了名词，所以能当主语。这时候它叫动名词，当主语时算单数，be 动词用 is。Swim 是动词原形，不能当主语。",
+          "example": "Swimming is good for you. / Swim every day.",
+          "win": "加了 ing 的动词，就能当主语了。"
+        },
+        {
+          "id": "5-2-r2",
+          "cn": "我喜欢读书。",
+          "tip": "enjoy 后面只能跟动名词",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "ger",
+              "label": "动名词短语（作宾语）",
+              "parent": "vp"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "I",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "enjoy",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "reading",
+              "pos": "verb",
+              "role": "动名词",
+              "group": "ger",
+              "nonfinite": true
+            },
+            {
+              "text": "books",
+              "pos": "noun",
+              "role": "宾语",
+              "group": "ger"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "read",
+              "pos": "verb",
+              "role": "动名词",
+              "group": "ger"
+            },
+            {
+              "text": "to",
+              "pos": "inf",
+              "role": "不定式符号",
+              "group": "ger"
+            }
+          ],
+          "explain": "enjoy 后面只能跟动名词：enjoy reading。不能说 enjoy to read —— 这是必须一个个记住的固定搭配。类似的还有 finish / mind / practice / suggest。",
+          "example": "I enjoy reading books. / I want to read books.",
+          "win": "enjoy 后面跟动名词，不跟不定式。"
+        },
+        {
+          "id": "5-2-r3",
+          "cn": "谢谢你帮我。",
+          "tip": "介词后面跟动名词",
+          "groups": [
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "ger",
+              "label": "动名词短语（介词宾语）",
+              "parent": "vp"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "Thank",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "you",
+              "pos": "pronoun",
+              "role": "宾语",
+              "group": "vp"
+            },
+            {
+              "text": "for",
+              "pos": "prep",
+              "role": "介词",
+              "group": "ger"
+            },
+            {
+              "text": "helping",
+              "pos": "verb",
+              "role": "动名词",
+              "group": "ger",
+              "nonfinite": true
+            },
+            {
+              "text": "me",
+              "pos": "pronoun",
+              "role": "宾语",
+              "group": "ger"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "help",
+              "pos": "verb",
+              "role": "动名词",
+              "group": "ger"
+            }
+          ],
+          "explain": "介词（for / of / in / about…）后面要跟名词，所以动词要变成动名词：for helping，不是 for help。",
+          "example": "Thank you for helping me. / He left without saying goodbye.",
+          "win": "介词后面跟动名词。"
+        },
+        {
+          "id": "5-2-r4",
+          "cn": "他读完了那本书。",
+          "tip": "改错：finish 后面跟动名词",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "ger",
+              "label": "动名词短语（作宾语）",
+              "parent": "vp"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "He",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "finished",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "reading",
+              "pos": "verb",
+              "role": "动名词",
+              "group": "ger",
+              "nonfinite": true
+            },
+            {
+              "text": "the",
+              "pos": "article",
+              "role": "限定词",
+              "group": "ger"
+            },
+            {
+              "text": "book",
+              "pos": "noun",
+              "role": "宾语",
+              "group": "ger"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "read",
+              "pos": "verb",
+              "role": "动名词",
+              "group": "ger"
+            }
+          ],
+          "prefill": [
+            "He",
+            "finished",
+            "read",
+            "the",
+            "book"
+          ],
+          "explain": "finish 后面接动名词：finished reading。read 是动词原形，不能直接跟在另一个动词后面。",
+          "example": "He finished reading the book. / He read the book.",
+          "win": "一个句子只有一个谓语动词。"
+        },
+        {
+          "id": "5-2-r5",
+          "cn": "我的工作是教英语。",
+          "tip": "动名词也能作表语",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "ger",
+              "label": "动名词短语（作表语）",
+              "parent": "vp"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "My",
+              "pos": "pronoun",
+              "role": "限定词",
+              "group": "np1"
+            },
+            {
+              "text": "job",
+              "pos": "noun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "is",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "teaching",
+              "pos": "verb",
+              "role": "动名词",
+              "group": "ger",
+              "nonfinite": true
+            },
+            {
+              "text": "English",
+              "pos": "noun",
+              "role": "宾语",
+              "group": "ger"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "teach",
+              "pos": "verb",
+              "role": "动名词",
+              "group": "ger"
+            }
+          ],
+          "explain": "be 动词后面用动名词作表语，说明主语「是什么」。和不定式一样，动名词也能站这个位置。",
+          "example": "My job is teaching English. / My job is to teach English.",
+          "win": "动名词也能作表语。"
+        }
+      ]
+    },
+    {
+      "id": "5-3",
+      "topic": "现在分词",
+      "emoji": "🟢",
+      "goal": "动词加 ing 当形容词用，还能表示伴随的动作",
+      "rounds": [
+        {
+          "id": "5-3-r1",
+          "cn": "正在睡觉的婴儿很可爱。",
+          "tip": "现在分词放名词前面",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "part",
+              "label": "现在分词（定语）",
+              "clause": true,
+              "parent": "np1"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "The",
+              "pos": "article",
+              "role": "限定词",
+              "group": "np1"
+            },
+            {
+              "text": "sleeping",
+              "pos": "verb",
+              "role": "现在分词",
+              "group": "part",
+              "nonfinite": true
+            },
+            {
+              "text": "baby",
+              "pos": "noun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "is",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "cute",
+              "pos": "adj",
+              "role": "表语",
+              "group": "vp"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "sleep",
+              "pos": "verb",
+              "role": "现在分词",
+              "group": "part"
+            }
+          ],
+          "explain": "现在分词（-ing）放在名词前面，起形容词的作用：sleeping baby 就是「正在睡觉的婴儿」。它说明的是名词的状态，不是句子的谓语。",
+          "example": "The sleeping baby is cute. / The baby is sleeping.",
+          "win": "分词放在名词前，就等于一个形容词。"
+        },
+        {
+          "id": "5-3-r2",
+          "cn": "我看见他正在过马路。",
+          "tip": "see + 宾语 + 现在分词",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "np2",
+              "label": "宾语 NP"
+            },
+            {
+              "id": "part",
+              "label": "现在分词（宾语补足语）",
+              "clause": true,
+              "parent": "np2"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "I",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "saw",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "him",
+              "pos": "pronoun",
+              "role": "宾语",
+              "group": "np2"
+            },
+            {
+              "text": "crossing",
+              "pos": "verb",
+              "role": "现在分词",
+              "group": "part",
+              "nonfinite": true
+            },
+            {
+              "text": "the",
+              "pos": "article",
+              "role": "限定词",
+              "group": "part"
+            },
+            {
+              "text": "street",
+              "pos": "noun",
+              "role": "宾语",
+              "group": "part"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "cross",
+              "pos": "verb",
+              "role": "现在分词",
+              "group": "part"
+            }
+          ],
+          "explain": "see + 宾语 + 现在分词，表示「看见某人正在做某事」。him 是宾语，crossing the street 补充说明他当时在做什么 —— 用分词说明动作正在进行。",
+          "example": "I saw him crossing the street. / I saw him cross the street.（看见整个过程）",
+          "win": "分词作宾补，说明动作正在进行。"
+        },
+        {
+          "id": "5-3-r3",
+          "cn": "站在那里的那个人是我的老师。",
+          "tip": "分词短语放名词后面，等于省略的定语从句",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "part",
+              "label": "现在分词短语（定语）",
+              "clause": true,
+              "parent": "np1"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "np2",
+              "label": "表语 NP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "The",
+              "pos": "article",
+              "role": "限定词",
+              "group": "np1"
+            },
+            {
+              "text": "man",
+              "pos": "noun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "standing",
+              "pos": "verb",
+              "role": "现在分词",
+              "group": "part",
+              "nonfinite": true
+            },
+            {
+              "text": "there",
+              "pos": "adv",
+              "role": "状语",
+              "group": "part"
+            },
+            {
+              "text": "is",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "my",
+              "pos": "pronoun",
+              "role": "限定词",
+              "group": "np2"
+            },
+            {
+              "text": "teacher",
+              "pos": "noun",
+              "role": "表语",
+              "group": "np2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "stand",
+              "pos": "verb",
+              "role": "现在分词",
+              "group": "part"
+            }
+          ],
+          "explain": "现在分词短语放在名词后面，相当于一个省略了的定语从句：the man standing there = the man who is standing there。注意它没有主语，也没有 be 动词。",
+          "example": "The man standing there is my teacher. / The man who is standing there is my teacher.",
+          "win": "分词短语 = 简写版的定语从句。"
+        },
+        {
+          "id": "5-3-r4",
+          "cn": "正在睡觉的婴儿很可爱。",
+          "tip": "改错：名词前面不能用原形",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "part",
+              "label": "现在分词（定语）",
+              "clause": true,
+              "parent": "np1"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "The",
+              "pos": "article",
+              "role": "限定词",
+              "group": "np1"
+            },
+            {
+              "text": "sleeping",
+              "pos": "verb",
+              "role": "现在分词",
+              "group": "part",
+              "nonfinite": true
+            },
+            {
+              "text": "baby",
+              "pos": "noun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "is",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "cute",
+              "pos": "adj",
+              "role": "表语",
+              "group": "vp"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "sleep",
+              "pos": "verb",
+              "role": "现在分词",
+              "group": "part"
+            }
+          ],
+          "prefill": [
+            "The",
+            "sleep",
+            "baby",
+            "is",
+            "cute"
+          ],
+          "explain": "名词前面的修饰成分要用现在分词 sleeping，不能用动词原形 sleep。一个句子里只能有一个谓语动词，这里是 is。",
+          "example": "The sleeping baby is cute. / The baby is sleeping.",
+          "win": "修饰名词的动词要变分词。"
+        },
+        {
+          "id": "5-3-r5",
+          "cn": "她坐在那儿看书。",
+          "tip": "句尾的分词表示伴随的动作",
+          "groups": [
+            {
+              "id": "main",
+              "label": "主句"
+            },
+            {
+              "id": "part",
+              "label": "现在分词短语（伴随状语）",
+              "clause": true,
+              "parent": "main"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "She",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "main"
+            },
+            {
+              "text": "sat",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "main"
+            },
+            {
+              "text": "there",
+              "pos": "adv",
+              "role": "状语",
+              "group": "main"
+            },
+            {
+              "text": "reading",
+              "pos": "verb",
+              "role": "现在分词",
+              "group": "part",
+              "nonfinite": true
+            },
+            {
+              "text": "a",
+              "pos": "article",
+              "role": "限定词",
+              "group": "part"
+            },
+            {
+              "text": "book",
+              "pos": "noun",
+              "role": "宾语",
+              "group": "part"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "read",
+              "pos": "verb",
+              "role": "现在分词",
+              "group": "part"
+            }
+          ],
+          "explain": "现在分词短语放在句尾，表示伴随的动作：她坐在那儿，同时在看一本书。这个分词的主语跟主句一样（都是 She），所以不用再写一遍。",
+          "example": "She sat there reading a book. / She sat there and read a book.",
+          "win": "分词还能表示伴随动作。"
+        }
+      ]
+    },
+    {
+      "id": "5-4",
+      "topic": "过去分词",
+      "emoji": "🔴",
+      "goal": "-ed 分词表示被动或完成，同样能当形容词用",
+      "rounds": [
+        {
+          "id": "5-4-r1",
+          "cn": "那扇破窗户很危险。",
+          "tip": "过去分词放名词前面",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "part",
+              "label": "过去分词（定语）",
+              "clause": true,
+              "parent": "np1"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "The",
+              "pos": "article",
+              "role": "限定词",
+              "group": "np1"
+            },
+            {
+              "text": "broken",
+              "pos": "verb",
+              "role": "过去分词",
+              "group": "part",
+              "nonfinite": true
+            },
+            {
+              "text": "window",
+              "pos": "noun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "is",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "dangerous",
+              "pos": "adj",
+              "role": "表语",
+              "group": "vp"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "break",
+              "pos": "verb",
+              "role": "过去分词",
+              "group": "part"
+            }
+          ],
+          "explain": "过去分词放在名词前面，表示被动的状态：broken window 就是「被打破的窗户」。它和现在分词位置一样，区别在意思是「被……」还是「正在……」。",
+          "example": "The broken window is dangerous. / The breaking news is important.",
+          "win": "过去分词表示被动或完成。"
+        },
+        {
+          "id": "5-4-r2",
+          "cn": "我找到了丢失的钥匙。",
+          "tip": "lose 的过去分词是 lost",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "np2",
+              "label": "宾语 NP"
+            },
+            {
+              "id": "part",
+              "label": "过去分词（定语）",
+              "clause": true,
+              "parent": "np2"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "I",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "found",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "the",
+              "pos": "article",
+              "role": "限定词",
+              "group": "np2"
+            },
+            {
+              "text": "lost",
+              "pos": "verb",
+              "role": "过去分词",
+              "group": "part",
+              "nonfinite": true
+            },
+            {
+              "text": "key",
+              "pos": "noun",
+              "role": "宾语",
+              "group": "np2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "lose",
+              "pos": "verb",
+              "role": "过去分词",
+              "group": "part"
+            }
+          ],
+          "explain": "lose 的过去分词是 lost，放在名词前面表示「丢失的」。注意它表示的是被动/完成状态，不是正在进行。",
+          "example": "I found the lost key. / The key was lost.",
+          "win": "过去分词当形容词，意思偏被动。"
+        },
+        {
+          "id": "5-4-r3",
+          "cn": "他写的那本书很有名。",
+          "tip": "过去分词短语放名词后面 = 被动语态的定语从句",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "part",
+              "label": "过去分词短语（定语）",
+              "clause": true,
+              "parent": "np1"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "The",
+              "pos": "article",
+              "role": "限定词",
+              "group": "np1"
+            },
+            {
+              "text": "book",
+              "pos": "noun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "written",
+              "pos": "verb",
+              "role": "过去分词",
+              "group": "part",
+              "nonfinite": true
+            },
+            {
+              "text": "by",
+              "pos": "prep",
+              "role": "介词",
+              "group": "part"
+            },
+            {
+              "text": "him",
+              "pos": "pronoun",
+              "role": "介词宾语",
+              "group": "part"
+            },
+            {
+              "text": "is",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "famous",
+              "pos": "adj",
+              "role": "表语",
+              "group": "vp"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "wrote",
+              "pos": "verb",
+              "role": "过去分词",
+              "group": "part"
+            }
+          ],
+          "explain": "过去分词短语放在名词后面，相当于一个被动语态的定语从句：the book written by him = the book which was written by him。注意用过去分词 written，不是过去式 wrote。",
+          "example": "The book written by him is famous. / The book which was written by him is famous.",
+          "win": "过去分词短语 = 被动版的定语从句。"
+        },
+        {
+          "id": "5-4-r4",
+          "cn": "那把丢失的钥匙是我找到的。",
+          "tip": "改错：be 后面用过去分词",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "part",
+              "label": "过去分词（定语）",
+              "clause": true,
+              "parent": "np1"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP（被动）"
+            },
+            {
+              "id": "pp",
+              "label": "施动者 PP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "The",
+              "pos": "article",
+              "role": "限定词",
+              "group": "np1"
+            },
+            {
+              "text": "lost",
+              "pos": "verb",
+              "role": "过去分词",
+              "group": "part",
+              "nonfinite": true
+            },
+            {
+              "text": "key",
+              "pos": "noun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "was",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            },
+            {
+              "text": "found",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "by",
+              "pos": "prep",
+              "role": "介词",
+              "group": "pp"
+            },
+            {
+              "text": "me",
+              "pos": "pronoun",
+              "role": "介词宾语",
+              "group": "pp"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "find",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            }
+          ],
+          "prefill": [
+            "The",
+            "lost",
+            "key",
+            "was",
+            "find",
+            "by",
+            "me"
+          ],
+          "explain": "这一句里有两个过去分词：lost 作定语修饰 key，found 和 was 一起构成被动语态。be 动词后面要用过去分词，不是原形 find。",
+          "example": "The lost key was found by me.",
+          "win": "同一个句子里，过去分词可以当定语，也可以当谓语的一部分。"
+        },
+        {
+          "id": "5-4-r5",
+          "cn": "我看见窗户被打破了。",
+          "tip": "see + 宾语 + 过去分词",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "np2",
+              "label": "宾语 NP"
+            },
+            {
+              "id": "part",
+              "label": "过去分词（宾语补足语）",
+              "clause": true,
+              "parent": "np2"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "I",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "saw",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "the",
+              "pos": "article",
+              "role": "限定词",
+              "group": "np2"
+            },
+            {
+              "text": "window",
+              "pos": "noun",
+              "role": "宾语",
+              "group": "np2"
+            },
+            {
+              "text": "broken",
+              "pos": "verb",
+              "role": "过去分词",
+              "group": "part",
+              "nonfinite": true
+            }
+          ],
+          "distractors": [
+            {
+              "text": "broke",
+              "pos": "verb",
+              "role": "过去分词",
+              "group": "part"
+            }
+          ],
+          "explain": "see + 宾语 + 过去分词，表示「看见某物被……」。broken 说明窗户是被打破的状态 —— 用过去分词是因为窗户不会自己破，它是被打破的。",
+          "example": "I saw the window broken. / I saw him breaking the window.",
+          "win": "宾补用现在分词表示主动，用过去分词表示被动。"
+        }
+      ]
+    },
+    {
+      "id": "5-5",
+      "topic": "虚拟语气",
+      "emoji": "🌀",
+      "goal": "说与事实相反的假设：从句往过去退一步，be 动词一律用 were",
+      "rounds": [
+        {
+          "id": "5-5-r1",
+          "cn": "如果我是你，我就去。",
+          "tip": "虚拟语气里 be 动词一律用 were",
+          "groups": [
+            {
+              "id": "main",
+              "label": "主句"
+            },
+            {
+              "id": "sub",
+              "label": "虚拟条件从句",
+              "clause": true
+            }
+          ],
+          "blocks": [
+            {
+              "text": "I",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "main"
+            },
+            {
+              "text": "would",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "main"
+            },
+            {
+              "text": "go",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "main"
+            },
+            {
+              "text": "if",
+              "pos": "conj",
+              "role": "连接词",
+              "group": "sub"
+            },
+            {
+              "text": "I",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "sub"
+            },
+            {
+              "text": "were",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "sub"
+            },
+            {
+              "text": "you",
+              "pos": "pronoun",
+              "role": "表语",
+              "group": "sub"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "was",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "sub"
+            }
+          ],
+          "explain": "虚拟语气表示「与事实相反的假设」。if 从句里 be 动词一律用 were，不管主语是谁 —— If I were you，不能用 was。这是虚拟语气最标志性的一条。",
+          "example": "I would go if I were you. / If I were you, I would go.",
+          "win": "虚拟语气里，be 动词只有 were 一个形态。"
+        },
+        {
+          "id": "5-5-r2",
+          "cn": "如果我有时间，我就会帮你。",
+          "tip": "与现在事实相反：从句用过去式",
+          "groups": [
+            {
+              "id": "main",
+              "label": "主句"
+            },
+            {
+              "id": "sub",
+              "label": "虚拟条件从句",
+              "clause": true
+            }
+          ],
+          "blocks": [
+            {
+              "text": "I",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "main"
+            },
+            {
+              "text": "would",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "main"
+            },
+            {
+              "text": "help",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "main"
+            },
+            {
+              "text": "you",
+              "pos": "pronoun",
+              "role": "宾语",
+              "group": "main"
+            },
+            {
+              "text": "if",
+              "pos": "conj",
+              "role": "连接词",
+              "group": "sub"
+            },
+            {
+              "text": "I",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "sub"
+            },
+            {
+              "text": "had",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "sub"
+            },
+            {
+              "text": "time",
+              "pos": "noun",
+              "role": "宾语",
+              "group": "sub"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "have",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "sub"
+            }
+          ],
+          "explain": "与现在事实相反：从句的动词往过去退一步（have → had），主句用 would + 动词原形。意思是「我现在没时间，所以帮不了你」。",
+          "example": "I would help you if I had time. / I don't have time.",
+          "win": "从句退一步用过去式，主句用 would。"
+        },
+        {
+          "id": "5-5-r3",
+          "cn": "真希望我更高一点。",
+          "tip": "wish 后面的从句也用虚拟语气",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "cl",
+              "label": "宾语从句（虚拟）",
+              "clause": true,
+              "parent": "vp"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "I",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "wish",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "I",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "cl"
+            },
+            {
+              "text": "were",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "cl"
+            },
+            {
+              "text": "taller",
+              "pos": "adj",
+              "role": "表语",
+              "group": "cl"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "was",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "cl"
+            }
+          ],
+          "explain": "wish 后面的从句要用虚拟语气，表示「真希望……（可惜不是）」。be 动词照样用 were：wish I were taller。",
+          "example": "I wish I were taller. / I am not tall.",
+          "win": "wish 后面也要用虚拟。"
+        },
+        {
+          "id": "5-5-r4",
+          "cn": "真希望我知道答案。",
+          "tip": "改错：wish 后面用过去式",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "cl",
+              "label": "宾语从句（虚拟）",
+              "clause": true,
+              "parent": "vp"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "I",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "wish",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "I",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "cl"
+            },
+            {
+              "text": "knew",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "cl"
+            },
+            {
+              "text": "the",
+              "pos": "article",
+              "role": "限定词",
+              "group": "cl"
+            },
+            {
+              "text": "answer",
+              "pos": "noun",
+              "role": "宾语",
+              "group": "cl"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "know",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "cl"
+            }
+          ],
+          "prefill": [
+            "I",
+            "wish",
+            "I",
+            "know",
+            "the",
+            "answer"
+          ],
+          "explain": "wish 后面的从句要用过去式表示与现在相反：wish I knew（可惜我不知道）。用现在时 know 就变成「希望我知道」这种现实陈述了。",
+          "example": "I wish I knew the answer. / I don't know the answer.",
+          "win": "wish 后面用过去式，表示现在的遗憾。"
+        },
+        {
+          "id": "5-5-r5",
+          "cn": "如果我早知道，我就会来了。",
+          "tip": "与过去事实相反：had + 过去分词",
+          "groups": [
+            {
+              "id": "main",
+              "label": "主句"
+            },
+            {
+              "id": "sub",
+              "label": "虚拟条件从句",
+              "clause": true
+            }
+          ],
+          "blocks": [
+            {
+              "text": "I",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "main"
+            },
+            {
+              "text": "would",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "main"
+            },
+            {
+              "text": "have",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "main"
+            },
+            {
+              "text": "come",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "main"
+            },
+            {
+              "text": "if",
+              "pos": "conj",
+              "role": "连接词",
+              "group": "sub"
+            },
+            {
+              "text": "I",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "sub"
+            },
+            {
+              "text": "had",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "sub"
+            },
+            {
+              "text": "known",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "sub"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "knew",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "sub"
+            }
+          ],
+          "explain": "与过去事实相反：从句用 had + 过去分词，主句用 would have + 过去分词。意思是「我当时不知道，所以我没来」。",
+          "example": "I would have come if I had known. / I didn't know, so I didn't come.",
+          "win": "过去的虚拟要往后退一格：had done / would have done。"
+        }
+      ]
+    },
+    {
+      "id": "5-6",
+      "topic": "倒装",
+      "emoji": "🔄",
+      "goal": "否定词或 here/there 放句首时，助动词要跑到主语前面",
+      "rounds": [
+        {
+          "id": "5-6-r1",
+          "cn": "他很少出门。",
+          "tip": "否定词放句首要倒装",
+          "groups": [
+            {
+              "id": "q",
+              "label": "否定词（提前）"
+            },
+            {
+              "id": "vp",
+              "label": "助动词"
+            },
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp2",
+              "label": "谓语 VP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "Seldom",
+              "pos": "adv",
+              "role": "否定词",
+              "group": "q"
+            },
+            {
+              "text": "does",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            },
+            {
+              "text": "he",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "go",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp2"
+            },
+            {
+              "text": "out",
+              "pos": "adv",
+              "role": "状语",
+              "group": "vp2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "do",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            }
+          ],
+          "explain": "seldom（很少）、never、hardly 都是否定词。它们放到句首时，句子要倒装：助动词提到主语前面。正常语序是 He seldom goes out。",
+          "example": "Seldom does he go out. / He seldom goes out.",
+          "win": "否定词提前，助动词跟着提前。"
+        },
+        {
+          "id": "5-6-r2",
+          "cn": "公交车来了。",
+          "tip": "here / there 开头的倒装",
+          "groups": [
+            {
+              "id": "q",
+              "label": "副词（提前）"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "Here",
+              "pos": "adv",
+              "role": "状语",
+              "group": "q"
+            },
+            {
+              "text": "comes",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "the",
+              "pos": "article",
+              "role": "限定词",
+              "group": "np1"
+            },
+            {
+              "text": "bus",
+              "pos": "noun",
+              "role": "主语",
+              "group": "np1"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "come",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            }
+          ],
+          "explain": "here / there 放在句首时也要倒装：谓语动词提到主语前面。主语 the bus 是单数，所以用 comes。",
+          "example": "Here comes the bus. / The bus comes here.",
+          "win": "here / there 开头，谓语提前。"
+        },
+        {
+          "id": "5-6-r3",
+          "cn": "他根本不知道真相。",
+          "tip": "little 也是否定词",
+          "groups": [
+            {
+              "id": "q",
+              "label": "否定词（提前）"
+            },
+            {
+              "id": "vp",
+              "label": "助动词"
+            },
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp2",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "np2",
+              "label": "宾语 NP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "Little",
+              "pos": "adv",
+              "role": "否定词",
+              "group": "q"
+            },
+            {
+              "text": "did",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            },
+            {
+              "text": "he",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "know",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp2"
+            },
+            {
+              "text": "the",
+              "pos": "article",
+              "role": "限定词",
+              "group": "np2"
+            },
+            {
+              "text": "truth",
+              "pos": "noun",
+              "role": "宾语",
+              "group": "np2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "do",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            }
+          ],
+          "explain": "little 在这里表示「几乎不」，属于否定词，放句首要倒装。did he know = 他当时并不知道。注意倒装后主动词回到原形 know。",
+          "example": "Little did he know the truth. / He little knew the truth.",
+          "win": "倒装后助动词承担时态，动词回原形。"
+        },
+        {
+          "id": "5-6-r4",
+          "cn": "我从没见过这样的事。",
+          "tip": "改错：否定词提前后要和主语换位",
+          "groups": [
+            {
+              "id": "q",
+              "label": "否定词（提前）"
+            },
+            {
+              "id": "vp",
+              "label": "助动词"
+            },
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp2",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "np2",
+              "label": "宾语 NP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "Never",
+              "pos": "adv",
+              "role": "否定词",
+              "group": "q"
+            },
+            {
+              "text": "have",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            },
+            {
+              "text": "I",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "seen",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp2"
+            },
+            {
+              "text": "such",
+              "pos": "pronoun",
+              "role": "限定词",
+              "group": "np2"
+            },
+            {
+              "text": "a",
+              "pos": "article",
+              "role": "限定词",
+              "group": "np2"
+            },
+            {
+              "text": "thing",
+              "pos": "noun",
+              "role": "宾语",
+              "group": "np2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "saw",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp2"
+            }
+          ],
+          "prefill": [
+            "Never",
+            "I",
+            "have",
+            "seen",
+            "such",
+            "a",
+            "thing"
+          ],
+          "explain": "否定词提到句首后，助动词要和主语交换位置：Never have I...，不是 Never I have...。正常语序是 I have never seen such a thing。",
+          "example": "Never have I seen such a thing. / I have never seen such a thing.",
+          "win": "倒装就是把助动词和主语换个位。"
+        },
+        {
+          "id": "5-6-r5",
+          "cn": "直到那时我才明白。",
+          "tip": "only + 状语放句首，主句倒装",
+          "groups": [
+            {
+              "id": "q",
+              "label": "Only + 状语"
+            },
+            {
+              "id": "vp",
+              "label": "助动词"
+            },
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp2",
+              "label": "谓语 VP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "Only",
+              "pos": "adv",
+              "role": "状语",
+              "group": "q"
+            },
+            {
+              "text": "then",
+              "pos": "adv",
+              "role": "状语",
+              "group": "q"
+            },
+            {
+              "text": "did",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            },
+            {
+              "text": "I",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "understand",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "do",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            }
+          ],
+          "explain": "only + 状语放在句首时，主句也要倒装：did I understand，不是 I understood。正常语序是 I understood only then。",
+          "example": "Only then did I understand. / I understood only then.",
+          "win": "only + 状语提前，主句倒装。"
+        }
+      ]
+    },
+    {
+      "id": "5-7",
+      "topic": "强调句",
+      "emoji": "🔦",
+      "goal": "It is/was + 被强调的部分 + that/who —— 把重点挑出来",
+      "rounds": [
+        {
+          "id": "5-7-r1",
+          "cn": "是 Tom 打破了窗户。",
+          "tip": "强调句的公式",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "It（形式主语）"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "np2",
+              "label": "被强调的部分"
+            },
+            {
+              "id": "cl",
+              "label": "句子的其余部分",
+              "clause": true,
+              "parent": "np2"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "It",
+              "pos": "pronoun",
+              "role": "形式主语",
+              "group": "np1"
+            },
+            {
+              "text": "was",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "Tom",
+              "pos": "noun",
+              "role": "被强调部分",
+              "group": "np2"
+            },
+            {
+              "text": "who",
+              "pos": "pronoun",
+              "role": "关系词",
+              "group": "cl"
+            },
+            {
+              "text": "broke",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "cl"
+            },
+            {
+              "text": "the",
+              "pos": "article",
+              "role": "限定词",
+              "group": "cl"
+            },
+            {
+              "text": "window",
+              "pos": "noun",
+              "role": "宾语",
+              "group": "cl"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "which",
+              "pos": "pronoun",
+              "role": "关系词",
+              "group": "cl"
+            }
+          ],
+          "explain": "强调句的公式：It is/was + 被强调的部分 + that/who + 其余部分。强调人的时候用 who 或 that，强调物的时候只能用 that。",
+          "example": "It was Tom who broke the window. / Tom broke the window.",
+          "win": "要强调谁，就把它夹在 It was 和 who 中间。"
+        },
+        {
+          "id": "5-7-r2",
+          "cn": "我爱的是你。",
+          "tip": "强调句的连接词不能用 what",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "It（形式主语）"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "np2",
+              "label": "被强调的部分"
+            },
+            {
+              "id": "cl",
+              "label": "句子的其余部分",
+              "clause": true,
+              "parent": "np2"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "It",
+              "pos": "pronoun",
+              "role": "形式主语",
+              "group": "np1"
+            },
+            {
+              "text": "is",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "you",
+              "pos": "pronoun",
+              "role": "被强调部分",
+              "group": "np2"
+            },
+            {
+              "text": "that",
+              "pos": "pronoun",
+              "role": "关系词",
+              "group": "cl"
+            },
+            {
+              "text": "I",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "cl"
+            },
+            {
+              "text": "love",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "cl"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "what",
+              "pos": "pronoun",
+              "role": "关系词",
+              "group": "cl"
+            }
+          ],
+          "explain": "强调句的连接词是 that（强调人时也可以用 who），但绝不能用 what。what 是用来引导名词性从句的，它不能当强调句的连接词。",
+          "example": "It is you that I love. / I love you.",
+          "win": "强调句用 that 或 who，不用 what。"
+        },
+        {
+          "id": "5-7-r3",
+          "cn": "我们是在北京认识的。",
+          "tip": "强调地点也用 that，不用 where",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "It（形式主语）"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "np2",
+              "label": "被强调的部分"
+            },
+            {
+              "id": "cl",
+              "label": "句子的其余部分",
+              "clause": true,
+              "parent": "np2"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "It",
+              "pos": "pronoun",
+              "role": "形式主语",
+              "group": "np1"
+            },
+            {
+              "text": "was",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "in",
+              "pos": "prep",
+              "role": "介词",
+              "group": "np2"
+            },
+            {
+              "text": "Beijing",
+              "pos": "noun",
+              "role": "被强调部分",
+              "group": "np2"
+            },
+            {
+              "text": "that",
+              "pos": "pronoun",
+              "role": "关系词",
+              "group": "cl"
+            },
+            {
+              "text": "we",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "cl"
+            },
+            {
+              "text": "met",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "cl"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "where",
+              "pos": "adv",
+              "role": "关系词",
+              "group": "cl"
+            }
+          ],
+          "explain": "强调部分也可以是状语。注意连接词照样用 that，即使被强调的是地点也不用 where —— where 是定语从句的用法，别混。",
+          "example": "It was in Beijing that we met. / We met in Beijing.",
+          "win": "强调句的连接词永远是 that / who。"
+        },
+        {
+          "id": "5-7-r4",
+          "cn": "他是昨天来的。",
+          "tip": "改错：强调时间也用 that",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "It（形式主语）"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "np2",
+              "label": "被强调的部分"
+            },
+            {
+              "id": "cl",
+              "label": "句子的其余部分",
+              "clause": true,
+              "parent": "np2"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "It",
+              "pos": "pronoun",
+              "role": "形式主语",
+              "group": "np1"
+            },
+            {
+              "text": "was",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "yesterday",
+              "pos": "adv",
+              "role": "被强调部分",
+              "group": "np2"
+            },
+            {
+              "text": "that",
+              "pos": "pronoun",
+              "role": "关系词",
+              "group": "cl"
+            },
+            {
+              "text": "he",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "cl"
+            },
+            {
+              "text": "came",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "cl"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "when",
+              "pos": "adv",
+              "role": "关系词",
+              "group": "cl"
+            }
+          ],
+          "prefill": [
+            "It",
+            "was",
+            "yesterday",
+            "when",
+            "he",
+            "came"
+          ],
+          "explain": "强调时间状语也用 that，不用 when。when 引导的是时间状语从句，两者的结构完全不同。",
+          "example": "It was yesterday that he came. / He came yesterday.",
+          "win": "that 是强调句的万能连接词。"
+        },
+        {
+          "id": "5-7-r5",
+          "cn": "我想学的是英语。",
+          "tip": "强调宾语",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "It（形式主语）"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "np2",
+              "label": "被强调的部分"
+            },
+            {
+              "id": "cl",
+              "label": "句子的其余部分",
+              "clause": true,
+              "parent": "np2"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "It",
+              "pos": "pronoun",
+              "role": "形式主语",
+              "group": "np1"
+            },
+            {
+              "text": "is",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "English",
+              "pos": "noun",
+              "role": "被强调部分",
+              "group": "np2"
+            },
+            {
+              "text": "that",
+              "pos": "pronoun",
+              "role": "关系词",
+              "group": "cl"
+            },
+            {
+              "text": "I",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "cl"
+            },
+            {
+              "text": "want",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "cl"
+            },
+            {
+              "text": "to",
+              "pos": "inf",
+              "role": "不定式符号",
+              "group": "cl"
+            },
+            {
+              "text": "learn",
+              "pos": "verb",
+              "role": "动词",
+              "group": "cl",
+              "nonfinite": true
+            }
+          ],
+          "distractors": [
+            {
+              "text": "which",
+              "pos": "pronoun",
+              "role": "关系词",
+              "group": "cl"
+            }
+          ],
+          "explain": "强调宾语 English。连接词用 that。从句里的 to learn 是不定式，照样用原形。",
+          "example": "It is English that I want to learn. / I want to learn English.",
+          "win": "强调哪个成分，就把它夹进公式里。"
+        }
+      ]
+    },
+    {
+      "id": "5-8",
+      "topic": "高级 · Boss",
+      "emoji": "👑",
+      "boss": true,
+      "goal": "非谓语、虚拟、倒装、强调混着来 —— 限时挑战，最高难度",
+      "rounds": [
+        {
+          "id": "5-8-r1",
+          "cn": "她想成为歌手。",
+          "tip": "不定式",
+          "timeLimit": 45,
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "inf",
+              "label": "不定式短语（作宾语）",
+              "parent": "vp"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "She",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "wants",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "to",
+              "pos": "inf",
+              "role": "不定式符号",
+              "group": "inf"
+            },
+            {
+              "text": "become",
+              "pos": "verb",
+              "role": "动词",
+              "group": "inf",
+              "nonfinite": true
+            },
+            {
+              "text": "a",
+              "pos": "article",
+              "role": "限定词",
+              "group": "inf"
+            },
+            {
+              "text": "singer",
+              "pos": "noun",
+              "role": "表语",
+              "group": "inf"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "becomes",
+              "pos": "verb",
+              "role": "动词",
+              "group": "inf"
+            }
+          ],
+          "explain": "主句动词 wants 跟着主语 She 变三单；不定式里的 become 保持原形。",
+          "example": "She wants to become a singer.",
+          "win": "变形停在主句，不定式不动。"
+        },
+        {
+          "id": "5-8-r2",
+          "cn": "阅读帮我放松。",
+          "tip": "动名词作主语",
+          "timeLimit": 40,
+          "groups": [
+            {
+              "id": "ger",
+              "label": "动名词作主语",
+              "clause": true
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "np2",
+              "label": "宾语 + 宾补"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "Reading",
+              "pos": "verb",
+              "role": "动名词",
+              "group": "ger",
+              "nonfinite": true
+            },
+            {
+              "text": "helps",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "me",
+              "pos": "pronoun",
+              "role": "宾语",
+              "group": "np2"
+            },
+            {
+              "text": "relax",
+              "pos": "verb",
+              "role": "宾补",
+              "group": "np2",
+              "nonfinite": true
+            }
+          ],
+          "distractors": [
+            {
+              "text": "Read",
+              "pos": "verb",
+              "role": "动名词",
+              "group": "ger"
+            }
+          ],
+          "explain": "动名词 Reading 当主语，算单数，动词用 helps。relax 是宾语补足语，说明 me 会怎么样。",
+          "example": "Reading helps me relax. / Reading is helpful.",
+          "win": "动名词作主语，动词用单数。"
+        },
+        {
+          "id": "5-8-r3",
+          "cn": "站在那里的那个人是我爸爸。",
+          "tip": "现在分词短语作定语",
+          "timeLimit": 45,
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "part",
+              "label": "现在分词短语（定语）",
+              "clause": true,
+              "parent": "np1"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "np2",
+              "label": "表语 NP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "The",
+              "pos": "article",
+              "role": "限定词",
+              "group": "np1"
+            },
+            {
+              "text": "man",
+              "pos": "noun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "standing",
+              "pos": "verb",
+              "role": "现在分词",
+              "group": "part",
+              "nonfinite": true
+            },
+            {
+              "text": "there",
+              "pos": "adv",
+              "role": "状语",
+              "group": "part"
+            },
+            {
+              "text": "is",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "my",
+              "pos": "pronoun",
+              "role": "限定词",
+              "group": "np2"
+            },
+            {
+              "text": "father",
+              "pos": "noun",
+              "role": "表语",
+              "group": "np2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "stand",
+              "pos": "verb",
+              "role": "现在分词",
+              "group": "part"
+            }
+          ],
+          "explain": "现在分词短语放在名词后面修饰它，等于省略了 who is。主句骨架是 The man is my father。",
+          "example": "The man standing there is my father. / The man who is standing there is my father.",
+          "win": "分词短语插在名词后面，主句骨架不能丢。"
+        },
+        {
+          "id": "5-8-r4",
+          "cn": "如果我是你，我会更努力学习。",
+          "tip": "虚拟语气",
+          "timeLimit": 50,
+          "groups": [
+            {
+              "id": "main",
+              "label": "主句"
+            },
+            {
+              "id": "sub",
+              "label": "虚拟条件从句",
+              "clause": true
+            }
+          ],
+          "blocks": [
+            {
+              "text": "I",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "main"
+            },
+            {
+              "text": "would",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "main"
+            },
+            {
+              "text": "study",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "main"
+            },
+            {
+              "text": "harder",
+              "pos": "adv",
+              "role": "状语",
+              "group": "main"
+            },
+            {
+              "text": "if",
+              "pos": "conj",
+              "role": "连接词",
+              "group": "sub"
+            },
+            {
+              "text": "I",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "sub"
+            },
+            {
+              "text": "were",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "sub"
+            },
+            {
+              "text": "you",
+              "pos": "pronoun",
+              "role": "表语",
+              "group": "sub"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "was",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "sub"
+            }
+          ],
+          "explain": "虚拟语气：从句 be 动词用 were，主句用 would + 原形。harder 是 hard 的比较级，修饰 study。",
+          "example": "I would study harder if I were you.",
+          "win": "were + would 是虚拟语气的标志。"
+        },
+        {
+          "id": "5-8-r5",
+          "cn": "我从没见过这么美的城市。",
+          "tip": "倒装",
+          "timeLimit": 50,
+          "groups": [
+            {
+              "id": "q",
+              "label": "否定词（提前）"
+            },
+            {
+              "id": "vp",
+              "label": "助动词"
+            },
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp2",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "np2",
+              "label": "宾语 NP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "Never",
+              "pos": "adv",
+              "role": "否定词",
+              "group": "q"
+            },
+            {
+              "text": "have",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            },
+            {
+              "text": "I",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "seen",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp2"
+            },
+            {
+              "text": "such",
+              "pos": "pronoun",
+              "role": "限定词",
+              "group": "np2"
+            },
+            {
+              "text": "a",
+              "pos": "article",
+              "role": "限定词",
+              "group": "np2"
+            },
+            {
+              "text": "beautiful",
+              "pos": "adj",
+              "role": "定语",
+              "group": "np2"
+            },
+            {
+              "text": "city",
+              "pos": "noun",
+              "role": "宾语",
+              "group": "np2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "saw",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp2"
+            }
+          ],
+          "explain": "否定词 Never 提前，助动词 have 和主语 I 交换位置。seen 是过去分词，和 have 一起构成现在完成时。",
+          "example": "Never have I seen such a beautiful city. / I have never seen such a beautiful city.",
+          "win": "倒装 + 现在完成，两件事一起。"
+        },
+        {
+          "id": "5-8-r6",
+          "cn": "是我妈妈教会我的。",
+          "tip": "强调句",
+          "timeLimit": 45,
+          "groups": [
+            {
+              "id": "np1",
+              "label": "It（形式主语）"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "np2",
+              "label": "被强调的部分"
+            },
+            {
+              "id": "cl",
+              "label": "句子的其余部分",
+              "clause": true,
+              "parent": "np2"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "It",
+              "pos": "pronoun",
+              "role": "形式主语",
+              "group": "np1"
+            },
+            {
+              "text": "was",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "my",
+              "pos": "pronoun",
+              "role": "限定词",
+              "group": "np2"
+            },
+            {
+              "text": "mother",
+              "pos": "noun",
+              "role": "被强调部分",
+              "group": "np2"
+            },
+            {
+              "text": "that",
+              "pos": "pronoun",
+              "role": "关系词",
+              "group": "cl"
+            },
+            {
+              "text": "taught",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "cl"
+            },
+            {
+              "text": "me",
+              "pos": "pronoun",
+              "role": "宾语",
+              "group": "cl"
+            },
+            {
+              "text": "this",
+              "pos": "pronoun",
+              "role": "宾语",
+              "group": "cl"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "teaches",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "cl"
+            }
+          ],
+          "explain": "强调句：It was + 被强调的部分 + that + 其余部分。因为整句是过去的事，所以用 was 和 taught。",
+          "example": "It was my mother that taught me this. / My mother taught me this.",
+          "win": "强调句的时态跟着原句走。"
+        }
+      ]
+    }
+  ]
+}

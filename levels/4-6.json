@@ -1,0 +1,353 @@
+{
+  "id": "4-6",
+  "topic": "时间状语从句",
+  "emoji": "⏰",
+  "goal": "when / before / after / until：主句和从句的时态要一致",
+  "rounds": [
+    {
+      "id": "4-6-r1",
+      "cn": "他打电话来的时候我正在看书。",
+      "tip": "主句进行时 + 从句一般过去时",
+      "groups": [
+        {
+          "id": "main",
+          "label": "主句"
+        },
+        {
+          "id": "sub",
+          "label": "时间状语从句",
+          "clause": true
+        }
+      ],
+      "blocks": [
+        {
+          "text": "I",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "main"
+        },
+        {
+          "text": "was",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "main"
+        },
+        {
+          "text": "reading",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "main"
+        },
+        {
+          "text": "when",
+          "pos": "conj",
+          "role": "连接词",
+          "group": "sub"
+        },
+        {
+          "text": "he",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "sub"
+        },
+        {
+          "text": "called",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "sub"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "call",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "sub"
+        }
+      ],
+      "explain": "when 引导时间状语从句。主句用过去进行时表示「正在做某件事」，从句用一般过去时表示「这时突然发生了另一件事」。",
+      "example": "I was reading when he called. / I read when I have time.",
+      "win": "正在做 + 突然发生，是经典搭配。"
+    },
+    {
+      "id": "4-6-r2",
+      "cn": "吃完晚饭后我们出去了。",
+      "tip": "after 从句里的动作先发生",
+      "groups": [
+        {
+          "id": "main",
+          "label": "主句"
+        },
+        {
+          "id": "sub",
+          "label": "时间状语从句",
+          "clause": true
+        }
+      ],
+      "blocks": [
+        {
+          "text": "We",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "main"
+        },
+        {
+          "text": "went",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "main"
+        },
+        {
+          "text": "out",
+          "pos": "adv",
+          "role": "状语",
+          "group": "main"
+        },
+        {
+          "text": "after",
+          "pos": "conj",
+          "role": "连接词",
+          "group": "sub"
+        },
+        {
+          "text": "we",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "sub"
+        },
+        {
+          "text": "finished",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "sub"
+        },
+        {
+          "text": "dinner",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "sub"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "finish",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "sub"
+        }
+      ],
+      "explain": "after 引导的从句表示「在……之后」。主句和从句都用过去式，这叫时态一致。",
+      "example": "We went out after we finished dinner. / After dinner we went out.",
+      "win": "after 从句里的动作先发生。"
+    },
+    {
+      "id": "4-6-r3",
+      "cn": "我们一直等到雨停。",
+      "tip": "until = 直到……为止",
+      "groups": [
+        {
+          "id": "main",
+          "label": "主句"
+        },
+        {
+          "id": "sub",
+          "label": "时间状语从句",
+          "clause": true
+        }
+      ],
+      "blocks": [
+        {
+          "text": "We",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "main"
+        },
+        {
+          "text": "waited",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "main"
+        },
+        {
+          "text": "until",
+          "pos": "conj",
+          "role": "连接词",
+          "group": "sub"
+        },
+        {
+          "text": "the",
+          "pos": "article",
+          "role": "限定词",
+          "group": "sub"
+        },
+        {
+          "text": "rain",
+          "pos": "noun",
+          "role": "主语",
+          "group": "sub"
+        },
+        {
+          "text": "stopped",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "sub"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "stops",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "sub"
+        }
+      ],
+      "explain": "until 表示「直到……为止」。主句是过去式 waited，从句也要用过去式 stopped。",
+      "example": "We waited until the rain stopped. / We will wait until the rain stops.",
+      "win": "until 前后时态要一致。"
+    },
+    {
+      "id": "4-6-r4",
+      "cn": "他回来之前我们就走了。",
+      "tip": "改错：主句过去，从句也得过去",
+      "groups": [
+        {
+          "id": "main",
+          "label": "主句"
+        },
+        {
+          "id": "sub",
+          "label": "时间状语从句",
+          "clause": true
+        }
+      ],
+      "blocks": [
+        {
+          "text": "We",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "main"
+        },
+        {
+          "text": "left",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "main"
+        },
+        {
+          "text": "before",
+          "pos": "conj",
+          "role": "连接词",
+          "group": "sub"
+        },
+        {
+          "text": "he",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "sub"
+        },
+        {
+          "text": "came",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "sub"
+        },
+        {
+          "text": "back",
+          "pos": "adv",
+          "role": "状语",
+          "group": "sub"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "leave",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "main"
+        },
+        {
+          "text": "comes",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "sub"
+        }
+      ],
+      "prefill": [
+        "We",
+        "leave",
+        "before",
+        "he",
+        "comes",
+        "back"
+      ],
+      "explain": "主句 left 是过去式，从句也要用过去时 came，两个动作都发生在过去。leave 的过去式是不规则的 left。",
+      "example": "We left before he came back. / We will leave before he comes back.",
+      "win": "一句话里的时态要一致。"
+    },
+    {
+      "id": "4-6-r5",
+      "cn": "她走之前给我打了电话。",
+      "tip": "before 从句和主句都用过去时",
+      "groups": [
+        {
+          "id": "main",
+          "label": "主句"
+        },
+        {
+          "id": "sub",
+          "label": "时间状语从句",
+          "clause": true
+        }
+      ],
+      "blocks": [
+        {
+          "text": "She",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "main"
+        },
+        {
+          "text": "called",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "main"
+        },
+        {
+          "text": "me",
+          "pos": "pronoun",
+          "role": "宾语",
+          "group": "main"
+        },
+        {
+          "text": "before",
+          "pos": "conj",
+          "role": "连接词",
+          "group": "sub"
+        },
+        {
+          "text": "she",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "sub"
+        },
+        {
+          "text": "left",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "sub"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "leaves",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "sub"
+        }
+      ],
+      "explain": "before 引导时间状语从句。leave 的过去式是 left，主句从句都用过去时。",
+      "example": "She called me before she left. / She will call me before she leaves.",
+      "win": "before 从句用过去时，主句也用过去时。"
+    }
+  ]
+}

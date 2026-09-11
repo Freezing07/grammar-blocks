@@ -1,0 +1,122 @@
+{
+  "id": "7-3",
+  "topic": "因果链",
+  "emoji": "⛓️",
+  "goal": "起因 → 结果 → 接着 → 最后：让每一句都能接上上一句",
+  "rounds": [
+    {
+      "id": "7-3-r1",
+      "mode": "order",
+      "cn": "把这几句话排成一段通顺的话",
+      "tip": "As a result 前面一定是原因",
+      "blocks": [
+        {
+          "text": "The weather was terrible last weekend.",
+          "role": "起因"
+        },
+        {
+          "text": "As a result, all the flights were canceled.",
+          "role": "结果"
+        },
+        {
+          "text": "We had to stay at the airport for a whole night.",
+          "role": "接着"
+        },
+        {
+          "text": "In the end, we took a train home.",
+          "role": "最后"
+        }
+      ],
+      "links": [
+        "导致",
+        "于是",
+        "最终"
+      ],
+      "distractors": [
+        {
+          "text": "The airport was very clean and modern.",
+          "role": "多余的一句"
+        }
+      ],
+      "explain": "As a result 的信号很硬：它前面必须是原因（天气糟糕），后面才是结果（航班取消）。后面两句顺着「结果」往下推：先滞留，最后改坐火车。机场干净那句是无关细节。",
+      "example": "起因 → As a result… → 于是… → In the end…",
+      "win": "As a result 前面永远跟着原因。"
+    },
+    {
+      "id": "7-3-r2",
+      "mode": "order",
+      "cn": "把这几句话排成一段通顺的话",
+      "tip": "考砸之后，人的反应、再之后做了什么",
+      "blocks": [
+        {
+          "text": "Tom did not study for the exam.",
+          "role": "起因"
+        },
+        {
+          "text": "Therefore, he failed it.",
+          "role": "结果"
+        },
+        {
+          "text": "His parents were very disappointed.",
+          "role": "反应"
+        },
+        {
+          "text": "He promised to work harder next time.",
+          "role": "后续"
+        }
+      ],
+      "links": [
+        "因此",
+        "家人反应",
+        "后续"
+      ],
+      "distractors": [
+        {
+          "text": "The exam was held in a large hall.",
+          "role": "多余的一句"
+        }
+      ],
+      "explain": "Therefore 说明第二句是第一句的结果；第三句是结果带来的反应；第四句是反应之后的行动。这样一环扣一环。考场大不大，对这条因果链没有任何影响。",
+      "example": "没有复习 → Therefore 挂了 → 父母失望 → 他下决心",
+      "win": "每一句都要能接上上一句。"
+    },
+    {
+      "id": "7-3-r3",
+      "mode": "order",
+      "cn": "把这几句话排成一段通顺的话",
+      "tip": "两句 As a result / Finally 把链条串起来",
+      "blocks": [
+        {
+          "text": "The city built a new subway line.",
+          "role": "起因"
+        },
+        {
+          "text": "Therefore, many people gave up driving.",
+          "role": "结果一"
+        },
+        {
+          "text": "As a result, the air became much cleaner.",
+          "role": "结果二"
+        },
+        {
+          "text": "Finally, the city won an environmental prize.",
+          "role": "最终"
+        }
+      ],
+      "links": [
+        "因此",
+        "进一步导致",
+        "最终"
+      ],
+      "distractors": [
+        {
+          "text": "The new line has twenty stations.",
+          "role": "多余的一句"
+        }
+      ],
+      "explain": "这一段的因果是层层推进的：修地铁 → 少开车 → 空气变好 → 得奖。两个连接词 Therefore 和 As a result 交替使用，避免重复。有几站是细节，插进来会把链条打断。",
+      "example": "修地铁 → Therefore → As a result → Finally",
+      "win": "因果可以一层一层往下推。"
+    }
+  ]
+}

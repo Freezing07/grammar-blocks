@@ -1,0 +1,313 @@
+{
+  "id": "1-6",
+  "topic": "冠词",
+  "emoji": "🔤",
+  "goal": "分清 a / an / the —— 判断标准是发音，不是字母",
+  "rounds": [
+    {
+      "id": "1-6-r1",
+      "cn": "我有一只猫。",
+      "tip": "a 还是 an，看紧跟后面那个词的第一个音",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "宾语 NP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "I",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "have",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "a",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np2"
+        },
+        {
+          "text": "cat",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "np2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "an",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np2"
+        }
+      ],
+      "explain": "cat 开头的音是 /k/，是个辅音，所以用 a。an 只给元音音素开头的词用（an apple）。",
+      "example": "a cat / an apple / a university（u 读 /juː/，还是用 a）",
+      "win": "a 还是 an，看的是发音。"
+    },
+    {
+      "id": "1-6-r2",
+      "cn": "她是一名画家。",
+      "tip": "元音音素前面用 an",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "表语 NP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "She",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "an",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np2"
+        },
+        {
+          "text": "artist",
+          "pos": "noun",
+          "role": "表语",
+          "group": "np2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "a",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np2"
+        }
+      ],
+      "explain": "artist 开头的音是元音 /ɑː/，所以用 an。记住：看的是读音，不是字母 a。",
+      "example": "an artist / a teacher",
+      "win": "元音音素前面用 an。"
+    },
+    {
+      "id": "1-6-r3",
+      "cn": "太阳很亮。",
+      "tip": "特指、独一无二的东西用 the",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "表语 NP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "The",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np1"
+        },
+        {
+          "text": "sun",
+          "pos": "noun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "bright",
+          "pos": "adj",
+          "role": "表语",
+          "group": "np2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "A",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np1"
+        },
+        {
+          "text": "An",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np1"
+        }
+      ],
+      "explain": "天上只有一个太阳，说话双方都知道指的是哪一个 —— 这种「独一无二、特指」的东西用 the。第一次提到某个不确定的东西才用 a/an。",
+      "example": "The sun is bright. / I see a bird. The bird is singing.",
+      "win": "特指、独一无二 → the。"
+    },
+    {
+      "id": "1-6-r4",
+      "cn": "这是一栋老房子。",
+      "tip": "a/an 只看紧跟其后的那个词",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "表语 NP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "This",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "an",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np2"
+        },
+        {
+          "text": "old",
+          "pos": "adj",
+          "role": "定语",
+          "group": "np2"
+        },
+        {
+          "text": "house",
+          "pos": "noun",
+          "role": "表语",
+          "group": "np2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "a",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np2"
+        }
+      ],
+      "explain": "决定用 a 还是 an 的，是紧跟在冠词后面的那个词。这里紧跟的是 old，以元音开头，所以用 an —— 跟后面的 house 没关系。",
+      "example": "an old house / a big old house",
+      "win": "a/an 只看紧跟其后的词。"
+    },
+    {
+      "id": "1-6-r5",
+      "cn": "他是个诚实的人。",
+      "tip": "改错：h 不发音，就读元音",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "表语 NP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "He",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "an",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np2"
+        },
+        {
+          "text": "honest",
+          "pos": "adj",
+          "role": "定语",
+          "group": "np2"
+        },
+        {
+          "text": "man",
+          "pos": "noun",
+          "role": "表语",
+          "group": "np2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "a",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np2"
+        }
+      ],
+      "prefill": [
+        "He",
+        "is",
+        "a",
+        "honest",
+        "man"
+      ],
+      "explain": "honest 的 h 不发音，读起来是 /ˈɒnɪst/，开头是元音，所以用 an。判断标准永远是「读出来的第一个音」。",
+      "example": "an honest man / an hour / a hotel（h 发音，用 a）",
+      "win": "h 不发音就用 an。"
+    }
+  ]
+}

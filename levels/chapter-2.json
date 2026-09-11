@@ -1,0 +1,2703 @@
+{
+  "id": 2,
+  "name": "第二章 · 句子小镇",
+  "emoji": "🏘️",
+  "subtitle": "简单句 + 主谓一致",
+  "levels": [
+    {
+      "id": "2-1",
+      "topic": "主谓",
+      "emoji": "🌤️",
+      "goal": "最小的一句话：一个主语 + 一个动词就能成句",
+      "rounds": [
+        {
+          "id": "2-1-r1",
+          "cn": "太阳升起。",
+          "tip": "谁 + 干什么，就够了",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "The",
+              "pos": "article",
+              "role": "限定词",
+              "group": "np1"
+            },
+            {
+              "text": "sun",
+              "pos": "noun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "rises",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "rise",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            }
+          ],
+          "explain": "主语 The sun 是第三人称单数，动词要加 s：rises。rise 是给复数主语用的（The stars rise）。",
+          "example": "The sun rises. / The stars rise.",
+          "win": "一个主语加一个动词，就是最小的一句话。"
+        },
+        {
+          "id": "2-1-r2",
+          "cn": "我父母在一家银行工作。",
+          "tip": "复数主语配动词原形",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "pp",
+              "label": "介词短语 PP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "My",
+              "pos": "pronoun",
+              "role": "限定词",
+              "group": "np1"
+            },
+            {
+              "text": "parents",
+              "pos": "noun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "work",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "in",
+              "pos": "prep",
+              "role": "介词",
+              "group": "pp"
+            },
+            {
+              "text": "a",
+              "pos": "article",
+              "role": "限定词",
+              "group": "pp"
+            },
+            {
+              "text": "bank",
+              "pos": "noun",
+              "role": "介词宾语",
+              "group": "pp"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "works",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            }
+          ],
+          "explain": "主语 My parents 是复数（两个人），动词用原形 work，不能加 s。",
+          "example": "My parents work in a bank. / My father works in a bank.",
+          "win": "复数主语配动词原形。"
+        },
+        {
+          "id": "2-1-r3",
+          "cn": "火车到了。",
+          "tip": "有些动词后面不需要宾语",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "The",
+              "pos": "article",
+              "role": "限定词",
+              "group": "np1"
+            },
+            {
+              "text": "train",
+              "pos": "noun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "arrives",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "arrive",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "trains",
+              "pos": "noun",
+              "role": "主语",
+              "group": "np1"
+            }
+          ],
+          "explain": "主语 The train 是单数，动词加 s。arrive 是「不及物动词」，后面不需要宾语，句子到这里已经完整了。",
+          "example": "The train arrives. / The trains arrive.",
+          "win": "不及物动词后面不需要宾语。"
+        },
+        {
+          "id": "2-1-r4",
+          "cn": "孩子们在玩。",
+          "tip": "改错：children 不带 s，但它是复数",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "The",
+              "pos": "article",
+              "role": "限定词",
+              "group": "np1"
+            },
+            {
+              "text": "children",
+              "pos": "noun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "play",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "plays",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            }
+          ],
+          "prefill": [
+            "The",
+            "children",
+            "plays"
+          ],
+          "explain": "children 是 child 的复数，虽然它不带 s，但它是复数，动词要用原形 play。判断单复数不能只看结尾有没有 s。",
+          "example": "The children play. / The child plays.",
+          "win": "看主语是不是复数，别只看有没有 s。"
+        },
+        {
+          "id": "2-1-r5",
+          "cn": "那位老人走得很慢。",
+          "tip": "在骨架上加形容词和副词",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "The",
+              "pos": "article",
+              "role": "限定词",
+              "group": "np1"
+            },
+            {
+              "text": "old",
+              "pos": "adj",
+              "role": "定语",
+              "group": "np1"
+            },
+            {
+              "text": "man",
+              "pos": "noun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "walks",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "slowly",
+              "pos": "adv",
+              "role": "状语",
+              "group": "vp"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "walk",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            }
+          ],
+          "explain": "主语是 The old man（单数），动词用 walks；slowly 是副词，修饰动词 walks。形容词 old 放在名词 man 前面。",
+          "example": "The old man walks slowly. / The old men walk slowly.",
+          "win": "主谓结构加上形容词和副词，句子就丰满了。"
+        }
+      ]
+    },
+    {
+      "id": "2-2",
+      "topic": "主谓宾",
+      "emoji": "🎯",
+      "goal": "动词后面得有个东西接住它，句子意思才完整",
+      "rounds": [
+        {
+          "id": "2-2-r1",
+          "cn": "她写故事。",
+          "tip": "「写」后面得说清楚写的是什么",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "np2",
+              "label": "宾语 NP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "She",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "writes",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "stories",
+              "pos": "noun",
+              "role": "宾语",
+              "group": "np2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "story",
+              "pos": "noun",
+              "role": "宾语",
+              "group": "np2"
+            },
+            {
+              "text": "write",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            }
+          ],
+          "explain": "write 后面必须说清楚「写什么」，这个被写的东西就是宾语。泛指一类东西时，名词用复数 stories。",
+          "example": "She writes stories. / She writes a story.",
+          "win": "动词后面要有宾语，句子才完整。"
+        },
+        {
+          "id": "2-2-r2",
+          "cn": "我妈妈做晚饭。",
+          "tip": "主语单数 → 动词加 s；dinner 不可数",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "np2",
+              "label": "宾语 NP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "My",
+              "pos": "pronoun",
+              "role": "限定词",
+              "group": "np1"
+            },
+            {
+              "text": "mother",
+              "pos": "noun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "makes",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "dinner",
+              "pos": "noun",
+              "role": "宾语",
+              "group": "np2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "make",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            }
+          ],
+          "explain": "主语 My mother 是单数 → makes；dinner 是「一餐饭」，属于不可数名词，不加 s。",
+          "example": "My mother makes dinner. / My parents make dinner.",
+          "win": "三单加 s，同时记住宾语是不可数名词。"
+        },
+        {
+          "id": "2-2-r3",
+          "cn": "我们需要更多时间。",
+          "tip": "宾语也能带形容词",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "np2",
+              "label": "宾语 NP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "We",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "need",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "more",
+              "pos": "adj",
+              "role": "定语",
+              "group": "np2"
+            },
+            {
+              "text": "time",
+              "pos": "noun",
+              "role": "宾语",
+              "group": "np2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "times",
+              "pos": "noun",
+              "role": "宾语",
+              "group": "np2"
+            }
+          ],
+          "explain": "need 后面跟「需要的东西」。time 表示「时间」时不可数，没有 times 这种写法。形容词 more 放在名词前面，顺序还是「形容词 + 名词」。",
+          "example": "We need more time. / We need two hours.",
+          "win": "宾语可以带形容词，顺序还是形容词在前。"
+        },
+        {
+          "id": "2-2-r4",
+          "cn": "她打开门。",
+          "tip": "改错：主语是单数，动词得加 s",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "np2",
+              "label": "宾语 NP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "She",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "opens",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "the",
+              "pos": "article",
+              "role": "限定词",
+              "group": "np2"
+            },
+            {
+              "text": "door",
+              "pos": "noun",
+              "role": "宾语",
+              "group": "np2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "open",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            }
+          ],
+          "prefill": [
+            "She",
+            "open",
+            "the",
+            "door"
+          ],
+          "explain": "主语 She 是第三人称单数，动词要加 s：opens。",
+          "example": "She opens the door. / They open the door.",
+          "win": "主语是单数，动词就得加 s。"
+        },
+        {
+          "id": "2-2-r5",
+          "cn": "Tom 放学后打篮球。",
+          "tip": "主谓宾后面还能再加信息",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "np2",
+              "label": "宾语 NP"
+            },
+            {
+              "id": "pp",
+              "label": "介词短语 PP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "Tom",
+              "pos": "noun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "plays",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "basketball",
+              "pos": "noun",
+              "role": "宾语",
+              "group": "np2"
+            },
+            {
+              "text": "after",
+              "pos": "prep",
+              "role": "介词",
+              "group": "pp"
+            },
+            {
+              "text": "school",
+              "pos": "noun",
+              "role": "介词宾语",
+              "group": "pp"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "play",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            }
+          ],
+          "explain": "主语 Tom 是单数 → plays；basketball 是宾语；after school 是介词短语，补充说明时间。",
+          "example": "Tom plays basketball after school. / Tom plays basketball every day.",
+          "win": "主谓宾是骨架，后面还能挂上时间地点。"
+        }
+      ]
+    },
+    {
+      "id": "2-3",
+      "topic": "主系表",
+      "emoji": "🪞",
+      "goal": "be 动词后面不接宾语，接的是说明主语的「表语」",
+      "rounds": [
+        {
+          "id": "2-3-r1",
+          "cn": "她是一名医生。",
+          "tip": "be 动词后面说明主语「是什么」",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "np2",
+              "label": "表语 NP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "She",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "is",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "a",
+              "pos": "article",
+              "role": "限定词",
+              "group": "np2"
+            },
+            {
+              "text": "doctor",
+              "pos": "noun",
+              "role": "表语",
+              "group": "np2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "doctors",
+              "pos": "noun",
+              "role": "表语",
+              "group": "np2"
+            }
+          ],
+          "explain": "be 动词后面不接宾语，接的是「表语」—— 说明主语的身份或状态。这里 a doctor 说明她是谁。主语单数，表语也用单数。",
+          "example": "She is a doctor. / They are doctors.",
+          "win": "be 动词后面是表语，说明主语是什么。"
+        },
+        {
+          "id": "2-3-r2",
+          "cn": "天气很冷。",
+          "tip": "表语也可以是形容词",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "np2",
+              "label": "表语 NP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "The",
+              "pos": "article",
+              "role": "限定词",
+              "group": "np1"
+            },
+            {
+              "text": "weather",
+              "pos": "noun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "is",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "cold",
+              "pos": "adj",
+              "role": "表语",
+              "group": "np2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "coldly",
+              "pos": "adv",
+              "role": "表语",
+              "group": "np2"
+            }
+          ],
+          "explain": "表语不只可以是名词，也可以是形容词，说明主语「怎么样」。coldly 是副词，不能跟在 is 后面。",
+          "example": "The weather is cold. / It is a cold day.",
+          "win": "表语说明主语是什么、怎么样。"
+        },
+        {
+          "id": "2-3-r3",
+          "cn": "我来自加拿大。",
+          "tip": "I 只能配 am",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "pp",
+              "label": "表语 PP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "I",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "am",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "from",
+              "pos": "prep",
+              "role": "介词",
+              "group": "pp"
+            },
+            {
+              "text": "Canada",
+              "pos": "noun",
+              "role": "介词宾语",
+              "group": "pp"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "is",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "are",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            }
+          ],
+          "explain": "主语 I 只能配 am —— am 是专属 I 的，没有例外。表语这里是一个介词短语 from Canada。",
+          "example": "I am from Canada. / He is from Canada.",
+          "win": "I 配 am，这条没有例外。"
+        },
+        {
+          "id": "2-3-r4",
+          "cn": "他们是我的同学。",
+          "tip": "主语复数，表语也跟着复数",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "np2",
+              "label": "表语 NP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "They",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "are",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "my",
+              "pos": "pronoun",
+              "role": "限定词",
+              "group": "np2"
+            },
+            {
+              "text": "classmates",
+              "pos": "noun",
+              "role": "表语",
+              "group": "np2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "is",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "classmate",
+              "pos": "noun",
+              "role": "表语",
+              "group": "np2"
+            }
+          ],
+          "explain": "主语 They 是复数 → are；表语说的是「好几个同学」，所以用复数 classmates。",
+          "example": "They are my classmates. / He is my classmate.",
+          "win": "主语复数，表语也跟着复数。"
+        },
+        {
+          "id": "2-3-r5",
+          "cn": "我姐姐是一名护士。",
+          "tip": "改错：be 动词和主语要配上",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "np2",
+              "label": "表语 NP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "My",
+              "pos": "pronoun",
+              "role": "限定词",
+              "group": "np1"
+            },
+            {
+              "text": "sister",
+              "pos": "noun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "is",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "a",
+              "pos": "article",
+              "role": "限定词",
+              "group": "np2"
+            },
+            {
+              "text": "nurse",
+              "pos": "noun",
+              "role": "表语",
+              "group": "np2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "are",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "nurses",
+              "pos": "noun",
+              "role": "表语",
+              "group": "np2"
+            }
+          ],
+          "prefill": [
+            "My",
+            "sister",
+            "are",
+            "a",
+            "nurse"
+          ],
+          "explain": "主语 My sister 是「一个人」，属于单数，be 动词要用 is；表语也保持单数 a nurse。",
+          "example": "My sister is a nurse. / My sisters are nurses.",
+          "win": "主系表里，主语和表语要一起看单复数。"
+        }
+      ]
+    },
+    {
+      "id": "2-4",
+      "topic": "双宾",
+      "emoji": "🎁",
+      "goal": "有些动词后面跟两样东西：先给「人」，再给「物」",
+      "rounds": [
+        {
+          "id": "2-4-r1",
+          "cn": "老师给我们讲了一个故事。",
+          "tip": "先人后物",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "np2",
+              "label": "间接宾语（人）"
+            },
+            {
+              "id": "np3",
+              "label": "直接宾语（物）"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "The",
+              "pos": "article",
+              "role": "限定词",
+              "group": "np1"
+            },
+            {
+              "text": "teacher",
+              "pos": "noun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "tells",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "us",
+              "pos": "pronoun",
+              "role": "间接宾语",
+              "group": "np2"
+            },
+            {
+              "text": "a",
+              "pos": "article",
+              "role": "限定词",
+              "group": "np3"
+            },
+            {
+              "text": "story",
+              "pos": "noun",
+              "role": "直接宾语",
+              "group": "np3"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "we",
+              "pos": "pronoun",
+              "role": "间接宾语",
+              "group": "np2"
+            }
+          ],
+          "explain": "tell 后面跟两样东西：先说「告诉谁」（us），再说「告诉什么」（a story）。顺序是「先人后物」，而且「人」的位置要用宾格 us。",
+          "example": "The teacher tells us a story. / He tells me the truth.",
+          "win": "双宾语顺序是先人后物。"
+        },
+        {
+          "id": "2-4-r2",
+          "cn": "她给我看她的照片。",
+          "tip": "还是先人后物",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "np2",
+              "label": "间接宾语（人）"
+            },
+            {
+              "id": "np3",
+              "label": "直接宾语（物）"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "She",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "shows",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "me",
+              "pos": "pronoun",
+              "role": "间接宾语",
+              "group": "np2"
+            },
+            {
+              "text": "her",
+              "pos": "pronoun",
+              "role": "限定词",
+              "group": "np3"
+            },
+            {
+              "text": "photos",
+              "pos": "noun",
+              "role": "直接宾语",
+              "group": "np3"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "my",
+              "pos": "pronoun",
+              "role": "限定词",
+              "group": "np3"
+            },
+            {
+              "text": "photo",
+              "pos": "noun",
+              "role": "直接宾语",
+              "group": "np3"
+            }
+          ],
+          "explain": "先人后物：me 在前，her photos 在后。photos 说的是好几张照片，用复数；her 是物主代词，后面必须跟名词。",
+          "example": "She shows me her photos. / She shows her photos to me.",
+          "win": "人 + 物，顺序不能反。"
+        },
+        {
+          "id": "2-4-r3",
+          "cn": "他给儿子买了一辆自行车。",
+          "tip": "双宾动词常见的有 give / send / tell / show / buy",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "np2",
+              "label": "间接宾语（人）"
+            },
+            {
+              "id": "np3",
+              "label": "直接宾语（物）"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "He",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "buys",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "his",
+              "pos": "pronoun",
+              "role": "限定词",
+              "group": "np2"
+            },
+            {
+              "text": "son",
+              "pos": "noun",
+              "role": "间接宾语",
+              "group": "np2"
+            },
+            {
+              "text": "a",
+              "pos": "article",
+              "role": "限定词",
+              "group": "np3"
+            },
+            {
+              "text": "bike",
+              "pos": "noun",
+              "role": "直接宾语",
+              "group": "np3"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "buy",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            }
+          ],
+          "explain": "主语 He 是三单，buy 要加 s 变 buys。his son 是「给谁」，a bike 是「给什么」。",
+          "example": "He buys his son a bike. / He buys a bike for his son.",
+          "win": "give、send、tell、show、buy 都能带双宾语。"
+        },
+        {
+          "id": "2-4-r4",
+          "cn": "她给我一支笔。",
+          "tip": "改错：顺序反了，而且「人」用错了格",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "np2",
+              "label": "间接宾语（人）"
+            },
+            {
+              "id": "np3",
+              "label": "直接宾语（物）"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "She",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "gives",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "me",
+              "pos": "pronoun",
+              "role": "间接宾语",
+              "group": "np2"
+            },
+            {
+              "text": "a",
+              "pos": "article",
+              "role": "限定词",
+              "group": "np3"
+            },
+            {
+              "text": "pen",
+              "pos": "noun",
+              "role": "直接宾语",
+              "group": "np3"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "I",
+              "pos": "pronoun",
+              "role": "间接宾语",
+              "group": "np2"
+            }
+          ],
+          "prefill": [
+            "She",
+            "gives",
+            "a",
+            "pen",
+            "me"
+          ],
+          "explain": "双宾语的顺序是先人后物，所以是 gives me a pen，不是 gives a pen me。另外「人」的位置要用宾格 me，不能用主格 I。",
+          "example": "She gives me a pen. / She gives it to me.",
+          "win": "先人后物，人中用宾格。"
+        },
+        {
+          "id": "2-4-r5",
+          "cn": "公司给我们提供免费午餐。",
+          "tip": "双宾语里的「人」永远用宾格",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "np2",
+              "label": "间接宾语（人）"
+            },
+            {
+              "id": "np3",
+              "label": "直接宾语（物）"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "The",
+              "pos": "article",
+              "role": "限定词",
+              "group": "np1"
+            },
+            {
+              "text": "company",
+              "pos": "noun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "offers",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "us",
+              "pos": "pronoun",
+              "role": "间接宾语",
+              "group": "np2"
+            },
+            {
+              "text": "free",
+              "pos": "adj",
+              "role": "定语",
+              "group": "np3"
+            },
+            {
+              "text": "lunch",
+              "pos": "noun",
+              "role": "直接宾语",
+              "group": "np3"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "our",
+              "pos": "pronoun",
+              "role": "间接宾语",
+              "group": "np2"
+            }
+          ],
+          "explain": "offer 后面也是先人后物。free 是形容词，放在名词 lunch 前面。us 是宾格；our 是物主代词，后面还得再跟一个名词才能用。",
+          "example": "The company offers us free lunch. / The company offers free lunch to us.",
+          "win": "双宾语里的「人」永远用宾格。"
+        }
+      ]
+    },
+    {
+      "id": "2-5",
+      "topic": "宾补",
+      "emoji": "🧩",
+      "goal": "宾语后面再补一句说明它 —— 少了这块，意思就不完整",
+      "rounds": [
+        {
+          "id": "2-5-r1",
+          "cn": "我们叫他 Tom。",
+          "tip": "call + 人 + 叫他什么",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "np2",
+              "label": "宾语 + 宾补"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "We",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "call",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "him",
+              "pos": "pronoun",
+              "role": "宾语",
+              "group": "np2"
+            },
+            {
+              "text": "Tom",
+              "pos": "noun",
+              "role": "宾补",
+              "group": "np2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "he",
+              "pos": "pronoun",
+              "role": "宾语",
+              "group": "np2"
+            }
+          ],
+          "explain": "call 后面先跟「谁」（him），再跟「叫他什么」（Tom）。后面这个 Tom 就是宾语补足语 —— 少了它，句子的意思就不完整了。宾语位置要用宾格 him。",
+          "example": "We call him Tom. / We call the dog Lucky.",
+          "win": "宾语后面再补一句说明它，就是宾补。"
+        },
+        {
+          "id": "2-5-r2",
+          "cn": "这个消息让我很开心。",
+          "tip": "宾补说明宾语的状态，用形容词",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "np2",
+              "label": "宾语 + 宾补"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "The",
+              "pos": "article",
+              "role": "限定词",
+              "group": "np1"
+            },
+            {
+              "text": "news",
+              "pos": "noun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "makes",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "me",
+              "pos": "pronoun",
+              "role": "宾语",
+              "group": "np2"
+            },
+            {
+              "text": "happy",
+              "pos": "adj",
+              "role": "宾补",
+              "group": "np2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "happily",
+              "pos": "adv",
+              "role": "宾补",
+              "group": "np2"
+            }
+          ],
+          "explain": "make 后面先跟「让谁」（me），再跟「怎么样」（happy）。补足语说的是 me 的状态，所以用形容词 happy，不是副词 happily。",
+          "example": "The news makes me happy. / The news makes us sad.",
+          "win": "宾补用形容词，说明宾语的状态。"
+        },
+        {
+          "id": "2-5-r3",
+          "cn": "他们保持房间干净。",
+          "tip": "keep + 宾语 + 状态",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "np2",
+              "label": "宾语 + 宾补"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "They",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "keep",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "the",
+              "pos": "article",
+              "role": "限定词",
+              "group": "np2"
+            },
+            {
+              "text": "room",
+              "pos": "noun",
+              "role": "宾语",
+              "group": "np2"
+            },
+            {
+              "text": "clean",
+              "pos": "adj",
+              "role": "宾补",
+              "group": "np2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "cleanly",
+              "pos": "adv",
+              "role": "宾补",
+              "group": "np2"
+            }
+          ],
+          "explain": "keep 后面说「让某样东西保持什么状态」，说明的是 room 的状态，用形容词 clean。",
+          "example": "They keep the room clean. / Keep your desk tidy.",
+          "win": "形容词说明宾语的状态，副词说明动作的方式。"
+        },
+        {
+          "id": "2-5-r4",
+          "cn": "我觉得这本书很无聊。",
+          "tip": "boring 形容东西，bored 形容人",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "np2",
+              "label": "宾语 + 宾补"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "I",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "find",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "the",
+              "pos": "article",
+              "role": "限定词",
+              "group": "np2"
+            },
+            {
+              "text": "book",
+              "pos": "noun",
+              "role": "宾语",
+              "group": "np2"
+            },
+            {
+              "text": "boring",
+              "pos": "adj",
+              "role": "宾补",
+              "group": "np2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "bored",
+              "pos": "adj",
+              "role": "宾补",
+              "group": "np2"
+            }
+          ],
+          "explain": "boring 是「让人无聊」，形容东西；bored 是「感到无聊」，形容人的感受。这里说的是书，所以用 boring。",
+          "example": "I find the book boring. / I am bored.",
+          "win": "-ing 形容东西，-ed 形容人的感受。"
+        },
+        {
+          "id": "2-5-r5",
+          "cn": "这音乐让我很开心。",
+          "tip": "改错：宾补用形容词还是副词",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "np2",
+              "label": "宾语 + 宾补"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "The",
+              "pos": "article",
+              "role": "限定词",
+              "group": "np1"
+            },
+            {
+              "text": "music",
+              "pos": "noun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "makes",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "me",
+              "pos": "pronoun",
+              "role": "宾语",
+              "group": "np2"
+            },
+            {
+              "text": "happy",
+              "pos": "adj",
+              "role": "宾补",
+              "group": "np2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "happily",
+              "pos": "adv",
+              "role": "宾补",
+              "group": "np2"
+            }
+          ],
+          "prefill": [
+            "The",
+            "music",
+            "makes",
+            "me",
+            "happily"
+          ],
+          "explain": "补足语说明的是 me 的状态，要用形容词 happy。happily 是副词，只能修饰动作，修饰不了「人变成什么样」。",
+          "example": "The music makes me happy. / She looks happy.",
+          "win": "宾语补足语用形容词。"
+        }
+      ]
+    },
+    {
+      "id": "2-6",
+      "topic": "主谓一致",
+      "emoji": "⚖️",
+      "goal": "动词到底加不加 s，得先找到真正的主语",
+      "rounds": [
+        {
+          "id": "2-6-r1",
+          "cn": "桌上有一本书。",
+          "tip": "there be 跟着后面那个「真正的主语」变",
+          "groups": [
+            {
+              "id": "ex",
+              "label": "引导词"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "np1",
+              "label": "真正的主语 NP"
+            },
+            {
+              "id": "pp",
+              "label": "地点 PP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "There",
+              "pos": "adv",
+              "role": "引导词",
+              "group": "ex"
+            },
+            {
+              "text": "is",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "a",
+              "pos": "article",
+              "role": "限定词",
+              "group": "np1"
+            },
+            {
+              "text": "book",
+              "pos": "noun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "on",
+              "pos": "prep",
+              "role": "介词",
+              "group": "pp"
+            },
+            {
+              "text": "the",
+              "pos": "article",
+              "role": "限定词",
+              "group": "pp"
+            },
+            {
+              "text": "desk",
+              "pos": "noun",
+              "role": "介词宾语",
+              "group": "pp"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "are",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            }
+          ],
+          "explain": "there be 句型里，be 动词不看开头的 there，而是看后面那个「真正的主语」。a book 是单数，所以用 is。",
+          "example": "There is a book on the desk. / There are two books on the desk.",
+          "win": "there be 跟着后面的名词变。"
+        },
+        {
+          "id": "2-6-r2",
+          "cn": "沙发上有两只猫。",
+          "tip": "先找到真正的主语，再决定 is 还是 are",
+          "groups": [
+            {
+              "id": "ex",
+              "label": "引导词"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "np1",
+              "label": "真正的主语 NP"
+            },
+            {
+              "id": "pp",
+              "label": "地点 PP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "There",
+              "pos": "adv",
+              "role": "引导词",
+              "group": "ex"
+            },
+            {
+              "text": "are",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "two",
+              "pos": "adj",
+              "role": "定语",
+              "group": "np1"
+            },
+            {
+              "text": "cats",
+              "pos": "noun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "on",
+              "pos": "prep",
+              "role": "介词",
+              "group": "pp"
+            },
+            {
+              "text": "the",
+              "pos": "article",
+              "role": "限定词",
+              "group": "pp"
+            },
+            {
+              "text": "sofa",
+              "pos": "noun",
+              "role": "介词宾语",
+              "group": "pp"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "is",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            }
+          ],
+          "explain": "真正的主语是 two cats（两只，复数），所以用 are。two 是形容词，放在名词 cats 前面。",
+          "example": "There are two cats on the sofa. / There is a cat on the sofa.",
+          "win": "先找真正的主语，再决定 is 还是 are。"
+        },
+        {
+          "id": "2-6-r3",
+          "cn": "每个学生都有一台电脑。",
+          "tip": "every + 单数名词 → 动词用单数",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "np2",
+              "label": "宾语 NP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "Every",
+              "pos": "adj",
+              "role": "定语",
+              "group": "np1"
+            },
+            {
+              "text": "student",
+              "pos": "noun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "has",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "a",
+              "pos": "article",
+              "role": "限定词",
+              "group": "np2"
+            },
+            {
+              "text": "computer",
+              "pos": "noun",
+              "role": "宾语",
+              "group": "np2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "have",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            }
+          ],
+          "explain": "every 后面永远跟单数名词，动词也用单数 has。虽然意思上是「所有学生都有」，但形式上算单数。",
+          "example": "Every student has a computer. / All students have computers.",
+          "win": "every + 单数名词 → 动词用单数。"
+        },
+        {
+          "id": "2-6-r4",
+          "cn": "我的眼镜是新的。",
+          "tip": "有些词天生就是复数",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "np2",
+              "label": "表语 NP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "My",
+              "pos": "pronoun",
+              "role": "限定词",
+              "group": "np1"
+            },
+            {
+              "text": "glasses",
+              "pos": "noun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "are",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "new",
+              "pos": "adj",
+              "role": "表语",
+              "group": "np2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "is",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            }
+          ],
+          "explain": "glasses（眼镜）、pants（裤子）、scissors（剪刀）这些词天生就是复数，动词要用 are。因为一副眼镜有两个镜片，它们成对出现。",
+          "example": "My glasses are new. / This glass is clean.（glass 单数时是「玻璃杯」）",
+          "win": "有些词天生是复数：glasses、pants、scissors。"
+        },
+        {
+          "id": "2-6-r5",
+          "cn": "这个消息不错。",
+          "tip": "改错：以 s 结尾不等于复数",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "np2",
+              "label": "表语 NP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "The",
+              "pos": "article",
+              "role": "限定词",
+              "group": "np1"
+            },
+            {
+              "text": "news",
+              "pos": "noun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "is",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "good",
+              "pos": "adj",
+              "role": "表语",
+              "group": "np2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "are",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            }
+          ],
+          "prefill": [
+            "The",
+            "news",
+            "are",
+            "good"
+          ],
+          "explain": "news 虽然以 s 结尾，但它是不可数名词，永远当单数用，动词用 is。同类的还有 maths、physics。",
+          "example": "The news is good. / The news was good.",
+          "win": "以 s 结尾不等于复数。"
+        }
+      ]
+    },
+    {
+      "id": "2-7",
+      "topic": "疑问句",
+      "emoji": "❓",
+      "goal": "把助动词提到句首，动词就得还原 —— 这是最容易错的一步",
+      "rounds": [
+        {
+          "id": "2-7-r1",
+          "cn": "你喜欢音乐吗？",
+          "tip": "一般疑问句：句首加 Do",
+          "punct": "?",
+          "groups": [
+            {
+              "id": "vp",
+              "label": "助动词"
+            },
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp2",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "np2",
+              "label": "宾语 NP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "Do",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            },
+            {
+              "text": "you",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "like",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp2"
+            },
+            {
+              "text": "music",
+              "pos": "noun",
+              "role": "宾语",
+              "group": "np2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "likes",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp2"
+            }
+          ],
+          "explain": "一般现在时的疑问句，要在句首加助动词 Do，主语和动词的顺序照旧，动词保持原形。",
+          "example": "Do you like music? / You like music.",
+          "win": "疑问句 = 助动词提到句首，动词用原形。"
+        },
+        {
+          "id": "2-7-r2",
+          "cn": "她会说中文吗？",
+          "tip": "Does 出现后，动词一定要还原",
+          "punct": "?",
+          "groups": [
+            {
+              "id": "vp",
+              "label": "助动词"
+            },
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp2",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "np2",
+              "label": "宾语 NP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "Does",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            },
+            {
+              "text": "she",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "speak",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp2"
+            },
+            {
+              "text": "Chinese",
+              "pos": "noun",
+              "role": "宾语",
+              "group": "np2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "speaks",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp2"
+            }
+          ],
+          "explain": "主语 she 是第三人称单数，所以用 Does。注意：那个 s 的活已经由 Does 干了，后面的动词必须还原成原形 speak。",
+          "example": "Does she speak Chinese? / She speaks Chinese.",
+          "win": "Does 出现后，动词一定要还原。"
+        },
+        {
+          "id": "2-7-r3",
+          "cn": "他是你的老师吗？",
+          "tip": "be 动词直接提前，不用 do",
+          "punct": "?",
+          "groups": [
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "np2",
+              "label": "表语 NP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "Is",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "he",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "your",
+              "pos": "pronoun",
+              "role": "限定词",
+              "group": "np2"
+            },
+            {
+              "text": "teacher",
+              "pos": "noun",
+              "role": "表语",
+              "group": "np2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "Does",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            }
+          ],
+          "explain": "be 动词的疑问句最简单：把 is / are / am 直接提到句首，后面原样不动，不需要 do。因为 be 动词自己就能提前。",
+          "example": "Is he your teacher? / Are you a student?",
+          "win": "be 动词直接提前，不用 do。"
+        },
+        {
+          "id": "2-7-r4",
+          "cn": "你住在哪里？",
+          "tip": "疑问词 + 助动词 + 主语 + 动词原形",
+          "punct": "?",
+          "groups": [
+            {
+              "id": "q",
+              "label": "疑问词"
+            },
+            {
+              "id": "vp",
+              "label": "助动词"
+            },
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp2",
+              "label": "谓语 VP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "Where",
+              "pos": "adv",
+              "role": "疑问词",
+              "group": "q"
+            },
+            {
+              "text": "do",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            },
+            {
+              "text": "you",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "live",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "Does",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            }
+          ],
+          "explain": "特殊疑问句的顺序是：疑问词 + 助动词 + 主语 + 动词原形。主语是 you，所以助动词用 do。",
+          "example": "Where do you live? / Where does he live?",
+          "win": "疑问词开头时，后面还是「助动词 + 主语 + 动词」。"
+        },
+        {
+          "id": "2-7-r5",
+          "cn": "她喜欢音乐吗？",
+          "tip": "改错：Does 和 -s 不能同时出现",
+          "punct": "?",
+          "groups": [
+            {
+              "id": "vp",
+              "label": "助动词"
+            },
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp2",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "np2",
+              "label": "宾语 NP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "Does",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            },
+            {
+              "text": "she",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "like",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp2"
+            },
+            {
+              "text": "music",
+              "pos": "noun",
+              "role": "宾语",
+              "group": "np2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "likes",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp2"
+            }
+          ],
+          "prefill": [
+            "Does",
+            "she",
+            "likes",
+            "music"
+          ],
+          "explain": "用了 Does 之后，后面的动词要还原成原形 like，不能再加 s。三单的标志只能出现一次，它已经交给 Does 了。",
+          "example": "Does she like music? / She likes music.",
+          "win": "Does 和 -s 不能同时出现。"
+        }
+      ]
+    },
+    {
+      "id": "2-8",
+      "topic": "简单句 · Boss",
+      "emoji": "👑",
+      "boss": true,
+      "goal": "五种句型混着来 —— 限时挑战，看你能不能一眼认出骨架",
+      "rounds": [
+        {
+          "id": "2-8-r1",
+          "cn": "小男孩想要一个新玩具。",
+          "tip": "主谓宾 + 形容词",
+          "timeLimit": 40,
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "np2",
+              "label": "宾语 NP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "The",
+              "pos": "article",
+              "role": "限定词",
+              "group": "np1"
+            },
+            {
+              "text": "little",
+              "pos": "adj",
+              "role": "定语",
+              "group": "np1"
+            },
+            {
+              "text": "boy",
+              "pos": "noun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "wants",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "a",
+              "pos": "article",
+              "role": "限定词",
+              "group": "np2"
+            },
+            {
+              "text": "new",
+              "pos": "adj",
+              "role": "定语",
+              "group": "np2"
+            },
+            {
+              "text": "toy",
+              "pos": "noun",
+              "role": "宾语",
+              "group": "np2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "want",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            }
+          ],
+          "explain": "主谓宾结构：主语单数 → wants；形容词 little 和 new 分别放在它们修饰的名词前面。",
+          "example": "The little boy wants a new toy. / The little boys want new toys.",
+          "win": "骨架和装饰分得清了。"
+        },
+        {
+          "id": "2-8-r2",
+          "cn": "我的家乡非常美。",
+          "tip": "主系表 + 副词修饰形容词",
+          "timeLimit": 35,
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "np2",
+              "label": "表语 NP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "My",
+              "pos": "pronoun",
+              "role": "限定词",
+              "group": "np1"
+            },
+            {
+              "text": "hometown",
+              "pos": "noun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "is",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "very",
+              "pos": "adv",
+              "role": "状语",
+              "group": "np2"
+            },
+            {
+              "text": "beautiful",
+              "pos": "adj",
+              "role": "表语",
+              "group": "np2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "beautifully",
+              "pos": "adv",
+              "role": "表语",
+              "group": "np2"
+            }
+          ],
+          "explain": "主系表结构。very 是副词，修饰形容词 beautiful，放在它前面。be 动词后面要用形容词。",
+          "example": "My hometown is very beautiful. / My hometown is a beautiful place.",
+          "win": "副词修饰形容词，形容词作表语。"
+        },
+        {
+          "id": "2-8-r3",
+          "cn": "她给我们讲了一个有趣的故事。",
+          "tip": "双宾语 + 冠词",
+          "timeLimit": 45,
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "np2",
+              "label": "间接宾语（人）"
+            },
+            {
+              "id": "np3",
+              "label": "直接宾语（物）"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "She",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "tells",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "us",
+              "pos": "pronoun",
+              "role": "间接宾语",
+              "group": "np2"
+            },
+            {
+              "text": "an",
+              "pos": "article",
+              "role": "限定词",
+              "group": "np3"
+            },
+            {
+              "text": "interesting",
+              "pos": "adj",
+              "role": "定语",
+              "group": "np3"
+            },
+            {
+              "text": "story",
+              "pos": "noun",
+              "role": "直接宾语",
+              "group": "np3"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "a",
+              "pos": "article",
+              "role": "限定词",
+              "group": "np3"
+            }
+          ],
+          "explain": "双宾语结构，先人后物。interesting 以元音开头，所以用 an 而不是 a。",
+          "example": "She tells us an interesting story. / She tells an interesting story to us.",
+          "win": "双宾语和冠词，两个考点一起过。"
+        },
+        {
+          "id": "2-8-r4",
+          "cn": "我们保持教室干净。",
+          "tip": "宾语补足语用形容词",
+          "timeLimit": 40,
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "np2",
+              "label": "宾语 + 宾补"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "We",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "keep",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "our",
+              "pos": "pronoun",
+              "role": "限定词",
+              "group": "np2"
+            },
+            {
+              "text": "classroom",
+              "pos": "noun",
+              "role": "宾语",
+              "group": "np2"
+            },
+            {
+              "text": "clean",
+              "pos": "adj",
+              "role": "宾补",
+              "group": "np2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "cleanly",
+              "pos": "adv",
+              "role": "宾补",
+              "group": "np2"
+            },
+            {
+              "text": "us",
+              "pos": "pronoun",
+              "role": "限定词",
+              "group": "np2"
+            }
+          ],
+          "explain": "宾语补足语结构。clean 说明的是 classroom 的状态，用形容词。our 是物主代词，后面必须跟名词。",
+          "example": "We keep our classroom clean.",
+          "win": "宾补用形容词说明宾语的状态。"
+        },
+        {
+          "id": "2-8-r5",
+          "cn": "你父母在这里工作吗？",
+          "tip": "疑问句 + 主谓一致",
+          "timeLimit": 40,
+          "punct": "?",
+          "groups": [
+            {
+              "id": "vp",
+              "label": "助动词"
+            },
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp2",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "pp",
+              "label": "状语"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "Do",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            },
+            {
+              "text": "your",
+              "pos": "pronoun",
+              "role": "限定词",
+              "group": "np1"
+            },
+            {
+              "text": "parents",
+              "pos": "noun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "work",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp2"
+            },
+            {
+              "text": "here",
+              "pos": "adv",
+              "role": "状语",
+              "group": "pp"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "works",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp2"
+            },
+            {
+              "text": "Does",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            }
+          ],
+          "explain": "先看主语：your parents 是复数，所以助动词用 Do，动词用原形 work。这里是 parents，不是 parent。",
+          "example": "Do your parents work here? / Does your father work here?",
+          "win": "先看主语单复数，再选 Do 还是 Does。"
+        },
+        {
+          "id": "2-8-r6",
+          "cn": "书架上有一些书。",
+          "tip": "there be 跟着真正的主语走",
+          "timeLimit": 40,
+          "groups": [
+            {
+              "id": "ex",
+              "label": "引导词"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "np1",
+              "label": "真正的主语 NP"
+            },
+            {
+              "id": "pp",
+              "label": "地点 PP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "There",
+              "pos": "adv",
+              "role": "引导词",
+              "group": "ex"
+            },
+            {
+              "text": "are",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "some",
+              "pos": "adj",
+              "role": "定语",
+              "group": "np1"
+            },
+            {
+              "text": "books",
+              "pos": "noun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "on",
+              "pos": "prep",
+              "role": "介词",
+              "group": "pp"
+            },
+            {
+              "text": "the",
+              "pos": "article",
+              "role": "限定词",
+              "group": "pp"
+            },
+            {
+              "text": "shelf",
+              "pos": "noun",
+              "role": "介词宾语",
+              "group": "pp"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "is",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            }
+          ],
+          "explain": "真正的主语是 some books（复数），所以用 are。some 是形容词，放在名词 books 前面。",
+          "example": "There are some books on the shelf. / There is a book on the shelf.",
+          "win": "there be 跟着后面的真正主语走。"
+        }
+      ]
+    }
+  ]
+}

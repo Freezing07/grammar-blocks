@@ -1,0 +1,408 @@
+{
+  "id": "6-2",
+  "topic": "因果衔接",
+  "emoji": "➡️",
+  "goal": "as a result / therefore / because of：先说原因，再接结果",
+  "rounds": [
+    {
+      "id": "6-2-r1",
+      "cn": "雨下得很大。结果，比赛取消了。",
+      "tip": "as a result 引出结果",
+      "rootLabel": "句群",
+      "marks": {
+        "2": ".",
+        "3": ","
+      },
+      "groups": [
+        {
+          "id": "s1",
+          "label": "第一句（原因）"
+        },
+        {
+          "id": "s2",
+          "label": "第二句（结果）",
+          "clause": true
+        }
+      ],
+      "blocks": [
+        {
+          "text": "It",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "s1"
+        },
+        {
+          "text": "rained",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "s1"
+        },
+        {
+          "text": "heavily",
+          "pos": "adv",
+          "role": "状语",
+          "group": "s1"
+        },
+        {
+          "text": "As a result",
+          "pos": "adv",
+          "role": "衔接词",
+          "group": "s2"
+        },
+        {
+          "text": "the",
+          "pos": "article",
+          "role": "限定词",
+          "group": "s2"
+        },
+        {
+          "text": "match",
+          "pos": "noun",
+          "role": "主语",
+          "group": "s2"
+        },
+        {
+          "text": "was",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "s2"
+        },
+        {
+          "text": "canceled",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "s2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "However",
+          "pos": "adv",
+          "role": "衔接词",
+          "group": "s2"
+        }
+      ],
+      "explain": "as a result 表示「结果」：前面说原因，后面说结果。它和 therefore 意思接近，都是副词，要另起一句。",
+      "example": "It rained heavily. As a result, the match was canceled.",
+      "win": "原因在前，结果在后，中间用 as a result。"
+    },
+    {
+      "id": "6-2-r2",
+      "cn": "他迟到了。因此，他错过了火车。",
+      "tip": "therefore 是最常用的「因此」",
+      "rootLabel": "句群",
+      "marks": {
+        "2": ".",
+        "3": ","
+      },
+      "groups": [
+        {
+          "id": "s1",
+          "label": "第一句（原因）"
+        },
+        {
+          "id": "s2",
+          "label": "第二句（结果）",
+          "clause": true
+        }
+      ],
+      "blocks": [
+        {
+          "text": "He",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "s1"
+        },
+        {
+          "text": "was",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "s1"
+        },
+        {
+          "text": "late",
+          "pos": "adj",
+          "role": "表语",
+          "group": "s1"
+        },
+        {
+          "text": "Therefore",
+          "pos": "adv",
+          "role": "衔接词",
+          "group": "s2"
+        },
+        {
+          "text": "he",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "s2"
+        },
+        {
+          "text": "missed",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "s2"
+        },
+        {
+          "text": "the",
+          "pos": "article",
+          "role": "限定词",
+          "group": "s2"
+        },
+        {
+          "text": "train",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "s2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "Moreover",
+          "pos": "adv",
+          "role": "衔接词",
+          "group": "s2"
+        }
+      ],
+      "explain": "therefore 表示「因此」，是最常用的因果衔接词，比 so 正式，适合写作。",
+      "example": "He was late. Therefore, he missed the train. / He was late, so he missed the train.",
+      "win": "写作里用 therefore 替代口语的 so。"
+    },
+    {
+      "id": "6-2-r3",
+      "cn": "她病了。因为这个，她待在家里。",
+      "tip": "because of 后面跟名词，because 后面跟句子",
+      "rootLabel": "句群",
+      "marks": {
+        "2": ".",
+        "3": ","
+      },
+      "groups": [
+        {
+          "id": "s1",
+          "label": "第一句"
+        },
+        {
+          "id": "s2",
+          "label": "第二句（因果）",
+          "clause": true
+        }
+      ],
+      "blocks": [
+        {
+          "text": "She",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "s1"
+        },
+        {
+          "text": "was",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "s1"
+        },
+        {
+          "text": "ill",
+          "pos": "adj",
+          "role": "表语",
+          "group": "s1"
+        },
+        {
+          "text": "Because of this",
+          "pos": "adv",
+          "role": "衔接词",
+          "group": "s2"
+        },
+        {
+          "text": "she",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "s2"
+        },
+        {
+          "text": "stayed",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "s2"
+        },
+        {
+          "text": "home",
+          "pos": "adv",
+          "role": "状语",
+          "group": "s2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "Although",
+          "pos": "conj",
+          "role": "衔接词",
+          "group": "s2"
+        }
+      ],
+      "explain": "because of 后面跟名词或代词（这里的 this 指代前面「她病了」这件事）。如果把 because 直接放句首，后面就必须跟一个完整句子：Because she was ill, she stayed home.",
+      "example": "She was ill. Because of this, she stayed home. / Because she was ill, she stayed home.",
+      "win": "because of + 名词，because + 句子。"
+    },
+    {
+      "id": "6-2-r4",
+      "cn": "他很努力。结果，他通过了。",
+      "tip": "改错：这里是因果还是转折",
+      "rootLabel": "句群",
+      "marks": {
+        "2": ".",
+        "3": ","
+      },
+      "groups": [
+        {
+          "id": "s1",
+          "label": "第一句（原因）"
+        },
+        {
+          "id": "s2",
+          "label": "第二句（结果）",
+          "clause": true
+        }
+      ],
+      "blocks": [
+        {
+          "text": "He",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "s1"
+        },
+        {
+          "text": "worked",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "s1"
+        },
+        {
+          "text": "hard",
+          "pos": "adv",
+          "role": "状语",
+          "group": "s1"
+        },
+        {
+          "text": "As a result",
+          "pos": "adv",
+          "role": "衔接词",
+          "group": "s2"
+        },
+        {
+          "text": "he",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "s2"
+        },
+        {
+          "text": "passed",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "s2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "However",
+          "pos": "adv",
+          "role": "衔接词",
+          "group": "s2"
+        }
+      ],
+      "prefill": [
+        "He",
+        "worked",
+        "hard",
+        "However",
+        "he",
+        "passed"
+      ],
+      "explain": "努力和通过是顺理成章的因果关系，用 as a result。However 表示转折，用在这里等于说「努力了，然而通过了」，逻辑不对。",
+      "example": "He worked hard. As a result, he passed.",
+      "win": "两句方向一致就是因果，相反才是转折。"
+    },
+    {
+      "id": "6-2-r5",
+      "cn": "他从不练习。因此，他输了比赛。",
+      "tip": "consequently 更正式",
+      "rootLabel": "句群",
+      "marks": {
+        "2": ".",
+        "3": ","
+      },
+      "groups": [
+        {
+          "id": "s1",
+          "label": "第一句（原因）"
+        },
+        {
+          "id": "s2",
+          "label": "第二句（结果）",
+          "clause": true
+        }
+      ],
+      "blocks": [
+        {
+          "text": "He",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "s1"
+        },
+        {
+          "text": "never",
+          "pos": "adv",
+          "role": "状语",
+          "group": "s1"
+        },
+        {
+          "text": "practiced",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "s1"
+        },
+        {
+          "text": "Consequently",
+          "pos": "adv",
+          "role": "衔接词",
+          "group": "s2"
+        },
+        {
+          "text": "he",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "s2"
+        },
+        {
+          "text": "lost",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "s2"
+        },
+        {
+          "text": "the",
+          "pos": "article",
+          "role": "限定词",
+          "group": "s2"
+        },
+        {
+          "text": "game",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "s2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "However",
+          "pos": "adv",
+          "role": "衔接词",
+          "group": "s2"
+        }
+      ],
+      "explain": "consequently 也是「因此」，比 therefore 更正式一些，常用在议论文里。",
+      "example": "He never practiced. Consequently, he lost the game.",
+      "win": "therefore / consequently / as a result 可以换着用，别老用一个。"
+    }
+  ]
+}

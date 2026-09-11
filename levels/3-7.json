@@ -1,0 +1,357 @@
+{
+  "id": "3-7",
+  "topic": "过去完成",
+  "emoji": "⏮️",
+  "goal": "had + 过去分词：在过去某个时间点之前就已经完成",
+  "rounds": [
+    {
+      "id": "3-7-r1",
+      "cn": "（那时）火车已经开走了。",
+      "tip": "had + 过去分词",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "The",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np1"
+        },
+        {
+          "text": "train",
+          "pos": "noun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "had",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "vp"
+        },
+        {
+          "text": "already",
+          "pos": "adv",
+          "role": "状语",
+          "group": "vp"
+        },
+        {
+          "text": "left",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "has",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "vp"
+        },
+        {
+          "text": "leaves",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        }
+      ],
+      "explain": "过去完成时：had + 过去分词。它表示「在过去某个时间点之前就已经完成」，所以句子里通常会有一个过去的参照点。already 放在 had 和过去分词中间。",
+      "example": "The train had already left. / The train has already left.",
+      "win": "过去完成＝过去的过去。"
+    },
+    {
+      "id": "3-7-r2",
+      "cn": "她在晚饭前就完成了工作。",
+      "tip": "before 提供了那个过去的参照点",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "宾语 NP"
+        },
+        {
+          "id": "pp",
+          "label": "时间状语 PP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "She",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "had",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "vp"
+        },
+        {
+          "text": "finished",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "the",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np2"
+        },
+        {
+          "text": "work",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "np2"
+        },
+        {
+          "text": "before",
+          "pos": "prep",
+          "role": "介词",
+          "group": "pp"
+        },
+        {
+          "text": "dinner",
+          "pos": "noun",
+          "role": "介词宾语",
+          "group": "pp"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "has",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "vp"
+        },
+        {
+          "text": "finish",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        }
+      ],
+      "explain": "had + 过去分词，表示「在过去某件事之前就完成了」。before dinner 提供了那个过去的时间点。",
+      "example": "She had finished the work before dinner. / She finished the work after dinner.",
+      "win": "两个过去动作，先发生的用过去完成。"
+    },
+    {
+      "id": "3-7-r3",
+      "cn": "我以前从没见过雪。",
+      "tip": "never 放在 had 和过去分词中间",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "I",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "had",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "vp"
+        },
+        {
+          "text": "never",
+          "pos": "adv",
+          "role": "状语",
+          "group": "vp"
+        },
+        {
+          "text": "seen",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "before",
+          "pos": "adv",
+          "role": "状语",
+          "group": "vp"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "saw",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "have",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "vp"
+        }
+      ],
+      "explain": "never 站在 had 和过去分词中间。see 的过去分词是 seen，不是 saw。句末的 before 表示「在那之前」。",
+      "example": "I had never seen snow before. / I have never seen snow.",
+      "win": "never 也站在助动词后面。"
+    },
+    {
+      "id": "3-7-r4",
+      "cn": "他已经回家了。",
+      "tip": "改错：had 后面用过去分词",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "He",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "had",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "vp"
+        },
+        {
+          "text": "gone",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "home",
+          "pos": "adv",
+          "role": "状语",
+          "group": "vp"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "went",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "go",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        }
+      ],
+      "prefill": [
+        "He",
+        "had",
+        "went",
+        "home"
+      ],
+      "explain": "had 后面要用过去分词 gone，不是过去式 went。go 的三个形态是 go - went - gone。",
+      "example": "He had gone home. / He went home.",
+      "win": "go - went - gone，三个形态要分清。"
+    },
+    {
+      "id": "3-7-r5",
+      "cn": "到那时你完成了吗？",
+      "tip": "had 提到句首",
+      "punct": "?",
+      "groups": [
+        {
+          "id": "vp",
+          "label": "助动词"
+        },
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp2",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "pp",
+          "label": "时间状语 PP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "Had",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "vp"
+        },
+        {
+          "text": "you",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "finished",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp2"
+        },
+        {
+          "text": "by",
+          "pos": "prep",
+          "role": "介词",
+          "group": "pp"
+        },
+        {
+          "text": "then",
+          "pos": "adv",
+          "role": "介词宾语",
+          "group": "pp"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "Have",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "vp"
+        },
+        {
+          "text": "finish",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp2"
+        }
+      ],
+      "explain": "过去完成时的疑问句把 had 提到句首。by then 表示「到那时为止」。",
+      "example": "Had you finished by then? / You had finished by then.",
+      "win": "had 提前，动词不变。"
+    }
+  ]
+}

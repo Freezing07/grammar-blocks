@@ -1,0 +1,344 @@
+{
+  "id": "2-6",
+  "topic": "主谓一致",
+  "emoji": "⚖️",
+  "goal": "动词到底加不加 s，得先找到真正的主语",
+  "rounds": [
+    {
+      "id": "2-6-r1",
+      "cn": "桌上有一本书。",
+      "tip": "there be 跟着后面那个「真正的主语」变",
+      "groups": [
+        {
+          "id": "ex",
+          "label": "引导词"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np1",
+          "label": "真正的主语 NP"
+        },
+        {
+          "id": "pp",
+          "label": "地点 PP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "There",
+          "pos": "adv",
+          "role": "引导词",
+          "group": "ex"
+        },
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "a",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np1"
+        },
+        {
+          "text": "book",
+          "pos": "noun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "on",
+          "pos": "prep",
+          "role": "介词",
+          "group": "pp"
+        },
+        {
+          "text": "the",
+          "pos": "article",
+          "role": "限定词",
+          "group": "pp"
+        },
+        {
+          "text": "desk",
+          "pos": "noun",
+          "role": "介词宾语",
+          "group": "pp"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "are",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        }
+      ],
+      "explain": "there be 句型里，be 动词不看开头的 there，而是看后面那个「真正的主语」。a book 是单数，所以用 is。",
+      "example": "There is a book on the desk. / There are two books on the desk.",
+      "win": "there be 跟着后面的名词变。"
+    },
+    {
+      "id": "2-6-r2",
+      "cn": "沙发上有两只猫。",
+      "tip": "先找到真正的主语，再决定 is 还是 are",
+      "groups": [
+        {
+          "id": "ex",
+          "label": "引导词"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np1",
+          "label": "真正的主语 NP"
+        },
+        {
+          "id": "pp",
+          "label": "地点 PP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "There",
+          "pos": "adv",
+          "role": "引导词",
+          "group": "ex"
+        },
+        {
+          "text": "are",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "two",
+          "pos": "adj",
+          "role": "定语",
+          "group": "np1"
+        },
+        {
+          "text": "cats",
+          "pos": "noun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "on",
+          "pos": "prep",
+          "role": "介词",
+          "group": "pp"
+        },
+        {
+          "text": "the",
+          "pos": "article",
+          "role": "限定词",
+          "group": "pp"
+        },
+        {
+          "text": "sofa",
+          "pos": "noun",
+          "role": "介词宾语",
+          "group": "pp"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        }
+      ],
+      "explain": "真正的主语是 two cats（两只，复数），所以用 are。two 是形容词，放在名词 cats 前面。",
+      "example": "There are two cats on the sofa. / There is a cat on the sofa.",
+      "win": "先找真正的主语，再决定 is 还是 are。"
+    },
+    {
+      "id": "2-6-r3",
+      "cn": "每个学生都有一台电脑。",
+      "tip": "every + 单数名词 → 动词用单数",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "宾语 NP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "Every",
+          "pos": "adj",
+          "role": "定语",
+          "group": "np1"
+        },
+        {
+          "text": "student",
+          "pos": "noun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "has",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "a",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np2"
+        },
+        {
+          "text": "computer",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "np2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "have",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        }
+      ],
+      "explain": "every 后面永远跟单数名词，动词也用单数 has。虽然意思上是「所有学生都有」，但形式上算单数。",
+      "example": "Every student has a computer. / All students have computers.",
+      "win": "every + 单数名词 → 动词用单数。"
+    },
+    {
+      "id": "2-6-r4",
+      "cn": "我的眼镜是新的。",
+      "tip": "有些词天生就是复数",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "表语 NP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "My",
+          "pos": "pronoun",
+          "role": "限定词",
+          "group": "np1"
+        },
+        {
+          "text": "glasses",
+          "pos": "noun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "are",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "new",
+          "pos": "adj",
+          "role": "表语",
+          "group": "np2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        }
+      ],
+      "explain": "glasses（眼镜）、pants（裤子）、scissors（剪刀）这些词天生就是复数，动词要用 are。因为一副眼镜有两个镜片，它们成对出现。",
+      "example": "My glasses are new. / This glass is clean.（glass 单数时是「玻璃杯」）",
+      "win": "有些词天生是复数：glasses、pants、scissors。"
+    },
+    {
+      "id": "2-6-r5",
+      "cn": "这个消息不错。",
+      "tip": "改错：以 s 结尾不等于复数",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "表语 NP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "The",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np1"
+        },
+        {
+          "text": "news",
+          "pos": "noun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "good",
+          "pos": "adj",
+          "role": "表语",
+          "group": "np2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "are",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        }
+      ],
+      "prefill": [
+        "The",
+        "news",
+        "are",
+        "good"
+      ],
+      "explain": "news 虽然以 s 结尾，但它是不可数名词，永远当单数用，动词用 is。同类的还有 maths、physics。",
+      "example": "The news is good. / The news was good.",
+      "win": "以 s 结尾不等于复数。"
+    }
+  ]
+}

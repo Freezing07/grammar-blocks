@@ -1,0 +1,366 @@
+{
+  "id": "6-7",
+  "topic": "衔接词与标点",
+  "emoji": "❕",
+  "goal": "衔接词放句首时后面要加逗号 —— 不加读起来就不是那个意思",
+  "rounds": [
+    {
+      "id": "6-7-r1",
+      "cn": "在我看来，在线学习省时间。",
+      "tip": "句首的衔接词后面加逗号",
+      "marks": {
+        "0": ","
+      },
+      "groups": [
+        {
+          "id": "s1",
+          "label": "整句"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "In my opinion",
+          "pos": "adv",
+          "role": "衔接词",
+          "group": "s1"
+        },
+        {
+          "text": "online",
+          "pos": "adj",
+          "role": "定语",
+          "group": "s1"
+        },
+        {
+          "text": "learning",
+          "pos": "verb",
+          "role": "动名词",
+          "group": "s1",
+          "nonfinite": true
+        },
+        {
+          "text": "saves",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "s1"
+        },
+        {
+          "text": "time",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "s1"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "In conclusion",
+          "pos": "adv",
+          "role": "衔接词",
+          "group": "s1"
+        }
+      ],
+      "explain": "In my opinion 放在句首表明看法，后面要加逗号。像这样插在句子最前面的成分，英语里叫状语，逗号是把它和主句隔开的标志。",
+      "example": "In my opinion, online learning saves time.",
+      "win": "句首状语后面加逗号。"
+    },
+    {
+      "id": "6-7-r2",
+      "cn": "在线学习很方便。然而，它也有一些问题。",
+      "tip": "however 的位置：句首，后面跟逗号",
+      "rootLabel": "句群",
+      "marks": {
+        "3": ".",
+        "4": ","
+      },
+      "groups": [
+        {
+          "id": "s1",
+          "label": "第一句"
+        },
+        {
+          "id": "s2",
+          "label": "第二句（转折）",
+          "clause": true
+        }
+      ],
+      "blocks": [
+        {
+          "text": "Online",
+          "pos": "adj",
+          "role": "定语",
+          "group": "s1"
+        },
+        {
+          "text": "learning",
+          "pos": "verb",
+          "role": "动名词",
+          "group": "s1",
+          "nonfinite": true
+        },
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "s1"
+        },
+        {
+          "text": "convenient",
+          "pos": "adj",
+          "role": "表语",
+          "group": "s1"
+        },
+        {
+          "text": "However",
+          "pos": "adv",
+          "role": "衔接词",
+          "group": "s2"
+        },
+        {
+          "text": "it",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "s2"
+        },
+        {
+          "text": "has",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "s2"
+        },
+        {
+          "text": "some",
+          "pos": "pronoun",
+          "role": "限定词",
+          "group": "s2"
+        },
+        {
+          "text": "problems",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "s2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "Therefore",
+          "pos": "adv",
+          "role": "衔接词",
+          "group": "s2"
+        }
+      ],
+      "explain": "however 也可以放在句子中间（Online learning, however, has problems.），这时前后各一个逗号。放在句首最常见，后面要跟逗号。",
+      "example": "Online learning is convenient. However, it has some problems.",
+      "win": "however 前后都要有标点把它隔开。"
+    },
+    {
+      "id": "6-7-r3",
+      "cn": "第一，它省时间。第二，它省钱。",
+      "tip": "First, / Second, 后面跟逗号",
+      "rootLabel": "句群",
+      "marks": {
+        "0": ",",
+        "3": ".",
+        "4": ","
+      },
+      "groups": [
+        {
+          "id": "s1",
+          "label": "第一点"
+        },
+        {
+          "id": "s2",
+          "label": "第二点",
+          "clause": true
+        }
+      ],
+      "blocks": [
+        {
+          "text": "First",
+          "pos": "adv",
+          "role": "衔接词",
+          "group": "s1"
+        },
+        {
+          "text": "it",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "s1"
+        },
+        {
+          "text": "saves",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "s1"
+        },
+        {
+          "text": "time",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "s1"
+        },
+        {
+          "text": "Second",
+          "pos": "adv",
+          "role": "衔接词",
+          "group": "s2"
+        },
+        {
+          "text": "it",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "s2"
+        },
+        {
+          "text": "saves",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "s2"
+        },
+        {
+          "text": "money",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "s2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "Third",
+          "pos": "adv",
+          "role": "衔接词",
+          "group": "s2"
+        }
+      ],
+      "explain": "列举时 First, / Second, / Third, 后面都跟逗号。写作文时这几个词能让结构一眼可见。",
+      "example": "First, it saves time. Second, it saves money.",
+      "win": "列举词后面都有逗号。"
+    },
+    {
+      "id": "6-7-r4",
+      "cn": "在我看来，在线学习省时间。",
+      "tip": "改错：总结词不能用在这里",
+      "marks": {
+        "0": ","
+      },
+      "groups": [
+        {
+          "id": "s1",
+          "label": "整句"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "In my opinion",
+          "pos": "adv",
+          "role": "衔接词",
+          "group": "s1"
+        },
+        {
+          "text": "online",
+          "pos": "adj",
+          "role": "定语",
+          "group": "s1"
+        },
+        {
+          "text": "learning",
+          "pos": "verb",
+          "role": "动名词",
+          "group": "s1",
+          "nonfinite": true
+        },
+        {
+          "text": "saves",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "s1"
+        },
+        {
+          "text": "time",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "s1"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "In conclusion",
+          "pos": "adv",
+          "role": "衔接词",
+          "group": "s1"
+        }
+      ],
+      "prefill": [
+        "In conclusion",
+        "online",
+        "learning",
+        "saves",
+        "time"
+      ],
+      "explain": "In conclusion 只能用在段落结尾做总结。这里是在文章开头表明自己的看法，要用 In my opinion。",
+      "example": "In my opinion, online learning saves time.",
+      "win": "先判断这句在段落里的位置。"
+    },
+    {
+      "id": "6-7-r5",
+      "cn": "据我所知，这个方法非常有效。",
+      "tip": "as far as I know 也是句首状语",
+      "marks": {
+        "0": ","
+      },
+      "groups": [
+        {
+          "id": "s1",
+          "label": "整句"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "As far as I know",
+          "pos": "adv",
+          "role": "衔接词",
+          "group": "s1"
+        },
+        {
+          "text": "this",
+          "pos": "pronoun",
+          "role": "限定词",
+          "group": "s1"
+        },
+        {
+          "text": "method",
+          "pos": "noun",
+          "role": "主语",
+          "group": "s1"
+        },
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "s1"
+        },
+        {
+          "text": "very",
+          "pos": "adv",
+          "role": "状语",
+          "group": "s1"
+        },
+        {
+          "text": "effective",
+          "pos": "adj",
+          "role": "表语",
+          "group": "s1"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "In my opinion",
+          "pos": "adv",
+          "role": "衔接词",
+          "group": "s1"
+        }
+      ],
+      "explain": "as far as I know 表示「据我所知」，是把话说得留有余地的一种表达。它和 in my opinion 一样，放句首后面跟逗号。",
+      "example": "As far as I know, this method is very effective.",
+      "win": "不确定的语气，也要用衔接词标出来。"
+    }
+  ]
+}

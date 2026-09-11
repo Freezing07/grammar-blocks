@@ -1,0 +1,391 @@
+{
+  "id": "4-3",
+  "topic": "表语从句",
+  "emoji": "🪞",
+  "goal": "be 动词后面接一整个从句，用来说明主语是什么",
+  "rounds": [
+    {
+      "id": "4-3-r1",
+      "cn": "问题是我们迟到了。",
+      "tip": "be 动词后面可以跟一整个从句",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "cl",
+          "label": "表语从句",
+          "clause": true,
+          "parent": "vp"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "The",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np1"
+        },
+        {
+          "text": "problem",
+          "pos": "noun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "that",
+          "pos": "pronoun",
+          "role": "连接词",
+          "group": "cl"
+        },
+        {
+          "text": "we",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "cl"
+        },
+        {
+          "text": "are",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "cl"
+        },
+        {
+          "text": "late",
+          "pos": "adj",
+          "role": "表语",
+          "group": "cl"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "be",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "cl"
+        }
+      ],
+      "explain": "be 动词后面接的从句就是表语从句，用来说明主语「是什么」。that 后面跟完整的「主语 + 谓语」。",
+      "example": "The problem is that we are late. / The problem is our lateness.",
+      "win": "be 动词后面可以跟一整个从句。"
+    },
+    {
+      "id": "4-3-r2",
+      "cn": "这就是我给你打电话的原因。",
+      "tip": "why 也能引导表语从句",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "cl",
+          "label": "表语从句",
+          "clause": true,
+          "parent": "vp"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "That",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "why",
+          "pos": "adv",
+          "role": "连接词",
+          "group": "cl"
+        },
+        {
+          "text": "I",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "cl"
+        },
+        {
+          "text": "called",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "cl"
+        },
+        {
+          "text": "you",
+          "pos": "pronoun",
+          "role": "宾语",
+          "group": "cl"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "what",
+          "pos": "pronoun",
+          "role": "连接词",
+          "group": "cl"
+        }
+      ],
+      "explain": "why 引导表语从句，表示「这就是……的原因」。注意从句用正常语序 I called you。",
+      "example": "That is why I called you. / That is the reason why I called you.",
+      "win": "why 也能引导表语从句。"
+    },
+    {
+      "id": "4-3-r3",
+      "cn": "问题是他会不会同意。",
+      "tip": "be 动词后面说「是否」，用 whether 不用 if",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "cl",
+          "label": "表语从句",
+          "clause": true,
+          "parent": "vp"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "The",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np1"
+        },
+        {
+          "text": "question",
+          "pos": "noun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "whether",
+          "pos": "conj",
+          "role": "连接词",
+          "group": "cl"
+        },
+        {
+          "text": "he",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "cl"
+        },
+        {
+          "text": "will",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "cl"
+        },
+        {
+          "text": "agree",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "cl"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "if",
+          "pos": "conj",
+          "role": "连接词",
+          "group": "cl"
+        }
+      ],
+      "explain": "表语从句里表示「是否」要用 whether，不能用 if —— if 引导的从句不能放在 be 动词后面当表语，这是条硬规矩。",
+      "example": "The question is whether he will agree. / I don't know if he will agree.",
+      "win": "句首和 be 动词后面说「是否」，只能用 whether。"
+    },
+    {
+      "id": "4-3-r4",
+      "cn": "原因是他迟到了。",
+      "tip": "改错：The reason is because 不对",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "cl",
+          "label": "表语从句",
+          "clause": true,
+          "parent": "vp"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "The",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np1"
+        },
+        {
+          "text": "reason",
+          "pos": "noun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "that",
+          "pos": "pronoun",
+          "role": "连接词",
+          "group": "cl"
+        },
+        {
+          "text": "he",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "cl"
+        },
+        {
+          "text": "was",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "cl"
+        },
+        {
+          "text": "late",
+          "pos": "adj",
+          "role": "表语",
+          "group": "cl"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "because",
+          "pos": "conj",
+          "role": "连接词",
+          "group": "cl"
+        }
+      ],
+      "prefill": [
+        "The",
+        "reason",
+        "is",
+        "because",
+        "he",
+        "was",
+        "late"
+      ],
+      "explain": "表语从句用 that 引导。The reason is because 是很多人会写的，但标准写法是 The reason is that —— 用 because 就等于把「因为」说了两遍。",
+      "example": "The reason is that he was late. / Because he was late, we missed the train.",
+      "win": "The reason is that...，不是 because。"
+    },
+    {
+      "id": "4-3-r5",
+      "cn": "他似乎知道答案。",
+      "tip": "seem 后面接从句，也是一种表语",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "cl",
+          "label": "表语从句",
+          "clause": true,
+          "parent": "vp"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "It",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "seems",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "that",
+          "pos": "pronoun",
+          "role": "连接词",
+          "group": "cl"
+        },
+        {
+          "text": "he",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "cl"
+        },
+        {
+          "text": "knows",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "cl"
+        },
+        {
+          "text": "the",
+          "pos": "article",
+          "role": "限定词",
+          "group": "cl"
+        },
+        {
+          "text": "answer",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "cl"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "know",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "cl"
+        }
+      ],
+      "explain": "seem（似乎）后面接 that 从句，说明「看起来怎么样」。从句主语是 he，动词要用三单 knows。",
+      "example": "It seems that he knows the answer. / He seems to know the answer.",
+      "win": "seem 后面跟从句，从句照样有自己的主谓。"
+    }
+  ]
+}

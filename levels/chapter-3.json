@@ -1,0 +1,3780 @@
+{
+  "name": "第三章 · 时态平原",
+  "emoji": "🕰️",
+  "subtitle": "时态 + 语态",
+  "levels": [
+    {
+      "id": "3-1",
+      "topic": "一般现在",
+      "emoji": "🔁",
+      "goal": "什么时候用一般现在：习惯、事实、时刻表，以及否定怎么加",
+      "rounds": [
+        {
+          "id": "3-1-r1",
+          "cn": "她通常走路上学。",
+          "tip": "频度副词放在动词前面",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "adv",
+              "label": "频度状语"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "pp",
+              "label": "介词短语 PP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "She",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "usually",
+              "pos": "adv",
+              "role": "频度状语",
+              "group": "adv"
+            },
+            {
+              "text": "walks",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "to",
+              "pos": "prep",
+              "role": "介词",
+              "group": "pp"
+            },
+            {
+              "text": "school",
+              "pos": "noun",
+              "role": "介词宾语",
+              "group": "pp"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "walk",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "usual",
+              "pos": "adj",
+              "role": "频度状语",
+              "group": "adv"
+            }
+          ],
+          "explain": "一般现在时表示「习惯做的事」。usually 这类频度副词（always / often / sometimes / never）要放在动词前面，不是后面。主语 She 是三单，动词用 walks。",
+          "example": "She usually walks to school. / She always walks to school.",
+          "win": "频度副词站动词前面。"
+        },
+        {
+          "id": "3-1-r2",
+          "cn": "地球绕着太阳转。",
+          "tip": "客观事实也用一般现在",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "pp",
+              "label": "介词短语 PP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "The",
+              "pos": "article",
+              "role": "限定词",
+              "group": "np1"
+            },
+            {
+              "text": "earth",
+              "pos": "noun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "goes",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "around",
+              "pos": "prep",
+              "role": "介词",
+              "group": "pp"
+            },
+            {
+              "text": "the",
+              "pos": "article",
+              "role": "限定词",
+              "group": "pp"
+            },
+            {
+              "text": "sun",
+              "pos": "noun",
+              "role": "介词宾语",
+              "group": "pp"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "go",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            }
+          ],
+          "explain": "一般现在时还用来讲「客观事实」—— 不管什么时候说都成立。主语 The earth 是单数，动词用 goes。",
+          "example": "The earth goes around the sun. / The earth is round.",
+          "win": "永远成立的事，用一般现在。"
+        },
+        {
+          "id": "3-1-r3",
+          "cn": "他不喜欢咖啡。",
+          "tip": "否定要在动词前加 don't / doesn't",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "助动词"
+            },
+            {
+              "id": "vp2",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "np2",
+              "label": "宾语 NP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "He",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "doesn't",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            },
+            {
+              "text": "like",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp2"
+            },
+            {
+              "text": "coffee",
+              "pos": "noun",
+              "role": "宾语",
+              "group": "np2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "don't",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            },
+            {
+              "text": "likes",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp2"
+            }
+          ],
+          "explain": "一般现在时的否定要在动词前加 don't 或 doesn't。主语 He 是第三人称单数，用 doesn't；而且那个 s 的活已经由 doesn't 干了，后面动词要还原成原形 like。",
+          "example": "He doesn't like coffee. / He likes coffee.",
+          "win": "doesn't 出现后，动词回到原形。"
+        },
+        {
+          "id": "3-1-r4",
+          "cn": "我弟弟不吃肉。",
+          "tip": "改错：don't 还是 doesn't",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "助动词"
+            },
+            {
+              "id": "vp2",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "np2",
+              "label": "宾语 NP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "My",
+              "pos": "pronoun",
+              "role": "限定词",
+              "group": "np1"
+            },
+            {
+              "text": "brother",
+              "pos": "noun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "doesn't",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            },
+            {
+              "text": "eat",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp2"
+            },
+            {
+              "text": "meat",
+              "pos": "noun",
+              "role": "宾语",
+              "group": "np2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "don't",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            },
+            {
+              "text": "eats",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp2"
+            }
+          ],
+          "prefill": [
+            "My",
+            "brother",
+            "don't",
+            "eat",
+            "meat"
+          ],
+          "explain": "主语 My brother 是第三人称单数，否定要用 doesn't。don't 只能配 I / you / we / they。",
+          "example": "My brother doesn't eat meat. / My brothers don't eat meat.",
+          "win": "don't 和 doesn't，看主语是谁。"
+        },
+        {
+          "id": "3-1-r5",
+          "cn": "火车中午出发。",
+          "tip": "时刻表用一般现在",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "pp",
+              "label": "时间状语 PP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "The",
+              "pos": "article",
+              "role": "限定词",
+              "group": "np1"
+            },
+            {
+              "text": "train",
+              "pos": "noun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "leaves",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "at",
+              "pos": "prep",
+              "role": "介词",
+              "group": "pp"
+            },
+            {
+              "text": "noon",
+              "pos": "noun",
+              "role": "介词宾语",
+              "group": "pp"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "leave",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            }
+          ],
+          "explain": "时刻表、班次这类「按计划会发生」的事，也用一般现在时，哪怕说的是将来的事。at noon 是时间点。",
+          "example": "The train leaves at noon. / The train left at noon.",
+          "win": "计划好的时间表，用一般现在。"
+        }
+      ]
+    },
+    {
+      "id": "3-2",
+      "topic": "一般过去",
+      "emoji": "📜",
+      "goal": "过去发生的事：规则动词加 ed，不规则的只能记",
+      "rounds": [
+        {
+          "id": "3-2-r1",
+          "cn": "我上周去看望了奶奶。",
+          "tip": "规则动词加 ed",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "np2",
+              "label": "宾语 NP"
+            },
+            {
+              "id": "adv",
+              "label": "时间状语"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "I",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "visited",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "my",
+              "pos": "pronoun",
+              "role": "限定词",
+              "group": "np2"
+            },
+            {
+              "text": "grandma",
+              "pos": "noun",
+              "role": "宾语",
+              "group": "np2"
+            },
+            {
+              "text": "last",
+              "pos": "adj",
+              "role": "定语",
+              "group": "adv"
+            },
+            {
+              "text": "week",
+              "pos": "noun",
+              "role": "时间状语",
+              "group": "adv"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "visit",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            }
+          ],
+          "explain": "一般过去时表示过去发生的事，动词用过去式。visit 是规则动词，直接加 ed。last week 是时间状语，告诉你这是过去。",
+          "example": "I visited my grandma last week. / I visit my grandma every week.",
+          "win": "过去的事，动词加 ed。"
+        },
+        {
+          "id": "3-2-r2",
+          "cn": "她昨天去了北京。",
+          "tip": "go 的过去式是 went",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "pp",
+              "label": "介词短语 PP"
+            },
+            {
+              "id": "adv",
+              "label": "时间状语"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "She",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "went",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "to",
+              "pos": "prep",
+              "role": "介词",
+              "group": "pp"
+            },
+            {
+              "text": "Beijing",
+              "pos": "noun",
+              "role": "介词宾语",
+              "group": "pp"
+            },
+            {
+              "text": "yesterday",
+              "pos": "adv",
+              "role": "时间状语",
+              "group": "adv"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "go",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "goes",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            }
+          ],
+          "explain": "go 的过去式是 went，不是 goed。英语里最常用的动词几乎都是不规则的，只能一个个记。另外过去式不分人称，She 也用 went。",
+          "example": "She went to Beijing yesterday. / She goes to Beijing every year.",
+          "win": "常用动词的过去式，得记住。"
+        },
+        {
+          "id": "3-2-r3",
+          "cn": "他们昨晚看了一部电影。",
+          "tip": "saw 是过去式，seen 是过去分词",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "np2",
+              "label": "宾语 NP"
+            },
+            {
+              "id": "adv",
+              "label": "时间状语"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "They",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "saw",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "a",
+              "pos": "article",
+              "role": "限定词",
+              "group": "np2"
+            },
+            {
+              "text": "film",
+              "pos": "noun",
+              "role": "宾语",
+              "group": "np2"
+            },
+            {
+              "text": "last",
+              "pos": "adj",
+              "role": "定语",
+              "group": "adv"
+            },
+            {
+              "text": "night",
+              "pos": "noun",
+              "role": "时间状语",
+              "group": "adv"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "see",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "seen",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            }
+          ],
+          "explain": "see 的过去式是 saw。seen 是过去分词，它不能单独当谓语，得和 have / has / had 一起用（have seen）。",
+          "example": "They saw a film last night. / They have seen that film.",
+          "win": "过去式和过去分词是两个东西。"
+        },
+        {
+          "id": "3-2-r4",
+          "cn": "他买了一个新手机。",
+          "tip": "改错：buy 的过去式不是 buyed",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "np2",
+              "label": "宾语 NP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "He",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "bought",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "a",
+              "pos": "article",
+              "role": "限定词",
+              "group": "np2"
+            },
+            {
+              "text": "new",
+              "pos": "adj",
+              "role": "定语",
+              "group": "np2"
+            },
+            {
+              "text": "phone",
+              "pos": "noun",
+              "role": "宾语",
+              "group": "np2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "buy",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "buyed",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            }
+          ],
+          "prefill": [
+            "He",
+            "buyed",
+            "a",
+            "new",
+            "phone"
+          ],
+          "explain": "buy 的过去式是 bought，不是加 ed 的 buyed。英语里没有 buyed 这个词。",
+          "example": "He bought a new phone. / He buys a new phone every year.",
+          "win": "不规则动词不会乖乖加 ed。"
+        },
+        {
+          "id": "3-2-r5",
+          "cn": "你昨晚给我打电话了吗？",
+          "tip": "过去时的疑问句用 Did",
+          "punct": "?",
+          "groups": [
+            {
+              "id": "vp",
+              "label": "助动词"
+            },
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp2",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "np2",
+              "label": "宾语 NP"
+            },
+            {
+              "id": "adv",
+              "label": "时间状语"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "Did",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            },
+            {
+              "text": "you",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "call",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp2"
+            },
+            {
+              "text": "me",
+              "pos": "pronoun",
+              "role": "宾语",
+              "group": "np2"
+            },
+            {
+              "text": "last",
+              "pos": "adj",
+              "role": "定语",
+              "group": "adv"
+            },
+            {
+              "text": "night",
+              "pos": "noun",
+              "role": "时间状语",
+              "group": "adv"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "called",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp2"
+            }
+          ],
+          "explain": "一般过去时的疑问句用 Did 开头，后面的动词要还原成原形 call —— 过去时态的标志已经由 Did 承担了。",
+          "example": "Did you call me last night? / You called me last night.",
+          "win": "Did 出现后，动词回到原形。"
+        }
+      ]
+    },
+    {
+      "id": "3-3",
+      "topic": "一般将来",
+      "emoji": "🚀",
+      "goal": "will + 动词原形，will 后面永远不加 s、不加 ed",
+      "rounds": [
+        {
+          "id": "3-3-r1",
+          "cn": "我明天给你打电话。",
+          "tip": "will + 动词原形",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "助动词"
+            },
+            {
+              "id": "vp2",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "np2",
+              "label": "宾语 NP"
+            },
+            {
+              "id": "adv",
+              "label": "时间状语"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "I",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "will",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            },
+            {
+              "text": "call",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp2"
+            },
+            {
+              "text": "you",
+              "pos": "pronoun",
+              "role": "宾语",
+              "group": "np2"
+            },
+            {
+              "text": "tomorrow",
+              "pos": "adv",
+              "role": "时间状语",
+              "group": "adv"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "called",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp2"
+            },
+            {
+              "text": "calls",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp2"
+            }
+          ],
+          "explain": "一般将来时：will + 动词原形。will 后面永远用原形，不加 s 也不加 ed。tomorrow 提示这是将来的事。",
+          "example": "I will call you tomorrow. / I called you yesterday.",
+          "win": "will 后面永远跟原形。"
+        },
+        {
+          "id": "3-3-r2",
+          "cn": "明天会下雨。",
+          "tip": "will 后面不加 s",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "助动词"
+            },
+            {
+              "id": "vp2",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "adv",
+              "label": "时间状语"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "It",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "will",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            },
+            {
+              "text": "rain",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp2"
+            },
+            {
+              "text": "tomorrow",
+              "pos": "adv",
+              "role": "时间状语",
+              "group": "adv"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "rains",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp2"
+            },
+            {
+              "text": "rained",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp2"
+            }
+          ],
+          "explain": "will 已经把「将来」标出来了，动词就不用再变形。It will rains 是错的。",
+          "example": "It will rain tomorrow. / It rains a lot here.",
+          "win": "一个句子里，时态标志只出现一次。"
+        },
+        {
+          "id": "3-3-r3",
+          "cn": "他不会来参加聚会。",
+          "tip": "将来时的否定：will not",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "助动词"
+            },
+            {
+              "id": "vp2",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "pp",
+              "label": "介词短语 PP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "He",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "will",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            },
+            {
+              "text": "not",
+              "pos": "adv",
+              "role": "状语",
+              "group": "vp"
+            },
+            {
+              "text": "come",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp2"
+            },
+            {
+              "text": "to",
+              "pos": "prep",
+              "role": "介词",
+              "group": "pp"
+            },
+            {
+              "text": "the",
+              "pos": "article",
+              "role": "限定词",
+              "group": "pp"
+            },
+            {
+              "text": "party",
+              "pos": "noun",
+              "role": "介词宾语",
+              "group": "pp"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "comes",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp2"
+            },
+            {
+              "text": "came",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp2"
+            }
+          ],
+          "explain": "将来时的否定：在 will 后面加 not（口语常缩写成 won't），动词还是原形。",
+          "example": "He will not come to the party. / He won't come to the party.",
+          "win": "not 加在 will 后面。"
+        },
+        {
+          "id": "3-3-r4",
+          "cn": "她将去伦敦。",
+          "tip": "改错：will 后面不能加 s",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "助动词"
+            },
+            {
+              "id": "vp2",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "pp",
+              "label": "介词短语 PP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "She",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "will",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            },
+            {
+              "text": "go",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp2"
+            },
+            {
+              "text": "to",
+              "pos": "prep",
+              "role": "介词",
+              "group": "pp"
+            },
+            {
+              "text": "London",
+              "pos": "noun",
+              "role": "介词宾语",
+              "group": "pp"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "goes",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp2"
+            },
+            {
+              "text": "went",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp2"
+            }
+          ],
+          "prefill": [
+            "She",
+            "will",
+            "goes",
+            "to",
+            "London"
+          ],
+          "explain": "will 后面必须用原形。不能因为主语是 She 就加 s，也不能用过去式 went。",
+          "example": "She will go to London. / She goes to London every year.",
+          "win": "will 一出现，动词就不变形。"
+        },
+        {
+          "id": "3-3-r5",
+          "cn": "你会帮我吗？",
+          "tip": "will 提到句首就是疑问句",
+          "punct": "?",
+          "groups": [
+            {
+              "id": "vp",
+              "label": "助动词"
+            },
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp2",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "np2",
+              "label": "宾语 NP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "Will",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            },
+            {
+              "text": "you",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "help",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp2"
+            },
+            {
+              "text": "me",
+              "pos": "pronoun",
+              "role": "宾语",
+              "group": "np2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "helps",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp2"
+            }
+          ],
+          "explain": "将来时的疑问句把 will 提到句首，动词保持原形。",
+          "example": "Will you help me? / You will help me.",
+          "win": "will 提前，动词不变。"
+        }
+      ]
+    },
+    {
+      "id": "3-4",
+      "topic": "现在进行",
+      "emoji": "🏃‍♂️",
+      "goal": "be + 动词 ing，表示此刻正在发生 —— be 动词不能丢",
+      "rounds": [
+        {
+          "id": "3-4-r1",
+          "cn": "她正在看书。",
+          "tip": "be + doing，两个都不能少",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "助动词"
+            },
+            {
+              "id": "vp2",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "np2",
+              "label": "宾语 NP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "She",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "is",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            },
+            {
+              "text": "reading",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp2"
+            },
+            {
+              "text": "a",
+              "pos": "article",
+              "role": "限定词",
+              "group": "np2"
+            },
+            {
+              "text": "book",
+              "pos": "noun",
+              "role": "宾语",
+              "group": "np2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "read",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp2"
+            },
+            {
+              "text": "reads",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp2"
+            }
+          ],
+          "explain": "现在进行时：be + 动词 ing，表示此刻正在发生。be 动词不能丢 —— She reading 是残缺的句子。",
+          "example": "She is reading a book. / She reads a book every night.",
+          "win": "进行时 = be + ing，两个都要。"
+        },
+        {
+          "id": "3-4-r2",
+          "cn": "他们正在踢足球。",
+          "tip": "主语复数用 are",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "助动词"
+            },
+            {
+              "id": "vp2",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "np2",
+              "label": "宾语 NP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "They",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "are",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            },
+            {
+              "text": "playing",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp2"
+            },
+            {
+              "text": "football",
+              "pos": "noun",
+              "role": "宾语",
+              "group": "np2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "play",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp2"
+            },
+            {
+              "text": "is",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            }
+          ],
+          "explain": "主语 They 是复数，be 动词用 are。动词要变成 ing 形式 playing。",
+          "example": "They are playing football. / He is playing football.",
+          "win": "are + ing，主语复数。"
+        },
+        {
+          "id": "3-4-r3",
+          "cn": "我正在等你。",
+          "tip": "wait for 是固定搭配",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "助动词"
+            },
+            {
+              "id": "vp2",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "pp",
+              "label": "介词短语 PP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "I",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "am",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            },
+            {
+              "text": "waiting",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp2"
+            },
+            {
+              "text": "for",
+              "pos": "prep",
+              "role": "介词",
+              "group": "pp"
+            },
+            {
+              "text": "you",
+              "pos": "pronoun",
+              "role": "介词宾语",
+              "group": "pp"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "wait",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp2"
+            },
+            {
+              "text": "is",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            }
+          ],
+          "explain": "主语 I 只能配 am。wait 后面跟人时要加 for，这是固定搭配。",
+          "example": "I am waiting for you. / I wait for the bus every morning.",
+          "win": "I 配 am；wait for 是一个整体。"
+        },
+        {
+          "id": "3-4-r4",
+          "cn": "他正在写一封信。",
+          "tip": "改错：be 后面要用 ing 形式",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "助动词"
+            },
+            {
+              "id": "vp2",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "np2",
+              "label": "宾语 NP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "He",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "is",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            },
+            {
+              "text": "writing",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp2"
+            },
+            {
+              "text": "a",
+              "pos": "article",
+              "role": "限定词",
+              "group": "np2"
+            },
+            {
+              "text": "letter",
+              "pos": "noun",
+              "role": "宾语",
+              "group": "np2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "write",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp2"
+            }
+          ],
+          "prefill": [
+            "He",
+            "is",
+            "write",
+            "a",
+            "letter"
+          ],
+          "explain": "be 动词后面要用 ing 形式，不能直接跟原形。write 以不发音的 e 结尾，要去掉 e 再加 ing → writing。",
+          "example": "He is writing a letter. / He writes letters every day.",
+          "win": "以 e 结尾的动词，去 e 加 ing。"
+        },
+        {
+          "id": "3-4-r5",
+          "cn": "婴儿没在哭。",
+          "tip": "进行时的否定：be + not + doing",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "助动词"
+            },
+            {
+              "id": "vp2",
+              "label": "谓语 VP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "The",
+              "pos": "article",
+              "role": "限定词",
+              "group": "np1"
+            },
+            {
+              "text": "baby",
+              "pos": "noun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "is",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            },
+            {
+              "text": "not",
+              "pos": "adv",
+              "role": "状语",
+              "group": "vp"
+            },
+            {
+              "text": "crying",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "cries",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp2"
+            },
+            {
+              "text": "cry",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp2"
+            }
+          ],
+          "explain": "进行时的否定：在 be 动词后面加 not，动词保持 ing 形式。不需要 do 或 does。",
+          "example": "The baby is not crying. / The baby isn't crying.",
+          "win": "进行时的否定只动 be 动词。"
+        }
+      ]
+    },
+    {
+      "id": "3-5",
+      "topic": "过去进行",
+      "emoji": "⏳",
+      "goal": "was / were + doing：过去某个时刻正在发生的事",
+      "rounds": [
+        {
+          "id": "3-5-r1",
+          "cn": "那时我正在看书。",
+          "tip": "was + doing",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "助动词"
+            },
+            {
+              "id": "vp2",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "pp",
+              "label": "时间状语 PP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "I",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "was",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            },
+            {
+              "text": "reading",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp2"
+            },
+            {
+              "text": "at",
+              "pos": "prep",
+              "role": "介词",
+              "group": "pp"
+            },
+            {
+              "text": "that",
+              "pos": "pronoun",
+              "role": "限定词",
+              "group": "pp"
+            },
+            {
+              "text": "time",
+              "pos": "noun",
+              "role": "介词宾语",
+              "group": "pp"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "am",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            },
+            {
+              "text": "read",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp2"
+            }
+          ],
+          "explain": "过去进行时：was / were + 动词 ing，表示过去某个时刻正在发生的事。主语 I 配 was。at that time 是那个时间点。",
+          "example": "I was reading at that time. / I am reading now.",
+          "win": "过去进行 = was/were + ing。"
+        },
+        {
+          "id": "3-5-r2",
+          "cn": "他们当时在等公交车。",
+          "tip": "主语复数用 were",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "助动词"
+            },
+            {
+              "id": "vp2",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "pp",
+              "label": "介词短语 PP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "They",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "were",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            },
+            {
+              "text": "waiting",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp2"
+            },
+            {
+              "text": "for",
+              "pos": "prep",
+              "role": "介词",
+              "group": "pp"
+            },
+            {
+              "text": "the",
+              "pos": "article",
+              "role": "限定词",
+              "group": "pp"
+            },
+            {
+              "text": "bus",
+              "pos": "noun",
+              "role": "介词宾语",
+              "group": "pp"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "was",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            },
+            {
+              "text": "wait",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp2"
+            }
+          ],
+          "explain": "主语 They 是复数，用 were。was 只给单数主语（I / he / she / it）。",
+          "example": "They were waiting for the bus. / She was waiting for the bus.",
+          "win": "复数用 were，单数用 was。"
+        },
+        {
+          "id": "3-5-r3",
+          "cn": "整个上午都在下雨。",
+          "tip": "all morning 表示一整段时间",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "助动词"
+            },
+            {
+              "id": "vp2",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "adv",
+              "label": "时间状语"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "It",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "was",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            },
+            {
+              "text": "raining",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp2"
+            },
+            {
+              "text": "all",
+              "pos": "adj",
+              "role": "定语",
+              "group": "adv"
+            },
+            {
+              "text": "morning",
+              "pos": "noun",
+              "role": "时间状语",
+              "group": "adv"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "rains",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp2"
+            },
+            {
+              "text": "rained",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp2"
+            }
+          ],
+          "explain": "all morning 表示「整个上午」，是一段持续的时间，正好配合进行时 —— 强调那段时间里一直在下。",
+          "example": "It was raining all morning. / It rained last night.",
+          "win": "持续一段时间的事，用进行时更有画面。"
+        },
+        {
+          "id": "3-5-r4",
+          "cn": "他们当时在玩游戏。",
+          "tip": "改错：was 还是 were",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "助动词"
+            },
+            {
+              "id": "vp2",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "np2",
+              "label": "宾语 NP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "They",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "were",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            },
+            {
+              "text": "playing",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp2"
+            },
+            {
+              "text": "games",
+              "pos": "noun",
+              "role": "宾语",
+              "group": "np2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "was",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            },
+            {
+              "text": "play",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp2"
+            }
+          ],
+          "prefill": [
+            "They",
+            "was",
+            "playing",
+            "games"
+          ],
+          "explain": "主语 They 是复数，必须用 were。判断 was / were 只看主语是不是复数。",
+          "example": "They were playing games. / He was playing games.",
+          "win": "was / were 跟着主语走。"
+        },
+        {
+          "id": "3-5-r5",
+          "cn": "你当时在做什么？",
+          "tip": "疑问词 + was/were + 主语 + doing",
+          "punct": "?",
+          "groups": [
+            {
+              "id": "q",
+              "label": "疑问词"
+            },
+            {
+              "id": "vp",
+              "label": "助动词"
+            },
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp2",
+              "label": "谓语 VP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "What",
+              "pos": "pronoun",
+              "role": "疑问词",
+              "group": "q"
+            },
+            {
+              "text": "were",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            },
+            {
+              "text": "you",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "doing",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "was",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            },
+            {
+              "text": "do",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp2"
+            }
+          ],
+          "explain": "过去进行时的特殊疑问句：疑问词 + was / were + 主语 + doing。主语 you 配 were。",
+          "example": "What were you doing? / What does he do?",
+          "win": "疑问词后面，助动词跟着主语走。"
+        }
+      ]
+    },
+    {
+      "id": "3-6",
+      "topic": "现在完成",
+      "emoji": "✅",
+      "goal": "have / has + 过去分词：到现在为止已经完成，重点在结果",
+      "rounds": [
+        {
+          "id": "3-6-r1",
+          "cn": "我已经写完作业了。",
+          "tip": "have + 过去分词",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "助动词"
+            },
+            {
+              "id": "vp2",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "np2",
+              "label": "宾语 NP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "I",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "have",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            },
+            {
+              "text": "finished",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp2"
+            },
+            {
+              "text": "my",
+              "pos": "pronoun",
+              "role": "限定词",
+              "group": "np2"
+            },
+            {
+              "text": "homework",
+              "pos": "noun",
+              "role": "宾语",
+              "group": "np2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "finish",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp2"
+            },
+            {
+              "text": "finishes",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp2"
+            }
+          ],
+          "explain": "现在完成时：have / has + 过去分词。它说的是「到现在为止已经完成」，重点在结果，不在于过去的时间点 —— 所以不能说 I have finished my homework yesterday。",
+          "example": "I have finished my homework. / I finished my homework yesterday.",
+          "win": "现在完成：结果和现在有关。"
+        },
+        {
+          "id": "3-6-r2",
+          "cn": "她在这儿住了很多年。",
+          "tip": "for + 一段时间",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "pp",
+              "label": "时间状语 PP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "She",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "has",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            },
+            {
+              "text": "lived",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "here",
+              "pos": "adv",
+              "role": "状语",
+              "group": "vp"
+            },
+            {
+              "text": "for",
+              "pos": "prep",
+              "role": "介词",
+              "group": "pp"
+            },
+            {
+              "text": "many",
+              "pos": "adj",
+              "role": "定语",
+              "group": "pp"
+            },
+            {
+              "text": "years",
+              "pos": "noun",
+              "role": "介词宾语",
+              "group": "pp"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "live",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "have",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            }
+          ],
+          "explain": "for + 一段时间，表示这个动作持续了多久。主语 She 是第三人称单数，用 has。现在完成时也用来讲「从过去持续到现在」的事。",
+          "example": "She has lived here for many years. / She lived here many years ago.",
+          "win": "for + 一段时间，配现在完成。"
+        },
+        {
+          "id": "3-6-r3",
+          "cn": "你去过日本吗？",
+          "tip": "have been to 表示「去过」",
+          "punct": "?",
+          "groups": [
+            {
+              "id": "vp",
+              "label": "助动词"
+            },
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp2",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "pp",
+              "label": "介词短语 PP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "Have",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            },
+            {
+              "text": "you",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "ever",
+              "pos": "adv",
+              "role": "状语",
+              "group": "vp2"
+            },
+            {
+              "text": "been",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp2"
+            },
+            {
+              "text": "to",
+              "pos": "prep",
+              "role": "介词",
+              "group": "pp"
+            },
+            {
+              "text": "Japan",
+              "pos": "noun",
+              "role": "介词宾语",
+              "group": "pp"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "be",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp2"
+            },
+            {
+              "text": "went",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp2"
+            }
+          ],
+          "explain": "have been to 表示「去过某地」，是现在完成时的固定说法，说的是人生经验。ever 放在 have 和过去分词中间，表示「曾经」。",
+          "example": "Have you ever been to Japan? / I went to Japan last year.",
+          "win": "have been to = 去过。"
+        },
+        {
+          "id": "3-6-r4",
+          "cn": "那部电影我看过了。",
+          "tip": "改错：have 后面用过去分词，不是过去式",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "助动词"
+            },
+            {
+              "id": "vp2",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "np2",
+              "label": "宾语 NP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "I",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "have",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            },
+            {
+              "text": "seen",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp2"
+            },
+            {
+              "text": "that",
+              "pos": "pronoun",
+              "role": "限定词",
+              "group": "np2"
+            },
+            {
+              "text": "film",
+              "pos": "noun",
+              "role": "宾语",
+              "group": "np2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "saw",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp2"
+            }
+          ],
+          "prefill": [
+            "I",
+            "have",
+            "saw",
+            "that",
+            "film"
+          ],
+          "explain": "have 后面必须用过去分词，不是过去式。see 的过去式是 saw，过去分词是 seen —— 这两个不能混。",
+          "example": "I have seen that film. / I saw that film last week.",
+          "win": "have + 过去分词，不是过去式。"
+        },
+        {
+          "id": "3-6-r5",
+          "cn": "她刚走。",
+          "tip": "just 放在 have 和过去分词中间",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "She",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "has",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            },
+            {
+              "text": "just",
+              "pos": "adv",
+              "role": "状语",
+              "group": "vp"
+            },
+            {
+              "text": "left",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "leaves",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "leave",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            }
+          ],
+          "explain": "just 表示「刚刚」，位置在 have / has 和过去分词之间。leave 的过去分词是 left。",
+          "example": "She has just left. / She left just now.",
+          "win": "just 站在助动词和过去分词中间。"
+        }
+      ]
+    },
+    {
+      "id": "3-7",
+      "topic": "过去完成",
+      "emoji": "⏮️",
+      "goal": "had + 过去分词：在过去某个时间点之前就已经完成",
+      "rounds": [
+        {
+          "id": "3-7-r1",
+          "cn": "（那时）火车已经开走了。",
+          "tip": "had + 过去分词",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "The",
+              "pos": "article",
+              "role": "限定词",
+              "group": "np1"
+            },
+            {
+              "text": "train",
+              "pos": "noun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "had",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            },
+            {
+              "text": "already",
+              "pos": "adv",
+              "role": "状语",
+              "group": "vp"
+            },
+            {
+              "text": "left",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "has",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            },
+            {
+              "text": "leaves",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            }
+          ],
+          "explain": "过去完成时：had + 过去分词。它表示「在过去某个时间点之前就已经完成」，所以句子里通常会有一个过去的参照点。already 放在 had 和过去分词中间。",
+          "example": "The train had already left. / The train has already left.",
+          "win": "过去完成＝过去的过去。"
+        },
+        {
+          "id": "3-7-r2",
+          "cn": "她在晚饭前就完成了工作。",
+          "tip": "before 提供了那个过去的参照点",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "np2",
+              "label": "宾语 NP"
+            },
+            {
+              "id": "pp",
+              "label": "时间状语 PP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "She",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "had",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            },
+            {
+              "text": "finished",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "the",
+              "pos": "article",
+              "role": "限定词",
+              "group": "np2"
+            },
+            {
+              "text": "work",
+              "pos": "noun",
+              "role": "宾语",
+              "group": "np2"
+            },
+            {
+              "text": "before",
+              "pos": "prep",
+              "role": "介词",
+              "group": "pp"
+            },
+            {
+              "text": "dinner",
+              "pos": "noun",
+              "role": "介词宾语",
+              "group": "pp"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "has",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            },
+            {
+              "text": "finish",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            }
+          ],
+          "explain": "had + 过去分词，表示「在过去某件事之前就完成了」。before dinner 提供了那个过去的时间点。",
+          "example": "She had finished the work before dinner. / She finished the work after dinner.",
+          "win": "两个过去动作，先发生的用过去完成。"
+        },
+        {
+          "id": "3-7-r3",
+          "cn": "我以前从没见过雪。",
+          "tip": "never 放在 had 和过去分词中间",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "I",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "had",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            },
+            {
+              "text": "never",
+              "pos": "adv",
+              "role": "状语",
+              "group": "vp"
+            },
+            {
+              "text": "seen",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "before",
+              "pos": "adv",
+              "role": "状语",
+              "group": "vp"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "saw",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "have",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            }
+          ],
+          "explain": "never 站在 had 和过去分词中间。see 的过去分词是 seen，不是 saw。句末的 before 表示「在那之前」。",
+          "example": "I had never seen snow before. / I have never seen snow.",
+          "win": "never 也站在助动词后面。"
+        },
+        {
+          "id": "3-7-r4",
+          "cn": "他已经回家了。",
+          "tip": "改错：had 后面用过去分词",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "He",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "had",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            },
+            {
+              "text": "gone",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "home",
+              "pos": "adv",
+              "role": "状语",
+              "group": "vp"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "went",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "go",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            }
+          ],
+          "prefill": [
+            "He",
+            "had",
+            "went",
+            "home"
+          ],
+          "explain": "had 后面要用过去分词 gone，不是过去式 went。go 的三个形态是 go - went - gone。",
+          "example": "He had gone home. / He went home.",
+          "win": "go - went - gone，三个形态要分清。"
+        },
+        {
+          "id": "3-7-r5",
+          "cn": "到那时你完成了吗？",
+          "tip": "had 提到句首",
+          "punct": "?",
+          "groups": [
+            {
+              "id": "vp",
+              "label": "助动词"
+            },
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp2",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "pp",
+              "label": "时间状语 PP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "Had",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            },
+            {
+              "text": "you",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "finished",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp2"
+            },
+            {
+              "text": "by",
+              "pos": "prep",
+              "role": "介词",
+              "group": "pp"
+            },
+            {
+              "text": "then",
+              "pos": "adv",
+              "role": "介词宾语",
+              "group": "pp"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "Have",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            },
+            {
+              "text": "finish",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp2"
+            }
+          ],
+          "explain": "过去完成时的疑问句把 had 提到句首。by then 表示「到那时为止」。",
+          "example": "Had you finished by then? / You had finished by then.",
+          "win": "had 提前，动词不变。"
+        }
+      ]
+    },
+    {
+      "id": "3-8",
+      "topic": "将来完成",
+      "emoji": "🔮",
+      "goal": "will have + 过去分词：到将来某个时间点之前会完成",
+      "rounds": [
+        {
+          "id": "3-8-r1",
+          "cn": "我周五之前会写完报告。",
+          "tip": "will have + 过去分词",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "np2",
+              "label": "宾语 NP"
+            },
+            {
+              "id": "pp",
+              "label": "时间状语 PP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "I",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "will",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            },
+            {
+              "text": "have",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            },
+            {
+              "text": "finished",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "the",
+              "pos": "article",
+              "role": "限定词",
+              "group": "np2"
+            },
+            {
+              "text": "report",
+              "pos": "noun",
+              "role": "宾语",
+              "group": "np2"
+            },
+            {
+              "text": "by",
+              "pos": "prep",
+              "role": "介词",
+              "group": "pp"
+            },
+            {
+              "text": "Friday",
+              "pos": "noun",
+              "role": "介词宾语",
+              "group": "pp"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "finish",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            }
+          ],
+          "explain": "将来完成时：will have + 过去分词，表示「到将来某个时间点之前会完成」。by Friday 就是那个时间点。",
+          "example": "I will have finished the report by Friday. / I will finish the report tomorrow.",
+          "win": "will have + 过去分词，三个词一起用。"
+        },
+        {
+          "id": "3-8-r2",
+          "cn": "到那时他们已经到达了。",
+          "tip": "by then 表示「到那时」",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "pp",
+              "label": "时间状语 PP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "They",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "will",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            },
+            {
+              "text": "have",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            },
+            {
+              "text": "arrived",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "by",
+              "pos": "prep",
+              "role": "介词",
+              "group": "pp"
+            },
+            {
+              "text": "then",
+              "pos": "adv",
+              "role": "介词宾语",
+              "group": "pp"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "arrive",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "are",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            }
+          ],
+          "explain": "will have + 过去分词。by then 表示「到那时为止」，是将来完成时最常见的搭配。",
+          "example": "They will have arrived by then. / They will arrive soon.",
+          "win": "by + 时间点 = 到那时为止。"
+        },
+        {
+          "id": "3-8-r3",
+          "cn": "他会忘了我的名字。",
+          "tip": "forget 的过去分词是 forgotten",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "np2",
+              "label": "宾语 NP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "He",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "will",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            },
+            {
+              "text": "have",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            },
+            {
+              "text": "forgotten",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "my",
+              "pos": "pronoun",
+              "role": "限定词",
+              "group": "np2"
+            },
+            {
+              "text": "name",
+              "pos": "noun",
+              "role": "宾语",
+              "group": "np2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "forgot",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            }
+          ],
+          "explain": "forget 的三个形态是 forget - forgot - forgotten。have 后面要用过去分词 forgotten。",
+          "example": "He will have forgotten my name. / He forgot my name.",
+          "win": "不规则动词的第三个形态，还是得记。"
+        },
+        {
+          "id": "3-8-r4",
+          "cn": "我们会完成这个项目的。",
+          "tip": "改错：will have 后面用过去分词",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "np2",
+              "label": "宾语 NP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "We",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "will",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            },
+            {
+              "text": "have",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            },
+            {
+              "text": "finished",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "the",
+              "pos": "article",
+              "role": "限定词",
+              "group": "np2"
+            },
+            {
+              "text": "project",
+              "pos": "noun",
+              "role": "宾语",
+              "group": "np2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "finish",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            }
+          ],
+          "prefill": [
+            "We",
+            "will",
+            "have",
+            "finish",
+            "the",
+            "project"
+          ],
+          "explain": "will have 后面必须跟过去分词 finished，不能跟原形。这是三段式结构，缺一段都不行。",
+          "example": "We will have finished the project. / We have finished the project.",
+          "win": "will + have + 过去分词，一段都不能少。"
+        },
+        {
+          "id": "3-8-r5",
+          "cn": "到那时他们会到吗？",
+          "tip": "will 提到句首",
+          "punct": "?",
+          "groups": [
+            {
+              "id": "vp",
+              "label": "助动词"
+            },
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp2",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "pp",
+              "label": "时间状语 PP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "Will",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            },
+            {
+              "text": "they",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "have",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp2"
+            },
+            {
+              "text": "arrived",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp2"
+            },
+            {
+              "text": "by",
+              "pos": "prep",
+              "role": "介词",
+              "group": "pp"
+            },
+            {
+              "text": "then",
+              "pos": "adv",
+              "role": "介词宾语",
+              "group": "pp"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "arrive",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp2"
+            }
+          ],
+          "explain": "将来完成时的疑问句把 will 提到句首，have + 过去分词原样跟着。",
+          "example": "Will they have arrived by then? / They will have arrived by then.",
+          "win": "will 提前，have + 过去分词不动。"
+        }
+      ]
+    },
+    {
+      "id": "3-9",
+      "topic": "被动语态",
+      "emoji": "🔄",
+      "goal": "be + 过去分词：主语从「做事的」变成「被做的」",
+      "rounds": [
+        {
+          "id": "3-9-r1",
+          "cn": "这封信是 Tom 写的。",
+          "tip": "be + 过去分词，执行者用 by",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语（受事）"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP（被动）"
+            },
+            {
+              "id": "pp",
+              "label": "施动者 PP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "The",
+              "pos": "article",
+              "role": "限定词",
+              "group": "np1"
+            },
+            {
+              "text": "letter",
+              "pos": "noun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "was",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            },
+            {
+              "text": "written",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "by",
+              "pos": "prep",
+              "role": "介词",
+              "group": "pp"
+            },
+            {
+              "text": "Tom",
+              "pos": "noun",
+              "role": "介词宾语",
+              "group": "pp"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "wrote",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            }
+          ],
+          "explain": "被动语态：be + 过去分词。主语是「被写」的那封信，动作的执行者用 by 引出来。write 的过去分词是 written，不是过去式 wrote。",
+          "example": "The letter was written by Tom. / Tom wrote the letter.",
+          "win": "被动＝be + 过去分词。"
+        },
+        {
+          "id": "3-9-r2",
+          "cn": "全世界都在说英语。",
+          "tip": "说不出执行者时，by 可以不要",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语（受事）"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP（被动）"
+            },
+            {
+              "id": "pp",
+              "label": "范围状语 PP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "English",
+              "pos": "noun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "is",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            },
+            {
+              "text": "spoken",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "all",
+              "pos": "adj",
+              "role": "定语",
+              "group": "pp"
+            },
+            {
+              "text": "over",
+              "pos": "prep",
+              "role": "介词",
+              "group": "pp"
+            },
+            {
+              "text": "the",
+              "pos": "article",
+              "role": "限定词",
+              "group": "pp"
+            },
+            {
+              "text": "world",
+              "pos": "noun",
+              "role": "介词宾语",
+              "group": "pp"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "speak",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "speaks",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            }
+          ],
+          "explain": "speak 的过去分词是 spoken。这里没有 by，因为「谁说的」不重要 —— 被动语态常用于执行者不明确或不重要的时候。",
+          "example": "English is spoken all over the world. / People speak English all over the world.",
+          "win": "执行者不重要时，by 可以省略。"
+        },
+        {
+          "id": "3-9-r3",
+          "cn": "这座桥是很多年前建的。",
+          "tip": "build 的过去分词是 built",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语（受事）"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP（被动）"
+            },
+            {
+              "id": "pp",
+              "label": "时间状语 PP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "The",
+              "pos": "article",
+              "role": "限定词",
+              "group": "np1"
+            },
+            {
+              "text": "bridge",
+              "pos": "noun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "was",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            },
+            {
+              "text": "built",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "many",
+              "pos": "adj",
+              "role": "定语",
+              "group": "pp"
+            },
+            {
+              "text": "years",
+              "pos": "noun",
+              "role": "介词宾语",
+              "group": "pp"
+            },
+            {
+              "text": "ago",
+              "pos": "adv",
+              "role": "状语",
+              "group": "pp"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "build",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "builded",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            }
+          ],
+          "explain": "build 的过去分词是 built（不是 builded）。被动语态里主语是「被建」的桥。many years ago 说明这是过去的事，所以用 was。",
+          "example": "The bridge was built many years ago. / They built the bridge many years ago.",
+          "win": "被动语态的主语，是「被做」的那个。"
+        },
+        {
+          "id": "3-9-r4",
+          "cn": "这首歌是她写的。",
+          "tip": "改错：be 后面用过去分词",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语（受事）"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP（被动）"
+            },
+            {
+              "id": "pp",
+              "label": "施动者 PP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "The",
+              "pos": "article",
+              "role": "限定词",
+              "group": "np1"
+            },
+            {
+              "text": "song",
+              "pos": "noun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "was",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            },
+            {
+              "text": "written",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "by",
+              "pos": "prep",
+              "role": "介词",
+              "group": "pp"
+            },
+            {
+              "text": "her",
+              "pos": "pronoun",
+              "role": "介词宾语",
+              "group": "pp"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "wrote",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            }
+          ],
+          "prefill": [
+            "The",
+            "song",
+            "was",
+            "wrote",
+            "by",
+            "her"
+          ],
+          "explain": "be 后面要用过去分词 written，不是过去式 wrote。另外 by 后面要用宾格 her，不能用主格 she。",
+          "example": "The song was written by her. / She wrote the song.",
+          "win": "被动里 by 后面用宾格。"
+        },
+        {
+          "id": "3-9-r5",
+          "cn": "这些车是日本制造的。",
+          "tip": "主语复数 → are",
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语（受事）"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP（被动）"
+            },
+            {
+              "id": "pp",
+              "label": "地点 PP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "These",
+              "pos": "pronoun",
+              "role": "限定词",
+              "group": "np1"
+            },
+            {
+              "text": "cars",
+              "pos": "noun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "are",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            },
+            {
+              "text": "made",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "in",
+              "pos": "prep",
+              "role": "介词",
+              "group": "pp"
+            },
+            {
+              "text": "Japan",
+              "pos": "noun",
+              "role": "介词宾语",
+              "group": "pp"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "make",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "is",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            }
+          ],
+          "explain": "主语 These cars 是复数，be 动词用 are。make 的过去分词是 made。",
+          "example": "These cars are made in Japan. / This car is made in Japan.",
+          "win": "被动语态里，be 动词照样跟着主语变。"
+        }
+      ]
+    },
+    {
+      "id": "3-10",
+      "topic": "时态 · Boss",
+      "emoji": "👑",
+      "boss": true,
+      "goal": "八种时态加被动混着来 —— 限时挑战，看你能不能在 3 秒内认出时态",
+      "rounds": [
+        {
+          "id": "3-10-r1",
+          "cn": "婴儿现在正在睡觉。",
+          "tip": "now 提示用进行时",
+          "timeLimit": 40,
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "The",
+              "pos": "article",
+              "role": "限定词",
+              "group": "np1"
+            },
+            {
+              "text": "baby",
+              "pos": "noun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "is",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            },
+            {
+              "text": "sleeping",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "now",
+              "pos": "adv",
+              "role": "时间状语",
+              "group": "vp"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "sleeps",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            }
+          ],
+          "explain": "now 提示「此刻正在」，用现在进行时 be + ing。",
+          "example": "The baby is sleeping now. / The baby sleeps well.",
+          "win": "看到 now，先想进行时。"
+        },
+        {
+          "id": "3-10-r2",
+          "cn": "上周日我们参观了博物馆。",
+          "tip": "last Sunday 提示用过去时",
+          "timeLimit": 40,
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "np2",
+              "label": "宾语 NP"
+            },
+            {
+              "id": "adv",
+              "label": "时间状语"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "We",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "visited",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "the",
+              "pos": "article",
+              "role": "限定词",
+              "group": "np2"
+            },
+            {
+              "text": "museum",
+              "pos": "noun",
+              "role": "宾语",
+              "group": "np2"
+            },
+            {
+              "text": "last",
+              "pos": "adj",
+              "role": "定语",
+              "group": "adv"
+            },
+            {
+              "text": "Sunday",
+              "pos": "noun",
+              "role": "时间状语",
+              "group": "adv"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "visit",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            }
+          ],
+          "explain": "last Sunday 是明确的过去时间，用一般过去时，动词加 ed。",
+          "example": "We visited the museum last Sunday. / We visit the museum every Sunday.",
+          "win": "有明确的过去时间，就用过去时。"
+        },
+        {
+          "id": "3-10-r3",
+          "cn": "这部电影我已经看过了。",
+          "tip": "already 常配现在完成",
+          "timeLimit": 40,
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "np2",
+              "label": "宾语 NP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "I",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "have",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            },
+            {
+              "text": "already",
+              "pos": "adv",
+              "role": "状语",
+              "group": "vp"
+            },
+            {
+              "text": "seen",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "this",
+              "pos": "pronoun",
+              "role": "限定词",
+              "group": "np2"
+            },
+            {
+              "text": "film",
+              "pos": "noun",
+              "role": "宾语",
+              "group": "np2"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "saw",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            }
+          ],
+          "explain": "already 常和现在完成时搭配，位置在 have 和过去分词之间。have 后面用过去分词 seen。",
+          "example": "I have already seen this film. / I saw this film last week.",
+          "win": "already 站在助动词和过去分词中间。"
+        },
+        {
+          "id": "3-10-r4",
+          "cn": "这本书是用英语写的。",
+          "tip": "被动语态",
+          "timeLimit": 40,
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语（受事）"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP（被动）"
+            },
+            {
+              "id": "pp",
+              "label": "介词短语 PP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "The",
+              "pos": "article",
+              "role": "限定词",
+              "group": "np1"
+            },
+            {
+              "text": "book",
+              "pos": "noun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "was",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            },
+            {
+              "text": "written",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "in",
+              "pos": "prep",
+              "role": "介词",
+              "group": "pp"
+            },
+            {
+              "text": "English",
+              "pos": "noun",
+              "role": "介词宾语",
+              "group": "pp"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "wrote",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            }
+          ],
+          "explain": "被动语态 be + 过去分词。主语是「被写」的书。write 的过去分词是 written。",
+          "example": "The book was written in English. / Someone wrote the book in English.",
+          "win": "主语被做，就用被动。"
+        },
+        {
+          "id": "3-10-r5",
+          "cn": "到那时我就完成了。",
+          "tip": "将来完成",
+          "timeLimit": 45,
+          "groups": [
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "np2",
+              "label": "宾语 NP"
+            },
+            {
+              "id": "pp",
+              "label": "时间状语 PP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "I",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "will",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            },
+            {
+              "text": "have",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            },
+            {
+              "text": "finished",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            },
+            {
+              "text": "it",
+              "pos": "pronoun",
+              "role": "宾语",
+              "group": "np2"
+            },
+            {
+              "text": "by",
+              "pos": "prep",
+              "role": "介词",
+              "group": "pp"
+            },
+            {
+              "text": "then",
+              "pos": "adv",
+              "role": "介词宾语",
+              "group": "pp"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "finish",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp"
+            }
+          ],
+          "explain": "by then 表示「到那时为止」，配将来完成时 will have + 过去分词。",
+          "example": "I will have finished it by then. / I will finish it tomorrow.",
+          "win": "by then 后面跟将来完成。"
+        },
+        {
+          "id": "3-10-r6",
+          "cn": "你去过巴黎吗？",
+          "tip": "have been to = 去过",
+          "timeLimit": 40,
+          "punct": "?",
+          "groups": [
+            {
+              "id": "vp",
+              "label": "助动词"
+            },
+            {
+              "id": "np1",
+              "label": "主语 NP"
+            },
+            {
+              "id": "vp2",
+              "label": "谓语 VP"
+            },
+            {
+              "id": "pp",
+              "label": "介词短语 PP"
+            }
+          ],
+          "blocks": [
+            {
+              "text": "Have",
+              "pos": "verb",
+              "role": "助动词",
+              "group": "vp"
+            },
+            {
+              "text": "you",
+              "pos": "pronoun",
+              "role": "主语",
+              "group": "np1"
+            },
+            {
+              "text": "ever",
+              "pos": "adv",
+              "role": "状语",
+              "group": "vp2"
+            },
+            {
+              "text": "been",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp2"
+            },
+            {
+              "text": "to",
+              "pos": "prep",
+              "role": "介词",
+              "group": "pp"
+            },
+            {
+              "text": "Paris",
+              "pos": "noun",
+              "role": "介词宾语",
+              "group": "pp"
+            }
+          ],
+          "distractors": [
+            {
+              "text": "went",
+              "pos": "verb",
+              "role": "谓语",
+              "group": "vp2"
+            }
+          ],
+          "explain": "have been to 是现在完成时的固定说法，说人生经验。ever 表示「曾经」，放在中间。",
+          "example": "Have you ever been to Paris? / I went to Paris last year.",
+          "win": "问经验用 have been to。"
+        }
+      ]
+    }
+  ]
+}

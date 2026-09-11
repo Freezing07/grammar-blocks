@@ -1,0 +1,421 @@
+{
+  "2-1": {
+    "groups": [
+      { "id": "np1", "label": "主语 NP" },
+      { "id": "vp", "label": "谓语 VP" }
+    ],
+    "patterns": [
+      [["article", "限定词", "np1"], ["noun", "主语", "np1"], ["verb", "谓语", "vp"]],
+      [["noun", "主语", "np1"], ["verb", "谓语", "vp"]],
+      [["pronoun", "主语", "np1"], ["verb", "谓语", "vp"], ["adv", "状语", "vp"]]
+    ],
+    "rules": [
+      "一个主语加一个动词，就是最小的一句话。",
+      "主语是单数，动词要加 s；主语是复数，动词用原形。",
+      "不及物动词（arrive / rise / happen / sleep）后面不需要宾语，句子到这里就完整了。"
+    ],
+    "items": [
+      { "w": ["The", "baby", "cries"], "d": { "cry": 2 }, "r": 1 },
+      { "w": ["The", "sun", "rises"], "d": { "rise": 2 }, "r": 1 },
+      { "w": ["The", "train", "arrives"], "d": { "arrive": 2 }, "r": 2 },
+      { "w": ["The", "story", "ends"], "d": { "end": 2 }, "r": 1 },
+      { "w": ["The", "meeting", "starts"], "d": { "start": 2 }, "r": 1 },
+      { "w": ["The", "bus", "stops"], "d": { "stop": 2 }, "r": 1 },
+      { "w": ["The", "bell", "rings"], "d": { "ring": 2 }, "r": 1 },
+      { "w": ["The", "snow", "melts"], "d": { "melt": 2 }, "r": 1 },
+      { "w": ["The", "wind", "blows"], "d": { "blow": 2 }, "r": 1 },
+      { "w": ["The", "fire", "burns"], "d": { "burn": 2 }, "r": 1 },
+      { "w": ["Birds", "sing"], "d": { "sings": 1 }, "p": 1, "r": 1 },
+      { "w": ["Dogs", "bark"], "d": { "barks": 1 }, "p": 1, "r": 1 },
+      { "w": ["Leaves", "fall"], "d": { "falls": 1 }, "p": 1, "r": 1 },
+      { "w": ["Stars", "shine"], "d": { "shines": 1 }, "p": 1, "r": 1 },
+      { "w": ["Prices", "rise"], "d": { "rises": 1 }, "p": 1, "r": 1 },
+      { "w": ["People", "gather"], "d": { "gathers": 1 }, "p": 1, "r": 1 },
+      { "w": ["Clocks", "tick"], "d": { "ticks": 1 }, "p": 1, "r": 1 },
+      { "w": ["Children", "laugh"], "d": { "laughs": 1 }, "p": 1, "r": 1 },
+      { "w": ["Flowers", "bloom"], "d": { "blooms": 1 }, "p": 1, "r": 1 },
+      { "w": ["Clouds", "move"], "d": { "moves": 1 }, "p": 1, "r": 1 },
+      { "w": ["He", "sleeps", "well"], "d": { "sleep": 1 }, "p": 2, "r": 1 },
+      { "w": ["She", "arrives", "late"], "d": { "arrive": 1 }, "p": 2, "r": 2 },
+      { "w": ["They", "work", "hard"], "d": { "works": 1 }, "p": 2, "r": 1 },
+      { "w": ["It", "happens", "often"], "d": { "happen": 1 }, "p": 2, "r": 2 },
+      { "w": ["We", "agree", "completely"], "d": { "agrees": 1 }, "p": 2, "r": 1 },
+      { "w": ["She", "smiles", "warmly"], "d": { "smile": 1 }, "p": 2, "r": 1 },
+      { "w": ["He", "waits", "patiently"], "d": { "wait": 1 }, "p": 2, "r": 1 },
+      { "w": ["They", "leave", "early"], "d": { "leaves": 1 }, "p": 2, "r": 1 },
+      { "w": ["It", "snows", "heavily"], "d": { "snow": 1 }, "p": 2, "r": 2 },
+      { "w": ["It", "rains", "often"], "d": { "rain": 1 }, "p": 2, "r": 2 }
+    ]
+  },
+
+  "2-2": {
+    "groups": [
+      { "id": "np1", "label": "主语 NP" },
+      { "id": "vp", "label": "谓语 VP" },
+      { "id": "np2", "label": "宾语 NP" }
+    ],
+    "patterns": [
+      [["pronoun", "主语", "np1"], ["verb", "谓语", "vp"], ["noun", "宾语", "np2"]],
+      [["pronoun", "主语", "np1"], ["verb", "谓语", "vp"], ["article", "限定词", "np2"], ["noun", "宾语", "np2"]],
+      [["pronoun", "主语", "np1"], ["verb", "谓语", "vp"], ["adj", "定语", "np2"], ["noun", "宾语", "np2"]]
+    ],
+    "rules": [
+      "动词后面要有东西接住它，句子意思才完整 —— 这就是宾语。",
+      "主语是第三人称单数，动词加 s。",
+      "泛指一类东西时，宾语用复数；不可数名词永远不加 s。"
+    ],
+    "items": [
+      { "w": ["She", "reads", "books"], "d": { "read": 1 }, "r": 1 },
+      { "w": ["He", "writes", "stories"], "d": { "write": 1 }, "r": 1 },
+      { "w": ["They", "play", "games"], "d": { "plays": 1 }, "r": 1 },
+      { "w": ["We", "need", "water"], "d": { "needs": 1 }, "r": 1 },
+      { "w": ["I", "like", "apples"], "d": { "likes": 1 }, "r": 1 },
+      { "w": ["You", "speak", "English"], "d": { "speaks": 1 }, "r": 1 },
+      { "w": ["She", "makes", "dinner"], "d": { "make": 1 }, "r": 1 },
+      { "w": ["He", "buys", "food"], "d": { "buy": 1 }, "r": 1 },
+      { "w": ["They", "sell", "books"], "d": { "sells": 1 }, "r": 1 },
+      { "w": ["We", "study", "English"], "d": { "studies": 1 }, "r": 1 },
+      { "w": ["She", "teaches", "math"], "d": { "teach": 1 }, "r": 1 },
+      { "w": ["He", "catches", "fish"], "d": { "catch": 1 }, "r": 1 },
+      { "w": ["I", "have", "a", "bike"], "d": { "has": 1 }, "p": 1, "r": 1 },
+      { "w": ["She", "has", "a", "dog"], "d": { "have": 1 }, "p": 1, "r": 1 },
+      { "w": ["He", "wants", "a", "car"], "d": { "want": 1 }, "p": 1, "r": 1 },
+      { "w": ["They", "need", "a", "plan"], "d": { "needs": 1 }, "p": 1, "r": 1 },
+      { "w": ["We", "bought", "a", "house"], "d": { "buy": 1 }, "p": 1, "r": 1 },
+      { "w": ["She", "wrote", "a", "letter"], "d": { "writes": 1 }, "p": 1, "r": 1 },
+      { "w": ["I", "read", "a", "book"], "d": { "reads": 1 }, "p": 1, "r": 1 },
+      { "w": ["He", "made", "a", "cake"], "d": { "makes": 1 }, "p": 1, "r": 1 },
+      { "w": ["She", "found", "a", "key"], "d": { "finds": 1 }, "p": 1, "r": 1 },
+      { "w": ["We", "saw", "a", "film"], "d": { "sees": 1 }, "p": 1, "r": 1 },
+      { "w": ["We", "need", "more", "time"], "d": { "times": 3 }, "p": 2, "r": 2 },
+      { "w": ["They", "want", "more", "space"], "d": { "spaces": 3 }, "p": 2, "r": 2 },
+      { "w": ["She", "needs", "more", "help"], "d": { "helps": 3 }, "p": 2, "r": 2 },
+      { "w": ["I", "need", "more", "money"], "d": { "moneys": 3 }, "p": 2, "r": 2 },
+      { "w": ["He", "wants", "more", "water"], "d": { "waters": 3 }, "p": 2, "r": 2 },
+      { "w": ["We", "have", "enough", "food"], "d": { "foods": 3 }, "p": 2, "r": 2 },
+      { "w": ["They", "need", "clean", "water"], "d": { "waters": 3 }, "p": 2, "r": 2 },
+      { "w": ["She", "wants", "fresh", "air"], "d": { "airs": 3 }, "p": 2, "r": 2 }
+    ]
+  },
+
+  "2-3": {
+    "groups": [
+      { "id": "np1", "label": "主语 NP" },
+      { "id": "vp", "label": "谓语 VP" },
+      { "id": "np2", "label": "表语 NP" }
+    ],
+    "patterns": [
+      [["pronoun", "主语", "np1"], ["verb", "谓语", "vp"], ["adj", "表语", "np2"]],
+      [["pronoun", "主语", "np1"], ["verb", "谓语", "vp"], ["article", "限定词", "np2"], ["noun", "表语", "np2"]],
+      [["article", "限定词", "np1"], ["noun", "主语", "np1"], ["verb", "谓语", "vp"], ["adj", "表语", "np2"]]
+    ],
+    "rules": [
+      "be 动词跟着主语走：I 用 am，he / she / it 用 is，you / we / they 用 are。",
+      "be 动词后面是表语，不是宾语 —— 它说明主语「是什么、怎么样」。",
+      "主语是单数，表语也跟着单数。",
+      "表语要用形容词，不能用副词。"
+    ],
+    "items": [
+      { "w": ["I", "am", "happy"], "d": { "is": 1 }, "r": 0 },
+      { "w": ["He", "is", "tall"], "d": { "are": 1 }, "r": 0 },
+      { "w": ["They", "are", "young"], "d": { "is": 1 }, "r": 0 },
+      { "w": ["We", "are", "ready"], "d": { "is": 1 }, "r": 0 },
+      { "w": ["She", "is", "busy"], "d": { "are": 1 }, "r": 0 },
+      { "w": ["You", "are", "right"], "d": { "is": 1 }, "r": 0 },
+      { "w": ["It", "is", "cold"], "d": { "are": 1 }, "r": 0 },
+      { "w": ["I", "am", "tired"], "d": { "are": 1 }, "r": 0 },
+      { "w": ["They", "are", "late"], "d": { "is": 1 }, "r": 0 },
+      { "w": ["She", "is", "kind"], "d": { "am": 1 }, "r": 0 },
+      { "w": ["She", "is", "a", "doctor"], "d": { "doctors": 3 }, "p": 1, "r": 2 },
+      { "w": ["He", "is", "a", "teacher"], "d": { "teachers": 3 }, "p": 1, "r": 2 },
+      { "w": ["They", "are", "students"], "d": { "student": 2 }, "p": 1, "r": 2 },
+      { "w": ["I", "am", "a", "student"], "d": { "students": 3 }, "p": 1, "r": 2 },
+      { "w": ["She", "is", "an", "artist"], "d": { "artists": 3 }, "p": 1, "r": 2 },
+      { "w": ["He", "is", "a", "driver"], "d": { "drivers": 3 }, "p": 1, "r": 2 },
+      { "w": ["We", "are", "friends"], "d": { "friend": 2 }, "p": 1, "r": 2 },
+      { "w": ["She", "is", "my", "sister"], "d": { "sisters": 3 }, "p": 1, "r": 2 },
+      { "w": ["He", "is", "a", "farmer"], "d": { "farmers": 3 }, "p": 1, "r": 2 },
+      { "w": ["They", "are", "doctors"], "d": { "doctor": 2 }, "p": 1, "r": 2 },
+      { "w": ["The", "soup", "is", "hot"], "d": { "hotly": 3 }, "p": 2, "r": 3 },
+      { "w": ["The", "room", "is", "clean"], "d": { "cleanly": 3 }, "p": 2, "r": 3 },
+      { "w": ["The", "road", "is", "wide"], "d": { "widely": 3 }, "p": 2, "r": 3 },
+      { "w": ["The", "test", "is", "easy"], "d": { "easily": 3 }, "p": 2, "r": 3 },
+      { "w": ["The", "book", "is", "new"], "d": { "newly": 3 }, "p": 2, "r": 3 },
+      { "w": ["The", "water", "is", "cold"], "d": { "coldly": 3 }, "p": 2, "r": 3 },
+      { "w": ["The", "box", "is", "heavy"], "d": { "heavily": 3 }, "p": 2, "r": 3 },
+      { "w": ["The", "story", "is", "interesting"], "d": { "interestingly": 3 }, "p": 2, "r": 3 },
+      { "w": ["The", "task", "is", "simple"], "d": { "simply": 3 }, "p": 2, "r": 3 },
+      { "w": ["The", "city", "is", "quiet"], "d": { "quietly": 3 }, "p": 2, "r": 3 }
+    ]
+  },
+
+  "2-4": {
+    "groups": [
+      { "id": "np1", "label": "主语 NP" },
+      { "id": "vp", "label": "谓语 VP" },
+      { "id": "np2", "label": "间接宾语（人）" },
+      { "id": "np3", "label": "直接宾语（物）" }
+    ],
+    "patterns": [
+      [["pronoun", "主语", "np1"], ["verb", "谓语", "vp"], ["pronoun", "间接宾语", "np2"], ["article", "限定词", "np3"], ["noun", "直接宾语", "np3"]],
+      [["pronoun", "主语", "np1"], ["verb", "谓语", "vp"], ["pronoun", "限定词", "np2"], ["noun", "间接宾语", "np2"], ["article", "限定词", "np3"], ["noun", "直接宾语", "np3"]]
+    ],
+    "rules": [
+      "双宾语的顺序是「先人后物」：先给谁，再给什么。",
+      "间接宾语（人）要用宾格：me / him / her / us / them。",
+      "主语是第三人称单数，动词加 s。"
+    ],
+    "items": [
+      { "w": ["She", "gives", "me", "a", "pen"], "o": ["She", "gives", "a", "pen", "me"], "r": 0 },
+      { "w": ["He", "sends", "me", "a", "letter"], "o": ["He", "sends", "a", "letter", "me"], "r": 0 },
+      { "w": ["They", "tell", "us", "a", "story"], "o": ["They", "tell", "a", "story", "us"], "r": 0 },
+      { "w": ["She", "shows", "him", "the", "way"], "o": ["She", "shows", "the", "way", "him"], "r": 0 },
+      { "w": ["He", "buys", "her", "a", "gift"], "o": ["He", "buys", "a", "gift", "her"], "r": 0 },
+      { "w": ["She", "reads", "me", "a", "book"], "o": ["She", "reads", "a", "book", "me"], "r": 0 },
+      { "w": ["He", "gives", "them", "two", "books"], "o": ["He", "gives", "two", "books", "them"], "r": 0 },
+      { "w": ["They", "send", "us", "some", "gifts"], "o": ["They", "send", "some", "gifts", "us"], "r": 0 },
+      { "w": ["She", "tells", "him", "the", "truth"], "o": ["She", "tells", "the", "truth", "him"], "r": 0 },
+      { "w": ["He", "shows", "us", "his", "photos"], "o": ["He", "shows", "his", "photos", "us"], "r": 0 },
+      { "w": ["She", "gives", "me", "a", "pen"], "d": { "I": 2 }, "r": 1 },
+      { "w": ["He", "sends", "me", "a", "letter"], "d": { "I": 2 }, "r": 1 },
+      { "w": ["They", "tell", "us", "a", "story"], "d": { "we": 2 }, "r": 1 },
+      { "w": ["She", "shows", "him", "the", "way"], "d": { "he": 2 }, "r": 1 },
+      { "w": ["He", "buys", "her", "a", "gift"], "d": { "she": 2 }, "r": 1 },
+      { "w": ["They", "give", "them", "some", "books"], "d": { "they": 2 }, "r": 1 },
+      { "w": ["She", "tells", "us", "the", "truth"], "d": { "we": 2 }, "r": 1 },
+      { "w": ["He", "shows", "me", "his", "photos"], "d": { "I": 2 }, "r": 1 },
+      { "w": ["He", "buys", "his", "son", "a", "bike"], "d": { "buy": 1 }, "p": 1, "r": 2 },
+      { "w": ["She", "sends", "her", "friend", "a", "card"], "d": { "send": 1 }, "p": 1, "r": 2 },
+      { "w": ["He", "tells", "his", "son", "a", "story"], "d": { "tell": 1 }, "p": 1, "r": 2 },
+      { "w": ["She", "gives", "her", "sister", "a", "gift"], "d": { "give": 1 }, "p": 1, "r": 2 },
+      { "w": ["He", "shows", "his", "friend", "the", "way"], "d": { "show": 1 }, "p": 1, "r": 2 },
+      { "w": ["She", "reads", "her", "child", "a", "book"], "d": { "read": 1 }, "p": 1, "r": 2 },
+      { "w": ["He", "buys", "his", "wife", "a", "gift"], "d": { "buy": 1 }, "p": 1, "r": 2 },
+      { "w": ["She", "tells", "her", "students", "a", "story"], "d": { "tell": 1 }, "p": 1, "r": 2 },
+      { "w": ["He", "sends", "his", "parents", "a", "letter"], "d": { "send": 1 }, "p": 1, "r": 2 },
+      { "w": ["She", "shows", "her", "friends", "the", "photos"], "d": { "show": 1 }, "p": 1, "r": 2 },
+      { "w": ["He", "gives", "his", "brother", "a", "pen"], "d": { "give": 1 }, "p": 1, "r": 2 },
+      { "w": ["She", "buys", "her", "daughter", "a", "dress"], "d": { "buy": 1 }, "p": 1, "r": 2 }
+    ]
+  },
+
+  "2-5": {
+    "groups": [
+      { "id": "np1", "label": "主语 NP" },
+      { "id": "vp", "label": "谓语 VP" },
+      { "id": "np2", "label": "宾语 + 宾补" }
+    ],
+    "patterns": [
+      [["pronoun", "主语", "np1"], ["verb", "谓语", "vp"], ["pronoun", "宾语", "np2"], ["adj", "宾补", "np2"]],
+      [["pronoun", "主语", "np1"], ["verb", "谓语", "vp"], ["article", "限定词", "np2"], ["noun", "宾语", "np2"], ["adj", "宾补", "np2"]],
+      [["pronoun", "主语", "np1"], ["verb", "谓语", "vp"], ["pronoun", "宾语", "np2"], ["noun", "宾补", "np2"]]
+    ],
+    "rules": [
+      "宾语后面再补一句说明它，就是宾语补足语。",
+      "宾补说明的是宾语的状态，要用形容词，不是副词。",
+      "boring 形容东西（让人无聊），bored 形容人的感受（感到无聊）。",
+      "call / name 这类动词后面，宾补是名词。"
+    ],
+    "items": [
+      { "w": ["It", "makes", "me", "happy"], "d": { "happily": 3 }, "r": 1 },
+      { "w": ["It", "makes", "him", "sad"], "d": { "sadly": 3 }, "r": 1 },
+      { "w": ["It", "keeps", "me", "busy"], "d": { "busily": 3 }, "r": 1 },
+      { "w": ["It", "makes", "her", "angry"], "d": { "angrily": 3 }, "r": 1 },
+      { "w": ["It", "makes", "us", "strong"], "d": { "strongly": 3 }, "r": 1 },
+      { "w": ["It", "keeps", "them", "safe"], "d": { "safely": 3 }, "r": 1 },
+      { "w": ["It", "makes", "me", "tired"], "d": { "tiredly": 3 }, "r": 1 },
+      { "w": ["It", "makes", "him", "nervous"], "d": { "nervously": 3 }, "r": 1 },
+      { "w": ["It", "keeps", "us", "warm"], "d": { "warmly": 3 }, "r": 1 },
+      { "w": ["It", "makes", "her", "proud"], "d": { "proudly": 3 }, "r": 1 },
+      { "w": ["It", "keeps", "her", "calm"], "d": { "calmly": 3 }, "r": 1 },
+      { "w": ["It", "makes", "them", "happy"], "d": { "happily": 3 }, "r": 1 },
+      { "w": ["We", "keep", "the", "room", "clean"], "d": { "cleanly": 4 }, "p": 1, "r": 1 },
+      { "w": ["They", "painted", "the", "wall", "white"], "d": { "whitely": 4 }, "p": 1, "r": 1 },
+      { "w": ["She", "made", "the", "soup", "hot"], "d": { "hotly": 4 }, "p": 1, "r": 1 },
+      { "w": ["We", "found", "the", "test", "easy"], "d": { "easily": 4 }, "p": 1, "r": 1 },
+      { "w": ["They", "left", "the", "door", "open"], "d": { "openly": 4 }, "p": 1, "r": 1 },
+      { "w": ["She", "cut", "the", "bread", "thin"], "d": { "thinly": 4 }, "p": 1, "r": 1 },
+      { "w": ["He", "painted", "the", "box", "red"], "d": { "redly": 4 }, "p": 1, "r": 1 },
+      { "w": ["We", "keep", "the", "garden", "tidy"], "d": { "tidily": 4 }, "p": 1, "r": 1 },
+      { "w": ["She", "found", "the", "book", "boring"], "d": { "bored": 4 }, "p": 1, "r": 2 },
+      { "w": ["They", "made", "the", "story", "interesting"], "d": { "interested": 4 }, "p": 1, "r": 2 },
+      { "w": ["He", "made", "the", "film", "exciting"], "d": { "excited": 4 }, "p": 1, "r": 2 },
+      { "w": ["She", "found", "the", "task", "tiring"], "d": { "tired": 4 }, "p": 1, "r": 2 },
+      { "w": ["We", "call", "him", "Tom"], "d": { "he": 2 }, "p": 2, "r": 3 },
+      { "w": ["They", "named", "her", "Lucy"], "d": { "she": 2 }, "p": 2, "r": 3 },
+      { "w": ["We", "call", "her", "Lily"], "d": { "she": 2 }, "p": 2, "r": 3 },
+      { "w": ["They", "named", "him", "Jack"], "d": { "he": 2 }, "p": 2, "r": 3 },
+      { "w": ["We", "call", "them", "friends"], "d": { "they": 2 }, "p": 2, "r": 3 },
+      { "w": ["They", "named", "it", "Lucky"], "d": { "its": 2 }, "p": 2, "r": 3 }
+    ]
+  },
+
+  "2-6": {
+    "groups": [
+      { "id": "ex", "label": "引导词" },
+      { "id": "vp", "label": "谓语 VP" },
+      { "id": "np1", "label": "真正的主语 NP" },
+      { "id": "pp", "label": "地点 PP" },
+      { "id": "np2", "label": "宾语 NP" }
+    ],
+    "patterns": [
+      [["adv", "引导词", "ex"], ["verb", "谓语", "vp"], ["article", "限定词", "np1"], ["noun", "主语", "np1"], ["prep", "介词", "pp"], ["article", "限定词", "pp"], ["noun", "介词宾语", "pp"]],
+      [["pronoun", "限定词", "np1"], ["noun", "主语", "np1"], ["verb", "谓语", "vp"], ["article", "限定词", "np2"], ["noun", "宾语", "np2"]],
+      [["pronoun", "限定词", "np1"], ["noun", "主语", "np1"], ["verb", "谓语", "vp"], ["adj", "表语", "np1"]],
+      [["article", "限定词", "np1"], ["noun", "主语", "np1"], ["verb", "谓语", "vp"], ["adj", "表语", "np1"]]
+    ],
+    "rules": [
+      "there be 句型里，be 动词跟着后面那个「真正的主语」变，不看 there。",
+      "every 后面永远跟单数名词，动词也用单数。",
+      "glasses / pants / scissors 这些词天生是复数，动词用 are。",
+      "news 虽然以 s 结尾，但它是不可数名词，当单数用。"
+    ],
+    "items": [
+      { "w": ["There", "is", "a", "book", "on", "the", "desk"], "d": { "are": 1 }, "r": 0 },
+      { "w": ["There", "is", "a", "cat", "in", "the", "garden"], "d": { "are": 1 }, "r": 0 },
+      { "w": ["There", "are", "two", "books", "on", "the", "desk"], "d": { "is": 1 }, "r": 0 },
+      { "w": ["There", "are", "some", "apples", "in", "the", "box"], "d": { "is": 1 }, "r": 0 },
+      { "w": ["There", "is", "a", "pen", "in", "my", "bag"], "d": { "are": 1 }, "r": 0 },
+      { "w": ["There", "are", "many", "students", "in", "the", "room"], "d": { "is": 1 }, "r": 0 },
+      { "w": ["There", "is", "a", "bird", "in", "the", "tree"], "d": { "are": 1 }, "r": 0 },
+      { "w": ["There", "are", "two", "doors", "in", "the", "room"], "d": { "is": 1 }, "r": 0 },
+      { "w": ["There", "is", "a", "map", "on", "the", "wall"], "d": { "are": 1 }, "r": 0 },
+      { "w": ["There", "are", "some", "books", "on", "the", "shelf"], "d": { "is": 1 }, "r": 0 },
+      { "w": ["There", "is", "an", "egg", "in", "the", "box"], "d": { "are": 1 }, "r": 0 },
+      { "w": ["There", "are", "five", "people", "in", "the", "car"], "d": { "is": 1 }, "r": 0 },
+      { "w": ["Every", "student", "has", "a", "computer"], "d": { "have": 2 }, "p": 1, "r": 1 },
+      { "w": ["Every", "child", "needs", "a", "book"], "d": { "need": 2 }, "p": 1, "r": 1 },
+      { "w": ["Every", "room", "has", "a", "window"], "d": { "have": 2 }, "p": 1, "r": 1 },
+      { "w": ["Every", "teacher", "likes", "a", "quiet"], "d": { "like": 2 }, "p": 1, "r": 1 },
+      { "w": ["Every", "family", "has", "a", "car"], "d": { "have": 2 }, "p": 1, "r": 1 },
+      { "w": ["Every", "dog", "needs", "a", "name"], "d": { "need": 2 }, "p": 1, "r": 1 },
+      { "w": ["Every", "student", "likes", "a", "holiday"], "d": { "like": 2 }, "p": 1, "r": 1 },
+      { "w": ["Every", "player", "wants", "a", "chance"], "d": { "want": 2 }, "p": 1, "r": 1 },
+      { "w": ["My", "glasses", "are", "new"], "d": { "is": 2 }, "p": 2, "r": 2 },
+      { "w": ["His", "pants", "are", "black"], "d": { "is": 2 }, "p": 2, "r": 2 },
+      { "w": ["Her", "scissors", "are", "sharp"], "d": { "is": 2 }, "p": 2, "r": 2 },
+      { "w": ["My", "glasses", "are", "broken"], "d": { "is": 2 }, "p": 2, "r": 2 },
+      { "w": ["My", "shoes", "are", "dirty"], "d": { "is": 2 }, "p": 2, "r": 2 },
+      { "w": ["The", "news", "is", "good"], "d": { "are": 2 }, "p": 3, "r": 3 },
+      { "w": ["The", "news", "is", "bad"], "d": { "are": 2 }, "p": 3, "r": 3 },
+      { "w": ["The", "news", "is", "surprising"], "d": { "are": 2 }, "p": 3, "r": 3 },
+      { "w": ["The", "news", "is", "important"], "d": { "are": 2 }, "p": 3, "r": 3 },
+      { "w": ["The", "news", "is", "true"], "d": { "are": 2 }, "p": 3, "r": 3 }
+    ]
+  },
+
+  "2-7": {
+    "punct": "?",
+    "groups": [
+      { "id": "vp", "label": "助动词" },
+      { "id": "np1", "label": "主语 NP" },
+      { "id": "vp2", "label": "谓语 VP" },
+      { "id": "np2", "label": "宾语 NP" },
+      { "id": "q", "label": "疑问词" }
+    ],
+    "patterns": [
+      [["verb", "助动词", "vp"], ["pronoun", "主语", "np1"], ["verb", "谓语", "vp2"], ["noun", "宾语", "np2"]],
+      [["verb", "助动词", "vp"], ["pronoun", "主语", "np1"], ["verb", "谓语", "vp2"], ["article", "限定词", "np2"], ["noun", "宾语", "np2"]],
+      [["verb", "谓语", "vp"], ["pronoun", "主语", "np1"], ["pronoun", "限定词", "np2"], ["noun", "表语", "np2"]],
+      [["adv", "疑问词", "q"], ["verb", "助动词", "vp"], ["pronoun", "主语", "np1"], ["verb", "谓语", "vp2"]]
+    ],
+    "rules": [
+      "一般现在时的疑问句要在句首加 Do 或 Does，后面的动词用原形。",
+      "Does 出现后，动词一定要还原成原形 —— 三单的活已经交给 Does 了。",
+      "be 动词的疑问句把 is / are / am 直接提到句首，不用 do。"
+    ],
+    "items": [
+      { "w": ["Do", "you", "like", "music"], "d": { "likes": 2 }, "r": 1 },
+      { "w": ["Does", "she", "like", "music"], "d": { "likes": 2 }, "r": 1 },
+      { "w": ["Do", "they", "play", "football"], "d": { "plays": 2 }, "r": 1 },
+      { "w": ["Does", "he", "read", "books"], "d": { "reads": 2 }, "r": 1 },
+      { "w": ["Do", "you", "speak", "English"], "d": { "speaks": 2 }, "r": 1 },
+      { "w": ["Does", "she", "teach", "English"], "d": { "teaches": 2 }, "r": 1 },
+      { "w": ["Do", "we", "need", "tickets"], "d": { "needs": 2 }, "r": 1 },
+      { "w": ["Does", "he", "want", "coffee"], "d": { "wants": 2 }, "r": 1 },
+      { "w": ["Do", "they", "live", "here"], "d": { "lives": 2 }, "r": 1 },
+      { "w": ["Does", "she", "know", "him"], "d": { "knows": 2 }, "r": 1 },
+      { "w": ["Do", "you", "have", "a", "pen"], "d": { "has": 2 }, "p": 1, "r": 1 },
+      { "w": ["Does", "he", "have", "a", "car"], "d": { "has": 2 }, "p": 1, "r": 1 },
+      { "w": ["Do", "they", "need", "a", "plan"], "d": { "needs": 2 }, "p": 1, "r": 1 },
+      { "w": ["Does", "she", "want", "a", "dog"], "d": { "wants": 2 }, "p": 1, "r": 1 },
+      { "w": ["Do", "we", "have", "a", "map"], "d": { "has": 2 }, "p": 1, "r": 1 },
+      { "w": ["Does", "he", "need", "a", "break"], "d": { "needs": 2 }, "p": 1, "r": 1 },
+      { "w": ["Do", "you", "want", "some", "water"], "d": { "wants": 2 }, "p": 1, "r": 1 },
+      { "w": ["Does", "she", "have", "a", "sister"], "d": { "has": 2 }, "p": 1, "r": 1 },
+      { "w": ["Is", "he", "your", "teacher"], "d": { "Does": 0 }, "p": 2, "r": 2 },
+      { "w": ["Are", "you", "a", "student"], "d": { "Do": 0 }, "p": 2, "r": 2 },
+      { "w": ["Is", "she", "your", "sister"], "d": { "Does": 0 }, "p": 2, "r": 2 },
+      { "w": ["Are", "they", "your", "friends"], "d": { "Do": 0 }, "p": 2, "r": 2 },
+      { "w": ["Is", "it", "a", "cat"], "d": { "Does": 0 }, "p": 2, "r": 2 },
+      { "w": ["Are", "we", "late"], "d": { "Do": 0 }, "p": 2, "r": 2 },
+      { "w": ["Is", "he", "a", "doctor"], "d": { "Does": 0 }, "p": 2, "r": 2 },
+      { "w": ["Are", "you", "busy"], "d": { "Do": 0 }, "p": 2, "r": 2 },
+      { "w": ["Where", "do", "you", "live"], "d": { "does": 1 }, "p": 3, "r": 0 },
+      { "w": ["What", "do", "you", "want"], "d": { "does": 1 }, "p": 3, "r": 0 },
+      { "w": ["When", "do", "they", "arrive"], "d": { "does": 1 }, "p": 3, "r": 0 },
+      { "w": ["Why", "does", "he", "cry"], "d": { "do": 1 }, "p": 3, "r": 0 }
+    ]
+  },
+
+  "2-8": {
+    "punct": "?",
+    "groups": [
+      { "id": "np1", "label": "主语 NP" },
+      { "id": "vp", "label": "谓语 VP" },
+      { "id": "np2", "label": "宾语 / 表语 NP" },
+      { "id": "vp2", "label": "谓语 VP" },
+      { "id": "np3", "label": "宾语 + 宾补" },
+      { "id": "ex", "label": "引导词" },
+      { "id": "pp", "label": "地点 PP" }
+    ],
+    "patterns": [
+      [["pronoun", "主语", "np1"], ["verb", "谓语", "vp"], ["noun", "宾语", "np2"]],
+      [["pronoun", "主语", "np1"], ["verb", "谓语", "vp"], ["adj", "表语", "np2"]],
+      [["pronoun", "主语", "np1"], ["verb", "谓语", "vp"], ["pronoun", "间接宾语", "np2"], ["article", "限定词", "np2"], ["noun", "直接宾语", "np2"]],
+      [["pronoun", "主语", "np1"], ["verb", "谓语", "vp"], ["pronoun", "宾语", "np3"], ["adj", "宾补", "np3"]],
+      [["verb", "助动词", "vp"], ["pronoun", "主语", "np1"], ["verb", "谓语", "vp2"], ["noun", "宾语", "np2"]],
+      [["adv", "引导词", "ex"], ["verb", "谓语", "vp"], ["article", "限定词", "np1"], ["noun", "主语", "np1"], ["prep", "介词", "pp"], ["article", "限定词", "pp"], ["noun", "介词宾语", "pp"]]
+    ],
+    "rules": [
+      "主谓宾：动词后面要有东西接住它。",
+      "主系表：be 动词后面是表语，说明主语是什么、怎么样。",
+      "双宾语：先人后物，人用宾格。",
+      "宾语补足语说明宾语的状态，要用形容词。",
+      "一般现在时的疑问句用 Do / Does，后面动词还原成原形。",
+      "there be 跟着后面那个真正的主语变，不看 there。"
+    ],
+    "items": [
+      { "w": ["She", "reads", "books"], "d": { "read": 1 }, "r": 0 },
+      { "w": ["He", "writes", "stories"], "d": { "write": 1 }, "r": 0 },
+      { "w": ["They", "play", "games"], "d": { "plays": 1 }, "r": 0 },
+      { "w": ["We", "need", "water"], "d": { "needs": 1 }, "r": 0 },
+      { "w": ["She", "makes", "dinner"], "d": { "make": 1 }, "r": 0 },
+      { "w": ["He", "catches", "fish"], "d": { "catch": 1 }, "r": 0 },
+      { "w": ["He", "is", "tall"], "d": { "are": 1 }, "p": 1, "r": 1 },
+      { "w": ["They", "are", "young"], "d": { "is": 1 }, "p": 1, "r": 1 },
+      { "w": ["She", "is", "busy"], "d": { "are": 1 }, "p": 1, "r": 1 },
+      { "w": ["We", "are", "ready"], "d": { "is": 1 }, "p": 1, "r": 1 },
+      { "w": ["I", "am", "happy"], "d": { "is": 1 }, "p": 1, "r": 1 },
+      { "w": ["It", "is", "cold"], "d": { "are": 1 }, "p": 1, "r": 1 },
+      { "w": ["She", "gives", "me", "a", "pen"], "d": { "I": 2 }, "p": 2, "r": 2 },
+      { "w": ["He", "sends", "me", "a", "letter"], "d": { "I": 2 }, "p": 2, "r": 2 },
+      { "w": ["They", "tell", "us", "a", "story"], "d": { "we": 2 }, "p": 2, "r": 2 },
+      { "w": ["She", "shows", "him", "the", "way"], "d": { "he": 2 }, "p": 2, "r": 2 },
+      { "w": ["He", "buys", "her", "a", "gift"], "d": { "she": 2 }, "p": 2, "r": 2 },
+      { "w": ["She", "gives", "them", "some", "books"], "d": { "they": 2 }, "p": 2, "r": 2 },
+      { "w": ["It", "makes", "me", "happy"], "d": { "happily": 3 }, "p": 3, "r": 3 },
+      { "w": ["It", "keeps", "him", "busy"], "d": { "busily": 3 }, "p": 3, "r": 3 },
+      { "w": ["It", "makes", "us", "strong"], "d": { "strongly": 3 }, "p": 3, "r": 3 },
+      { "w": ["It", "keeps", "her", "calm"], "d": { "calmly": 3 }, "p": 3, "r": 3 },
+      { "w": ["It", "makes", "them", "sad"], "d": { "sadly": 3 }, "p": 3, "r": 3 },
+      { "w": ["It", "keeps", "me", "warm"], "d": { "warmly": 3 }, "p": 3, "r": 3 },
+      { "w": ["Do", "you", "like", "music"], "d": { "likes": 2 }, "p": 4, "r": 4 },
+      { "w": ["Does", "she", "like", "music"], "d": { "likes": 2 }, "p": 4, "r": 4 },
+      { "w": ["Do", "they", "play", "football"], "d": { "plays": 2 }, "p": 4, "r": 4 },
+      { "w": ["There", "is", "a", "book", "on", "the", "desk"], "d": { "are": 1 }, "p": 5, "r": 5 },
+      { "w": ["There", "are", "two", "books", "on", "the", "desk"], "d": { "is": 1 }, "p": 5, "r": 5 },
+      { "w": ["There", "is", "a", "cat", "in", "the", "garden"], "d": { "are": 1 }, "p": 5, "r": 5 }
+    ]
+  }
+}

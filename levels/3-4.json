@@ -1,0 +1,359 @@
+{
+  "id": "3-4",
+  "topic": "现在进行",
+  "emoji": "🏃‍♂️",
+  "goal": "be + 动词 ing，表示此刻正在发生 —— be 动词不能丢",
+  "rounds": [
+    {
+      "id": "3-4-r1",
+      "cn": "她正在看书。",
+      "tip": "be + doing，两个都不能少",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "助动词"
+        },
+        {
+          "id": "vp2",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "宾语 NP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "She",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "vp"
+        },
+        {
+          "text": "reading",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp2"
+        },
+        {
+          "text": "a",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np2"
+        },
+        {
+          "text": "book",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "np2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "read",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp2"
+        },
+        {
+          "text": "reads",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp2"
+        }
+      ],
+      "explain": "现在进行时：be + 动词 ing，表示此刻正在发生。be 动词不能丢 —— She reading 是残缺的句子。",
+      "example": "She is reading a book. / She reads a book every night.",
+      "win": "进行时 = be + ing，两个都要。"
+    },
+    {
+      "id": "3-4-r2",
+      "cn": "他们正在踢足球。",
+      "tip": "主语复数用 are",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "助动词"
+        },
+        {
+          "id": "vp2",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "宾语 NP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "They",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "are",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "vp"
+        },
+        {
+          "text": "playing",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp2"
+        },
+        {
+          "text": "football",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "np2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "play",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp2"
+        },
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "vp"
+        }
+      ],
+      "explain": "主语 They 是复数，be 动词用 are。动词要变成 ing 形式 playing。",
+      "example": "They are playing football. / He is playing football.",
+      "win": "are + ing，主语复数。"
+    },
+    {
+      "id": "3-4-r3",
+      "cn": "我正在等你。",
+      "tip": "wait for 是固定搭配",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "助动词"
+        },
+        {
+          "id": "vp2",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "pp",
+          "label": "介词短语 PP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "I",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "am",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "vp"
+        },
+        {
+          "text": "waiting",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp2"
+        },
+        {
+          "text": "for",
+          "pos": "prep",
+          "role": "介词",
+          "group": "pp"
+        },
+        {
+          "text": "you",
+          "pos": "pronoun",
+          "role": "介词宾语",
+          "group": "pp"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "wait",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp2"
+        },
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "vp"
+        }
+      ],
+      "explain": "主语 I 只能配 am。wait 后面跟人时要加 for，这是固定搭配。",
+      "example": "I am waiting for you. / I wait for the bus every morning.",
+      "win": "I 配 am；wait for 是一个整体。"
+    },
+    {
+      "id": "3-4-r4",
+      "cn": "他正在写一封信。",
+      "tip": "改错：be 后面要用 ing 形式",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "助动词"
+        },
+        {
+          "id": "vp2",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "宾语 NP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "He",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "vp"
+        },
+        {
+          "text": "writing",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp2"
+        },
+        {
+          "text": "a",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np2"
+        },
+        {
+          "text": "letter",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "np2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "write",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp2"
+        }
+      ],
+      "prefill": [
+        "He",
+        "is",
+        "write",
+        "a",
+        "letter"
+      ],
+      "explain": "be 动词后面要用 ing 形式，不能直接跟原形。write 以不发音的 e 结尾，要去掉 e 再加 ing → writing。",
+      "example": "He is writing a letter. / He writes letters every day.",
+      "win": "以 e 结尾的动词，去 e 加 ing。"
+    },
+    {
+      "id": "3-4-r5",
+      "cn": "婴儿没在哭。",
+      "tip": "进行时的否定：be + not + doing",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "助动词"
+        },
+        {
+          "id": "vp2",
+          "label": "谓语 VP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "The",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np1"
+        },
+        {
+          "text": "baby",
+          "pos": "noun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "vp"
+        },
+        {
+          "text": "not",
+          "pos": "adv",
+          "role": "状语",
+          "group": "vp"
+        },
+        {
+          "text": "crying",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "cries",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp2"
+        },
+        {
+          "text": "cry",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp2"
+        }
+      ],
+      "explain": "进行时的否定：在 be 动词后面加 not，动词保持 ing 形式。不需要 do 或 does。",
+      "example": "The baby is not crying. / The baby isn't crying.",
+      "win": "进行时的否定只动 be 动词。"
+    }
+  ]
+}

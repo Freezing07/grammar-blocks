@@ -1,0 +1,370 @@
+{
+  "id": "3-6",
+  "topic": "现在完成",
+  "emoji": "✅",
+  "goal": "have / has + 过去分词：到现在为止已经完成，重点在结果",
+  "rounds": [
+    {
+      "id": "3-6-r1",
+      "cn": "我已经写完作业了。",
+      "tip": "have + 过去分词",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "助动词"
+        },
+        {
+          "id": "vp2",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "宾语 NP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "I",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "have",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "vp"
+        },
+        {
+          "text": "finished",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp2"
+        },
+        {
+          "text": "my",
+          "pos": "pronoun",
+          "role": "限定词",
+          "group": "np2"
+        },
+        {
+          "text": "homework",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "np2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "finish",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp2"
+        },
+        {
+          "text": "finishes",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp2"
+        }
+      ],
+      "explain": "现在完成时：have / has + 过去分词。它说的是「到现在为止已经完成」，重点在结果，不在于过去的时间点 —— 所以不能说 I have finished my homework yesterday。",
+      "example": "I have finished my homework. / I finished my homework yesterday.",
+      "win": "现在完成：结果和现在有关。"
+    },
+    {
+      "id": "3-6-r2",
+      "cn": "她在这儿住了很多年。",
+      "tip": "for + 一段时间",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "pp",
+          "label": "时间状语 PP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "She",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "has",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "vp"
+        },
+        {
+          "text": "lived",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "here",
+          "pos": "adv",
+          "role": "状语",
+          "group": "vp"
+        },
+        {
+          "text": "for",
+          "pos": "prep",
+          "role": "介词",
+          "group": "pp"
+        },
+        {
+          "text": "many",
+          "pos": "adj",
+          "role": "定语",
+          "group": "pp"
+        },
+        {
+          "text": "years",
+          "pos": "noun",
+          "role": "介词宾语",
+          "group": "pp"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "live",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "have",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "vp"
+        }
+      ],
+      "explain": "for + 一段时间，表示这个动作持续了多久。主语 She 是第三人称单数，用 has。现在完成时也用来讲「从过去持续到现在」的事。",
+      "example": "She has lived here for many years. / She lived here many years ago.",
+      "win": "for + 一段时间，配现在完成。"
+    },
+    {
+      "id": "3-6-r3",
+      "cn": "你去过日本吗？",
+      "tip": "have been to 表示「去过」",
+      "punct": "?",
+      "groups": [
+        {
+          "id": "vp",
+          "label": "助动词"
+        },
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp2",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "pp",
+          "label": "介词短语 PP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "Have",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "vp"
+        },
+        {
+          "text": "you",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "ever",
+          "pos": "adv",
+          "role": "状语",
+          "group": "vp2"
+        },
+        {
+          "text": "been",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp2"
+        },
+        {
+          "text": "to",
+          "pos": "prep",
+          "role": "介词",
+          "group": "pp"
+        },
+        {
+          "text": "Japan",
+          "pos": "noun",
+          "role": "介词宾语",
+          "group": "pp"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "be",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp2"
+        },
+        {
+          "text": "went",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp2"
+        }
+      ],
+      "explain": "have been to 表示「去过某地」，是现在完成时的固定说法，说的是人生经验。ever 放在 have 和过去分词中间，表示「曾经」。",
+      "example": "Have you ever been to Japan? / I went to Japan last year.",
+      "win": "have been to = 去过。"
+    },
+    {
+      "id": "3-6-r4",
+      "cn": "那部电影我看过了。",
+      "tip": "改错：have 后面用过去分词，不是过去式",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "助动词"
+        },
+        {
+          "id": "vp2",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "宾语 NP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "I",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "have",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "vp"
+        },
+        {
+          "text": "seen",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp2"
+        },
+        {
+          "text": "that",
+          "pos": "pronoun",
+          "role": "限定词",
+          "group": "np2"
+        },
+        {
+          "text": "film",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "np2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "saw",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp2"
+        }
+      ],
+      "prefill": [
+        "I",
+        "have",
+        "saw",
+        "that",
+        "film"
+      ],
+      "explain": "have 后面必须用过去分词，不是过去式。see 的过去式是 saw，过去分词是 seen —— 这两个不能混。",
+      "example": "I have seen that film. / I saw that film last week.",
+      "win": "have + 过去分词，不是过去式。"
+    },
+    {
+      "id": "3-6-r5",
+      "cn": "她刚走。",
+      "tip": "just 放在 have 和过去分词中间",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "She",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "has",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "vp"
+        },
+        {
+          "text": "just",
+          "pos": "adv",
+          "role": "状语",
+          "group": "vp"
+        },
+        {
+          "text": "left",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "leaves",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "leave",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        }
+      ],
+      "explain": "just 表示「刚刚」，位置在 have / has 和过去分词之间。leave 的过去分词是 left。",
+      "example": "She has just left. / She left just now.",
+      "win": "just 站在助动词和过去分词中间。"
+    }
+  ]
+}

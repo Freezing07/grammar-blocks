@@ -1,0 +1,198 @@
+{
+  "7-1": {
+    "rules": [
+      "叙事段落按时间先后排：先找 at seven / After / Then / Finally 这类时间词，它们就是路标。",
+      "放在最后的那一句不能和前面矛盾 —— 比如早上出门的段落里不该出现晚上睡觉。"
+    ],
+    "paragraphs": [
+      { "s": ["I woke up late this morning.", "I skipped breakfast and ran out of the door.", "On the way, I missed the bus.", "I arrived at school ten minutes late."],
+        "roles": ["开头", "接着", "然后", "最后"], "links": ["接着", "然后", "最后"],
+        "d": ["I usually go to bed at ten."], "r": 0 },
+      { "s": ["Last summer, my family visited the seaside.", "We set off before sunrise.", "When we got there, the beach was almost empty.", "We stayed until the sun went down."],
+        "roles": ["开头", "出发", "到达", "结束"], "links": ["出发", "到达", "结束"],
+        "d": ["My sister does not like the sea at all."], "r": 0 },
+      { "s": ["After dinner, I started my homework.", "First I finished my maths exercises.", "Then I reviewed my English notes.", "I went to bed at eleven."],
+        "roles": ["开头", "第一件事", "第二件事", "结束"], "links": ["先做", "再做", "最后"],
+        "d": ["My desk is next to the window."], "r": 0 },
+      { "s": ["The party began at six in the evening.", "Our friends arrived one after another.", "We ate cake and played games.", "Everyone left at ten o'clock."],
+        "roles": ["开头", "接着", "活动", "结束"], "links": ["接着", "活动", "结束"],
+        "d": ["The cake was made by my mother."], "r": 0 },
+      { "s": ["The exam started at nine.", "I read every question carefully.", "I finished the paper half an hour early.", "I checked my answers twice before handing it in."],
+        "roles": ["开头", "接着", "进度", "最后"], "links": ["接着", "进度", "收尾"],
+        "d": ["The classroom was very quiet."], "r": 0 },
+      { "s": ["My father taught me to ride a bike.", "At first I fell off again and again.", "After a week, I could ride a short distance.", "Now I ride to school every day."],
+        "roles": ["开头", "起初", "之后", "现在"], "links": ["起初", "之后", "现在"],
+        "d": ["Bikes are cheaper than cars."], "r": 0 },
+      { "s": ["On Saturday morning, we cleaned the house.", "In the afternoon, we went shopping.", "In the evening, we watched a film together.", "We went to bed early that night."],
+        "roles": ["上午", "下午", "晚上", "结束"], "links": ["下午", "晚上", "结束"],
+        "d": ["Sunday is my favourite day."], "r": 0 },
+      { "s": ["We moved to a new flat last month.", "First we packed all our books.", "Then the workers carried the boxes downstairs.", "By the evening, everything was in the new place."],
+        "roles": ["开头", "第一步", "第二步", "结束"], "links": ["第一步", "第二步", "结束"],
+        "d": ["The new flat is on the fifth floor."], "r": 0 }
+    ]
+  },
+
+  "7-2": {
+    "rules": [
+      "英语段落最常见的骨架：主题句（观点）→ 理由 → 例子 → 结论。",
+      "For example 一定跟在理由后面，In conclusion / To sum up 一定是最后一句。",
+      "表达同一个意思的第二点用 Moreover / It also，不要重复 First。"
+    ],
+    "paragraphs": [
+      { "s": ["Online learning has become very popular.", "It is convenient because you can study anywhere.", "For example, you can watch a lesson on the bus.", "In conclusion, online learning saves a lot of time."],
+        "roles": ["主题句（观点）", "理由", "例子", "结论"], "links": ["理由", "举例", "总结"],
+        "d": ["My brother is a teacher in a middle school."], "r": 0 },
+      { "s": ["Reading is one of the best habits.", "First of all, it builds your vocabulary.", "Moreover, it helps you think more clearly.", "To sum up, everyone should read every day."],
+        "roles": ["主题句", "理由一", "理由二", "结论"], "links": ["理由一", "理由二（递进）", "总结"],
+        "d": ["Some books are very expensive."], "r": 0 },
+      { "s": ["Exercising every day is important.", "It keeps your body strong.", "It also makes you feel happier.", "Therefore, we should exercise regularly."],
+        "roles": ["主题句", "理由一", "理由二", "结论"], "links": ["理由一", "理由二", "得出结论"],
+        "d": ["I bought a new pair of shoes yesterday."], "r": 0 },
+      { "s": ["Breakfast is the most important meal of the day.", "It gives you energy for the whole morning.", "For example, students who eat breakfast concentrate better.", "In short, we should never skip it."],
+        "roles": ["主题句", "理由", "例子", "结论"], "links": ["理由", "举例", "总结"],
+        "d": ["Lunch is usually at twelve."], "r": 1 },
+      { "s": ["Learning a foreign language is good for you.", "First, it opens the door to other cultures.", "Moreover, it makes your brain work better.", "In conclusion, everyone should learn at least one."],
+        "roles": ["主题句", "理由一", "理由二", "结论"], "links": ["理由一", "理由二（递进）", "总结"],
+        "d": ["My cousin speaks three languages."], "r": 0 },
+      { "s": ["Saving money is a good habit.", "It prepares you for unexpected problems.", "It also helps you reach your long-term goals.", "Therefore, we should save a little every month."],
+        "roles": ["主题句", "理由一", "理由二", "结论"], "links": ["理由一", "理由二", "结论"],
+        "d": ["Bank cards are easy to use."], "r": 2 },
+      { "s": ["Enough sleep matters more than people think.", "It helps your body recover from the day.", "For example, students who sleep well get better grades.", "To sum up, we should go to bed earlier."],
+        "roles": ["主题句", "理由", "例子", "结论"], "links": ["理由", "举例", "总结"],
+        "d": ["My alarm clock is broken."], "r": 1 },
+      { "s": ["Good friends make life better.", "They support you when things go wrong.", "They also make happy moments more enjoyable.", "In conclusion, we should value our friends."],
+        "roles": ["主题句", "理由一", "理由二", "结论"], "links": ["理由一", "理由二", "总结"],
+        "d": ["I met my best friend at primary school."], "r": 2 }
+    ]
+  },
+
+  "7-3": {
+    "rules": [
+      "As a result 前面一定是原因，后面才是结果。",
+      "因果可以层层推进：修地铁 → 少开车 → 空气变好 → 得奖。",
+      "也可以先抛结果再倒回去讲原因，读起来更抓人。"
+    ],
+    "paragraphs": [
+      { "s": ["The weather was terrible last weekend.", "As a result, all the flights were canceled.", "We had to stay at the airport for a whole night.", "In the end, we took a train home."],
+        "roles": ["起因", "结果", "接着", "最后"], "links": ["导致", "于是", "最终"],
+        "d": ["The airport was very clean and modern."], "r": 0 },
+      { "s": ["Tom did not study for the exam.", "Therefore, he failed it.", "His parents were very disappointed.", "He promised to work harder next time."],
+        "roles": ["起因", "结果", "家人反应", "后续"], "links": ["因此", "家人反应", "后续"],
+        "d": ["The exam was held in a large hall."], "r": 0 },
+      { "s": ["The city built a new subway line.", "Therefore, many people gave up driving.", "As a result, the air became much cleaner.", "Finally, the city won an environmental prize."],
+        "roles": ["起因", "结果一", "结果二", "最终"], "links": ["因此", "进一步导致", "最终"],
+        "d": ["The new line has twenty stations."], "r": 1 },
+      { "s": ["The small shop closed last month.", "The rent had gone up twice in one year.", "As a result, the owner could not make any profit.", "Finally, he decided to move to another street."],
+        "roles": ["结果（先说）", "原因", "进一步结果", "最终"], "links": ["原因是", "于是", "最终"],
+        "d": ["The shop used to sell fresh vegetables."], "r": 2 },
+      { "s": ["I stayed up late playing games.", "So I overslept the next morning.", "As a result, I missed the first class.", "I decided never to stay up so late again."],
+        "roles": ["起因", "结果一", "结果二", "后续"], "links": ["导致", "进一步", "后续"],
+        "d": ["My phone is two years old."], "r": 0 },
+      { "s": ["It rained for a whole week.", "The river rose above its banks.", "As a result, several villages were flooded.", "The government sent food and water to the area."],
+        "roles": ["起因", "发展", "结果", "后续"], "links": ["发展", "导致", "后续"],
+        "d": ["Farming is important in that area."], "r": 1 },
+      { "s": ["I forgot to charge my phone.", "Therefore, it died in the middle of the day.", "As a result, I could not find the meeting room.", "I was half an hour late."],
+        "roles": ["起因", "结果一", "结果二", "最后"], "links": ["因此", "进一步", "最后"],
+        "d": ["The meeting room is on the third floor."], "r": 0 },
+      { "s": ["The bookstore began selling coffee.", "More people came in every day.", "Therefore, the owner opened a second shop.", "Now the shop is famous in the city."],
+        "roles": ["起因", "发展", "结果", "现状"], "links": ["发展", "因此", "现状"],
+        "d": ["Books are usually cheaper online."], "r": 1 }
+    ]
+  },
+
+  "7-4": {
+    "rules": [
+      "First / Then / Next / Finally 本身就是顺序，照着排就行。",
+      "步骤之间有先后依赖（没借书证就没法借书），顺序不能换。",
+      "和步骤无关的背景介绍不要放进来，会把动作顺序打断。"
+    ],
+    "paragraphs": [
+      { "s": ["First, boil some water.", "Then, put a tea bag into the cup.", "Next, pour the hot water into the cup.", "Finally, wait for three minutes and enjoy it."],
+        "roles": ["第一步", "第二步", "第三步", "第四步"], "links": ["第二步", "第三步", "第四步"],
+        "d": ["Tea is very popular in many countries."], "r": 0 },
+      { "s": ["First, you need a library card.", "Then, you can search for books on the computer.", "After that, write down the book number.", "Finally, ask the librarian if you cannot find it."],
+        "roles": ["第一步", "第二步", "第三步", "第四步"], "links": ["第二步", "第三步", "求助"],
+        "d": ["The library closes at nine on weekdays."], "r": 1 },
+      { "s": ["First, write a clear subject line.", "Then, greet the person politely.", "After that, state your purpose in one or two sentences.", "Finally, end with a polite closing."],
+        "roles": ["第一步", "第二步", "第三步", "第四步"], "links": ["第二步", "第三步", "收尾"],
+        "d": ["Many people check their email every hour."], "r": 0 },
+      { "s": ["First, wash and cut the vegetables.", "Then, heat some oil in the pan.", "Next, put the rice and vegetables in and stir.", "Finally, add a little salt and serve it hot."],
+        "roles": ["第一步", "第二步", "第三步", "第四步"], "links": ["第二步", "第三步", "第四步"],
+        "d": ["Rice is the main food in many Asian countries."], "r": 0 },
+      { "s": ["First, fill in the application form.", "Then, take a photo that meets the rules.", "After that, hand in your documents at the office.", "Finally, collect your passport two weeks later."],
+        "roles": ["第一步", "第二步", "第三步", "第四步"], "links": ["第二步", "第三步", "取件"],
+        "d": ["Passports are checked at the airport."], "r": 1 },
+      { "s": ["First, decide what your main idea is.", "Then, write down two or three reasons.", "After that, add an example for each reason.", "Finally, write a short conclusion."],
+        "roles": ["第一步", "第二步", "第三步", "第四步"], "links": ["第二步", "第三步", "收尾"],
+        "d": ["Writing takes a lot of practice."], "r": 0 },
+      { "s": ["First, put the clothes into the machine.", "Then, add the washing powder.", "Next, choose the right program.", "Finally, press the start button."],
+        "roles": ["第一步", "第二步", "第三步", "第四步"], "links": ["第二步", "第三步", "第四步"],
+        "d": ["Washing machines are quite cheap now."], "r": 0 },
+      { "s": ["First, check whether the person is breathing.", "Then, call for an ambulance.", "After that, keep the person warm.", "Finally, stay with them until help arrives."],
+        "roles": ["第一步", "第二步", "第三步", "第四步"], "links": ["第二步", "第三步", "第四步"],
+        "d": ["First aid saves thousands of lives every year."], "r": 1 }
+    ]
+  },
+
+  "7-5": {
+    "rules": [
+      "On the one hand 和 On the other hand 是成套的：一段讲好处，一段讲坏处，顺序固定。",
+      "结论句不能偏袒一边 —— 用 it depends / the best choice 这类折中的说法。",
+      "对比两边要讲同一类事情才公平：都是使用感受，或者都是成本。"
+    ],
+    "paragraphs": [
+      { "s": ["Living in a city has both advantages and disadvantages.", "On the one hand, it offers more job opportunities.", "On the other hand, the cost of living is much higher.", "In conclusion, it depends on what you value most."],
+        "roles": ["主题句", "一方面（好处）", "另一方面（坏处）", "结论"], "links": ["一方面", "另一方面", "权衡"],
+        "d": ["My uncle has lived in the same city for thirty years."], "r": 0 },
+      { "s": ["Some people prefer to work from home.", "They say it saves both time and money.", "However, others find it hard to stay focused at home.", "Therefore, the best choice depends on the person."],
+        "roles": ["主题句", "支持理由", "转折（反方）", "结论"], "links": ["理由", "转折", "折中结论"],
+        "d": ["The company moved to a new office last year."], "r": 1 },
+      { "s": ["Both paper books and e-books have their fans.", "Paper books are easier on the eyes.", "E-books, on the other hand, are much lighter to carry.", "In the end, it is a matter of personal taste."],
+        "roles": ["主题句", "一方（纸质书）", "另一方（电子书）", "结论"], "links": ["先讲纸质书", "再讲电子书", "结论"],
+        "d": ["I read three books last month."], "r": 2 },
+      { "s": ["Online shopping has changed the way we buy things.", "On the one hand, it is fast and convenient.", "On the other hand, you cannot touch the goods before paying.", "In short, we should weigh the pros and cons."],
+        "roles": ["主题句", "一方面", "另一方面", "结论"], "links": ["一方面", "另一方面", "权衡"],
+        "d": ["Delivery usually takes two or three days."], "r": 0 },
+      { "s": ["Where to live is a hard question for young people.", "Big cities offer better schools and hospitals.", "Small towns, however, are quieter and much cheaper.", "It depends on what you need at this stage of life."],
+        "roles": ["主题句", "大城市", "小城镇", "结论"], "links": ["大城市", "转折", "折中"],
+        "d": ["Rents in big cities keep going up."], "r": 1 },
+      { "s": ["Both classroom lessons and online courses have strengths.", "Classroom lessons give you a teacher right in front of you.", "Online courses, on the other hand, let you study at your own pace.", "The best plan is probably to combine them."],
+        "roles": ["主题句", "线下课", "网课", "结论"], "links": ["线下课", "另一方面", "折中"],
+        "d": ["Our school has thirty classrooms."], "r": 2 },
+      { "s": ["Smartphones are part of everyday life now.", "On the one hand, they keep us connected all the time.", "On the other hand, they take away our attention.", "The key is to use them wisely."],
+        "roles": ["主题句", "一方面", "另一方面", "结论"], "links": ["一方面", "另一方面", "结论"],
+        "d": ["My phone has a very good camera."], "r": 0 },
+      { "s": ["People argue about whether to get up early.", "Early risers say the morning is the most productive time.", "Night owls, however, work better when the world is quiet.", "In the end, what matters is a regular schedule."],
+        "roles": ["主题句", "一方", "另一方", "结论"], "links": ["一方观点", "转折", "折中"],
+        "d": ["I set three alarms every night."], "r": 1 }
+    ]
+  },
+
+  "7-6": {
+    "rules": [
+      "先判断这一段属于哪种骨架：时间线、总分总、因果、对比还是流程。",
+      "找到最硬的信号词（As a result / In conclusion / First / On the other hand），它们的位置基本就定死了。",
+      "叙述类段落里，那句和整段时间线或逻辑冲突的，就是多余的。"
+    ],
+    "paragraphs": [
+      { "s": ["Last Friday, our class went on a school trip.", "We set off at six in the morning.", "After two hours, we reached the mountain.", "We climbed to the top and took many photos.", "In the evening, we came back home, tired but happy."],
+        "roles": ["开头", "出发", "到达", "活动", "返程"], "links": ["出发", "到达", "活动", "返程"],
+        "d": ["Our teacher is very strict with us."], "r": 0 },
+      { "s": ["Learning a foreign language is good for you.", "First, it opens the door to other cultures.", "Moreover, it makes your brain work better.", "For example, studies show it can improve memory.", "In conclusion, everyone should learn at least one foreign language."],
+        "roles": ["主题句（观点）", "理由一", "理由二", "例子", "结论"], "links": ["理由一", "理由二（递进）", "举例", "总结"],
+        "d": ["My cousin speaks three languages."], "r": 1 },
+      { "s": ["The small shop closed last month.", "The rent had gone up twice in one year.", "As a result, the owner could not make any profit.", "Finally, he decided to move to another street."],
+        "roles": ["结果（先说）", "原因", "进一步结果", "最终"], "links": ["原因是", "于是", "最终"],
+        "d": ["The shop used to sell fresh vegetables."], "r": 2 },
+      { "s": ["Online shopping has changed the way we buy things.", "On the one hand, it is fast and convenient.", "On the other hand, you cannot touch the goods before paying.", "In short, we should weigh the pros and cons."],
+        "roles": ["主题句", "一方面", "另一方面", "结论"], "links": ["一方面", "另一方面", "权衡"],
+        "d": ["Delivery usually takes two or three days."], "r": 1 },
+      { "s": ["First, decide what your main idea is.", "Then, write down two or three reasons.", "After that, add an example for each reason.", "Finally, write a short conclusion."],
+        "roles": ["第一步", "第二步", "第三步", "第四步"], "links": ["第二步", "第三步", "收尾"],
+        "d": ["Writing takes a lot of practice."], "r": 1 },
+      { "s": ["It rained for a whole week.", "The river rose above its banks.", "As a result, several villages were flooded.", "The government sent food and water to the area."],
+        "roles": ["起因", "发展", "结果", "后续"], "links": ["发展", "导致", "后续"],
+        "d": ["Farming is important in that area."], "r": 2 }
+    ]
+  }
+}

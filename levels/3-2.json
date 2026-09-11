@@ -1,0 +1,382 @@
+{
+  "id": "3-2",
+  "topic": "一般过去",
+  "emoji": "📜",
+  "goal": "过去发生的事：规则动词加 ed，不规则的只能记",
+  "rounds": [
+    {
+      "id": "3-2-r1",
+      "cn": "我上周去看望了奶奶。",
+      "tip": "规则动词加 ed",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "宾语 NP"
+        },
+        {
+          "id": "adv",
+          "label": "时间状语"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "I",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "visited",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "my",
+          "pos": "pronoun",
+          "role": "限定词",
+          "group": "np2"
+        },
+        {
+          "text": "grandma",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "np2"
+        },
+        {
+          "text": "last",
+          "pos": "adj",
+          "role": "定语",
+          "group": "adv"
+        },
+        {
+          "text": "week",
+          "pos": "noun",
+          "role": "时间状语",
+          "group": "adv"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "visit",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        }
+      ],
+      "explain": "一般过去时表示过去发生的事，动词用过去式。visit 是规则动词，直接加 ed。last week 是时间状语，告诉你这是过去。",
+      "example": "I visited my grandma last week. / I visit my grandma every week.",
+      "win": "过去的事，动词加 ed。"
+    },
+    {
+      "id": "3-2-r2",
+      "cn": "她昨天去了北京。",
+      "tip": "go 的过去式是 went",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "pp",
+          "label": "介词短语 PP"
+        },
+        {
+          "id": "adv",
+          "label": "时间状语"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "She",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "went",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "to",
+          "pos": "prep",
+          "role": "介词",
+          "group": "pp"
+        },
+        {
+          "text": "Beijing",
+          "pos": "noun",
+          "role": "介词宾语",
+          "group": "pp"
+        },
+        {
+          "text": "yesterday",
+          "pos": "adv",
+          "role": "时间状语",
+          "group": "adv"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "go",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "goes",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        }
+      ],
+      "explain": "go 的过去式是 went，不是 goed。英语里最常用的动词几乎都是不规则的，只能一个个记。另外过去式不分人称，She 也用 went。",
+      "example": "She went to Beijing yesterday. / She goes to Beijing every year.",
+      "win": "常用动词的过去式，得记住。"
+    },
+    {
+      "id": "3-2-r3",
+      "cn": "他们昨晚看了一部电影。",
+      "tip": "saw 是过去式，seen 是过去分词",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "宾语 NP"
+        },
+        {
+          "id": "adv",
+          "label": "时间状语"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "They",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "saw",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "a",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np2"
+        },
+        {
+          "text": "film",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "np2"
+        },
+        {
+          "text": "last",
+          "pos": "adj",
+          "role": "定语",
+          "group": "adv"
+        },
+        {
+          "text": "night",
+          "pos": "noun",
+          "role": "时间状语",
+          "group": "adv"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "see",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "seen",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        }
+      ],
+      "explain": "see 的过去式是 saw。seen 是过去分词，它不能单独当谓语，得和 have / has / had 一起用（have seen）。",
+      "example": "They saw a film last night. / They have seen that film.",
+      "win": "过去式和过去分词是两个东西。"
+    },
+    {
+      "id": "3-2-r4",
+      "cn": "他买了一个新手机。",
+      "tip": "改错：buy 的过去式不是 buyed",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "宾语 NP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "He",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "bought",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "a",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np2"
+        },
+        {
+          "text": "new",
+          "pos": "adj",
+          "role": "定语",
+          "group": "np2"
+        },
+        {
+          "text": "phone",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "np2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "buy",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "buyed",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        }
+      ],
+      "prefill": [
+        "He",
+        "buyed",
+        "a",
+        "new",
+        "phone"
+      ],
+      "explain": "buy 的过去式是 bought，不是加 ed 的 buyed。英语里没有 buyed 这个词。",
+      "example": "He bought a new phone. / He buys a new phone every year.",
+      "win": "不规则动词不会乖乖加 ed。"
+    },
+    {
+      "id": "3-2-r5",
+      "cn": "你昨晚给我打电话了吗？",
+      "tip": "过去时的疑问句用 Did",
+      "punct": "?",
+      "groups": [
+        {
+          "id": "vp",
+          "label": "助动词"
+        },
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp2",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "宾语 NP"
+        },
+        {
+          "id": "adv",
+          "label": "时间状语"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "Did",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "vp"
+        },
+        {
+          "text": "you",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "call",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp2"
+        },
+        {
+          "text": "me",
+          "pos": "pronoun",
+          "role": "宾语",
+          "group": "np2"
+        },
+        {
+          "text": "last",
+          "pos": "adj",
+          "role": "定语",
+          "group": "adv"
+        },
+        {
+          "text": "night",
+          "pos": "noun",
+          "role": "时间状语",
+          "group": "adv"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "called",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp2"
+        }
+      ],
+      "explain": "一般过去时的疑问句用 Did 开头，后面的动词要还原成原形 call —— 过去时态的标志已经由 Did 承担了。",
+      "example": "Did you call me last night? / You called me last night.",
+      "win": "Did 出现后，动词回到原形。"
+    }
+  ]
+}

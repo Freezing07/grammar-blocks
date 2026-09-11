@@ -1,0 +1,435 @@
+{
+  "id": "6-5",
+  "topic": "指代衔接",
+  "emoji": "🔁",
+  "goal": "第一次提用 a，再提用 the；一整件事用 this 指代",
+  "rounds": [
+    {
+      "id": "6-5-r1",
+      "cn": "我昨天买了一本书。那本书很有意思。",
+      "tip": "第一次用 a，第二次用 the",
+      "rootLabel": "句群",
+      "marks": {
+        "4": "."
+      },
+      "groups": [
+        {
+          "id": "s1",
+          "label": "第一句"
+        },
+        {
+          "id": "s2",
+          "label": "第二句（回指）",
+          "clause": true
+        }
+      ],
+      "blocks": [
+        {
+          "text": "I",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "s1"
+        },
+        {
+          "text": "bought",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "s1"
+        },
+        {
+          "text": "a",
+          "pos": "article",
+          "role": "限定词",
+          "group": "s1"
+        },
+        {
+          "text": "book",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "s1"
+        },
+        {
+          "text": "yesterday",
+          "pos": "adv",
+          "role": "状语",
+          "group": "s1"
+        },
+        {
+          "text": "The",
+          "pos": "article",
+          "role": "限定词",
+          "group": "s2"
+        },
+        {
+          "text": "book",
+          "pos": "noun",
+          "role": "主语",
+          "group": "s2"
+        },
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "s2"
+        },
+        {
+          "text": "very",
+          "pos": "adv",
+          "role": "状语",
+          "group": "s2"
+        },
+        {
+          "text": "interesting",
+          "pos": "adj",
+          "role": "表语",
+          "group": "s2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "A",
+          "pos": "article",
+          "role": "限定词",
+          "group": "s2"
+        }
+      ],
+      "explain": "第一次提到某个不确定的东西用 a book；第二次提到同一个东西，读者已经知道是哪个了，就要用 the book。这就是冠词在语篇里的作用 —— 它标记「这个信息之前出现过」。",
+      "example": "I bought a book yesterday. The book is very interesting.",
+      "win": "a 引出新信息，the 回指旧信息。"
+    },
+    {
+      "id": "6-5-r2",
+      "cn": "她考试没通过。这件事让她很难过。",
+      "tip": "this 可以指代一整句话",
+      "rootLabel": "句群",
+      "marks": {
+        "3": "."
+      },
+      "groups": [
+        {
+          "id": "s1",
+          "label": "第一句"
+        },
+        {
+          "id": "s2",
+          "label": "第二句（指代整件事）",
+          "clause": true
+        }
+      ],
+      "blocks": [
+        {
+          "text": "She",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "s1"
+        },
+        {
+          "text": "failed",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "s1"
+        },
+        {
+          "text": "the",
+          "pos": "article",
+          "role": "限定词",
+          "group": "s1"
+        },
+        {
+          "text": "exam",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "s1"
+        },
+        {
+          "text": "This",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "s2"
+        },
+        {
+          "text": "made",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "s2"
+        },
+        {
+          "text": "her",
+          "pos": "pronoun",
+          "role": "宾语",
+          "group": "s2"
+        },
+        {
+          "text": "very",
+          "pos": "adv",
+          "role": "状语",
+          "group": "s2"
+        },
+        {
+          "text": "sad",
+          "pos": "adj",
+          "role": "宾补",
+          "group": "s2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "These",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "s2"
+        }
+      ],
+      "explain": "this 可以指代前面**整个句子**（她考试没通过这件事）。指代一整件事只能用 this，不能用 these —— these 指代的是复数名词。",
+      "example": "She failed the exam. This made her very sad.",
+      "win": "指代一整件事，用 this。"
+    },
+    {
+      "id": "6-5-r3",
+      "cn": "他有两个儿子。他们俩都是医生。",
+      "tip": "指代复数用 them",
+      "rootLabel": "句群",
+      "marks": {
+        "3": "."
+      },
+      "groups": [
+        {
+          "id": "s1",
+          "label": "第一句"
+        },
+        {
+          "id": "s2",
+          "label": "第二句（回指）",
+          "clause": true
+        }
+      ],
+      "blocks": [
+        {
+          "text": "He",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "s1"
+        },
+        {
+          "text": "has",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "s1"
+        },
+        {
+          "text": "two",
+          "pos": "adj",
+          "role": "定语",
+          "group": "s1"
+        },
+        {
+          "text": "sons",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "s1"
+        },
+        {
+          "text": "Both of them",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "s2"
+        },
+        {
+          "text": "are",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "s2"
+        },
+        {
+          "text": "doctors",
+          "pos": "noun",
+          "role": "表语",
+          "group": "s2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "Both of it",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "s2"
+        }
+      ],
+      "explain": "both of them 指代前面的 two sons。指代两个以上的人要用 them，不能用 it。",
+      "example": "He has two sons. Both of them are doctors.",
+      "win": "复数指代用 them。"
+    },
+    {
+      "id": "6-5-r4",
+      "cn": "我买了一本书。那本书很有意思。",
+      "tip": "改错：第二次提到要用 the",
+      "rootLabel": "句群",
+      "marks": {
+        "3": "."
+      },
+      "groups": [
+        {
+          "id": "s1",
+          "label": "第一句"
+        },
+        {
+          "id": "s2",
+          "label": "第二句（回指）",
+          "clause": true
+        }
+      ],
+      "blocks": [
+        {
+          "text": "I",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "s1"
+        },
+        {
+          "text": "bought",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "s1"
+        },
+        {
+          "text": "a",
+          "pos": "article",
+          "role": "限定词",
+          "group": "s1"
+        },
+        {
+          "text": "book",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "s1"
+        },
+        {
+          "text": "The",
+          "pos": "article",
+          "role": "限定词",
+          "group": "s2"
+        },
+        {
+          "text": "book",
+          "pos": "noun",
+          "role": "主语",
+          "group": "s2"
+        },
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "s2"
+        },
+        {
+          "text": "interesting",
+          "pos": "adj",
+          "role": "表语",
+          "group": "s2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "A",
+          "pos": "article",
+          "role": "限定词",
+          "group": "s2"
+        }
+      ],
+      "prefill": [
+        "I",
+        "bought",
+        "a",
+        "book",
+        "A",
+        "book",
+        "is",
+        "interesting"
+      ],
+      "explain": "第二次提到同一本书，要用 The book。用 A book 会让读者以为你又买了一本新的。",
+      "example": "I bought a book. The book is interesting.",
+      "win": "a 是「有一个」，the 是「就那个」。"
+    },
+    {
+      "id": "6-5-r5",
+      "cn": "这里有很多书。其中一些是旧的。",
+      "tip": "some of them 指代复数名词",
+      "rootLabel": "句群",
+      "marks": {
+        "4": "."
+      },
+      "groups": [
+        {
+          "id": "s1",
+          "label": "第一句"
+        },
+        {
+          "id": "s2",
+          "label": "第二句（回指一部分）",
+          "clause": true
+        }
+      ],
+      "blocks": [
+        {
+          "text": "There",
+          "pos": "adv",
+          "role": "引导词",
+          "group": "s1"
+        },
+        {
+          "text": "are",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "s1"
+        },
+        {
+          "text": "many",
+          "pos": "adj",
+          "role": "定语",
+          "group": "s1"
+        },
+        {
+          "text": "books",
+          "pos": "noun",
+          "role": "主语",
+          "group": "s1"
+        },
+        {
+          "text": "here",
+          "pos": "adv",
+          "role": "状语",
+          "group": "s1"
+        },
+        {
+          "text": "Some of them",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "s2"
+        },
+        {
+          "text": "are",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "s2"
+        },
+        {
+          "text": "old",
+          "pos": "adj",
+          "role": "表语",
+          "group": "s2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "Some of it",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "s2"
+        }
+      ],
+      "explain": "some of them 指代前面的 books（复数）。用 it 就变成指代单数，和 books 对不上。",
+      "example": "There are many books here. Some of them are old.",
+      "win": "指代一部分时，人称和单复数都要跟前面一致。"
+    }
+  ]
+}

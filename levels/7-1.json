@@ -1,0 +1,122 @@
+{
+  "id": "7-1",
+  "topic": "时间顺序",
+  "emoji": "⏱️",
+  "goal": "按时间先后排列一件事：先找时间词，时间词就是路标",
+  "rounds": [
+    {
+      "id": "7-1-r1",
+      "mode": "order",
+      "cn": "把这几句话排成一段通顺的话",
+      "tip": "先找时间词：at seven → after → on the way → and then",
+      "blocks": [
+        {
+          "text": "I got up at seven this morning.",
+          "role": "开头"
+        },
+        {
+          "text": "After breakfast, I went to school.",
+          "role": "接着"
+        },
+        {
+          "text": "On the way, I met an old friend.",
+          "role": "然后"
+        },
+        {
+          "text": "We talked for a while and then said goodbye.",
+          "role": "最后"
+        }
+      ],
+      "links": [
+        "接着",
+        "然后",
+        "最后"
+      ],
+      "distractors": [
+        {
+          "text": "I usually go to bed at eleven.",
+          "role": "多余的一句"
+        }
+      ],
+      "explain": "按时间排的关键是找「时间词」：at seven → After breakfast → On the way → and then，这四个词本身就是路标。最后那句说晚上十一点睡觉，和早上出门这条时间线对不上。",
+      "example": "信号词：at seven / After… / On the way / and then",
+      "win": "时间词就是段落的路标。"
+    },
+    {
+      "id": "7-1-r2",
+      "mode": "order",
+      "cn": "把这几句话排成一段通顺的话",
+      "tip": "先说什么时候出发，再说到哪儿、做了什么",
+      "blocks": [
+        {
+          "text": "Last summer, my family went to the beach.",
+          "role": "开头"
+        },
+        {
+          "text": "We left home early in the morning.",
+          "role": "出发"
+        },
+        {
+          "text": "When we arrived, the sun was already high.",
+          "role": "到达"
+        },
+        {
+          "text": "We swam and played until the evening.",
+          "role": "活动"
+        }
+      ],
+      "links": [
+        "出发",
+        "到达",
+        "活动"
+      ],
+      "distractors": [
+        {
+          "text": "My father does not like swimming at all.",
+          "role": "多余的一句"
+        }
+      ],
+      "explain": "叙事段落的常规写法：先交代时间地点（Last summer），再说出发，再说到达，最后说做了什么。最后那句说爸爸不喜欢游泳，和「我们游泳玩到晚上」直接矛盾，不能放进来。",
+      "example": "Last summer → left home → arrived → swam and played",
+      "win": "时间线要顺，前后不能打架。"
+    },
+    {
+      "id": "7-1-r3",
+      "mode": "order",
+      "cn": "把这几句话排成一段通顺的话",
+      "tip": "休息 → 开始写 → 写了多久 → 之后做什么",
+      "blocks": [
+        {
+          "text": "I came home and had a short rest.",
+          "role": "开头"
+        },
+        {
+          "text": "Then I started my homework.",
+          "role": "接着"
+        },
+        {
+          "text": "It took me about two hours.",
+          "role": "持续"
+        },
+        {
+          "text": "After that, I watched TV for a while.",
+          "role": "之后"
+        }
+      ],
+      "links": [
+        "接着",
+        "持续多久",
+        "之后"
+      ],
+      "distractors": [
+        {
+          "text": "I forgot to bring my book home.",
+          "role": "多余的一句"
+        }
+      ],
+      "explain": "短句之间用 Then / After that 串起来，时间线就清楚了。最后那句说「忘带书回家」——如果真忘了，后面根本做不了作业，所以它和整段冲突。",
+      "example": "had a rest → Then started → took two hours → After that",
+      "win": "注意句子之间不能互相矛盾。"
+    }
+  ]
+}

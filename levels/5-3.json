@@ -1,0 +1,368 @@
+{
+  "id": "5-3",
+  "topic": "现在分词",
+  "emoji": "🟢",
+  "goal": "动词加 ing 当形容词用，还能表示伴随的动作",
+  "rounds": [
+    {
+      "id": "5-3-r1",
+      "cn": "正在睡觉的婴儿很可爱。",
+      "tip": "现在分词放名词前面",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "part",
+          "label": "现在分词（定语）",
+          "clause": true,
+          "parent": "np1"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "The",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np1"
+        },
+        {
+          "text": "sleeping",
+          "pos": "verb",
+          "role": "现在分词",
+          "group": "part",
+          "nonfinite": true
+        },
+        {
+          "text": "baby",
+          "pos": "noun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "cute",
+          "pos": "adj",
+          "role": "表语",
+          "group": "vp"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "sleep",
+          "pos": "verb",
+          "role": "现在分词",
+          "group": "part"
+        }
+      ],
+      "explain": "现在分词（-ing）放在名词前面，起形容词的作用：sleeping baby 就是「正在睡觉的婴儿」。它说明的是名词的状态，不是句子的谓语。",
+      "example": "The sleeping baby is cute. / The baby is sleeping.",
+      "win": "分词放在名词前，就等于一个形容词。"
+    },
+    {
+      "id": "5-3-r2",
+      "cn": "我看见他正在过马路。",
+      "tip": "see + 宾语 + 现在分词",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "宾语 NP"
+        },
+        {
+          "id": "part",
+          "label": "现在分词（宾语补足语）",
+          "clause": true,
+          "parent": "np2"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "I",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "saw",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "him",
+          "pos": "pronoun",
+          "role": "宾语",
+          "group": "np2"
+        },
+        {
+          "text": "crossing",
+          "pos": "verb",
+          "role": "现在分词",
+          "group": "part",
+          "nonfinite": true
+        },
+        {
+          "text": "the",
+          "pos": "article",
+          "role": "限定词",
+          "group": "part"
+        },
+        {
+          "text": "street",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "part"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "cross",
+          "pos": "verb",
+          "role": "现在分词",
+          "group": "part"
+        }
+      ],
+      "explain": "see + 宾语 + 现在分词，表示「看见某人正在做某事」。him 是宾语，crossing the street 补充说明他当时在做什么 —— 用分词说明动作正在进行。",
+      "example": "I saw him crossing the street. / I saw him cross the street.（看见整个过程）",
+      "win": "分词作宾补，说明动作正在进行。"
+    },
+    {
+      "id": "5-3-r3",
+      "cn": "站在那里的那个人是我的老师。",
+      "tip": "分词短语放名词后面，等于省略的定语从句",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "part",
+          "label": "现在分词短语（定语）",
+          "clause": true,
+          "parent": "np1"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "表语 NP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "The",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np1"
+        },
+        {
+          "text": "man",
+          "pos": "noun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "standing",
+          "pos": "verb",
+          "role": "现在分词",
+          "group": "part",
+          "nonfinite": true
+        },
+        {
+          "text": "there",
+          "pos": "adv",
+          "role": "状语",
+          "group": "part"
+        },
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "my",
+          "pos": "pronoun",
+          "role": "限定词",
+          "group": "np2"
+        },
+        {
+          "text": "teacher",
+          "pos": "noun",
+          "role": "表语",
+          "group": "np2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "stand",
+          "pos": "verb",
+          "role": "现在分词",
+          "group": "part"
+        }
+      ],
+      "explain": "现在分词短语放在名词后面，相当于一个省略了的定语从句：the man standing there = the man who is standing there。注意它没有主语，也没有 be 动词。",
+      "example": "The man standing there is my teacher. / The man who is standing there is my teacher.",
+      "win": "分词短语 = 简写版的定语从句。"
+    },
+    {
+      "id": "5-3-r4",
+      "cn": "正在睡觉的婴儿很可爱。",
+      "tip": "改错：名词前面不能用原形",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "part",
+          "label": "现在分词（定语）",
+          "clause": true,
+          "parent": "np1"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "The",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np1"
+        },
+        {
+          "text": "sleeping",
+          "pos": "verb",
+          "role": "现在分词",
+          "group": "part",
+          "nonfinite": true
+        },
+        {
+          "text": "baby",
+          "pos": "noun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "cute",
+          "pos": "adj",
+          "role": "表语",
+          "group": "vp"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "sleep",
+          "pos": "verb",
+          "role": "现在分词",
+          "group": "part"
+        }
+      ],
+      "prefill": [
+        "The",
+        "sleep",
+        "baby",
+        "is",
+        "cute"
+      ],
+      "explain": "名词前面的修饰成分要用现在分词 sleeping，不能用动词原形 sleep。一个句子里只能有一个谓语动词，这里是 is。",
+      "example": "The sleeping baby is cute. / The baby is sleeping.",
+      "win": "修饰名词的动词要变分词。"
+    },
+    {
+      "id": "5-3-r5",
+      "cn": "她坐在那儿看书。",
+      "tip": "句尾的分词表示伴随的动作",
+      "groups": [
+        {
+          "id": "main",
+          "label": "主句"
+        },
+        {
+          "id": "part",
+          "label": "现在分词短语（伴随状语）",
+          "clause": true,
+          "parent": "main"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "She",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "main"
+        },
+        {
+          "text": "sat",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "main"
+        },
+        {
+          "text": "there",
+          "pos": "adv",
+          "role": "状语",
+          "group": "main"
+        },
+        {
+          "text": "reading",
+          "pos": "verb",
+          "role": "现在分词",
+          "group": "part",
+          "nonfinite": true
+        },
+        {
+          "text": "a",
+          "pos": "article",
+          "role": "限定词",
+          "group": "part"
+        },
+        {
+          "text": "book",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "part"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "read",
+          "pos": "verb",
+          "role": "现在分词",
+          "group": "part"
+        }
+      ],
+      "explain": "现在分词短语放在句尾，表示伴随的动作：她坐在那儿，同时在看一本书。这个分词的主语跟主句一样（都是 She），所以不用再写一遍。",
+      "example": "She sat there reading a book. / She sat there and read a book.",
+      "win": "分词还能表示伴随动作。"
+    }
+  ]
+}

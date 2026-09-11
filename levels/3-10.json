@@ -1,0 +1,432 @@
+{
+  "id": "3-10",
+  "topic": "时态 · Boss",
+  "emoji": "👑",
+  "boss": true,
+  "goal": "八种时态加被动混着来 —— 限时挑战，看你能不能在 3 秒内认出时态",
+  "rounds": [
+    {
+      "id": "3-10-r1",
+      "cn": "婴儿现在正在睡觉。",
+      "tip": "now 提示用进行时",
+      "timeLimit": 40,
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "The",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np1"
+        },
+        {
+          "text": "baby",
+          "pos": "noun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "vp"
+        },
+        {
+          "text": "sleeping",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "now",
+          "pos": "adv",
+          "role": "时间状语",
+          "group": "vp"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "sleeps",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        }
+      ],
+      "explain": "now 提示「此刻正在」，用现在进行时 be + ing。",
+      "example": "The baby is sleeping now. / The baby sleeps well.",
+      "win": "看到 now，先想进行时。"
+    },
+    {
+      "id": "3-10-r2",
+      "cn": "上周日我们参观了博物馆。",
+      "tip": "last Sunday 提示用过去时",
+      "timeLimit": 40,
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "宾语 NP"
+        },
+        {
+          "id": "adv",
+          "label": "时间状语"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "We",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "visited",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "the",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np2"
+        },
+        {
+          "text": "museum",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "np2"
+        },
+        {
+          "text": "last",
+          "pos": "adj",
+          "role": "定语",
+          "group": "adv"
+        },
+        {
+          "text": "Sunday",
+          "pos": "noun",
+          "role": "时间状语",
+          "group": "adv"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "visit",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        }
+      ],
+      "explain": "last Sunday 是明确的过去时间，用一般过去时，动词加 ed。",
+      "example": "We visited the museum last Sunday. / We visit the museum every Sunday.",
+      "win": "有明确的过去时间，就用过去时。"
+    },
+    {
+      "id": "3-10-r3",
+      "cn": "这部电影我已经看过了。",
+      "tip": "already 常配现在完成",
+      "timeLimit": 40,
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "宾语 NP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "I",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "have",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "vp"
+        },
+        {
+          "text": "already",
+          "pos": "adv",
+          "role": "状语",
+          "group": "vp"
+        },
+        {
+          "text": "seen",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "this",
+          "pos": "pronoun",
+          "role": "限定词",
+          "group": "np2"
+        },
+        {
+          "text": "film",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "np2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "saw",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        }
+      ],
+      "explain": "already 常和现在完成时搭配，位置在 have 和过去分词之间。have 后面用过去分词 seen。",
+      "example": "I have already seen this film. / I saw this film last week.",
+      "win": "already 站在助动词和过去分词中间。"
+    },
+    {
+      "id": "3-10-r4",
+      "cn": "这本书是用英语写的。",
+      "tip": "被动语态",
+      "timeLimit": 40,
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语（受事）"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP（被动）"
+        },
+        {
+          "id": "pp",
+          "label": "介词短语 PP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "The",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np1"
+        },
+        {
+          "text": "book",
+          "pos": "noun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "was",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "vp"
+        },
+        {
+          "text": "written",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "in",
+          "pos": "prep",
+          "role": "介词",
+          "group": "pp"
+        },
+        {
+          "text": "English",
+          "pos": "noun",
+          "role": "介词宾语",
+          "group": "pp"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "wrote",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        }
+      ],
+      "explain": "被动语态 be + 过去分词。主语是「被写」的书。write 的过去分词是 written。",
+      "example": "The book was written in English. / Someone wrote the book in English.",
+      "win": "主语被做，就用被动。"
+    },
+    {
+      "id": "3-10-r5",
+      "cn": "到那时我就完成了。",
+      "tip": "将来完成",
+      "timeLimit": 45,
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "宾语 NP"
+        },
+        {
+          "id": "pp",
+          "label": "时间状语 PP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "I",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "will",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "vp"
+        },
+        {
+          "text": "have",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "vp"
+        },
+        {
+          "text": "finished",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "it",
+          "pos": "pronoun",
+          "role": "宾语",
+          "group": "np2"
+        },
+        {
+          "text": "by",
+          "pos": "prep",
+          "role": "介词",
+          "group": "pp"
+        },
+        {
+          "text": "then",
+          "pos": "adv",
+          "role": "介词宾语",
+          "group": "pp"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "finish",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        }
+      ],
+      "explain": "by then 表示「到那时为止」，配将来完成时 will have + 过去分词。",
+      "example": "I will have finished it by then. / I will finish it tomorrow.",
+      "win": "by then 后面跟将来完成。"
+    },
+    {
+      "id": "3-10-r6",
+      "cn": "你去过巴黎吗？",
+      "tip": "have been to = 去过",
+      "timeLimit": 40,
+      "punct": "?",
+      "groups": [
+        {
+          "id": "vp",
+          "label": "助动词"
+        },
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp2",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "pp",
+          "label": "介词短语 PP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "Have",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "vp"
+        },
+        {
+          "text": "you",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "ever",
+          "pos": "adv",
+          "role": "状语",
+          "group": "vp2"
+        },
+        {
+          "text": "been",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp2"
+        },
+        {
+          "text": "to",
+          "pos": "prep",
+          "role": "介词",
+          "group": "pp"
+        },
+        {
+          "text": "Paris",
+          "pos": "noun",
+          "role": "介词宾语",
+          "group": "pp"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "went",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp2"
+        }
+      ],
+      "explain": "have been to 是现在完成时的固定说法，说人生经验。ever 表示「曾经」，放在中间。",
+      "example": "Have you ever been to Paris? / I went to Paris last year.",
+      "win": "问经验用 have been to。"
+    }
+  ]
+}

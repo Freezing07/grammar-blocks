@@ -1,0 +1,122 @@
+{
+  "id": "7-2",
+  "topic": "总分总",
+  "emoji": "🔺",
+  "goal": "观点 → 理由 → 例子 → 结论：中国学生最该练熟的段落骨架",
+  "rounds": [
+    {
+      "id": "7-2-r1",
+      "mode": "order",
+      "cn": "把这几句话排成一段通顺的话",
+      "tip": "先说观点，再说理由，然后举例，最后总结",
+      "blocks": [
+        {
+          "text": "Online learning has become very popular.",
+          "role": "主题句（观点）"
+        },
+        {
+          "text": "It is convenient because you can study anywhere.",
+          "role": "理由"
+        },
+        {
+          "text": "For example, you can watch a lesson on the bus.",
+          "role": "例子"
+        },
+        {
+          "text": "In conclusion, online learning saves a lot of time.",
+          "role": "结论"
+        }
+      ],
+      "links": [
+        "理由",
+        "举例",
+        "总结"
+      ],
+      "distractors": [
+        {
+          "text": "My brother is a teacher in a middle school.",
+          "role": "多余的一句"
+        }
+      ],
+      "explain": "这是最标准的英语段落骨架：主题句（观点）→ 理由 → 例子 → 结论。信号词也很明显：For example 一定跟在理由后面，In conclusion 一定在最后。最后那句讲哥哥是老师，和「在线学习」这个主题没有任何关系。",
+      "example": "观点 → 理由 → For example… → In conclusion…",
+      "win": "观点、理由、例子、结论，一段就这四块。"
+    },
+    {
+      "id": "7-2-r2",
+      "mode": "order",
+      "cn": "把这几句话排成一段通顺的话",
+      "tip": "First of all / Moreover 提示这两句是并列的理由",
+      "blocks": [
+        {
+          "text": "Reading is one of the best habits.",
+          "role": "主题句（观点）"
+        },
+        {
+          "text": "First of all, it builds your vocabulary.",
+          "role": "理由一"
+        },
+        {
+          "text": "Moreover, it helps you think more clearly.",
+          "role": "理由二"
+        },
+        {
+          "text": "To sum up, everyone should read every day.",
+          "role": "结论"
+        }
+      ],
+      "links": [
+        "理由一",
+        "理由二（递进）",
+        "总结"
+      ],
+      "distractors": [
+        {
+          "text": "Some books are very expensive.",
+          "role": "多余的一句"
+        }
+      ],
+      "explain": "First of all 和 Moreover 是成对出现的：一个提第一点，一个补第二点，所以它们必须连着。To sum up 收尾。最后那句谈的是书价，这段谈的是阅读习惯，主题不搭。",
+      "example": "观点 → First of all… → Moreover… → To sum up…",
+      "win": "First of all 和 Moreover 是成套的。"
+    },
+    {
+      "id": "7-2-r3",
+      "mode": "order",
+      "cn": "把这几句话排成一段通顺的话",
+      "tip": "Therefore 表示「因此」，只能用在结论句",
+      "blocks": [
+        {
+          "text": "Exercising every day is important.",
+          "role": "主题句（观点）"
+        },
+        {
+          "text": "It keeps your body strong.",
+          "role": "理由一"
+        },
+        {
+          "text": "It also makes you feel happier.",
+          "role": "理由二"
+        },
+        {
+          "text": "Therefore, we should exercise regularly.",
+          "role": "结论"
+        }
+      ],
+      "links": [
+        "理由一",
+        "理由二",
+        "得出结论"
+      ],
+      "distractors": [
+        {
+          "text": "I bought a new pair of shoes yesterday.",
+          "role": "多余的一句"
+        }
+      ],
+      "explain": "第二句和第三句是并列的两个好处，用 It also 衔接。Therefore 引出结论，必须放最后。买鞋那句虽然和运动沾边，但它是个人琐事，支撑不了观点。",
+      "example": "观点 → 理由一 → It also… → Therefore…",
+      "win": "Therefore 只出现在结论句。"
+    }
+  ]
+}

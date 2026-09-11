@@ -1,0 +1,520 @@
+{
+  "id": "6-8",
+  "topic": "篇章 · Boss",
+  "emoji": "👑",
+  "boss": true,
+  "goal": "转折、因果、指代、让步、举例、总结混着来 —— 限时挑战",
+  "rounds": [
+    {
+      "id": "6-8-r1",
+      "cn": "任务很难。然而，我们完成了。",
+      "tip": "转折衔接",
+      "timeLimit": 50,
+      "rootLabel": "句群",
+      "marks": {
+        "3": ".",
+        "4": ","
+      },
+      "groups": [
+        {
+          "id": "s1",
+          "label": "第一句"
+        },
+        {
+          "id": "s2",
+          "label": "第二句（转折）",
+          "clause": true
+        }
+      ],
+      "blocks": [
+        {
+          "text": "The",
+          "pos": "article",
+          "role": "限定词",
+          "group": "s1"
+        },
+        {
+          "text": "task",
+          "pos": "noun",
+          "role": "主语",
+          "group": "s1"
+        },
+        {
+          "text": "was",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "s1"
+        },
+        {
+          "text": "hard",
+          "pos": "adj",
+          "role": "表语",
+          "group": "s1"
+        },
+        {
+          "text": "However",
+          "pos": "adv",
+          "role": "衔接词",
+          "group": "s2"
+        },
+        {
+          "text": "we",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "s2"
+        },
+        {
+          "text": "finished",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "s2"
+        },
+        {
+          "text": "it",
+          "pos": "pronoun",
+          "role": "宾语",
+          "group": "s2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "Therefore",
+          "pos": "adv",
+          "role": "衔接词",
+          "group": "s2"
+        }
+      ],
+      "explain": "难却完成了，是转折，用 However。",
+      "example": "The task was hard. However, we finished it.",
+      "win": "转向相反的一面，用 however。"
+    },
+    {
+      "id": "6-8-r2",
+      "cn": "她每天练习。结果，她得了奖。",
+      "tip": "因果衔接",
+      "timeLimit": 50,
+      "rootLabel": "句群",
+      "marks": {
+        "3": ".",
+        "4": ","
+      },
+      "groups": [
+        {
+          "id": "s1",
+          "label": "第一句（原因）"
+        },
+        {
+          "id": "s2",
+          "label": "第二句（结果）",
+          "clause": true
+        }
+      ],
+      "blocks": [
+        {
+          "text": "She",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "s1"
+        },
+        {
+          "text": "practiced",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "s1"
+        },
+        {
+          "text": "every",
+          "pos": "adj",
+          "role": "定语",
+          "group": "s1"
+        },
+        {
+          "text": "day",
+          "pos": "noun",
+          "role": "状语",
+          "group": "s1"
+        },
+        {
+          "text": "As a result",
+          "pos": "adv",
+          "role": "衔接词",
+          "group": "s2"
+        },
+        {
+          "text": "she",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "s2"
+        },
+        {
+          "text": "won",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "s2"
+        },
+        {
+          "text": "the",
+          "pos": "article",
+          "role": "限定词",
+          "group": "s2"
+        },
+        {
+          "text": "prize",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "s2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "However",
+          "pos": "adv",
+          "role": "衔接词",
+          "group": "s2"
+        }
+      ],
+      "explain": "练习和得奖是因果关系，用 As a result。",
+      "example": "She practiced every day. As a result, she won the prize.",
+      "win": "顺理成章往下走，用 as a result。"
+    },
+    {
+      "id": "6-8-r3",
+      "cn": "他买了一辆车。那辆车很快。",
+      "tip": "回指衔接",
+      "timeLimit": 45,
+      "rootLabel": "句群",
+      "marks": {
+        "3": "."
+      },
+      "groups": [
+        {
+          "id": "s1",
+          "label": "第一句"
+        },
+        {
+          "id": "s2",
+          "label": "第二句（回指）",
+          "clause": true
+        }
+      ],
+      "blocks": [
+        {
+          "text": "He",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "s1"
+        },
+        {
+          "text": "bought",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "s1"
+        },
+        {
+          "text": "a",
+          "pos": "article",
+          "role": "限定词",
+          "group": "s1"
+        },
+        {
+          "text": "car",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "s1"
+        },
+        {
+          "text": "The",
+          "pos": "article",
+          "role": "限定词",
+          "group": "s2"
+        },
+        {
+          "text": "car",
+          "pos": "noun",
+          "role": "主语",
+          "group": "s2"
+        },
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "s2"
+        },
+        {
+          "text": "very",
+          "pos": "adv",
+          "role": "状语",
+          "group": "s2"
+        },
+        {
+          "text": "fast",
+          "pos": "adj",
+          "role": "表语",
+          "group": "s2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "A",
+          "pos": "article",
+          "role": "限定词",
+          "group": "s2"
+        }
+      ],
+      "explain": "第二次提到同一辆车，用 The car 回指。",
+      "example": "He bought a car. The car is very fast.",
+      "win": "a 在前，the 在后。"
+    },
+    {
+      "id": "6-8-r4",
+      "cn": "尽管很晚了，我们还在继续工作。",
+      "tip": "让步衔接",
+      "timeLimit": 45,
+      "groups": [
+        {
+          "id": "main",
+          "label": "主句"
+        },
+        {
+          "id": "sub",
+          "label": "让步状语从句",
+          "clause": true
+        }
+      ],
+      "blocks": [
+        {
+          "text": "We",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "main"
+        },
+        {
+          "text": "kept",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "main"
+        },
+        {
+          "text": "working",
+          "pos": "verb",
+          "role": "现在分词",
+          "group": "main",
+          "nonfinite": true
+        },
+        {
+          "text": "although",
+          "pos": "conj",
+          "role": "连接词",
+          "group": "sub"
+        },
+        {
+          "text": "it",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "sub"
+        },
+        {
+          "text": "was",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "sub"
+        },
+        {
+          "text": "late",
+          "pos": "adj",
+          "role": "表语",
+          "group": "sub"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "despite",
+          "pos": "prep",
+          "role": "介词",
+          "group": "sub"
+        }
+      ],
+      "explain": "although 后面是完整句子（it was late）。keep doing 表示「一直在做」。",
+      "example": "We kept working although it was late.",
+      "win": "后面是句子，就用 although。"
+    },
+    {
+      "id": "6-8-r5",
+      "cn": "有些人喜欢喝茶。比如，我爸爸就是。",
+      "tip": "举例衔接",
+      "timeLimit": 50,
+      "rootLabel": "句群",
+      "marks": {
+        "3": ".",
+        "4": ","
+      },
+      "groups": [
+        {
+          "id": "s1",
+          "label": "第一句（概括）"
+        },
+        {
+          "id": "s2",
+          "label": "第二句（举例）",
+          "clause": true
+        }
+      ],
+      "blocks": [
+        {
+          "text": "Some",
+          "pos": "pronoun",
+          "role": "限定词",
+          "group": "s1"
+        },
+        {
+          "text": "people",
+          "pos": "noun",
+          "role": "主语",
+          "group": "s1"
+        },
+        {
+          "text": "like",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "s1"
+        },
+        {
+          "text": "tea",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "s1"
+        },
+        {
+          "text": "For example",
+          "pos": "adv",
+          "role": "衔接词",
+          "group": "s2"
+        },
+        {
+          "text": "my",
+          "pos": "pronoun",
+          "role": "限定词",
+          "group": "s2"
+        },
+        {
+          "text": "father",
+          "pos": "noun",
+          "role": "主语",
+          "group": "s2"
+        },
+        {
+          "text": "does",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "s2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "Such as",
+          "pos": "adv",
+          "role": "衔接词",
+          "group": "s2"
+        }
+      ],
+      "explain": "后面跟的是完整句子（my father does），所以用 for example，不能用 such as。",
+      "example": "Some people like tea. For example, my father does.",
+      "win": "句子的例子用 for example。"
+    },
+    {
+      "id": "6-8-r6",
+      "cn": "路很长。总之，我们永远不该放弃。",
+      "tip": "总结衔接",
+      "timeLimit": 45,
+      "rootLabel": "句群",
+      "marks": {
+        "3": ".",
+        "4": ","
+      },
+      "groups": [
+        {
+          "id": "s1",
+          "label": "铺垫"
+        },
+        {
+          "id": "s2",
+          "label": "总结句",
+          "clause": true
+        }
+      ],
+      "blocks": [
+        {
+          "text": "The",
+          "pos": "article",
+          "role": "限定词",
+          "group": "s1"
+        },
+        {
+          "text": "road",
+          "pos": "noun",
+          "role": "主语",
+          "group": "s1"
+        },
+        {
+          "text": "was",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "s1"
+        },
+        {
+          "text": "long",
+          "pos": "adj",
+          "role": "表语",
+          "group": "s1"
+        },
+        {
+          "text": "To sum up",
+          "pos": "adv",
+          "role": "衔接词",
+          "group": "s2"
+        },
+        {
+          "text": "we",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "s2"
+        },
+        {
+          "text": "should",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "s2"
+        },
+        {
+          "text": "never",
+          "pos": "adv",
+          "role": "状语",
+          "group": "s2"
+        },
+        {
+          "text": "give",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "s2"
+        },
+        {
+          "text": "up",
+          "pos": "adv",
+          "role": "状语",
+          "group": "s2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "For example",
+          "pos": "adv",
+          "role": "衔接词",
+          "group": "s2"
+        }
+      ],
+      "explain": "To sum up 用来收尾，把整段话收成一个结论。For example 是举例，放在结尾就变成了「比如，我们永远不该放弃」，逻辑不通。",
+      "example": "The road was long. To sum up, we should never give up.",
+      "win": "结尾给一句能记住的总结。"
+    }
+  ]
+}

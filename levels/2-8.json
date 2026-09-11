@@ -1,0 +1,442 @@
+{
+  "id": "2-8",
+  "topic": "简单句 · Boss",
+  "emoji": "👑",
+  "boss": true,
+  "goal": "五种句型混着来 —— 限时挑战，看你能不能一眼认出骨架",
+  "rounds": [
+    {
+      "id": "2-8-r1",
+      "cn": "小男孩想要一个新玩具。",
+      "tip": "主谓宾 + 形容词",
+      "timeLimit": 40,
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "宾语 NP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "The",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np1"
+        },
+        {
+          "text": "little",
+          "pos": "adj",
+          "role": "定语",
+          "group": "np1"
+        },
+        {
+          "text": "boy",
+          "pos": "noun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "wants",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "a",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np2"
+        },
+        {
+          "text": "new",
+          "pos": "adj",
+          "role": "定语",
+          "group": "np2"
+        },
+        {
+          "text": "toy",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "np2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "want",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        }
+      ],
+      "explain": "主谓宾结构：主语单数 → wants；形容词 little 和 new 分别放在它们修饰的名词前面。",
+      "example": "The little boy wants a new toy. / The little boys want new toys.",
+      "win": "骨架和装饰分得清了。"
+    },
+    {
+      "id": "2-8-r2",
+      "cn": "我的家乡非常美。",
+      "tip": "主系表 + 副词修饰形容词",
+      "timeLimit": 35,
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "表语 NP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "My",
+          "pos": "pronoun",
+          "role": "限定词",
+          "group": "np1"
+        },
+        {
+          "text": "hometown",
+          "pos": "noun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "very",
+          "pos": "adv",
+          "role": "状语",
+          "group": "np2"
+        },
+        {
+          "text": "beautiful",
+          "pos": "adj",
+          "role": "表语",
+          "group": "np2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "beautifully",
+          "pos": "adv",
+          "role": "表语",
+          "group": "np2"
+        }
+      ],
+      "explain": "主系表结构。very 是副词，修饰形容词 beautiful，放在它前面。be 动词后面要用形容词。",
+      "example": "My hometown is very beautiful. / My hometown is a beautiful place.",
+      "win": "副词修饰形容词，形容词作表语。"
+    },
+    {
+      "id": "2-8-r3",
+      "cn": "她给我们讲了一个有趣的故事。",
+      "tip": "双宾语 + 冠词",
+      "timeLimit": 45,
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "间接宾语（人）"
+        },
+        {
+          "id": "np3",
+          "label": "直接宾语（物）"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "She",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "tells",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "us",
+          "pos": "pronoun",
+          "role": "间接宾语",
+          "group": "np2"
+        },
+        {
+          "text": "an",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np3"
+        },
+        {
+          "text": "interesting",
+          "pos": "adj",
+          "role": "定语",
+          "group": "np3"
+        },
+        {
+          "text": "story",
+          "pos": "noun",
+          "role": "直接宾语",
+          "group": "np3"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "a",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np3"
+        }
+      ],
+      "explain": "双宾语结构，先人后物。interesting 以元音开头，所以用 an 而不是 a。",
+      "example": "She tells us an interesting story. / She tells an interesting story to us.",
+      "win": "双宾语和冠词，两个考点一起过。"
+    },
+    {
+      "id": "2-8-r4",
+      "cn": "我们保持教室干净。",
+      "tip": "宾语补足语用形容词",
+      "timeLimit": 40,
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "宾语 + 宾补"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "We",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "keep",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "our",
+          "pos": "pronoun",
+          "role": "限定词",
+          "group": "np2"
+        },
+        {
+          "text": "classroom",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "np2"
+        },
+        {
+          "text": "clean",
+          "pos": "adj",
+          "role": "宾补",
+          "group": "np2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "cleanly",
+          "pos": "adv",
+          "role": "宾补",
+          "group": "np2"
+        },
+        {
+          "text": "us",
+          "pos": "pronoun",
+          "role": "限定词",
+          "group": "np2"
+        }
+      ],
+      "explain": "宾语补足语结构。clean 说明的是 classroom 的状态，用形容词。our 是物主代词，后面必须跟名词。",
+      "example": "We keep our classroom clean.",
+      "win": "宾补用形容词说明宾语的状态。"
+    },
+    {
+      "id": "2-8-r5",
+      "cn": "你父母在这里工作吗？",
+      "tip": "疑问句 + 主谓一致",
+      "timeLimit": 40,
+      "punct": "?",
+      "groups": [
+        {
+          "id": "vp",
+          "label": "助动词"
+        },
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp2",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "pp",
+          "label": "状语"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "Do",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "vp"
+        },
+        {
+          "text": "your",
+          "pos": "pronoun",
+          "role": "限定词",
+          "group": "np1"
+        },
+        {
+          "text": "parents",
+          "pos": "noun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "work",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp2"
+        },
+        {
+          "text": "here",
+          "pos": "adv",
+          "role": "状语",
+          "group": "pp"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "works",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp2"
+        },
+        {
+          "text": "Does",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "vp"
+        }
+      ],
+      "explain": "先看主语：your parents 是复数，所以助动词用 Do，动词用原形 work。这里是 parents，不是 parent。",
+      "example": "Do your parents work here? / Does your father work here?",
+      "win": "先看主语单复数，再选 Do 还是 Does。"
+    },
+    {
+      "id": "2-8-r6",
+      "cn": "书架上有一些书。",
+      "tip": "there be 跟着真正的主语走",
+      "timeLimit": 40,
+      "groups": [
+        {
+          "id": "ex",
+          "label": "引导词"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np1",
+          "label": "真正的主语 NP"
+        },
+        {
+          "id": "pp",
+          "label": "地点 PP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "There",
+          "pos": "adv",
+          "role": "引导词",
+          "group": "ex"
+        },
+        {
+          "text": "are",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "some",
+          "pos": "adj",
+          "role": "定语",
+          "group": "np1"
+        },
+        {
+          "text": "books",
+          "pos": "noun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "on",
+          "pos": "prep",
+          "role": "介词",
+          "group": "pp"
+        },
+        {
+          "text": "the",
+          "pos": "article",
+          "role": "限定词",
+          "group": "pp"
+        },
+        {
+          "text": "shelf",
+          "pos": "noun",
+          "role": "介词宾语",
+          "group": "pp"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        }
+      ],
+      "explain": "真正的主语是 some books（复数），所以用 are。some 是形容词，放在名词 books 前面。",
+      "example": "There are some books on the shelf. / There is a book on the shelf.",
+      "win": "there be 跟着后面的真正主语走。"
+    }
+  ]
+}

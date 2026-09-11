@@ -1,0 +1,429 @@
+{
+  "id": "4-5",
+  "topic": "定语从句 that/whose",
+  "emoji": "🧷",
+  "goal": "that 人和物都能指；whose 表示「谁的」，后面必须跟名词",
+  "rounds": [
+    {
+      "id": "4-5-r1",
+      "cn": "我读的那本书很有意思。",
+      "tip": "that 人和物都能指",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "rel",
+          "label": "定语从句",
+          "clause": true,
+          "parent": "np1"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "表语 NP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "The",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np1"
+        },
+        {
+          "text": "book",
+          "pos": "noun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "that",
+          "pos": "pronoun",
+          "role": "关系代词",
+          "group": "rel"
+        },
+        {
+          "text": "I",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "rel"
+        },
+        {
+          "text": "read",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "rel"
+        },
+        {
+          "text": "was",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "interesting",
+          "pos": "adj",
+          "role": "表语",
+          "group": "np2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "what",
+          "pos": "pronoun",
+          "role": "关系代词",
+          "group": "rel"
+        }
+      ],
+      "explain": "that 引导定语从句时，人和物都能指。这里先行词是物，that 和 which 都可以。",
+      "example": "The book that I read was interesting. / The book which I read was interesting.",
+      "win": "that 是通用的那个。"
+    },
+    {
+      "id": "4-5-r2",
+      "cn": "我认识那个爸爸是医生的男孩。",
+      "tip": "whose 后面必须跟名词",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "宾语 NP"
+        },
+        {
+          "id": "rel",
+          "label": "定语从句",
+          "clause": true,
+          "parent": "np2"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "I",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "know",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "the",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np2"
+        },
+        {
+          "text": "boy",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "np2"
+        },
+        {
+          "text": "whose",
+          "pos": "pronoun",
+          "role": "关系代词",
+          "group": "rel"
+        },
+        {
+          "text": "father",
+          "pos": "noun",
+          "role": "主语",
+          "group": "rel"
+        },
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "rel"
+        },
+        {
+          "text": "a",
+          "pos": "article",
+          "role": "限定词",
+          "group": "rel"
+        },
+        {
+          "text": "doctor",
+          "pos": "noun",
+          "role": "表语",
+          "group": "rel"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "who",
+          "pos": "pronoun",
+          "role": "关系代词",
+          "group": "rel"
+        }
+      ],
+      "explain": "whose 表示「谁的」，后面必须紧跟它修饰的名词：whose father 就是「他的爸爸」。用 who 不行 —— who 不能直接修饰名词，会写成 who father。",
+      "example": "I know the boy whose father is a doctor. / I know the boy. His father is a doctor.",
+      "win": "whose = 谁的，后面跟名词。"
+    },
+    {
+      "id": "4-5-r3",
+      "cn": "我们看的那部电影很无聊。",
+      "tip": "that 在从句里能当宾语",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "rel",
+          "label": "定语从句",
+          "clause": true,
+          "parent": "np1"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "表语 NP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "The",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np1"
+        },
+        {
+          "text": "film",
+          "pos": "noun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "that",
+          "pos": "pronoun",
+          "role": "关系代词",
+          "group": "rel"
+        },
+        {
+          "text": "we",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "rel"
+        },
+        {
+          "text": "saw",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "rel"
+        },
+        {
+          "text": "was",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "boring",
+          "pos": "adj",
+          "role": "表语",
+          "group": "np2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "what",
+          "pos": "pronoun",
+          "role": "关系代词",
+          "group": "rel"
+        }
+      ],
+      "explain": "先行词 the film 是物，that 或 which 都行。that 在从句里当宾语（我们看的是那部电影），所以从句剩下 we saw。",
+      "example": "The film that we saw was boring. / The film was boring.",
+      "win": "关系代词在从句里也要占一个位置。"
+    },
+    {
+      "id": "4-5-r4",
+      "cn": "我读的那本书很好。",
+      "tip": "改错：物不能用 who",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "rel",
+          "label": "定语从句",
+          "clause": true,
+          "parent": "np1"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "表语 NP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "The",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np1"
+        },
+        {
+          "text": "book",
+          "pos": "noun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "that",
+          "pos": "pronoun",
+          "role": "关系代词",
+          "group": "rel"
+        },
+        {
+          "text": "I",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "rel"
+        },
+        {
+          "text": "read",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "rel"
+        },
+        {
+          "text": "was",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "good",
+          "pos": "adj",
+          "role": "表语",
+          "group": "np2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "who",
+          "pos": "pronoun",
+          "role": "关系代词",
+          "group": "rel"
+        }
+      ],
+      "prefill": [
+        "The",
+        "book",
+        "who",
+        "I",
+        "read",
+        "was",
+        "good"
+      ],
+      "explain": "先行词 the book 是物，不能用 who。物一律用 that 或 which。",
+      "example": "The book that I read was good. / The book which I read was good.",
+      "win": "先看先行词是人还是物。"
+    },
+    {
+      "id": "4-5-r5",
+      "cn": "那就是我离开的原因。",
+      "tip": "reason 后面的从句常用 why",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "表语 NP"
+        },
+        {
+          "id": "rel",
+          "label": "定语从句",
+          "clause": true,
+          "parent": "np2"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "That",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "the",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np2"
+        },
+        {
+          "text": "reason",
+          "pos": "noun",
+          "role": "表语",
+          "group": "np2"
+        },
+        {
+          "text": "why",
+          "pos": "adv",
+          "role": "关系副词",
+          "group": "rel"
+        },
+        {
+          "text": "I",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "rel"
+        },
+        {
+          "text": "left",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "rel"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "that",
+          "pos": "adv",
+          "role": "关系副词",
+          "group": "rel"
+        }
+      ],
+      "explain": "先行词是 the reason 时，定语从句常用 why 引导（用 that 也可以）。这里 why 相当于「因为这个原因」。",
+      "example": "That is the reason why I left. / That is the reason that I left.",
+      "win": "reason 后面的从句，why 最自然。"
+    }
+  ]
+}

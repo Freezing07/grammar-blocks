@@ -1,0 +1,283 @@
+{
+  "id": "2-1",
+  "topic": "主谓",
+  "emoji": "🌤️",
+  "goal": "最小的一句话：一个主语 + 一个动词就能成句",
+  "rounds": [
+    {
+      "id": "2-1-r1",
+      "cn": "太阳升起。",
+      "tip": "谁 + 干什么，就够了",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "The",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np1"
+        },
+        {
+          "text": "sun",
+          "pos": "noun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "rises",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "rise",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        }
+      ],
+      "explain": "主语 The sun 是第三人称单数，动词要加 s：rises。rise 是给复数主语用的（The stars rise）。",
+      "example": "The sun rises. / The stars rise.",
+      "win": "一个主语加一个动词，就是最小的一句话。"
+    },
+    {
+      "id": "2-1-r2",
+      "cn": "我父母在一家银行工作。",
+      "tip": "复数主语配动词原形",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "pp",
+          "label": "介词短语 PP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "My",
+          "pos": "pronoun",
+          "role": "限定词",
+          "group": "np1"
+        },
+        {
+          "text": "parents",
+          "pos": "noun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "work",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "in",
+          "pos": "prep",
+          "role": "介词",
+          "group": "pp"
+        },
+        {
+          "text": "a",
+          "pos": "article",
+          "role": "限定词",
+          "group": "pp"
+        },
+        {
+          "text": "bank",
+          "pos": "noun",
+          "role": "介词宾语",
+          "group": "pp"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "works",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        }
+      ],
+      "explain": "主语 My parents 是复数（两个人），动词用原形 work，不能加 s。",
+      "example": "My parents work in a bank. / My father works in a bank.",
+      "win": "复数主语配动词原形。"
+    },
+    {
+      "id": "2-1-r3",
+      "cn": "火车到了。",
+      "tip": "有些动词后面不需要宾语",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "The",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np1"
+        },
+        {
+          "text": "train",
+          "pos": "noun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "arrives",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "arrive",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "trains",
+          "pos": "noun",
+          "role": "主语",
+          "group": "np1"
+        }
+      ],
+      "explain": "主语 The train 是单数，动词加 s。arrive 是「不及物动词」，后面不需要宾语，句子到这里已经完整了。",
+      "example": "The train arrives. / The trains arrive.",
+      "win": "不及物动词后面不需要宾语。"
+    },
+    {
+      "id": "2-1-r4",
+      "cn": "孩子们在玩。",
+      "tip": "改错：children 不带 s，但它是复数",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "The",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np1"
+        },
+        {
+          "text": "children",
+          "pos": "noun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "play",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "plays",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        }
+      ],
+      "prefill": [
+        "The",
+        "children",
+        "plays"
+      ],
+      "explain": "children 是 child 的复数，虽然它不带 s，但它是复数，动词要用原形 play。判断单复数不能只看结尾有没有 s。",
+      "example": "The children play. / The child plays.",
+      "win": "看主语是不是复数，别只看有没有 s。"
+    },
+    {
+      "id": "2-1-r5",
+      "cn": "那位老人走得很慢。",
+      "tip": "在骨架上加形容词和副词",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "The",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np1"
+        },
+        {
+          "text": "old",
+          "pos": "adj",
+          "role": "定语",
+          "group": "np1"
+        },
+        {
+          "text": "man",
+          "pos": "noun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "walks",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "slowly",
+          "pos": "adv",
+          "role": "状语",
+          "group": "vp"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "walk",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        }
+      ],
+      "explain": "主语是 The old man（单数），动词用 walks；slowly 是副词，修饰动词 walks。形容词 old 放在名词 man 前面。",
+      "example": "The old man walks slowly. / The old men walk slowly.",
+      "win": "主谓结构加上形容词和副词，句子就丰满了。"
+    }
+  ]
+}

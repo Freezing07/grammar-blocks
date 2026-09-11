@@ -1,0 +1,364 @@
+{
+  "id": "4-2",
+  "topic": "主语从句",
+  "emoji": "🎩",
+  "goal": "一整个从句当主语，太长就用 it 先占住句首",
+  "rounds": [
+    {
+      "id": "4-2-r1",
+      "cn": "他说的是真的。",
+      "tip": "从句整体当主语",
+      "groups": [
+        {
+          "id": "cl",
+          "label": "主语从句",
+          "clause": true
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "表语 NP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "What",
+          "pos": "pronoun",
+          "role": "连接词",
+          "group": "cl"
+        },
+        {
+          "text": "he",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "cl"
+        },
+        {
+          "text": "said",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "cl"
+        },
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "true",
+          "pos": "adj",
+          "role": "表语",
+          "group": "np2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "did",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "cl"
+        }
+      ],
+      "explain": "主语从句本身是一个完整的句子，整体当主语用：What he said（他说的话）就是这句话的主语。从句里用正常语序，不倒装。",
+      "example": "What he said is true. / What did he say?",
+      "win": "从句整体当主语，后面照常接谓语。"
+    },
+    {
+      "id": "4-2-r2",
+      "cn": "我们努力学习很重要。",
+      "tip": "主语太长，用 it 先占住句首",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "形式主语 It"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "表语 NP"
+        },
+        {
+          "id": "cl",
+          "label": "真正的主语从句",
+          "clause": true
+        }
+      ],
+      "blocks": [
+        {
+          "text": "It",
+          "pos": "pronoun",
+          "role": "形式主语",
+          "group": "np1"
+        },
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "important",
+          "pos": "adj",
+          "role": "表语",
+          "group": "np2"
+        },
+        {
+          "text": "that",
+          "pos": "pronoun",
+          "role": "连接词",
+          "group": "cl"
+        },
+        {
+          "text": "we",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "cl"
+        },
+        {
+          "text": "study",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "cl"
+        },
+        {
+          "text": "hard",
+          "pos": "adv",
+          "role": "状语",
+          "group": "cl"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "studies",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "cl"
+        }
+      ],
+      "explain": "主语从句太长的时候，英语习惯用 it 先占住句首当「形式主语」，把真正的主语从句放到后面去。It 本身没有意思。",
+      "example": "It is important that we study hard. / That we study hard is important.",
+      "win": "长主语从句，用 it 占位。"
+    },
+    {
+      "id": "4-2-r3",
+      "cn": "他为什么离开还是个谜。",
+      "tip": "疑问词引导的主语从句也不倒装",
+      "groups": [
+        {
+          "id": "cl",
+          "label": "主语从句",
+          "clause": true
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "表语 NP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "Why",
+          "pos": "adv",
+          "role": "连接词",
+          "group": "cl"
+        },
+        {
+          "text": "he",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "cl"
+        },
+        {
+          "text": "left",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "cl"
+        },
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "unknown",
+          "pos": "adj",
+          "role": "表语",
+          "group": "np2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "did",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "cl"
+        },
+        {
+          "text": "leave",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "cl"
+        }
+      ],
+      "explain": "疑问词（what / how / why / who）都能引导主语从句，从句里用正常语序：Why he left，不是 Why did he leave。",
+      "example": "Why he left is unknown. / Why did he leave?",
+      "win": "主语从句和宾语从句一样，都不倒装。"
+    },
+    {
+      "id": "4-2-r4",
+      "cn": "他说的是真的。",
+      "tip": "改错：从句里多了 did",
+      "groups": [
+        {
+          "id": "cl",
+          "label": "主语从句",
+          "clause": true
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "表语 NP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "What",
+          "pos": "pronoun",
+          "role": "连接词",
+          "group": "cl"
+        },
+        {
+          "text": "he",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "cl"
+        },
+        {
+          "text": "said",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "cl"
+        },
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "true",
+          "pos": "adj",
+          "role": "表语",
+          "group": "np2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "did",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "cl"
+        },
+        {
+          "text": "say",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "cl"
+        }
+      ],
+      "prefill": [
+        "What",
+        "did",
+        "say",
+        "is",
+        "true"
+      ],
+      "explain": "从句里不能用 did 倒装，直接用正常语序，动词用过去式 said。",
+      "example": "What he said is true. / What did he say?",
+      "win": "从句里放平语序，疑问语气交给主句。"
+    },
+    {
+      "id": "4-2-r5",
+      "cn": "他怎么想不重要。",
+      "tip": "it 占位，从句殿后",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "形式主语 It"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "cl",
+          "label": "真正的主语从句",
+          "clause": true
+        }
+      ],
+      "blocks": [
+        {
+          "text": "It",
+          "pos": "pronoun",
+          "role": "形式主语",
+          "group": "np1"
+        },
+        {
+          "text": "doesn't",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "vp"
+        },
+        {
+          "text": "matter",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "what",
+          "pos": "pronoun",
+          "role": "连接词",
+          "group": "cl"
+        },
+        {
+          "text": "he",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "cl"
+        },
+        {
+          "text": "thinks",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "cl"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "think",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "cl"
+        }
+      ],
+      "explain": "it 是形式主语，真正的主语是 what he thinks。matter 是「重要、有关系」，it 算第三人称单数，否定用 doesn't。",
+      "example": "It doesn't matter what he thinks. / What he thinks doesn't matter.",
+      "win": "it 占位，从句殿后。"
+    }
+  ]
+}

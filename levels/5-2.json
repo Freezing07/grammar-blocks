@@ -1,0 +1,331 @@
+{
+  "id": "5-2",
+  "topic": "动名词",
+  "emoji": "🔵",
+  "goal": "动词加 ing 变成名词 —— 它就能当主语、宾语、介词宾语",
+  "rounds": [
+    {
+      "id": "5-2-r1",
+      "cn": "游泳对你有好处。",
+      "tip": "动名词当主语时算单数",
+      "groups": [
+        {
+          "id": "ger",
+          "label": "动名词作主语",
+          "clause": true
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "pp",
+          "label": "介词短语 PP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "Swimming",
+          "pos": "verb",
+          "role": "动名词",
+          "group": "ger",
+          "nonfinite": true
+        },
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "good",
+          "pos": "adj",
+          "role": "表语",
+          "group": "vp"
+        },
+        {
+          "text": "for",
+          "pos": "prep",
+          "role": "介词",
+          "group": "pp"
+        },
+        {
+          "text": "you",
+          "pos": "pronoun",
+          "role": "介词宾语",
+          "group": "pp"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "Swim",
+          "pos": "verb",
+          "role": "动名词",
+          "group": "ger"
+        }
+      ],
+      "explain": "动词加 ing 之后就不是动词了，变成了名词，所以能当主语。这时候它叫动名词，当主语时算单数，be 动词用 is。Swim 是动词原形，不能当主语。",
+      "example": "Swimming is good for you. / Swim every day.",
+      "win": "加了 ing 的动词，就能当主语了。"
+    },
+    {
+      "id": "5-2-r2",
+      "cn": "我喜欢读书。",
+      "tip": "enjoy 后面只能跟动名词",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "ger",
+          "label": "动名词短语（作宾语）",
+          "parent": "vp"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "I",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "enjoy",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "reading",
+          "pos": "verb",
+          "role": "动名词",
+          "group": "ger",
+          "nonfinite": true
+        },
+        {
+          "text": "books",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "ger"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "read",
+          "pos": "verb",
+          "role": "动名词",
+          "group": "ger"
+        },
+        {
+          "text": "to",
+          "pos": "inf",
+          "role": "不定式符号",
+          "group": "ger"
+        }
+      ],
+      "explain": "enjoy 后面只能跟动名词：enjoy reading。不能说 enjoy to read —— 这是必须一个个记住的固定搭配。类似的还有 finish / mind / practice / suggest。",
+      "example": "I enjoy reading books. / I want to read books.",
+      "win": "enjoy 后面跟动名词，不跟不定式。"
+    },
+    {
+      "id": "5-2-r3",
+      "cn": "谢谢你帮我。",
+      "tip": "介词后面跟动名词",
+      "groups": [
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "ger",
+          "label": "动名词短语（介词宾语）",
+          "parent": "vp"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "Thank",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "you",
+          "pos": "pronoun",
+          "role": "宾语",
+          "group": "vp"
+        },
+        {
+          "text": "for",
+          "pos": "prep",
+          "role": "介词",
+          "group": "ger"
+        },
+        {
+          "text": "helping",
+          "pos": "verb",
+          "role": "动名词",
+          "group": "ger",
+          "nonfinite": true
+        },
+        {
+          "text": "me",
+          "pos": "pronoun",
+          "role": "宾语",
+          "group": "ger"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "help",
+          "pos": "verb",
+          "role": "动名词",
+          "group": "ger"
+        }
+      ],
+      "explain": "介词（for / of / in / about…）后面要跟名词，所以动词要变成动名词：for helping，不是 for help。",
+      "example": "Thank you for helping me. / He left without saying goodbye.",
+      "win": "介词后面跟动名词。"
+    },
+    {
+      "id": "5-2-r4",
+      "cn": "他读完了那本书。",
+      "tip": "改错：finish 后面跟动名词",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "ger",
+          "label": "动名词短语（作宾语）",
+          "parent": "vp"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "He",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "finished",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "reading",
+          "pos": "verb",
+          "role": "动名词",
+          "group": "ger",
+          "nonfinite": true
+        },
+        {
+          "text": "the",
+          "pos": "article",
+          "role": "限定词",
+          "group": "ger"
+        },
+        {
+          "text": "book",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "ger"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "read",
+          "pos": "verb",
+          "role": "动名词",
+          "group": "ger"
+        }
+      ],
+      "prefill": [
+        "He",
+        "finished",
+        "read",
+        "the",
+        "book"
+      ],
+      "explain": "finish 后面接动名词：finished reading。read 是动词原形，不能直接跟在另一个动词后面。",
+      "example": "He finished reading the book. / He read the book.",
+      "win": "一个句子只有一个谓语动词。"
+    },
+    {
+      "id": "5-2-r5",
+      "cn": "我的工作是教英语。",
+      "tip": "动名词也能作表语",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "ger",
+          "label": "动名词短语（作表语）",
+          "parent": "vp"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "My",
+          "pos": "pronoun",
+          "role": "限定词",
+          "group": "np1"
+        },
+        {
+          "text": "job",
+          "pos": "noun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "teaching",
+          "pos": "verb",
+          "role": "动名词",
+          "group": "ger",
+          "nonfinite": true
+        },
+        {
+          "text": "English",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "ger"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "teach",
+          "pos": "verb",
+          "role": "动名词",
+          "group": "ger"
+        }
+      ],
+      "explain": "be 动词后面用动名词作表语，说明主语「是什么」。和不定式一样，动名词也能站这个位置。",
+      "example": "My job is teaching English. / My job is to teach English.",
+      "win": "动名词也能作表语。"
+    }
+  ]
+}

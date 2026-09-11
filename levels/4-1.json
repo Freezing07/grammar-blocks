@@ -1,0 +1,391 @@
+{
+  "id": "4-1",
+  "topic": "宾语从句",
+  "emoji": "💬",
+  "goal": "从句跟在动词后面当宾语 —— 关键是里面要用正常语序",
+  "rounds": [
+    {
+      "id": "4-1-r1",
+      "cn": "我觉得他是对的。",
+      "tip": "宾语从句用 that 引导，从句里是正常语序",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "cl",
+          "label": "宾语从句",
+          "clause": true,
+          "parent": "vp"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "I",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "think",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "that",
+          "pos": "pronoun",
+          "role": "连接词",
+          "group": "cl"
+        },
+        {
+          "text": "he",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "cl"
+        },
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "cl"
+        },
+        {
+          "text": "right",
+          "pos": "adj",
+          "role": "表语",
+          "group": "cl"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "what",
+          "pos": "pronoun",
+          "role": "连接词",
+          "group": "cl"
+        }
+      ],
+      "explain": "宾语从句跟在动词 think 后面，用 that 引导（口语里常省略）。从句内部要用「主语 + 谓语」的正常语序，不能倒装。",
+      "example": "I think that he is right. / I think he is right.",
+      "win": "宾语从句＝that + 正常语序。"
+    },
+    {
+      "id": "4-1-r2",
+      "cn": "你知道他住在哪里吗？",
+      "tip": "从句里绝对不能倒装",
+      "punct": "?",
+      "groups": [
+        {
+          "id": "vp",
+          "label": "助动词"
+        },
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp2",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "cl",
+          "label": "宾语从句",
+          "clause": true,
+          "parent": "vp2"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "Do",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "vp"
+        },
+        {
+          "text": "you",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "know",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp2"
+        },
+        {
+          "text": "where",
+          "pos": "adv",
+          "role": "连接词",
+          "group": "cl"
+        },
+        {
+          "text": "he",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "cl"
+        },
+        {
+          "text": "lives",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "cl"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "does",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "cl"
+        }
+      ],
+      "explain": "从句里用正常语序：where he lives。绝对不能写成 where does he live —— 这是中国学生最高频的错误之一。主句已经有 Do 了，疑问的活已经干完，从句不再倒装。",
+      "example": "Do you know where he lives? / Where does he live?",
+      "win": "一个疑问句里只需要一次倒装。"
+    },
+    {
+      "id": "4-1-r3",
+      "cn": "她说她很忙。",
+      "tip": "从句有自己的主谓，不受主句影响",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "cl",
+          "label": "宾语从句",
+          "clause": true,
+          "parent": "vp"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "She",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "says",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "that",
+          "pos": "pronoun",
+          "role": "连接词",
+          "group": "cl"
+        },
+        {
+          "text": "she",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "cl"
+        },
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "cl"
+        },
+        {
+          "text": "busy",
+          "pos": "adj",
+          "role": "表语",
+          "group": "cl"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "be",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "cl"
+        }
+      ],
+      "explain": "主句动词 says 是第三人称单数，加 s；从句里照样是「主语 + 谓语」，它有自己的主语 she 和谓语 is。",
+      "example": "She says that she is busy. / She said that she was busy.",
+      "win": "从句是一句话，自己有自己的主谓。"
+    },
+    {
+      "id": "4-1-r4",
+      "cn": "我不知道她住在哪里。",
+      "tip": "改错：从句里多了一个 does",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "助动词"
+        },
+        {
+          "id": "vp2",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "cl",
+          "label": "宾语从句",
+          "clause": true,
+          "parent": "vp2"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "I",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "don't",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "vp"
+        },
+        {
+          "text": "know",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp2"
+        },
+        {
+          "text": "where",
+          "pos": "adv",
+          "role": "连接词",
+          "group": "cl"
+        },
+        {
+          "text": "she",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "cl"
+        },
+        {
+          "text": "lives",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "cl"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "does",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "cl"
+        },
+        {
+          "text": "live",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "cl"
+        }
+      ],
+      "prefill": [
+        "I",
+        "don't",
+        "know",
+        "where",
+        "does",
+        "live"
+      ],
+      "explain": "从句里用正常语序 where she lives。既不能加 does 倒装，动词也要按主语 she 变成三单 lives。",
+      "example": "I don't know where she lives. / Where does she live?",
+      "win": "从句里不倒装，但动词照样跟着主语变。"
+    },
+    {
+      "id": "4-1-r5",
+      "cn": "我不知道她会不会来。",
+      "tip": "if 引导的从句意思是「是否」",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "助动词"
+        },
+        {
+          "id": "vp2",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "cl",
+          "label": "宾语从句",
+          "clause": true,
+          "parent": "vp2"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "I",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "don't",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "vp"
+        },
+        {
+          "text": "know",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp2"
+        },
+        {
+          "text": "if",
+          "pos": "conj",
+          "role": "连接词",
+          "group": "cl"
+        },
+        {
+          "text": "she",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "cl"
+        },
+        {
+          "text": "will",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "cl"
+        },
+        {
+          "text": "come",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "cl"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "that",
+          "pos": "pronoun",
+          "role": "连接词",
+          "group": "cl"
+        }
+      ],
+      "explain": "if 也能引导宾语从句，意思是「是否」。这里不能用 that —— that 引导的从句是陈述事实，而这里说的是「不确定会不会」。",
+      "example": "I don't know if she will come. / I know that she will come.",
+      "win": "if = 是否，that = 陈述事实。"
+    }
+  ]
+}

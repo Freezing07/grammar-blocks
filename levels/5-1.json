@@ -1,0 +1,369 @@
+{
+  "id": "5-1",
+  "topic": "不定式",
+  "emoji": "➡️",
+  "goal": "to + 动词原形：动词变身去当名词，还能当宾语、主语、表语",
+  "rounds": [
+    {
+      "id": "5-1-r1",
+      "cn": "我想回家。",
+      "tip": "to 是不定式符号，后面永远跟原形",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "inf",
+          "label": "不定式短语（作宾语）",
+          "parent": "vp"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "I",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "want",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "to",
+          "pos": "inf",
+          "role": "不定式符号",
+          "group": "inf"
+        },
+        {
+          "text": "go",
+          "pos": "verb",
+          "role": "动词",
+          "group": "inf",
+          "nonfinite": true
+        },
+        {
+          "text": "home",
+          "pos": "adv",
+          "role": "状语",
+          "group": "inf"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "going",
+          "pos": "verb",
+          "role": "动词",
+          "group": "inf"
+        }
+      ],
+      "explain": "不定式是「to + 动词原形」，跟在 want 后面当宾语。这里的 to 是不定式符号，不是介词 —— 后面永远跟动词原形，不加 s、不加 ing。",
+      "example": "I want to go home. / I want to go.",
+      "win": "to 后面永远跟动词原形。"
+    },
+    {
+      "id": "5-1-r2",
+      "cn": "她想当医生。",
+      "tip": "不定式里用 be，不用 is",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "inf",
+          "label": "不定式短语（作宾语）",
+          "parent": "vp"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "She",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "wants",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "to",
+          "pos": "inf",
+          "role": "不定式符号",
+          "group": "inf"
+        },
+        {
+          "text": "be",
+          "pos": "verb",
+          "role": "动词",
+          "group": "inf",
+          "nonfinite": true
+        },
+        {
+          "text": "a",
+          "pos": "article",
+          "role": "限定词",
+          "group": "inf"
+        },
+        {
+          "text": "doctor",
+          "pos": "noun",
+          "role": "表语",
+          "group": "inf"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "动词",
+          "group": "inf"
+        },
+        {
+          "text": "being",
+          "pos": "verb",
+          "role": "动词",
+          "group": "inf"
+        }
+      ],
+      "explain": "主语 She 是三单，主句动词加 s 变成 wants；但不定式里必须用原形 be，不能用 is。时态和人称的变化只发生在主句动词上。",
+      "example": "She wants to be a doctor. / She is a doctor.",
+      "win": "主句动词变形，不定式不变。"
+    },
+    {
+      "id": "5-1-r3",
+      "cn": "学英语很重要。",
+      "tip": "it 是形式主语，真正的主语是不定式",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "形式主语 It"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "表语 NP"
+        },
+        {
+          "id": "inf",
+          "label": "真正的主语：不定式",
+          "clause": true
+        }
+      ],
+      "blocks": [
+        {
+          "text": "It",
+          "pos": "pronoun",
+          "role": "形式主语",
+          "group": "np1"
+        },
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "important",
+          "pos": "adj",
+          "role": "表语",
+          "group": "np2"
+        },
+        {
+          "text": "to",
+          "pos": "inf",
+          "role": "不定式符号",
+          "group": "inf"
+        },
+        {
+          "text": "learn",
+          "pos": "verb",
+          "role": "动词",
+          "group": "inf",
+          "nonfinite": true
+        },
+        {
+          "text": "English",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "inf"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "learning",
+          "pos": "verb",
+          "role": "动词",
+          "group": "inf"
+        }
+      ],
+      "explain": "it 是形式主语，真正的主语是后面的不定式 to learn English。不定式照样用原形 learn。",
+      "example": "It is important to learn English. / To learn English is important.",
+      "win": "不定式也能当主语，长的时候用 it 占位。"
+    },
+    {
+      "id": "5-1-r4",
+      "cn": "他决定出国留学。",
+      "tip": "改错：to 后面不能用 ing",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "inf",
+          "label": "不定式短语（作宾语）",
+          "parent": "vp"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "He",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "decided",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "to",
+          "pos": "inf",
+          "role": "不定式符号",
+          "group": "inf"
+        },
+        {
+          "text": "study",
+          "pos": "verb",
+          "role": "动词",
+          "group": "inf",
+          "nonfinite": true
+        },
+        {
+          "text": "abroad",
+          "pos": "adv",
+          "role": "状语",
+          "group": "inf"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "studying",
+          "pos": "verb",
+          "role": "动词",
+          "group": "inf"
+        }
+      ],
+      "prefill": [
+        "He",
+        "decided",
+        "to",
+        "studying",
+        "abroad"
+      ],
+      "explain": "decide 后面接不定式，to 后面必须用动词原形 study。加了 ing 就变成了动名词，不能跟在 to 后面。",
+      "example": "He decided to study abroad. / He enjoys studying abroad.",
+      "win": "to 后面永远跟原形。"
+    },
+    {
+      "id": "5-1-r5",
+      "cn": "我的梦想是环游世界。",
+      "tip": "不定式也能放在 be 动词后面",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "inf",
+          "label": "不定式短语（作表语）",
+          "parent": "vp"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "My",
+          "pos": "pronoun",
+          "role": "限定词",
+          "group": "np1"
+        },
+        {
+          "text": "dream",
+          "pos": "noun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "to",
+          "pos": "inf",
+          "role": "不定式符号",
+          "group": "inf"
+        },
+        {
+          "text": "travel",
+          "pos": "verb",
+          "role": "动词",
+          "group": "inf",
+          "nonfinite": true
+        },
+        {
+          "text": "the",
+          "pos": "article",
+          "role": "限定词",
+          "group": "inf"
+        },
+        {
+          "text": "world",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "inf"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "traveling",
+          "pos": "verb",
+          "role": "动词",
+          "group": "inf"
+        }
+      ],
+      "explain": "不定式放在 be 动词后面当表语，说明主语「是什么」。这里 my dream 是什么？是 to travel the world。",
+      "example": "My dream is to travel the world.",
+      "win": "不定式一身三职：主语、宾语、表语。"
+    }
+  ]
+}

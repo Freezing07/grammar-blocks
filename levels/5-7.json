@@ -1,0 +1,411 @@
+{
+  "id": "5-7",
+  "topic": "强调句",
+  "emoji": "🔦",
+  "goal": "It is/was + 被强调的部分 + that/who —— 把重点挑出来",
+  "rounds": [
+    {
+      "id": "5-7-r1",
+      "cn": "是 Tom 打破了窗户。",
+      "tip": "强调句的公式",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "It（形式主语）"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "被强调的部分"
+        },
+        {
+          "id": "cl",
+          "label": "句子的其余部分",
+          "clause": true,
+          "parent": "np2"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "It",
+          "pos": "pronoun",
+          "role": "形式主语",
+          "group": "np1"
+        },
+        {
+          "text": "was",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "Tom",
+          "pos": "noun",
+          "role": "被强调部分",
+          "group": "np2"
+        },
+        {
+          "text": "who",
+          "pos": "pronoun",
+          "role": "关系词",
+          "group": "cl"
+        },
+        {
+          "text": "broke",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "cl"
+        },
+        {
+          "text": "the",
+          "pos": "article",
+          "role": "限定词",
+          "group": "cl"
+        },
+        {
+          "text": "window",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "cl"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "which",
+          "pos": "pronoun",
+          "role": "关系词",
+          "group": "cl"
+        }
+      ],
+      "explain": "强调句的公式：It is/was + 被强调的部分 + that/who + 其余部分。强调人的时候用 who 或 that，强调物的时候只能用 that。",
+      "example": "It was Tom who broke the window. / Tom broke the window.",
+      "win": "要强调谁，就把它夹在 It was 和 who 中间。"
+    },
+    {
+      "id": "5-7-r2",
+      "cn": "我爱的是你。",
+      "tip": "强调句的连接词不能用 what",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "It（形式主语）"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "被强调的部分"
+        },
+        {
+          "id": "cl",
+          "label": "句子的其余部分",
+          "clause": true,
+          "parent": "np2"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "It",
+          "pos": "pronoun",
+          "role": "形式主语",
+          "group": "np1"
+        },
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "you",
+          "pos": "pronoun",
+          "role": "被强调部分",
+          "group": "np2"
+        },
+        {
+          "text": "that",
+          "pos": "pronoun",
+          "role": "关系词",
+          "group": "cl"
+        },
+        {
+          "text": "I",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "cl"
+        },
+        {
+          "text": "love",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "cl"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "what",
+          "pos": "pronoun",
+          "role": "关系词",
+          "group": "cl"
+        }
+      ],
+      "explain": "强调句的连接词是 that（强调人时也可以用 who），但绝不能用 what。what 是用来引导名词性从句的，它不能当强调句的连接词。",
+      "example": "It is you that I love. / I love you.",
+      "win": "强调句用 that 或 who，不用 what。"
+    },
+    {
+      "id": "5-7-r3",
+      "cn": "我们是在北京认识的。",
+      "tip": "强调地点也用 that，不用 where",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "It（形式主语）"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "被强调的部分"
+        },
+        {
+          "id": "cl",
+          "label": "句子的其余部分",
+          "clause": true,
+          "parent": "np2"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "It",
+          "pos": "pronoun",
+          "role": "形式主语",
+          "group": "np1"
+        },
+        {
+          "text": "was",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "in",
+          "pos": "prep",
+          "role": "介词",
+          "group": "np2"
+        },
+        {
+          "text": "Beijing",
+          "pos": "noun",
+          "role": "被强调部分",
+          "group": "np2"
+        },
+        {
+          "text": "that",
+          "pos": "pronoun",
+          "role": "关系词",
+          "group": "cl"
+        },
+        {
+          "text": "we",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "cl"
+        },
+        {
+          "text": "met",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "cl"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "where",
+          "pos": "adv",
+          "role": "关系词",
+          "group": "cl"
+        }
+      ],
+      "explain": "强调部分也可以是状语。注意连接词照样用 that，即使被强调的是地点也不用 where —— where 是定语从句的用法，别混。",
+      "example": "It was in Beijing that we met. / We met in Beijing.",
+      "win": "强调句的连接词永远是 that / who。"
+    },
+    {
+      "id": "5-7-r4",
+      "cn": "他是昨天来的。",
+      "tip": "改错：强调时间也用 that",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "It（形式主语）"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "被强调的部分"
+        },
+        {
+          "id": "cl",
+          "label": "句子的其余部分",
+          "clause": true,
+          "parent": "np2"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "It",
+          "pos": "pronoun",
+          "role": "形式主语",
+          "group": "np1"
+        },
+        {
+          "text": "was",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "yesterday",
+          "pos": "adv",
+          "role": "被强调部分",
+          "group": "np2"
+        },
+        {
+          "text": "that",
+          "pos": "pronoun",
+          "role": "关系词",
+          "group": "cl"
+        },
+        {
+          "text": "he",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "cl"
+        },
+        {
+          "text": "came",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "cl"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "when",
+          "pos": "adv",
+          "role": "关系词",
+          "group": "cl"
+        }
+      ],
+      "prefill": [
+        "It",
+        "was",
+        "yesterday",
+        "when",
+        "he",
+        "came"
+      ],
+      "explain": "强调时间状语也用 that，不用 when。when 引导的是时间状语从句，两者的结构完全不同。",
+      "example": "It was yesterday that he came. / He came yesterday.",
+      "win": "that 是强调句的万能连接词。"
+    },
+    {
+      "id": "5-7-r5",
+      "cn": "我想学的是英语。",
+      "tip": "强调宾语",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "It（形式主语）"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "被强调的部分"
+        },
+        {
+          "id": "cl",
+          "label": "句子的其余部分",
+          "clause": true,
+          "parent": "np2"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "It",
+          "pos": "pronoun",
+          "role": "形式主语",
+          "group": "np1"
+        },
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "English",
+          "pos": "noun",
+          "role": "被强调部分",
+          "group": "np2"
+        },
+        {
+          "text": "that",
+          "pos": "pronoun",
+          "role": "关系词",
+          "group": "cl"
+        },
+        {
+          "text": "I",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "cl"
+        },
+        {
+          "text": "want",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "cl"
+        },
+        {
+          "text": "to",
+          "pos": "inf",
+          "role": "不定式符号",
+          "group": "cl"
+        },
+        {
+          "text": "learn",
+          "pos": "verb",
+          "role": "动词",
+          "group": "cl",
+          "nonfinite": true
+        }
+      ],
+      "distractors": [
+        {
+          "text": "which",
+          "pos": "pronoun",
+          "role": "关系词",
+          "group": "cl"
+        }
+      ],
+      "explain": "强调宾语 English。连接词用 that。从句里的 to learn 是不定式，照样用原形。",
+      "example": "It is English that I want to learn. / I want to learn English.",
+      "win": "强调哪个成分，就把它夹进公式里。"
+    }
+  ]
+}

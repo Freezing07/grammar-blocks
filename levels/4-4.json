@@ -1,0 +1,417 @@
+{
+  "id": "4-4",
+  "topic": "定语从句 who/which",
+  "emoji": "🔗",
+  "goal": "从句贴在名词后面修饰它；人用 who，物用 which",
+  "rounds": [
+    {
+      "id": "4-4-r1",
+      "cn": "打电话来的那个人是我叔叔。",
+      "tip": "定语从句紧跟在被修饰的名词后面",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "rel",
+          "label": "定语从句",
+          "clause": true,
+          "parent": "np1"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "表语 NP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "The",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np1"
+        },
+        {
+          "text": "man",
+          "pos": "noun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "who",
+          "pos": "pronoun",
+          "role": "关系代词",
+          "group": "rel"
+        },
+        {
+          "text": "called",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "rel"
+        },
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "my",
+          "pos": "pronoun",
+          "role": "限定词",
+          "group": "np2"
+        },
+        {
+          "text": "uncle",
+          "pos": "noun",
+          "role": "表语",
+          "group": "np2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "he",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "rel"
+        }
+      ],
+      "explain": "定语从句紧跟在它修饰的名词后面。who 代替 the man 在从句里当主语，所以从句里不能再出现 he —— 重复了就成「那个人他打电话」了。",
+      "example": "The man who called is my uncle. / The man called. He is my uncle.",
+      "win": "who 已经代替了前面的名词，从句里不再重复。"
+    },
+    {
+      "id": "4-4-r2",
+      "cn": "这就是我买的那本书。",
+      "tip": "先行词是物，用 which",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "表语 NP"
+        },
+        {
+          "id": "rel",
+          "label": "定语从句",
+          "clause": true,
+          "parent": "np2"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "This",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "the",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np2"
+        },
+        {
+          "text": "book",
+          "pos": "noun",
+          "role": "表语",
+          "group": "np2"
+        },
+        {
+          "text": "which",
+          "pos": "pronoun",
+          "role": "关系代词",
+          "group": "rel"
+        },
+        {
+          "text": "I",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "rel"
+        },
+        {
+          "text": "bought",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "rel"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "what",
+          "pos": "pronoun",
+          "role": "关系代词",
+          "group": "rel"
+        }
+      ],
+      "explain": "先行词是物，用 which（也可以用 that）。which 在从句里当宾语，所以从句剩下 I bought —— I 在从句里当主语。what 不能引导定语从句。",
+      "example": "This is the book which I bought. / This is the book that I bought.",
+      "win": "先行词是物 → which 或 that。"
+    },
+    {
+      "id": "4-4-r3",
+      "cn": "我喜欢那个唱歌很好听的女孩。",
+      "tip": "先行词是人，用 who",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "宾语 NP"
+        },
+        {
+          "id": "rel",
+          "label": "定语从句",
+          "clause": true,
+          "parent": "np2"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "I",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "like",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "the",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np2"
+        },
+        {
+          "text": "girl",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "np2"
+        },
+        {
+          "text": "who",
+          "pos": "pronoun",
+          "role": "关系代词",
+          "group": "rel"
+        },
+        {
+          "text": "sings",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "rel"
+        },
+        {
+          "text": "well",
+          "pos": "adv",
+          "role": "状语",
+          "group": "rel"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "which",
+          "pos": "pronoun",
+          "role": "关系代词",
+          "group": "rel"
+        }
+      ],
+      "explain": "先行词 the girl 是人，用 who；which 只能指物。",
+      "example": "I like the girl who sings well. / I like the song which she sings.",
+      "win": "人用 who，物用 which。"
+    },
+    {
+      "id": "4-4-r4",
+      "cn": "我认识那个会说中文的男孩。",
+      "tip": "改错：先行词是人，不能用 which",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "宾语 NP"
+        },
+        {
+          "id": "rel",
+          "label": "定语从句",
+          "clause": true,
+          "parent": "np2"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "I",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "know",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "the",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np2"
+        },
+        {
+          "text": "boy",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "np2"
+        },
+        {
+          "text": "who",
+          "pos": "pronoun",
+          "role": "关系代词",
+          "group": "rel"
+        },
+        {
+          "text": "speaks",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "rel"
+        },
+        {
+          "text": "Chinese",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "rel"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "which",
+          "pos": "pronoun",
+          "role": "关系代词",
+          "group": "rel"
+        }
+      ],
+      "prefill": [
+        "I",
+        "know",
+        "the",
+        "boy",
+        "which",
+        "speaks",
+        "Chinese"
+      ],
+      "explain": "先行词 the boy 是人，定语从句必须用 who。which 只指物。另外从句动词 speaks 是三单，因为 who 代替的是单数的 boy。",
+      "example": "I know the boy who speaks Chinese. / I know the boys who speak Chinese.",
+      "win": "先看先行词是人还是物，再决定用哪个。"
+    },
+    {
+      "id": "4-4-r5",
+      "cn": "我们买的那栋房子很旧。",
+      "tip": "从句插在主语和谓语中间，别丢了主句的谓语",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "rel",
+          "label": "定语从句",
+          "clause": true,
+          "parent": "np1"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "表语 NP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "The",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np1"
+        },
+        {
+          "text": "house",
+          "pos": "noun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "which",
+          "pos": "pronoun",
+          "role": "关系代词",
+          "group": "rel"
+        },
+        {
+          "text": "we",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "rel"
+        },
+        {
+          "text": "bought",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "rel"
+        },
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "old",
+          "pos": "adj",
+          "role": "表语",
+          "group": "np2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "who",
+          "pos": "pronoun",
+          "role": "关系代词",
+          "group": "rel"
+        }
+      ],
+      "explain": "先行词 the house 是物，用 which。这句的骨架是 The house is old，中间的 which we bought 是插进去的修饰成分 —— 别被它带跑，主句的 is 不能丢。",
+      "example": "The house which we bought is old. / The house is old.",
+      "win": "从句只是插进去的，主句的骨架要完整。"
+    }
+  ]
+}

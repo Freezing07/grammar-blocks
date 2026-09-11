@@ -1,0 +1,319 @@
+{
+  "id": "1-2",
+  "topic": "代词",
+  "emoji": "👤",
+  "goal": "搞清楚主格、宾格、物主代词各站哪个位置 —— 位置决定用哪个",
+  "rounds": [
+    {
+      "id": "1-2-r1",
+      "cn": "他是我的哥哥。",
+      "tip": "句首主语用主格，名词前面用物主代词",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "表语 NP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "He",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "my",
+          "pos": "pronoun",
+          "role": "限定词",
+          "group": "np2"
+        },
+        {
+          "text": "brother",
+          "pos": "noun",
+          "role": "表语",
+          "group": "np2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "Him",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "His",
+          "pos": "pronoun",
+          "role": "限定词",
+          "group": "np2"
+        }
+      ],
+      "explain": "句首主语只能用主格 He，不能用宾格 Him。my 是「我的」，后面必须跟名词 brother。",
+      "example": "He is my brother. / I know him. / His brother is tall.",
+      "win": "主语用主格，名词前面用物主代词。"
+    },
+    {
+      "id": "1-2-r2",
+      "cn": "我喜欢她。",
+      "tip": "动词后面是宾语位置，用宾格",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "宾语 NP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "I",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "like",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "her",
+          "pos": "pronoun",
+          "role": "宾语",
+          "group": "np2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "she",
+          "pos": "pronoun",
+          "role": "宾语",
+          "group": "np2"
+        },
+        {
+          "text": "hers",
+          "pos": "pronoun",
+          "role": "宾语",
+          "group": "np2"
+        }
+      ],
+      "explain": "动词 like 后面是宾语位置，要用宾格 her。主格 she 只能当主语（She likes me）；hers 意思是「她的东西」，不能跟在动词后面指人。",
+      "example": "I like her. / She likes me.",
+      "win": "动词后面用宾格。"
+    },
+    {
+      "id": "1-2-r3",
+      "cn": "这是我们的学校。",
+      "tip": "物主代词后面必须跟名词",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "表语 NP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "This",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "our",
+          "pos": "pronoun",
+          "role": "限定词",
+          "group": "np2"
+        },
+        {
+          "text": "school",
+          "pos": "noun",
+          "role": "表语",
+          "group": "np2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "us",
+          "pos": "pronoun",
+          "role": "限定词",
+          "group": "np2"
+        },
+        {
+          "text": "ours",
+          "pos": "pronoun",
+          "role": "表语",
+          "group": "np2"
+        }
+      ],
+      "explain": "名词 school 前面要用物主代词 our。us 是宾格，只能跟在动词或介词后面（help us）；ours 相当于「我们的学校」，它自己就代替了名词，后面不能再跟 school。",
+      "example": "This is our school. / This school is ours.",
+      "win": "物主代词 + 名词；名词性的那个自己就够。"
+    },
+    {
+      "id": "1-2-r4",
+      "cn": "他们是我的朋友。",
+      "tip": "句首主语位置只能放主格",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "表语 NP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "They",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "are",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "my",
+          "pos": "pronoun",
+          "role": "限定词",
+          "group": "np2"
+        },
+        {
+          "text": "friends",
+          "pos": "noun",
+          "role": "表语",
+          "group": "np2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "Them",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "Their",
+          "pos": "pronoun",
+          "role": "限定词",
+          "group": "np2"
+        }
+      ],
+      "explain": "句首主语位置只能用主格 They。Them 是宾格，当不了主语；Their 后面还得再跟一个名词（their friends），这里已经有 friends 了，位置不够。",
+      "example": "They are my friends. / Their friends are nice.",
+      "win": "句首主语用主格。"
+    },
+    {
+      "id": "1-2-r5",
+      "cn": "你和我是同学。",
+      "tip": "改错：and 两边作主语，都用主格",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "表语 NP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "You",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "and",
+          "pos": "conj",
+          "role": "连词",
+          "group": "np1"
+        },
+        {
+          "text": "I",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "are",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "classmates",
+          "pos": "noun",
+          "role": "表语",
+          "group": "np2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "me",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        }
+      ],
+      "prefill": [
+        "You",
+        "and",
+        "me",
+        "are",
+        "classmates"
+      ],
+      "explain": "这里 You and I 是主语，所以用主格 I，不能用宾格 me。口语里常听到 You and me，那是因为它出现在宾语位置，比如 They invited you and me。",
+      "example": "You and I are classmates. / They invited you and me.",
+      "win": "and 连起来的主语，两边都用主格。"
+    }
+  ]
+}

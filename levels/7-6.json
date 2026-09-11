@@ -1,0 +1,136 @@
+{
+  "id": "7-6",
+  "topic": "段落 · Boss",
+  "emoji": "👑",
+  "boss": true,
+  "goal": "时间、总分总、因果三种段落混着来 —— 限时挑战",
+  "rounds": [
+    {
+      "id": "7-6-r1",
+      "mode": "order",
+      "cn": "把这几句话排成一段通顺的话",
+      "tip": "五句话，按时间线排",
+      "timeLimit": 90,
+      "blocks": [
+        {
+          "text": "Last Friday, our class went on a school trip.",
+          "role": "开头"
+        },
+        {
+          "text": "We set off at six in the morning.",
+          "role": "出发"
+        },
+        {
+          "text": "After two hours, we reached the mountain.",
+          "role": "到达"
+        },
+        {
+          "text": "We climbed to the top and took many photos.",
+          "role": "活动"
+        },
+        {
+          "text": "In the evening, we came back home, tired but happy.",
+          "role": "返程"
+        }
+      ],
+      "links": [
+        "出发",
+        "到达",
+        "活动",
+        "返程"
+      ],
+      "distractors": [
+        {
+          "text": "Our teacher is very strict with us.",
+          "role": "多余的一句"
+        }
+      ],
+      "explain": "五句叙事：Last Friday 交代时间，然后 set off → reached → climbed → came back，一条时间线走到底。In the evening 和开头的 Last Friday 首尾呼应。老师严不严，跟这次出游没关系。",
+      "example": "Last Friday → set off → reached → climbed → In the evening",
+      "win": "五句话也能排得严丝合缝。"
+    },
+    {
+      "id": "7-6-r2",
+      "mode": "order",
+      "cn": "把这几句话排成一段通顺的话",
+      "tip": "总分总：观点 + 两个理由 + 例子 + 结论",
+      "timeLimit": 90,
+      "blocks": [
+        {
+          "text": "Learning a foreign language is good for you.",
+          "role": "主题句（观点）"
+        },
+        {
+          "text": "First, it opens the door to other cultures.",
+          "role": "理由一"
+        },
+        {
+          "text": "Moreover, it makes your brain work better.",
+          "role": "理由二"
+        },
+        {
+          "text": "For example, studies show it can improve memory.",
+          "role": "例子"
+        },
+        {
+          "text": "In conclusion, everyone should learn at least one foreign language.",
+          "role": "结论"
+        }
+      ],
+      "links": [
+        "理由一",
+        "理由二（递进）",
+        "举例",
+        "总结"
+      ],
+      "distractors": [
+        {
+          "text": "My cousin speaks three languages.",
+          "role": "多余的一句"
+        }
+      ],
+      "explain": "标准的总分总：观点 → First 理由一 → Moreover 理由二 → For example 例子 → In conclusion 结论。四个信号词把一个段落切得清清楚楚。cousin 会三门语言是个人例子，撑不起全段的结论。",
+      "example": "观点 → First → Moreover → For example → In conclusion",
+      "win": "信号词齐了，段落结构自己就浮出来了。"
+    },
+    {
+      "id": "7-6-r3",
+      "mode": "order",
+      "cn": "把这几句话排成一段通顺的话",
+      "tip": "这一段的因果有点绕：先说结果，再倒回去讲原因",
+      "timeLimit": 90,
+      "blocks": [
+        {
+          "text": "The small shop closed last month.",
+          "role": "结果（先说）"
+        },
+        {
+          "text": "The rent had gone up twice in one year.",
+          "role": "原因"
+        },
+        {
+          "text": "As a result, the owner could not make any profit.",
+          "role": "进一步结果"
+        },
+        {
+          "text": "Finally, he decided to move to another street.",
+          "role": "最终"
+        }
+      ],
+      "links": [
+        "原因是",
+        "于是",
+        "最终"
+      ],
+      "distractors": [
+        {
+          "text": "The shop used to sell fresh vegetables.",
+          "role": "多余的一句"
+        }
+      ],
+      "explain": "这一段先抛结果（店关了），再回头讲原因（房租涨了两次），然后顺着往下说（赚不到钱 → 搬走）。先果后因是写作里常见的写法，读起来更抓人。蔬菜那句是背景，会把因果链岔开。",
+      "example": "先说结果 → 倒回原因 → As a result → Finally",
+      "win": "因果不一定是先因后果，也可以先抛结果。"
+    }
+  ]
+}

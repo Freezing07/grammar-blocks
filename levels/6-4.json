@@ -1,0 +1,378 @@
+{
+  "id": "6-4",
+  "topic": "让步与对比",
+  "emoji": "⚖️",
+  "goal": "although 后面跟句子，despite 后面只能跟名词",
+  "rounds": [
+    {
+      "id": "6-4-r1",
+      "cn": "虽然在下雨，我们还是出去了。",
+      "tip": "although 后面是完整的句子",
+      "groups": [
+        {
+          "id": "main",
+          "label": "主句"
+        },
+        {
+          "id": "sub",
+          "label": "让步状语从句",
+          "clause": true
+        }
+      ],
+      "blocks": [
+        {
+          "text": "We",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "main"
+        },
+        {
+          "text": "went",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "main"
+        },
+        {
+          "text": "out",
+          "pos": "adv",
+          "role": "状语",
+          "group": "main"
+        },
+        {
+          "text": "although",
+          "pos": "conj",
+          "role": "连接词",
+          "group": "sub"
+        },
+        {
+          "text": "it",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "sub"
+        },
+        {
+          "text": "was",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "sub"
+        },
+        {
+          "text": "raining",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "sub"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "despite",
+          "pos": "prep",
+          "role": "介词",
+          "group": "sub"
+        }
+      ],
+      "explain": "although 是连词，后面跟一个完整的句子（有主语有谓语）：although it was raining。despite 是介词，后面只能跟名词，用了它后面就不能有 it was。",
+      "example": "We went out although it was raining. / We went out despite the rain.",
+      "win": "although + 句子，despite + 名词。"
+    },
+    {
+      "id": "6-4-r2",
+      "cn": "尽管下雨，我们还是出去了。",
+      "tip": "despite 后面跟名词短语",
+      "groups": [
+        {
+          "id": "main",
+          "label": "主句"
+        },
+        {
+          "id": "sub",
+          "label": "让步短语（名词）",
+          "clause": true
+        }
+      ],
+      "blocks": [
+        {
+          "text": "We",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "main"
+        },
+        {
+          "text": "went",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "main"
+        },
+        {
+          "text": "out",
+          "pos": "adv",
+          "role": "状语",
+          "group": "main"
+        },
+        {
+          "text": "despite",
+          "pos": "prep",
+          "role": "介词",
+          "group": "sub"
+        },
+        {
+          "text": "the",
+          "pos": "article",
+          "role": "限定词",
+          "group": "sub"
+        },
+        {
+          "text": "rain",
+          "pos": "noun",
+          "role": "介词宾语",
+          "group": "sub"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "although",
+          "pos": "conj",
+          "role": "连接词",
+          "group": "sub"
+        }
+      ],
+      "explain": "despite 后面跟名词短语 the rain。如果要用 although，就得把它变成句子：although it was raining。这一条是写作中最常出错的地方之一。",
+      "example": "We went out despite the rain. / We went out although it was raining.",
+      "win": "despite / in spite of 后面永远跟名词。"
+    },
+    {
+      "id": "6-4-r3",
+      "cn": "Tom 很高，而他弟弟很矮。",
+      "tip": "while 用来对比两件相反的事实",
+      "groups": [
+        {
+          "id": "s1",
+          "label": "第一分句"
+        },
+        {
+          "id": "s2",
+          "label": "对比分句",
+          "clause": true
+        }
+      ],
+      "blocks": [
+        {
+          "text": "Tom",
+          "pos": "noun",
+          "role": "主语",
+          "group": "s1"
+        },
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "s1"
+        },
+        {
+          "text": "tall",
+          "pos": "adj",
+          "role": "表语",
+          "group": "s1"
+        },
+        {
+          "text": "while",
+          "pos": "conj",
+          "role": "连接词",
+          "group": "s2"
+        },
+        {
+          "text": "his",
+          "pos": "pronoun",
+          "role": "限定词",
+          "group": "s2"
+        },
+        {
+          "text": "brother",
+          "pos": "noun",
+          "role": "主语",
+          "group": "s2"
+        },
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "s2"
+        },
+        {
+          "text": "short",
+          "pos": "adj",
+          "role": "表语",
+          "group": "s2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "although",
+          "pos": "conj",
+          "role": "连接词",
+          "group": "s2"
+        }
+      ],
+      "explain": "while 在这里表示「而」，用来对比两个相反的事实。although 是「虽然」，表示让步，用在这里意思不通。",
+      "example": "Tom is tall while his brother is short.",
+      "win": "对比用 while，让步用 although。"
+    },
+    {
+      "id": "6-4-r4",
+      "cn": "虽然在下雨，我们还是出去了。",
+      "tip": "改错：despite 后面不能跟句子",
+      "groups": [
+        {
+          "id": "main",
+          "label": "主句"
+        },
+        {
+          "id": "sub",
+          "label": "让步状语从句",
+          "clause": true
+        }
+      ],
+      "blocks": [
+        {
+          "text": "We",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "main"
+        },
+        {
+          "text": "went",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "main"
+        },
+        {
+          "text": "out",
+          "pos": "adv",
+          "role": "状语",
+          "group": "main"
+        },
+        {
+          "text": "although",
+          "pos": "conj",
+          "role": "连接词",
+          "group": "sub"
+        },
+        {
+          "text": "it",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "sub"
+        },
+        {
+          "text": "was",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "sub"
+        },
+        {
+          "text": "raining",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "sub"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "despite",
+          "pos": "prep",
+          "role": "介词",
+          "group": "sub"
+        }
+      ],
+      "prefill": [
+        "We",
+        "went",
+        "out",
+        "despite",
+        "it",
+        "was",
+        "raining"
+      ],
+      "explain": "despite 后面不能跟句子。既然后面是 it was raining（有主语有谓语），就必须换成 although。要保留 despite，就把它后面的内容改成名词：despite the rain。",
+      "example": "We went out although it was raining. / We went out despite the rain.",
+      "win": "后面是句子就用 although，是名词就用 despite。"
+    },
+    {
+      "id": "6-4-r5",
+      "cn": "尽管他很年轻，他非常有经验。",
+      "tip": "even though 比 although 语气更强",
+      "groups": [
+        {
+          "id": "main",
+          "label": "主句"
+        },
+        {
+          "id": "sub",
+          "label": "让步状语从句",
+          "clause": true
+        }
+      ],
+      "blocks": [
+        {
+          "text": "He",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "main"
+        },
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "main"
+        },
+        {
+          "text": "very",
+          "pos": "adv",
+          "role": "状语",
+          "group": "main"
+        },
+        {
+          "text": "experienced",
+          "pos": "adj",
+          "role": "表语",
+          "group": "main"
+        },
+        {
+          "text": "even though",
+          "pos": "conj",
+          "role": "连接词",
+          "group": "sub"
+        },
+        {
+          "text": "he",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "sub"
+        },
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "sub"
+        },
+        {
+          "text": "young",
+          "pos": "adj",
+          "role": "表语",
+          "group": "sub"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "despite",
+          "pos": "prep",
+          "role": "介词",
+          "group": "sub"
+        }
+      ],
+      "explain": "even though 也是连词，后面照样跟完整句子，只是语气比 although 更强，表示「尽管（而且还挺意外的）」。",
+      "example": "He is very experienced even though he is young.",
+      "win": "even though 语气更强，用法和 although 一样。"
+    }
+  ]
+}

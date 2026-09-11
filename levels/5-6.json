@@ -1,0 +1,363 @@
+{
+  "id": "5-6",
+  "topic": "倒装",
+  "emoji": "🔄",
+  "goal": "否定词或 here/there 放句首时，助动词要跑到主语前面",
+  "rounds": [
+    {
+      "id": "5-6-r1",
+      "cn": "他很少出门。",
+      "tip": "否定词放句首要倒装",
+      "groups": [
+        {
+          "id": "q",
+          "label": "否定词（提前）"
+        },
+        {
+          "id": "vp",
+          "label": "助动词"
+        },
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp2",
+          "label": "谓语 VP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "Seldom",
+          "pos": "adv",
+          "role": "否定词",
+          "group": "q"
+        },
+        {
+          "text": "does",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "vp"
+        },
+        {
+          "text": "he",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "go",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp2"
+        },
+        {
+          "text": "out",
+          "pos": "adv",
+          "role": "状语",
+          "group": "vp2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "do",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "vp"
+        }
+      ],
+      "explain": "seldom（很少）、never、hardly 都是否定词。它们放到句首时，句子要倒装：助动词提到主语前面。正常语序是 He seldom goes out。",
+      "example": "Seldom does he go out. / He seldom goes out.",
+      "win": "否定词提前，助动词跟着提前。"
+    },
+    {
+      "id": "5-6-r2",
+      "cn": "公交车来了。",
+      "tip": "here / there 开头的倒装",
+      "groups": [
+        {
+          "id": "q",
+          "label": "副词（提前）"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "Here",
+          "pos": "adv",
+          "role": "状语",
+          "group": "q"
+        },
+        {
+          "text": "comes",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "the",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np1"
+        },
+        {
+          "text": "bus",
+          "pos": "noun",
+          "role": "主语",
+          "group": "np1"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "come",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        }
+      ],
+      "explain": "here / there 放在句首时也要倒装：谓语动词提到主语前面。主语 the bus 是单数，所以用 comes。",
+      "example": "Here comes the bus. / The bus comes here.",
+      "win": "here / there 开头，谓语提前。"
+    },
+    {
+      "id": "5-6-r3",
+      "cn": "他根本不知道真相。",
+      "tip": "little 也是否定词",
+      "groups": [
+        {
+          "id": "q",
+          "label": "否定词（提前）"
+        },
+        {
+          "id": "vp",
+          "label": "助动词"
+        },
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp2",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "宾语 NP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "Little",
+          "pos": "adv",
+          "role": "否定词",
+          "group": "q"
+        },
+        {
+          "text": "did",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "vp"
+        },
+        {
+          "text": "he",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "know",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp2"
+        },
+        {
+          "text": "the",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np2"
+        },
+        {
+          "text": "truth",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "np2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "do",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "vp"
+        }
+      ],
+      "explain": "little 在这里表示「几乎不」，属于否定词，放句首要倒装。did he know = 他当时并不知道。注意倒装后主动词回到原形 know。",
+      "example": "Little did he know the truth. / He little knew the truth.",
+      "win": "倒装后助动词承担时态，动词回原形。"
+    },
+    {
+      "id": "5-6-r4",
+      "cn": "我从没见过这样的事。",
+      "tip": "改错：否定词提前后要和主语换位",
+      "groups": [
+        {
+          "id": "q",
+          "label": "否定词（提前）"
+        },
+        {
+          "id": "vp",
+          "label": "助动词"
+        },
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp2",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "宾语 NP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "Never",
+          "pos": "adv",
+          "role": "否定词",
+          "group": "q"
+        },
+        {
+          "text": "have",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "vp"
+        },
+        {
+          "text": "I",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "seen",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp2"
+        },
+        {
+          "text": "such",
+          "pos": "pronoun",
+          "role": "限定词",
+          "group": "np2"
+        },
+        {
+          "text": "a",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np2"
+        },
+        {
+          "text": "thing",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "np2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "saw",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp2"
+        }
+      ],
+      "prefill": [
+        "Never",
+        "I",
+        "have",
+        "seen",
+        "such",
+        "a",
+        "thing"
+      ],
+      "explain": "否定词提到句首后，助动词要和主语交换位置：Never have I...，不是 Never I have...。正常语序是 I have never seen such a thing。",
+      "example": "Never have I seen such a thing. / I have never seen such a thing.",
+      "win": "倒装就是把助动词和主语换个位。"
+    },
+    {
+      "id": "5-6-r5",
+      "cn": "直到那时我才明白。",
+      "tip": "only + 状语放句首，主句倒装",
+      "groups": [
+        {
+          "id": "q",
+          "label": "Only + 状语"
+        },
+        {
+          "id": "vp",
+          "label": "助动词"
+        },
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp2",
+          "label": "谓语 VP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "Only",
+          "pos": "adv",
+          "role": "状语",
+          "group": "q"
+        },
+        {
+          "text": "then",
+          "pos": "adv",
+          "role": "状语",
+          "group": "q"
+        },
+        {
+          "text": "did",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "vp"
+        },
+        {
+          "text": "I",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "understand",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "do",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "vp"
+        }
+      ],
+      "explain": "only + 状语放在句首时，主句也要倒装：did I understand，不是 I understood。正常语序是 I understood only then。",
+      "example": "Only then did I understand. / I understood only then.",
+      "win": "only + 状语提前，主句倒装。"
+    }
+  ]
+}

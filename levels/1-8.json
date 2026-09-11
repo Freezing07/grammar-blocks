@@ -1,0 +1,416 @@
+{
+  "id": "1-8",
+  "topic": "连词 · Boss",
+  "emoji": "👑",
+  "boss": true,
+  "goal": "连词把句子接起来 —— 限时挑战，混合复习前面全部词性",
+  "rounds": [
+    {
+      "id": "1-8-r1",
+      "cn": "我喜欢茶和咖啡。",
+      "tip": "and 并列，or 选择",
+      "timeLimit": 30,
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "并列宾语 NP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "I",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "like",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "tea",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "np2"
+        },
+        {
+          "text": "and",
+          "pos": "conj",
+          "role": "连词",
+          "group": "np2"
+        },
+        {
+          "text": "coffee",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "np2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "or",
+          "pos": "conj",
+          "role": "连词",
+          "group": "np2"
+        }
+      ],
+      "explain": "and 表示「都算」，or 表示「二选一」。喜欢茶也喜欢咖啡，是并列，用 and。",
+      "example": "tea and coffee / tea or coffee?",
+      "win": "and 并列，or 选择。"
+    },
+    {
+      "id": "1-8-r2",
+      "cn": "他累但开心。",
+      "tip": "but 表转折",
+      "timeLimit": 30,
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "表语 NP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "He",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "tired",
+          "pos": "adj",
+          "role": "表语",
+          "group": "np2"
+        },
+        {
+          "text": "but",
+          "pos": "conj",
+          "role": "连词",
+          "group": "np2"
+        },
+        {
+          "text": "happy",
+          "pos": "adj",
+          "role": "表语",
+          "group": "np2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "and",
+          "pos": "conj",
+          "role": "连词",
+          "group": "np2"
+        }
+      ],
+      "explain": "「累」和「开心」是相反的两面，用 but 表转折。and 是顺着说，这里的意思不顺。",
+      "example": "tired but happy / young and strong",
+      "win": "but 表转折。"
+    },
+    {
+      "id": "1-8-r3",
+      "cn": "下雨了，所以我们待在家里。",
+      "tip": "so 引出结果，because 引出原因",
+      "timeLimit": 30,
+      "groups": [
+        {
+          "id": "s1",
+          "label": "主句"
+        },
+        {
+          "id": "s2",
+          "label": "结果分句"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "It",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "s1"
+        },
+        {
+          "text": "rained",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "s1"
+        },
+        {
+          "text": "so",
+          "pos": "conj",
+          "role": "连词",
+          "group": "s2"
+        },
+        {
+          "text": "we",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "s2"
+        },
+        {
+          "text": "stayed",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "s2"
+        },
+        {
+          "text": "home",
+          "pos": "adv",
+          "role": "状语",
+          "group": "s2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "because",
+          "pos": "conj",
+          "role": "连词",
+          "group": "s2"
+        }
+      ],
+      "explain": "so 后面接「结果」，because 后面接「原因」。这里是下雨在前、待在家在后，后半句是结果，所以用 so。",
+      "example": "It rained, so we stayed home. / We stayed home because it rained.",
+      "win": "so 接结果，because 接原因。"
+    },
+    {
+      "id": "1-8-r4",
+      "cn": "他很年轻，但他工作很努力。",
+      "tip": "but 也能连接两个完整的句子",
+      "timeLimit": 35,
+      "groups": [
+        {
+          "id": "s1",
+          "label": "主句"
+        },
+        {
+          "id": "s2",
+          "label": "转折分句"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "He",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "s1"
+        },
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "s1"
+        },
+        {
+          "text": "young",
+          "pos": "adj",
+          "role": "表语",
+          "group": "s1"
+        },
+        {
+          "text": "but",
+          "pos": "conj",
+          "role": "连词",
+          "group": "s2"
+        },
+        {
+          "text": "he",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "s2"
+        },
+        {
+          "text": "works",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "s2"
+        },
+        {
+          "text": "hard",
+          "pos": "adv",
+          "role": "状语",
+          "group": "s2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "and",
+          "pos": "conj",
+          "role": "连词",
+          "group": "s2"
+        }
+      ],
+      "explain": "but 连接的是两个都完整的句子：前半句说他年轻，后半句说他努力，意思相反。顺便复习：works 是第三人称单数，hard 是副词。",
+      "example": "He is young, but he works hard.",
+      "win": "but 也能连接两个完整句子。"
+    },
+    {
+      "id": "1-8-r5",
+      "cn": "她有一个美丽的笑容。",
+      "tip": "改错：冠词和形容词的顺序",
+      "timeLimit": 30,
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "宾语 NP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "She",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "has",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "a",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np2"
+        },
+        {
+          "text": "beautiful",
+          "pos": "adj",
+          "role": "定语",
+          "group": "np2"
+        },
+        {
+          "text": "smile",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "np2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "beautifully",
+          "pos": "adv",
+          "role": "定语",
+          "group": "np2"
+        }
+      ],
+      "prefill": [
+        "She",
+        "has",
+        "beautiful",
+        "a",
+        "smile"
+      ],
+      "explain": "顺序是「冠词 + 形容词 + 名词」：a beautiful smile。冠词永远站最前面，形容词不能跑到它前面去。",
+      "example": "a beautiful smile / an old friend",
+      "win": "冠词 → 形容词 → 名词。"
+    },
+    {
+      "id": "1-8-r6",
+      "cn": "他在一座大城市工作。",
+      "tip": "综合复习：主语 + 动词 + 介词短语",
+      "timeLimit": 35,
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "pp",
+          "label": "介词短语 PP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "He",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "works",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "in",
+          "pos": "prep",
+          "role": "介词",
+          "group": "pp"
+        },
+        {
+          "text": "a",
+          "pos": "article",
+          "role": "限定词",
+          "group": "pp"
+        },
+        {
+          "text": "big",
+          "pos": "adj",
+          "role": "定语",
+          "group": "pp"
+        },
+        {
+          "text": "city",
+          "pos": "noun",
+          "role": "介词宾语",
+          "group": "pp"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "on",
+          "pos": "prep",
+          "role": "介词",
+          "group": "pp"
+        },
+        {
+          "text": "work",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        }
+      ],
+      "explain": "综合复习：主语 He 是第三人称单数，用 works；城市是一个范围，用 in；形容词 big 放在名词 city 前面。",
+      "example": "in a big city / on a farm",
+      "win": "前面几关的词性，你都串起来了。"
+    }
+  ]
+}

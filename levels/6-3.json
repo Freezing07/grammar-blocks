@@ -1,0 +1,426 @@
+{
+  "id": "6-3",
+  "topic": "举例与列举",
+  "emoji": "📋",
+  "goal": "for example 后面跟句子，such as 后面只能跟名词",
+  "rounds": [
+    {
+      "id": "6-3-r1",
+      "cn": "有些运动很便宜。比如，跑步不花钱。",
+      "tip": "先给概括，再给例子",
+      "rootLabel": "句群",
+      "marks": {
+        "3": ".",
+        "4": ","
+      },
+      "groups": [
+        {
+          "id": "s1",
+          "label": "第一句（概括）"
+        },
+        {
+          "id": "s2",
+          "label": "第二句（举例）",
+          "clause": true
+        }
+      ],
+      "blocks": [
+        {
+          "text": "Some",
+          "pos": "pronoun",
+          "role": "限定词",
+          "group": "s1"
+        },
+        {
+          "text": "sports",
+          "pos": "noun",
+          "role": "主语",
+          "group": "s1"
+        },
+        {
+          "text": "are",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "s1"
+        },
+        {
+          "text": "cheap",
+          "pos": "adj",
+          "role": "表语",
+          "group": "s1"
+        },
+        {
+          "text": "For example",
+          "pos": "adv",
+          "role": "衔接词",
+          "group": "s2"
+        },
+        {
+          "text": "running",
+          "pos": "verb",
+          "role": "动名词",
+          "group": "s2",
+          "nonfinite": true
+        },
+        {
+          "text": "costs",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "s2"
+        },
+        {
+          "text": "nothing",
+          "pos": "pronoun",
+          "role": "宾语",
+          "group": "s2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "In conclusion",
+          "pos": "adv",
+          "role": "衔接词",
+          "group": "s2"
+        }
+      ],
+      "explain": "举例的写法是「先概括，再举例」：先说 Some sports are cheap 这个概括，再用 For example 引出具体例子。In conclusion 是总结用的，位置在段落末尾。",
+      "example": "Some sports are cheap. For example, running costs nothing.",
+      "win": "概括在前，例子在后。"
+    },
+    {
+      "id": "6-3-r2",
+      "cn": "她会说好几种语言。比如，她会说法语。",
+      "tip": "for instance 和 for example 一样",
+      "rootLabel": "句群",
+      "marks": {
+        "3": ".",
+        "4": ","
+      },
+      "groups": [
+        {
+          "id": "s1",
+          "label": "第一句（概括）"
+        },
+        {
+          "id": "s2",
+          "label": "第二句（举例）",
+          "clause": true
+        }
+      ],
+      "blocks": [
+        {
+          "text": "She",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "s1"
+        },
+        {
+          "text": "speaks",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "s1"
+        },
+        {
+          "text": "several",
+          "pos": "adj",
+          "role": "定语",
+          "group": "s1"
+        },
+        {
+          "text": "languages",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "s1"
+        },
+        {
+          "text": "For instance",
+          "pos": "adv",
+          "role": "衔接词",
+          "group": "s2"
+        },
+        {
+          "text": "she",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "s2"
+        },
+        {
+          "text": "speaks",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "s2"
+        },
+        {
+          "text": "French",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "s2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "As a result",
+          "pos": "adv",
+          "role": "衔接词",
+          "group": "s2"
+        }
+      ],
+      "explain": "for instance 和 for example 意思完全一样，换着用可以让文章不单调。",
+      "example": "She speaks several languages. For instance, she speaks French.",
+      "win": "for example / for instance 可以互换。"
+    },
+    {
+      "id": "6-3-r3",
+      "cn": "首先，把米洗一洗。然后，把它煮熟。",
+      "tip": "first / then / finally 用来排顺序",
+      "rootLabel": "句群",
+      "marks": {
+        "0": ",",
+        "3": ".",
+        "4": ","
+      },
+      "groups": [
+        {
+          "id": "s1",
+          "label": "第一步"
+        },
+        {
+          "id": "s2",
+          "label": "第二步",
+          "clause": true
+        }
+      ],
+      "blocks": [
+        {
+          "text": "First",
+          "pos": "adv",
+          "role": "衔接词",
+          "group": "s1"
+        },
+        {
+          "text": "wash",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "s1"
+        },
+        {
+          "text": "the",
+          "pos": "article",
+          "role": "限定词",
+          "group": "s1"
+        },
+        {
+          "text": "rice",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "s1"
+        },
+        {
+          "text": "Then",
+          "pos": "adv",
+          "role": "衔接词",
+          "group": "s2"
+        },
+        {
+          "text": "cook",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "s2"
+        },
+        {
+          "text": "it",
+          "pos": "pronoun",
+          "role": "宾语",
+          "group": "s2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "For example",
+          "pos": "adv",
+          "role": "衔接词",
+          "group": "s2"
+        }
+      ],
+      "explain": "说明步骤时用 first / then / next / finally。它们后面通常加逗号，和后面的句子分开。",
+      "example": "First, wash the rice. Then, cook it.",
+      "win": "排顺序用 first / then / finally。"
+    },
+    {
+      "id": "6-3-r4",
+      "cn": "有些运动很便宜。比如，跑步不花钱。",
+      "tip": "改错：such as 后面不能跟句子",
+      "rootLabel": "句群",
+      "marks": {
+        "3": ".",
+        "4": ","
+      },
+      "groups": [
+        {
+          "id": "s1",
+          "label": "第一句（概括）"
+        },
+        {
+          "id": "s2",
+          "label": "第二句（举例）",
+          "clause": true
+        }
+      ],
+      "blocks": [
+        {
+          "text": "Some",
+          "pos": "pronoun",
+          "role": "限定词",
+          "group": "s1"
+        },
+        {
+          "text": "sports",
+          "pos": "noun",
+          "role": "主语",
+          "group": "s1"
+        },
+        {
+          "text": "are",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "s1"
+        },
+        {
+          "text": "cheap",
+          "pos": "adj",
+          "role": "表语",
+          "group": "s1"
+        },
+        {
+          "text": "For example",
+          "pos": "adv",
+          "role": "衔接词",
+          "group": "s2"
+        },
+        {
+          "text": "running",
+          "pos": "verb",
+          "role": "动名词",
+          "group": "s2",
+          "nonfinite": true
+        },
+        {
+          "text": "costs",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "s2"
+        },
+        {
+          "text": "nothing",
+          "pos": "pronoun",
+          "role": "宾语",
+          "group": "s2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "Such as",
+          "pos": "adv",
+          "role": "衔接词",
+          "group": "s2"
+        }
+      ],
+      "prefill": [
+        "Some",
+        "sports",
+        "are",
+        "cheap",
+        "Such as",
+        "running",
+        "costs",
+        "nothing"
+      ],
+      "explain": "such as 后面只能跟名词或名词短语（some sports, such as running），不能跟一个完整的句子。要引出整句例子，用 for example。",
+      "example": "Some sports are cheap. For example, running costs nothing. / Some sports, such as running, are cheap.",
+      "win": "such as + 名词，for example + 句子。"
+    },
+    {
+      "id": "6-3-r5",
+      "cn": "阅读很有用。比如，它能扩大你的词汇量。",
+      "tip": "例子的位置跟着概括走",
+      "rootLabel": "句群",
+      "marks": {
+        "2": ".",
+        "3": ","
+      },
+      "groups": [
+        {
+          "id": "s1",
+          "label": "第一句（概括）"
+        },
+        {
+          "id": "s2",
+          "label": "第二句（举例）",
+          "clause": true
+        }
+      ],
+      "blocks": [
+        {
+          "text": "Reading",
+          "pos": "verb",
+          "role": "动名词",
+          "group": "s1",
+          "nonfinite": true
+        },
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "s1"
+        },
+        {
+          "text": "useful",
+          "pos": "adj",
+          "role": "表语",
+          "group": "s1"
+        },
+        {
+          "text": "For example",
+          "pos": "adv",
+          "role": "衔接词",
+          "group": "s2"
+        },
+        {
+          "text": "it",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "s2"
+        },
+        {
+          "text": "builds",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "s2"
+        },
+        {
+          "text": "your",
+          "pos": "pronoun",
+          "role": "限定词",
+          "group": "s2"
+        },
+        {
+          "text": "vocabulary",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "s2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "In conclusion",
+          "pos": "adv",
+          "role": "衔接词",
+          "group": "s2"
+        }
+      ],
+      "explain": "举例子也可以举一整件事：it builds your vocabulary 就是 Reading is useful 的一个具体表现。",
+      "example": "Reading is useful. For example, it builds your vocabulary.",
+      "win": "例子可以是具体的事，也可以是一整句话。"
+    }
+  ]
+}

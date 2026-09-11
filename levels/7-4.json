@@ -1,0 +1,122 @@
+{
+  "id": "7-4",
+  "topic": "流程与步骤",
+  "emoji": "📶",
+  "goal": "First / Then / Next / Finally：说明步骤时必须一个不差按顺序",
+  "rounds": [
+    {
+      "id": "7-4-r1",
+      "mode": "order",
+      "cn": "把这几句话排成一段通顺的话",
+      "tip": "First / Then / Next / Finally 已经把顺序写出来了",
+      "blocks": [
+        {
+          "text": "First, boil some water.",
+          "role": "第一步"
+        },
+        {
+          "text": "Then, put a tea bag into the cup.",
+          "role": "第二步"
+        },
+        {
+          "text": "Next, pour the hot water into the cup.",
+          "role": "第三步"
+        },
+        {
+          "text": "Finally, wait for three minutes and enjoy it.",
+          "role": "第四步"
+        }
+      ],
+      "links": [
+        "第二步",
+        "第三步",
+        "第四步"
+      ],
+      "distractors": [
+        {
+          "text": "Tea is very popular in many countries.",
+          "role": "多余的一句"
+        }
+      ],
+      "explain": "说明步骤时，First / Then / Next / Finally 就是顺序本身，照着排就行。最后那句是背景介绍，不是步骤，放进流程里会让读者以为也要做这件事。",
+      "example": "First → Then → Next → Finally",
+      "win": "步骤段落里，不需要的话不要放。"
+    },
+    {
+      "id": "7-4-r2",
+      "mode": "order",
+      "cn": "把这几句话排成一段通顺的话",
+      "tip": "办卡 → 查书 → 记号码 → 找管理员求助",
+      "blocks": [
+        {
+          "text": "First, you need a library card.",
+          "role": "第一步"
+        },
+        {
+          "text": "Then, you can search for books on the computer.",
+          "role": "第二步"
+        },
+        {
+          "text": "After that, write down the book number.",
+          "role": "第三步"
+        },
+        {
+          "text": "Finally, ask the librarian if you cannot find it.",
+          "role": "第四步"
+        }
+      ],
+      "links": [
+        "第二步",
+        "第三步",
+        "最后求助"
+      ],
+      "distractors": [
+        {
+          "text": "The library closes at nine on weekdays.",
+          "role": "多余的一句"
+        }
+      ],
+      "explain": "这四步是有先后依赖的：没有借书证就没法借，没查到书号就没法找书。闭馆时间是补充信息，放在步骤中间会打断动作顺序。",
+      "example": "办证 → Then 查书 → After that 记书号 → Finally 找人帮忙",
+      "win": "步骤之间有先后依赖，顺序不能换。"
+    },
+    {
+      "id": "7-4-r3",
+      "mode": "order",
+      "cn": "把这几句话排成一段通顺的话",
+      "tip": "写信的顺序：主题 → 问候 → 正文 → 结尾",
+      "blocks": [
+        {
+          "text": "First, write a clear subject line.",
+          "role": "第一步"
+        },
+        {
+          "text": "Then, greet the person politely.",
+          "role": "第二步"
+        },
+        {
+          "text": "After that, state your purpose in one or two sentences.",
+          "role": "第三步"
+        },
+        {
+          "text": "Finally, end with a polite closing.",
+          "role": "第四步"
+        }
+      ],
+      "links": [
+        "第二步",
+        "第三步",
+        "收尾"
+      ],
+      "distractors": [
+        {
+          "text": "Many people check their email every hour.",
+          "role": "多余的一句"
+        }
+      ],
+      "explain": "写邮件也有固定顺序：主题行 → 称呼 → 说明来意 → 结尾。把这四句排对，就等于掌握了一封邮件的基本骨架。",
+      "example": "subject line → greet → state your purpose → closing",
+      "win": "流程段落练熟了，写说明文就有谱了。"
+    }
+  ]
+}

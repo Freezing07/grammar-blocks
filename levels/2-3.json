@@ -1,0 +1,319 @@
+{
+  "id": "2-3",
+  "topic": "主系表",
+  "emoji": "🪞",
+  "goal": "be 动词后面不接宾语，接的是说明主语的「表语」",
+  "rounds": [
+    {
+      "id": "2-3-r1",
+      "cn": "她是一名医生。",
+      "tip": "be 动词后面说明主语「是什么」",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "表语 NP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "She",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "a",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np2"
+        },
+        {
+          "text": "doctor",
+          "pos": "noun",
+          "role": "表语",
+          "group": "np2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "doctors",
+          "pos": "noun",
+          "role": "表语",
+          "group": "np2"
+        }
+      ],
+      "explain": "be 动词后面不接宾语，接的是「表语」—— 说明主语的身份或状态。这里 a doctor 说明她是谁。主语单数，表语也用单数。",
+      "example": "She is a doctor. / They are doctors.",
+      "win": "be 动词后面是表语，说明主语是什么。"
+    },
+    {
+      "id": "2-3-r2",
+      "cn": "天气很冷。",
+      "tip": "表语也可以是形容词",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "表语 NP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "The",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np1"
+        },
+        {
+          "text": "weather",
+          "pos": "noun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "cold",
+          "pos": "adj",
+          "role": "表语",
+          "group": "np2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "coldly",
+          "pos": "adv",
+          "role": "表语",
+          "group": "np2"
+        }
+      ],
+      "explain": "表语不只可以是名词，也可以是形容词，说明主语「怎么样」。coldly 是副词，不能跟在 is 后面。",
+      "example": "The weather is cold. / It is a cold day.",
+      "win": "表语说明主语是什么、怎么样。"
+    },
+    {
+      "id": "2-3-r3",
+      "cn": "我来自加拿大。",
+      "tip": "I 只能配 am",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "pp",
+          "label": "表语 PP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "I",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "am",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "from",
+          "pos": "prep",
+          "role": "介词",
+          "group": "pp"
+        },
+        {
+          "text": "Canada",
+          "pos": "noun",
+          "role": "介词宾语",
+          "group": "pp"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "are",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        }
+      ],
+      "explain": "主语 I 只能配 am —— am 是专属 I 的，没有例外。表语这里是一个介词短语 from Canada。",
+      "example": "I am from Canada. / He is from Canada.",
+      "win": "I 配 am，这条没有例外。"
+    },
+    {
+      "id": "2-3-r4",
+      "cn": "他们是我的同学。",
+      "tip": "主语复数，表语也跟着复数",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "表语 NP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "They",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "are",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "my",
+          "pos": "pronoun",
+          "role": "限定词",
+          "group": "np2"
+        },
+        {
+          "text": "classmates",
+          "pos": "noun",
+          "role": "表语",
+          "group": "np2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "classmate",
+          "pos": "noun",
+          "role": "表语",
+          "group": "np2"
+        }
+      ],
+      "explain": "主语 They 是复数 → are；表语说的是「好几个同学」，所以用复数 classmates。",
+      "example": "They are my classmates. / He is my classmate.",
+      "win": "主语复数，表语也跟着复数。"
+    },
+    {
+      "id": "2-3-r5",
+      "cn": "我姐姐是一名护士。",
+      "tip": "改错：be 动词和主语要配上",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "表语 NP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "My",
+          "pos": "pronoun",
+          "role": "限定词",
+          "group": "np1"
+        },
+        {
+          "text": "sister",
+          "pos": "noun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "a",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np2"
+        },
+        {
+          "text": "nurse",
+          "pos": "noun",
+          "role": "表语",
+          "group": "np2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "are",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "nurses",
+          "pos": "noun",
+          "role": "表语",
+          "group": "np2"
+        }
+      ],
+      "prefill": [
+        "My",
+        "sister",
+        "are",
+        "a",
+        "nurse"
+      ],
+      "explain": "主语 My sister 是「一个人」，属于单数，be 动词要用 is；表语也保持单数 a nurse。",
+      "example": "My sister is a nurse. / My sisters are nurses.",
+      "win": "主系表里，主语和表语要一起看单复数。"
+    }
+  ]
+}

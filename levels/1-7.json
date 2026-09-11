@@ -1,0 +1,322 @@
+{
+  "id": "1-7",
+  "topic": "介词",
+  "emoji": "🧭",
+  "goal": "用介词短语说清楚「在哪、去哪、什么时候」",
+  "rounds": [
+    {
+      "id": "1-7-r1",
+      "cn": "书在桌子上。",
+      "tip": "on 是表面接触，in 是里面",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "pp",
+          "label": "介词短语 PP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "The",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np1"
+        },
+        {
+          "text": "book",
+          "pos": "noun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "on",
+          "pos": "prep",
+          "role": "介词",
+          "group": "pp"
+        },
+        {
+          "text": "the",
+          "pos": "article",
+          "role": "限定词",
+          "group": "pp"
+        },
+        {
+          "text": "desk",
+          "pos": "noun",
+          "role": "介词宾语",
+          "group": "pp"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "in",
+          "pos": "prep",
+          "role": "介词",
+          "group": "pp"
+        }
+      ],
+      "explain": "书和桌面是「表面接触」，用 on。in 是「在……里面」，in the desk 说的是在桌子里（抽屉里）。",
+      "example": "on the desk / in the box",
+      "win": "on 是表面，in 是里面。"
+    },
+    {
+      "id": "1-7-r2",
+      "cn": "她去上学。",
+      "tip": "to 表示方向",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "pp",
+          "label": "介词短语 PP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "She",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "goes",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "to",
+          "pos": "prep",
+          "role": "介词",
+          "group": "pp"
+        },
+        {
+          "text": "school",
+          "pos": "noun",
+          "role": "介词宾语",
+          "group": "pp"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "for",
+          "pos": "prep",
+          "role": "介词",
+          "group": "pp"
+        }
+      ],
+      "explain": "表示「朝某个方向去」用 to。另外 go to school 是固定说法，school 前面不加 the —— 去的是「上学」这件事，不是某栋具体的房子。",
+      "example": "go to school / go to the park",
+      "win": "to 表示方向。"
+    },
+    {
+      "id": "1-7-r3",
+      "cn": "我们在公园里玩。",
+      "tip": "in 表示在某个范围里面",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "pp",
+          "label": "介词短语 PP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "We",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "play",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "in",
+          "pos": "prep",
+          "role": "介词",
+          "group": "pp"
+        },
+        {
+          "text": "the",
+          "pos": "article",
+          "role": "限定词",
+          "group": "pp"
+        },
+        {
+          "text": "park",
+          "pos": "noun",
+          "role": "介词宾语",
+          "group": "pp"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "on",
+          "pos": "prep",
+          "role": "介词",
+          "group": "pp"
+        }
+      ],
+      "explain": "公园是一个「范围」，人在范围里面，用 in。on 表示在某个表面上（on the roof 在屋顶上）。",
+      "example": "in the park / on the roof",
+      "win": "in 表示在范围里面。"
+    },
+    {
+      "id": "1-7-r4",
+      "cn": "他来自中国。",
+      "tip": "from 表示来源",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "pp",
+          "label": "介词短语 PP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "He",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "from",
+          "pos": "prep",
+          "role": "介词",
+          "group": "pp"
+        },
+        {
+          "text": "China",
+          "pos": "noun",
+          "role": "介词宾语",
+          "group": "pp"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "of",
+          "pos": "prep",
+          "role": "介词",
+          "group": "pp"
+        }
+      ],
+      "explain": "表示「来自哪里」用 from。of 表示所属关系，比如 the capital of China（中国的首都）。",
+      "example": "He is from China. / the capital of China",
+      "win": "from 表示来源，of 表示所属。"
+    },
+    {
+      "id": "1-7-r5",
+      "cn": "我们中午吃午饭。",
+      "tip": "时间介词 at / in / on 各有分工",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "宾语 NP"
+        },
+        {
+          "id": "pp",
+          "label": "介词短语 PP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "We",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "have",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "lunch",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "np2"
+        },
+        {
+          "text": "at",
+          "pos": "prep",
+          "role": "介词",
+          "group": "pp"
+        },
+        {
+          "text": "noon",
+          "pos": "noun",
+          "role": "介词宾语",
+          "group": "pp"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "in",
+          "pos": "prep",
+          "role": "介词",
+          "group": "pp"
+        },
+        {
+          "text": "on",
+          "pos": "prep",
+          "role": "介词",
+          "group": "pp"
+        }
+      ],
+      "explain": "具体的时间点用 at（at noon、at seven）；月份、年份、季节用 in（in May）；具体某一天用 on（on Monday）。",
+      "example": "at noon / in May / on Monday",
+      "win": "时间介词 at / in / on 分工记牢。"
+    }
+  ]
+}

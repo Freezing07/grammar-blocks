@@ -1,0 +1,386 @@
+{
+  "id": "3-9",
+  "topic": "被动语态",
+  "emoji": "🔄",
+  "goal": "be + 过去分词：主语从「做事的」变成「被做的」",
+  "rounds": [
+    {
+      "id": "3-9-r1",
+      "cn": "这封信是 Tom 写的。",
+      "tip": "be + 过去分词，执行者用 by",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语（受事）"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP（被动）"
+        },
+        {
+          "id": "pp",
+          "label": "施动者 PP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "The",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np1"
+        },
+        {
+          "text": "letter",
+          "pos": "noun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "was",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "vp"
+        },
+        {
+          "text": "written",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "by",
+          "pos": "prep",
+          "role": "介词",
+          "group": "pp"
+        },
+        {
+          "text": "Tom",
+          "pos": "noun",
+          "role": "介词宾语",
+          "group": "pp"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "wrote",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        }
+      ],
+      "explain": "被动语态：be + 过去分词。主语是「被写」的那封信，动作的执行者用 by 引出来。write 的过去分词是 written，不是过去式 wrote。",
+      "example": "The letter was written by Tom. / Tom wrote the letter.",
+      "win": "被动＝be + 过去分词。"
+    },
+    {
+      "id": "3-9-r2",
+      "cn": "全世界都在说英语。",
+      "tip": "说不出执行者时，by 可以不要",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语（受事）"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP（被动）"
+        },
+        {
+          "id": "pp",
+          "label": "范围状语 PP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "English",
+          "pos": "noun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "vp"
+        },
+        {
+          "text": "spoken",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "all",
+          "pos": "adj",
+          "role": "定语",
+          "group": "pp"
+        },
+        {
+          "text": "over",
+          "pos": "prep",
+          "role": "介词",
+          "group": "pp"
+        },
+        {
+          "text": "the",
+          "pos": "article",
+          "role": "限定词",
+          "group": "pp"
+        },
+        {
+          "text": "world",
+          "pos": "noun",
+          "role": "介词宾语",
+          "group": "pp"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "speak",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "speaks",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        }
+      ],
+      "explain": "speak 的过去分词是 spoken。这里没有 by，因为「谁说的」不重要 —— 被动语态常用于执行者不明确或不重要的时候。",
+      "example": "English is spoken all over the world. / People speak English all over the world.",
+      "win": "执行者不重要时，by 可以省略。"
+    },
+    {
+      "id": "3-9-r3",
+      "cn": "这座桥是很多年前建的。",
+      "tip": "build 的过去分词是 built",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语（受事）"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP（被动）"
+        },
+        {
+          "id": "pp",
+          "label": "时间状语 PP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "The",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np1"
+        },
+        {
+          "text": "bridge",
+          "pos": "noun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "was",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "vp"
+        },
+        {
+          "text": "built",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "many",
+          "pos": "adj",
+          "role": "定语",
+          "group": "pp"
+        },
+        {
+          "text": "years",
+          "pos": "noun",
+          "role": "介词宾语",
+          "group": "pp"
+        },
+        {
+          "text": "ago",
+          "pos": "adv",
+          "role": "状语",
+          "group": "pp"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "build",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "builded",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        }
+      ],
+      "explain": "build 的过去分词是 built（不是 builded）。被动语态里主语是「被建」的桥。many years ago 说明这是过去的事，所以用 was。",
+      "example": "The bridge was built many years ago. / They built the bridge many years ago.",
+      "win": "被动语态的主语，是「被做」的那个。"
+    },
+    {
+      "id": "3-9-r4",
+      "cn": "这首歌是她写的。",
+      "tip": "改错：be 后面用过去分词",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语（受事）"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP（被动）"
+        },
+        {
+          "id": "pp",
+          "label": "施动者 PP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "The",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np1"
+        },
+        {
+          "text": "song",
+          "pos": "noun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "was",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "vp"
+        },
+        {
+          "text": "written",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "by",
+          "pos": "prep",
+          "role": "介词",
+          "group": "pp"
+        },
+        {
+          "text": "her",
+          "pos": "pronoun",
+          "role": "介词宾语",
+          "group": "pp"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "wrote",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        }
+      ],
+      "prefill": [
+        "The",
+        "song",
+        "was",
+        "wrote",
+        "by",
+        "her"
+      ],
+      "explain": "be 后面要用过去分词 written，不是过去式 wrote。另外 by 后面要用宾格 her，不能用主格 she。",
+      "example": "The song was written by her. / She wrote the song.",
+      "win": "被动里 by 后面用宾格。"
+    },
+    {
+      "id": "3-9-r5",
+      "cn": "这些车是日本制造的。",
+      "tip": "主语复数 → are",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语（受事）"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP（被动）"
+        },
+        {
+          "id": "pp",
+          "label": "地点 PP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "These",
+          "pos": "pronoun",
+          "role": "限定词",
+          "group": "np1"
+        },
+        {
+          "text": "cars",
+          "pos": "noun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "are",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "vp"
+        },
+        {
+          "text": "made",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "in",
+          "pos": "prep",
+          "role": "介词",
+          "group": "pp"
+        },
+        {
+          "text": "Japan",
+          "pos": "noun",
+          "role": "介词宾语",
+          "group": "pp"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "make",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "vp"
+        }
+      ],
+      "explain": "主语 These cars 是复数，be 动词用 are。make 的过去分词是 made。",
+      "example": "These cars are made in Japan. / This car is made in Japan.",
+      "win": "被动语态里，be 动词照样跟着主语变。"
+    }
+  ]
+}

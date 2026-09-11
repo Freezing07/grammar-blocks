@@ -1,0 +1,364 @@
+{
+  "id": "1-1",
+  "topic": "名词",
+  "emoji": "🐕",
+  "goal": "认识名词：先把「谁是东西、谁是动作」分开，再把名词放进正确的槽位",
+  "rounds": [
+    {
+      "id": "1-1-r1",
+      "cn": "那只狗在跑。",
+      "tip": "名词 dog 作主语，站在动词前面",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "The",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np1"
+        },
+        {
+          "text": "dog",
+          "pos": "noun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "runs",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "dogs",
+          "pos": "noun",
+          "role": "主语",
+          "group": "np1"
+        }
+      ],
+      "explain": "主语 dog 是单数，动词就得用 runs。选 dogs 的话主语变复数，动词要跟着变回 run。",
+      "example": "The dog runs. → The dogs run.",
+      "win": "你分清了：dog 是名词，作主语，位置在动词前面。"
+    },
+    {
+      "id": "1-1-r2",
+      "cn": "我姐姐是一名老师。",
+      "tip": "表示「一个人」的名词，前后都要单数",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "表语 NP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "My",
+          "pos": "pronoun",
+          "role": "限定词",
+          "group": "np1"
+        },
+        {
+          "text": "sister",
+          "pos": "noun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "a",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np2"
+        },
+        {
+          "text": "teacher",
+          "pos": "noun",
+          "role": "表语",
+          "group": "np2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "sisters",
+          "pos": "noun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "teachers",
+          "pos": "noun",
+          "role": "表语",
+          "group": "np2"
+        }
+      ],
+      "explain": "sister 是「一个」姐姐，所以用 is；表语 teacher 也要跟着单数。复数 sisters 要配 are，teachers 也和 a 打架。",
+      "example": "My sister is a teacher. → My sisters are teachers.",
+      "win": "你摸到规律了：主语单数 → 句尾名词也单数。"
+    },
+    {
+      "id": "1-1-r3",
+      "cn": "孩子们喜欢苹果。",
+      "tip": "注意 children 这个不规则复数，还有泛指要用复数",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "宾语 NP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "The",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np1"
+        },
+        {
+          "text": "children",
+          "pos": "noun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "like",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "apples",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "np2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "childrens",
+          "pos": "noun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "apple",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "np2"
+        }
+      ],
+      "explain": "child 的复数是 children，不是 childrens —— 它是不规则变化，只能背。苹果这里泛指「苹果这类东西」，用复数 apples。",
+      "example": "one child → two children；an apple → I like apples.",
+      "win": "你记住了两个坑：children 不规则，泛指用复数。"
+    },
+    {
+      "id": "1-1-r4",
+      "cn": "他喝水。",
+      "tip": "water 数不出来，永远不加 s",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "宾语 NP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "He",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "drinks",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "water",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "np2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "waters",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "np2"
+        },
+        {
+          "text": "drink",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        }
+      ],
+      "explain": "water 是「不可数名词」，像水、米、钱一样数不出来，所以没有 waters 这种写法。主语 He 是第三人称单数，动词要加 s，写成 drinks。",
+      "example": "He drinks water. / They drink water.",
+      "win": "你避开了不可数名词这个坑：water 没有复数。"
+    },
+    {
+      "id": "1-1-r5",
+      "cn": "Tom 住在北京。",
+      "tip": "专有名词首字母必须大写",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "pp",
+          "label": "介词短语 PP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "Tom",
+          "pos": "noun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "lives",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "in",
+          "pos": "prep",
+          "role": "介词",
+          "group": "pp"
+        },
+        {
+          "text": "Beijing",
+          "pos": "noun",
+          "role": "介词宾语",
+          "group": "pp"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "beijing",
+          "pos": "noun",
+          "role": "介词宾语",
+          "group": "pp"
+        }
+      ],
+      "explain": "人名、地名、国名都是「专有名词」，首字母必须大写：Tom、Beijing。写小写的 beijing，英语里不算一个词。",
+      "example": "Tom lives in Beijing. / I am from China.",
+      "win": "你记住了：专有名词 = 首字母大写。"
+    },
+    {
+      "id": "1-1-r6",
+      "cn": "猫和狗是好朋友。",
+      "tip": "两个名词并列 → 主语是复数 → 系动词用 are",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "表语 NP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "Cats",
+          "pos": "noun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "and",
+          "pos": "conj",
+          "role": "连词",
+          "group": "np1"
+        },
+        {
+          "text": "dogs",
+          "pos": "noun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "are",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "good",
+          "pos": "adj",
+          "role": "定语",
+          "group": "np2"
+        },
+        {
+          "text": "friends",
+          "pos": "noun",
+          "role": "表语",
+          "group": "np2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        }
+      ],
+      "explain": "Cats and dogs 是两个名词用 and 连起来，合起来是复数，所以系动词要用 are，表语 friends 也用复数。这里用 is 就前后不一致了。",
+      "example": "Cats and dogs are good friends. / The cat is a good friend.",
+      "win": "你会看主语单复数了：and 连起来的主语算复数。"
+    }
+  ]
+}

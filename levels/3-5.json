@@ -1,0 +1,375 @@
+{
+  "id": "3-5",
+  "topic": "过去进行",
+  "emoji": "⏳",
+  "goal": "was / were + doing：过去某个时刻正在发生的事",
+  "rounds": [
+    {
+      "id": "3-5-r1",
+      "cn": "那时我正在看书。",
+      "tip": "was + doing",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "助动词"
+        },
+        {
+          "id": "vp2",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "pp",
+          "label": "时间状语 PP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "I",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "was",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "vp"
+        },
+        {
+          "text": "reading",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp2"
+        },
+        {
+          "text": "at",
+          "pos": "prep",
+          "role": "介词",
+          "group": "pp"
+        },
+        {
+          "text": "that",
+          "pos": "pronoun",
+          "role": "限定词",
+          "group": "pp"
+        },
+        {
+          "text": "time",
+          "pos": "noun",
+          "role": "介词宾语",
+          "group": "pp"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "am",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "vp"
+        },
+        {
+          "text": "read",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp2"
+        }
+      ],
+      "explain": "过去进行时：was / were + 动词 ing，表示过去某个时刻正在发生的事。主语 I 配 was。at that time 是那个时间点。",
+      "example": "I was reading at that time. / I am reading now.",
+      "win": "过去进行 = was/were + ing。"
+    },
+    {
+      "id": "3-5-r2",
+      "cn": "他们当时在等公交车。",
+      "tip": "主语复数用 were",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "助动词"
+        },
+        {
+          "id": "vp2",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "pp",
+          "label": "介词短语 PP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "They",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "were",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "vp"
+        },
+        {
+          "text": "waiting",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp2"
+        },
+        {
+          "text": "for",
+          "pos": "prep",
+          "role": "介词",
+          "group": "pp"
+        },
+        {
+          "text": "the",
+          "pos": "article",
+          "role": "限定词",
+          "group": "pp"
+        },
+        {
+          "text": "bus",
+          "pos": "noun",
+          "role": "介词宾语",
+          "group": "pp"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "was",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "vp"
+        },
+        {
+          "text": "wait",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp2"
+        }
+      ],
+      "explain": "主语 They 是复数，用 were。was 只给单数主语（I / he / she / it）。",
+      "example": "They were waiting for the bus. / She was waiting for the bus.",
+      "win": "复数用 were，单数用 was。"
+    },
+    {
+      "id": "3-5-r3",
+      "cn": "整个上午都在下雨。",
+      "tip": "all morning 表示一整段时间",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "助动词"
+        },
+        {
+          "id": "vp2",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "adv",
+          "label": "时间状语"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "It",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "was",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "vp"
+        },
+        {
+          "text": "raining",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp2"
+        },
+        {
+          "text": "all",
+          "pos": "adj",
+          "role": "定语",
+          "group": "adv"
+        },
+        {
+          "text": "morning",
+          "pos": "noun",
+          "role": "时间状语",
+          "group": "adv"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "rains",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp2"
+        },
+        {
+          "text": "rained",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp2"
+        }
+      ],
+      "explain": "all morning 表示「整个上午」，是一段持续的时间，正好配合进行时 —— 强调那段时间里一直在下。",
+      "example": "It was raining all morning. / It rained last night.",
+      "win": "持续一段时间的事，用进行时更有画面。"
+    },
+    {
+      "id": "3-5-r4",
+      "cn": "他们当时在玩游戏。",
+      "tip": "改错：was 还是 were",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "助动词"
+        },
+        {
+          "id": "vp2",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "宾语 NP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "They",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "were",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "vp"
+        },
+        {
+          "text": "playing",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp2"
+        },
+        {
+          "text": "games",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "np2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "was",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "vp"
+        },
+        {
+          "text": "play",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp2"
+        }
+      ],
+      "prefill": [
+        "They",
+        "was",
+        "playing",
+        "games"
+      ],
+      "explain": "主语 They 是复数，必须用 were。判断 was / were 只看主语是不是复数。",
+      "example": "They were playing games. / He was playing games.",
+      "win": "was / were 跟着主语走。"
+    },
+    {
+      "id": "3-5-r5",
+      "cn": "你当时在做什么？",
+      "tip": "疑问词 + was/were + 主语 + doing",
+      "punct": "?",
+      "groups": [
+        {
+          "id": "q",
+          "label": "疑问词"
+        },
+        {
+          "id": "vp",
+          "label": "助动词"
+        },
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp2",
+          "label": "谓语 VP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "What",
+          "pos": "pronoun",
+          "role": "疑问词",
+          "group": "q"
+        },
+        {
+          "text": "were",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "vp"
+        },
+        {
+          "text": "you",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "doing",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "was",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "vp"
+        },
+        {
+          "text": "do",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp2"
+        }
+      ],
+      "explain": "过去进行时的特殊疑问句：疑问词 + was / were + 主语 + doing。主语 you 配 were。",
+      "example": "What were you doing? / What does he do?",
+      "win": "疑问词后面，助动词跟着主语走。"
+    }
+  ]
+}

@@ -1,0 +1,374 @@
+{
+  "id": "3-3",
+  "topic": "一般将来",
+  "emoji": "🚀",
+  "goal": "will + 动词原形，will 后面永远不加 s、不加 ed",
+  "rounds": [
+    {
+      "id": "3-3-r1",
+      "cn": "我明天给你打电话。",
+      "tip": "will + 动词原形",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "助动词"
+        },
+        {
+          "id": "vp2",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "宾语 NP"
+        },
+        {
+          "id": "adv",
+          "label": "时间状语"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "I",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "will",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "vp"
+        },
+        {
+          "text": "call",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp2"
+        },
+        {
+          "text": "you",
+          "pos": "pronoun",
+          "role": "宾语",
+          "group": "np2"
+        },
+        {
+          "text": "tomorrow",
+          "pos": "adv",
+          "role": "时间状语",
+          "group": "adv"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "called",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp2"
+        },
+        {
+          "text": "calls",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp2"
+        }
+      ],
+      "explain": "一般将来时：will + 动词原形。will 后面永远用原形，不加 s 也不加 ed。tomorrow 提示这是将来的事。",
+      "example": "I will call you tomorrow. / I called you yesterday.",
+      "win": "will 后面永远跟原形。"
+    },
+    {
+      "id": "3-3-r2",
+      "cn": "明天会下雨。",
+      "tip": "will 后面不加 s",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "助动词"
+        },
+        {
+          "id": "vp2",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "adv",
+          "label": "时间状语"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "It",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "will",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "vp"
+        },
+        {
+          "text": "rain",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp2"
+        },
+        {
+          "text": "tomorrow",
+          "pos": "adv",
+          "role": "时间状语",
+          "group": "adv"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "rains",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp2"
+        },
+        {
+          "text": "rained",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp2"
+        }
+      ],
+      "explain": "will 已经把「将来」标出来了，动词就不用再变形。It will rains 是错的。",
+      "example": "It will rain tomorrow. / It rains a lot here.",
+      "win": "一个句子里，时态标志只出现一次。"
+    },
+    {
+      "id": "3-3-r3",
+      "cn": "他不会来参加聚会。",
+      "tip": "将来时的否定：will not",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "助动词"
+        },
+        {
+          "id": "vp2",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "pp",
+          "label": "介词短语 PP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "He",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "will",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "vp"
+        },
+        {
+          "text": "not",
+          "pos": "adv",
+          "role": "状语",
+          "group": "vp"
+        },
+        {
+          "text": "come",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp2"
+        },
+        {
+          "text": "to",
+          "pos": "prep",
+          "role": "介词",
+          "group": "pp"
+        },
+        {
+          "text": "the",
+          "pos": "article",
+          "role": "限定词",
+          "group": "pp"
+        },
+        {
+          "text": "party",
+          "pos": "noun",
+          "role": "介词宾语",
+          "group": "pp"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "comes",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp2"
+        },
+        {
+          "text": "came",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp2"
+        }
+      ],
+      "explain": "将来时的否定：在 will 后面加 not（口语常缩写成 won't），动词还是原形。",
+      "example": "He will not come to the party. / He won't come to the party.",
+      "win": "not 加在 will 后面。"
+    },
+    {
+      "id": "3-3-r4",
+      "cn": "她将去伦敦。",
+      "tip": "改错：will 后面不能加 s",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "助动词"
+        },
+        {
+          "id": "vp2",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "pp",
+          "label": "介词短语 PP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "She",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "will",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "vp"
+        },
+        {
+          "text": "go",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp2"
+        },
+        {
+          "text": "to",
+          "pos": "prep",
+          "role": "介词",
+          "group": "pp"
+        },
+        {
+          "text": "London",
+          "pos": "noun",
+          "role": "介词宾语",
+          "group": "pp"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "goes",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp2"
+        },
+        {
+          "text": "went",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp2"
+        }
+      ],
+      "prefill": [
+        "She",
+        "will",
+        "goes",
+        "to",
+        "London"
+      ],
+      "explain": "will 后面必须用原形。不能因为主语是 She 就加 s，也不能用过去式 went。",
+      "example": "She will go to London. / She goes to London every year.",
+      "win": "will 一出现，动词就不变形。"
+    },
+    {
+      "id": "3-3-r5",
+      "cn": "你会帮我吗？",
+      "tip": "will 提到句首就是疑问句",
+      "punct": "?",
+      "groups": [
+        {
+          "id": "vp",
+          "label": "助动词"
+        },
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp2",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "宾语 NP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "Will",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "vp"
+        },
+        {
+          "text": "you",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "help",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp2"
+        },
+        {
+          "text": "me",
+          "pos": "pronoun",
+          "role": "宾语",
+          "group": "np2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "helps",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp2"
+        }
+      ],
+      "explain": "将来时的疑问句把 will 提到句首，动词保持原形。",
+      "example": "Will you help me? / You will help me.",
+      "win": "will 提前，动词不变。"
+    }
+  ]
+}

@@ -1,0 +1,428 @@
+{
+  "id": "6-1",
+  "topic": "转折与递进",
+  "emoji": "↔️",
+  "goal": "however 不是 but：它是副词，要另起一句，而且后面得跟逗号",
+  "rounds": [
+    {
+      "id": "6-1-r1",
+      "cn": "他学习很努力。然而，他考试没及格。",
+      "tip": "however 表示转折，前后意思相反",
+      "rootLabel": "句群",
+      "marks": {
+        "2": ".",
+        "3": ","
+      },
+      "groups": [
+        {
+          "id": "s1",
+          "label": "第一句"
+        },
+        {
+          "id": "s2",
+          "label": "第二句（转折）",
+          "clause": true
+        }
+      ],
+      "blocks": [
+        {
+          "text": "He",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "s1"
+        },
+        {
+          "text": "studied",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "s1"
+        },
+        {
+          "text": "hard",
+          "pos": "adv",
+          "role": "状语",
+          "group": "s1"
+        },
+        {
+          "text": "However",
+          "pos": "adv",
+          "role": "衔接词",
+          "group": "s2"
+        },
+        {
+          "text": "he",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "s2"
+        },
+        {
+          "text": "failed",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "s2"
+        },
+        {
+          "text": "the",
+          "pos": "article",
+          "role": "限定词",
+          "group": "s2"
+        },
+        {
+          "text": "exam",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "s2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "Therefore",
+          "pos": "adv",
+          "role": "衔接词",
+          "group": "s2"
+        }
+      ],
+      "explain": "however 表示转折，前后两句意思相反。注意它是副词，不是连词 —— 不能像 but 那样把两句连在一个句子里，必须用句号断开，另起一句，而且在它后面加逗号。",
+      "example": "He studied hard. However, he failed the exam. / He studied hard, but he failed the exam.",
+      "win": "however 是副词，要另起一句。"
+    },
+    {
+      "id": "6-1-r2",
+      "cn": "她很累。而且，她还头疼。",
+      "tip": "in addition 是递进，方向一致",
+      "rootLabel": "句群",
+      "marks": {
+        "2": ".",
+        "3": ","
+      },
+      "groups": [
+        {
+          "id": "s1",
+          "label": "第一句"
+        },
+        {
+          "id": "s2",
+          "label": "第二句（递进）",
+          "clause": true
+        }
+      ],
+      "blocks": [
+        {
+          "text": "She",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "s1"
+        },
+        {
+          "text": "was",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "s1"
+        },
+        {
+          "text": "tired",
+          "pos": "adj",
+          "role": "表语",
+          "group": "s1"
+        },
+        {
+          "text": "In addition",
+          "pos": "adv",
+          "role": "衔接词",
+          "group": "s2"
+        },
+        {
+          "text": "she",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "s2"
+        },
+        {
+          "text": "had",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "s2"
+        },
+        {
+          "text": "a",
+          "pos": "article",
+          "role": "限定词",
+          "group": "s2"
+        },
+        {
+          "text": "headache",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "s2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "However",
+          "pos": "adv",
+          "role": "衔接词",
+          "group": "s2"
+        }
+      ],
+      "explain": "in addition / moreover / what's more 表示「而且」，是递进关系：前后两句话的方向是一致的（都很糟）。用 However 就成了转折，逻辑不通。",
+      "example": "She was tired. In addition, she had a headache.",
+      "win": "递进用 in addition，转折用 however。"
+    },
+    {
+      "id": "6-1-r3",
+      "cn": "这个方案很便宜。而且，它效果很好。",
+      "tip": "moreover 比 in addition 更书面",
+      "rootLabel": "句群",
+      "marks": {
+        "3": ".",
+        "4": ","
+      },
+      "groups": [
+        {
+          "id": "s1",
+          "label": "第一句"
+        },
+        {
+          "id": "s2",
+          "label": "第二句（递进）",
+          "clause": true
+        }
+      ],
+      "blocks": [
+        {
+          "text": "The",
+          "pos": "article",
+          "role": "限定词",
+          "group": "s1"
+        },
+        {
+          "text": "plan",
+          "pos": "noun",
+          "role": "主语",
+          "group": "s1"
+        },
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "s1"
+        },
+        {
+          "text": "cheap",
+          "pos": "adj",
+          "role": "表语",
+          "group": "s1"
+        },
+        {
+          "text": "Moreover",
+          "pos": "adv",
+          "role": "衔接词",
+          "group": "s2"
+        },
+        {
+          "text": "it",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "s2"
+        },
+        {
+          "text": "works",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "s2"
+        },
+        {
+          "text": "well",
+          "pos": "adv",
+          "role": "状语",
+          "group": "s2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "Therefore",
+          "pos": "adv",
+          "role": "衔接词",
+          "group": "s2"
+        }
+      ],
+      "explain": "moreover 和 in addition 意思一样，只是更书面。这里第二句是在补充优点，不是结果，所以不能用 Therefore。",
+      "example": "The plan is cheap. Moreover, it works well.",
+      "win": "补充同类信息，用 moreover。"
+    },
+    {
+      "id": "6-1-r4",
+      "cn": "他学习很努力。然而，他考试没及格。",
+      "tip": "改错：这里是转折还是因果",
+      "rootLabel": "句群",
+      "marks": {
+        "2": ".",
+        "3": ","
+      },
+      "groups": [
+        {
+          "id": "s1",
+          "label": "第一句"
+        },
+        {
+          "id": "s2",
+          "label": "第二句（转折）",
+          "clause": true
+        }
+      ],
+      "blocks": [
+        {
+          "text": "He",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "s1"
+        },
+        {
+          "text": "studied",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "s1"
+        },
+        {
+          "text": "hard",
+          "pos": "adv",
+          "role": "状语",
+          "group": "s1"
+        },
+        {
+          "text": "However",
+          "pos": "adv",
+          "role": "衔接词",
+          "group": "s2"
+        },
+        {
+          "text": "he",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "s2"
+        },
+        {
+          "text": "failed",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "s2"
+        },
+        {
+          "text": "the",
+          "pos": "article",
+          "role": "限定词",
+          "group": "s2"
+        },
+        {
+          "text": "exam",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "s2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "Therefore",
+          "pos": "adv",
+          "role": "衔接词",
+          "group": "s2"
+        }
+      ],
+      "prefill": [
+        "He",
+        "studied",
+        "hard",
+        "Therefore",
+        "he",
+        "failed",
+        "the",
+        "exam"
+      ],
+      "explain": "努力了却没过，这是转折关系，不是「因为努力所以没过」。Therefore 表示结果，用在这里逻辑正好反了。",
+      "example": "He studied hard. However, he failed the exam.",
+      "win": "先想清楚两句是什么关系，再选衔接词。"
+    },
+    {
+      "id": "6-1-r5",
+      "cn": "这份工作薪水不错。另一方面，它很累人。",
+      "tip": "on the other hand 用来看同一件事的两面",
+      "rootLabel": "句群",
+      "marks": {
+        "3": ".",
+        "4": ","
+      },
+      "groups": [
+        {
+          "id": "s1",
+          "label": "第一句"
+        },
+        {
+          "id": "s2",
+          "label": "第二句（另一面）",
+          "clause": true
+        }
+      ],
+      "blocks": [
+        {
+          "text": "It",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "s1"
+        },
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "s1"
+        },
+        {
+          "text": "well",
+          "pos": "adv",
+          "role": "状语",
+          "group": "s1"
+        },
+        {
+          "text": "paid",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "s1"
+        },
+        {
+          "text": "On the other hand",
+          "pos": "adv",
+          "role": "衔接词",
+          "group": "s2"
+        },
+        {
+          "text": "it",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "s2"
+        },
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "s2"
+        },
+        {
+          "text": "tiring",
+          "pos": "adj",
+          "role": "表语",
+          "group": "s2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "Moreover",
+          "pos": "adv",
+          "role": "衔接词",
+          "group": "s2"
+        }
+      ],
+      "explain": "on the other hand 表示「另一方面」，专门用来权衡同一件事的两面（好处 vs 坏处）。Moreover 只是「而且」，体现不出这种对比。",
+      "example": "It is well paid. On the other hand, it is tiring.",
+      "win": "权衡利弊，用 on the other hand。"
+    }
+  ]
+}

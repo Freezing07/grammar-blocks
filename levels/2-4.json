@@ -1,0 +1,369 @@
+{
+  "id": "2-4",
+  "topic": "双宾",
+  "emoji": "🎁",
+  "goal": "有些动词后面跟两样东西：先给「人」，再给「物」",
+  "rounds": [
+    {
+      "id": "2-4-r1",
+      "cn": "老师给我们讲了一个故事。",
+      "tip": "先人后物",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "间接宾语（人）"
+        },
+        {
+          "id": "np3",
+          "label": "直接宾语（物）"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "The",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np1"
+        },
+        {
+          "text": "teacher",
+          "pos": "noun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "tells",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "us",
+          "pos": "pronoun",
+          "role": "间接宾语",
+          "group": "np2"
+        },
+        {
+          "text": "a",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np3"
+        },
+        {
+          "text": "story",
+          "pos": "noun",
+          "role": "直接宾语",
+          "group": "np3"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "we",
+          "pos": "pronoun",
+          "role": "间接宾语",
+          "group": "np2"
+        }
+      ],
+      "explain": "tell 后面跟两样东西：先说「告诉谁」（us），再说「告诉什么」（a story）。顺序是「先人后物」，而且「人」的位置要用宾格 us。",
+      "example": "The teacher tells us a story. / He tells me the truth.",
+      "win": "双宾语顺序是先人后物。"
+    },
+    {
+      "id": "2-4-r2",
+      "cn": "她给我看她的照片。",
+      "tip": "还是先人后物",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "间接宾语（人）"
+        },
+        {
+          "id": "np3",
+          "label": "直接宾语（物）"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "She",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "shows",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "me",
+          "pos": "pronoun",
+          "role": "间接宾语",
+          "group": "np2"
+        },
+        {
+          "text": "her",
+          "pos": "pronoun",
+          "role": "限定词",
+          "group": "np3"
+        },
+        {
+          "text": "photos",
+          "pos": "noun",
+          "role": "直接宾语",
+          "group": "np3"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "my",
+          "pos": "pronoun",
+          "role": "限定词",
+          "group": "np3"
+        },
+        {
+          "text": "photo",
+          "pos": "noun",
+          "role": "直接宾语",
+          "group": "np3"
+        }
+      ],
+      "explain": "先人后物：me 在前，her photos 在后。photos 说的是好几张照片，用复数；her 是物主代词，后面必须跟名词。",
+      "example": "She shows me her photos. / She shows her photos to me.",
+      "win": "人 + 物，顺序不能反。"
+    },
+    {
+      "id": "2-4-r3",
+      "cn": "他给儿子买了一辆自行车。",
+      "tip": "双宾动词常见的有 give / send / tell / show / buy",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "间接宾语（人）"
+        },
+        {
+          "id": "np3",
+          "label": "直接宾语（物）"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "He",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "buys",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "his",
+          "pos": "pronoun",
+          "role": "限定词",
+          "group": "np2"
+        },
+        {
+          "text": "son",
+          "pos": "noun",
+          "role": "间接宾语",
+          "group": "np2"
+        },
+        {
+          "text": "a",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np3"
+        },
+        {
+          "text": "bike",
+          "pos": "noun",
+          "role": "直接宾语",
+          "group": "np3"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "buy",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        }
+      ],
+      "explain": "主语 He 是三单，buy 要加 s 变 buys。his son 是「给谁」，a bike 是「给什么」。",
+      "example": "He buys his son a bike. / He buys a bike for his son.",
+      "win": "give、send、tell、show、buy 都能带双宾语。"
+    },
+    {
+      "id": "2-4-r4",
+      "cn": "她给我一支笔。",
+      "tip": "改错：顺序反了，而且「人」用错了格",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "间接宾语（人）"
+        },
+        {
+          "id": "np3",
+          "label": "直接宾语（物）"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "She",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "gives",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "me",
+          "pos": "pronoun",
+          "role": "间接宾语",
+          "group": "np2"
+        },
+        {
+          "text": "a",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np3"
+        },
+        {
+          "text": "pen",
+          "pos": "noun",
+          "role": "直接宾语",
+          "group": "np3"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "I",
+          "pos": "pronoun",
+          "role": "间接宾语",
+          "group": "np2"
+        }
+      ],
+      "prefill": [
+        "She",
+        "gives",
+        "a",
+        "pen",
+        "me"
+      ],
+      "explain": "双宾语的顺序是先人后物，所以是 gives me a pen，不是 gives a pen me。另外「人」的位置要用宾格 me，不能用主格 I。",
+      "example": "She gives me a pen. / She gives it to me.",
+      "win": "先人后物，人中用宾格。"
+    },
+    {
+      "id": "2-4-r5",
+      "cn": "公司给我们提供免费午餐。",
+      "tip": "双宾语里的「人」永远用宾格",
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "间接宾语（人）"
+        },
+        {
+          "id": "np3",
+          "label": "直接宾语（物）"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "The",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np1"
+        },
+        {
+          "text": "company",
+          "pos": "noun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "offers",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "us",
+          "pos": "pronoun",
+          "role": "间接宾语",
+          "group": "np2"
+        },
+        {
+          "text": "free",
+          "pos": "adj",
+          "role": "定语",
+          "group": "np3"
+        },
+        {
+          "text": "lunch",
+          "pos": "noun",
+          "role": "直接宾语",
+          "group": "np3"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "our",
+          "pos": "pronoun",
+          "role": "间接宾语",
+          "group": "np2"
+        }
+      ],
+      "explain": "offer 后面也是先人后物。free 是形容词，放在名词 lunch 前面。us 是宾格；our 是物主代词，后面还得再跟一个名词才能用。",
+      "example": "The company offers us free lunch. / The company offers free lunch to us.",
+      "win": "双宾语里的「人」永远用宾格。"
+    }
+  ]
+}

@@ -1,0 +1,384 @@
+{
+  "id": "4-8",
+  "topic": "条件状语从句",
+  "emoji": "🔀",
+  "goal": "主将从现：主句用 will，从句用一般现在时",
+  "rounds": [
+    {
+      "id": "4-8-r1",
+      "cn": "如果下雨，我们就待在家里。",
+      "tip": "主将从现",
+      "groups": [
+        {
+          "id": "main",
+          "label": "主句"
+        },
+        {
+          "id": "sub",
+          "label": "条件状语从句",
+          "clause": true
+        }
+      ],
+      "blocks": [
+        {
+          "text": "We",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "main"
+        },
+        {
+          "text": "will",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "main"
+        },
+        {
+          "text": "stay",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "main"
+        },
+        {
+          "text": "home",
+          "pos": "adv",
+          "role": "状语",
+          "group": "main"
+        },
+        {
+          "text": "if",
+          "pos": "conj",
+          "role": "连接词",
+          "group": "sub"
+        },
+        {
+          "text": "it",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "sub"
+        },
+        {
+          "text": "rains",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "sub"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "rained",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "sub"
+        }
+      ],
+      "explain": "条件状语从句里用一般现在时表示将来，这叫「主将从现」：主句 will + 原形，从句用一般现在时。不能说 if it will rain。",
+      "example": "We will stay home if it rains. / If it rains, we will stay home.",
+      "win": "主将从现 —— 主句将来，从句现在。"
+    },
+    {
+      "id": "4-8-r2",
+      "cn": "如果我有时间就给你打电话。",
+      "tip": "从句里不出现 will",
+      "groups": [
+        {
+          "id": "main",
+          "label": "主句"
+        },
+        {
+          "id": "sub",
+          "label": "条件状语从句",
+          "clause": true
+        }
+      ],
+      "blocks": [
+        {
+          "text": "I",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "main"
+        },
+        {
+          "text": "will",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "main"
+        },
+        {
+          "text": "call",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "main"
+        },
+        {
+          "text": "you",
+          "pos": "pronoun",
+          "role": "宾语",
+          "group": "main"
+        },
+        {
+          "text": "if",
+          "pos": "conj",
+          "role": "连接词",
+          "group": "sub"
+        },
+        {
+          "text": "I",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "sub"
+        },
+        {
+          "text": "have",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "sub"
+        },
+        {
+          "text": "time",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "sub"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "has",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "sub"
+        }
+      ],
+      "explain": "从句用一般现在 have（不是 will have），因为它讲的是「如果有」这个条件。主语是 I，所以用 have 不是 has。",
+      "example": "I will call you if I have time. / If I have time, I will call you.",
+      "win": "从句里不出现 will。"
+    },
+    {
+      "id": "4-8-r3",
+      "cn": "除非你快一点，否则你会迟到。",
+      "tip": "unless 自带否定",
+      "groups": [
+        {
+          "id": "main",
+          "label": "主句"
+        },
+        {
+          "id": "sub",
+          "label": "条件状语从句",
+          "clause": true
+        }
+      ],
+      "blocks": [
+        {
+          "text": "You",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "main"
+        },
+        {
+          "text": "will",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "main"
+        },
+        {
+          "text": "be",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "main"
+        },
+        {
+          "text": "late",
+          "pos": "adj",
+          "role": "表语",
+          "group": "main"
+        },
+        {
+          "text": "unless",
+          "pos": "conj",
+          "role": "连接词",
+          "group": "sub"
+        },
+        {
+          "text": "you",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "sub"
+        },
+        {
+          "text": "hurry",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "sub"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "if",
+          "pos": "conj",
+          "role": "连接词",
+          "group": "sub"
+        }
+      ],
+      "explain": "unless = if not，意思是「除非」。用 unless 的时候从句本身已经含否定，不能再加 don't。",
+      "example": "You will be late unless you hurry. / You will be late if you don't hurry.",
+      "win": "unless 自带否定，别再加 not。"
+    },
+    {
+      "id": "4-8-r4",
+      "cn": "如果下雨，我们就待在家里。",
+      "tip": "改错：从句里的动词要跟主语一致",
+      "groups": [
+        {
+          "id": "sub",
+          "label": "条件状语从句",
+          "clause": true
+        },
+        {
+          "id": "main",
+          "label": "主句"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "If",
+          "pos": "conj",
+          "role": "连接词",
+          "group": "sub"
+        },
+        {
+          "text": "it",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "sub"
+        },
+        {
+          "text": "rains",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "sub"
+        },
+        {
+          "text": "we",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "main"
+        },
+        {
+          "text": "will",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "main"
+        },
+        {
+          "text": "stay",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "main"
+        },
+        {
+          "text": "home",
+          "pos": "adv",
+          "role": "状语",
+          "group": "main"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "rain",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "sub"
+        },
+        {
+          "text": "rained",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "sub"
+        }
+      ],
+      "prefill": [
+        "If",
+        "it",
+        "rain",
+        "we",
+        "will",
+        "stay",
+        "home"
+      ],
+      "explain": "条件从句里用一般现在时（不用 will），而且主语 it 是第三人称单数，动词要加 s：rains。",
+      "example": "If it rains, we will stay home. / We will stay home if it rains.",
+      "win": "从句里不出现 will。"
+    },
+    {
+      "id": "4-8-r5",
+      "cn": "如果她邀请我，我就去。",
+      "tip": "从句照样要跟主语一致",
+      "groups": [
+        {
+          "id": "main",
+          "label": "主句"
+        },
+        {
+          "id": "sub",
+          "label": "条件状语从句",
+          "clause": true
+        }
+      ],
+      "blocks": [
+        {
+          "text": "I",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "main"
+        },
+        {
+          "text": "will",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "main"
+        },
+        {
+          "text": "go",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "main"
+        },
+        {
+          "text": "if",
+          "pos": "conj",
+          "role": "连接词",
+          "group": "sub"
+        },
+        {
+          "text": "she",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "sub"
+        },
+        {
+          "text": "invites",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "sub"
+        },
+        {
+          "text": "me",
+          "pos": "pronoun",
+          "role": "宾语",
+          "group": "sub"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "invite",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "sub"
+        }
+      ],
+      "explain": "主句 will + 原形；从句用一般现在时，主语 she 是三单，所以动词用 invites。",
+      "example": "I will go if she invites me. / She will invite me.",
+      "win": "从句也要跟自己的主语一致。"
+    }
+  ]
+}

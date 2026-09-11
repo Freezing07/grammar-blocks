@@ -1,0 +1,315 @@
+{
+  "id": "2-7",
+  "topic": "疑问句",
+  "emoji": "❓",
+  "goal": "把助动词提到句首，动词就得还原 —— 这是最容易错的一步",
+  "rounds": [
+    {
+      "id": "2-7-r1",
+      "cn": "你喜欢音乐吗？",
+      "tip": "一般疑问句：句首加 Do",
+      "punct": "?",
+      "groups": [
+        {
+          "id": "vp",
+          "label": "助动词"
+        },
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp2",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "宾语 NP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "Do",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "vp"
+        },
+        {
+          "text": "you",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "like",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp2"
+        },
+        {
+          "text": "music",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "np2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "likes",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp2"
+        }
+      ],
+      "explain": "一般现在时的疑问句，要在句首加助动词 Do，主语和动词的顺序照旧，动词保持原形。",
+      "example": "Do you like music? / You like music.",
+      "win": "疑问句 = 助动词提到句首，动词用原形。"
+    },
+    {
+      "id": "2-7-r2",
+      "cn": "她会说中文吗？",
+      "tip": "Does 出现后，动词一定要还原",
+      "punct": "?",
+      "groups": [
+        {
+          "id": "vp",
+          "label": "助动词"
+        },
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp2",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "宾语 NP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "Does",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "vp"
+        },
+        {
+          "text": "she",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "speak",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp2"
+        },
+        {
+          "text": "Chinese",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "np2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "speaks",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp2"
+        }
+      ],
+      "explain": "主语 she 是第三人称单数，所以用 Does。注意：那个 s 的活已经由 Does 干了，后面的动词必须还原成原形 speak。",
+      "example": "Does she speak Chinese? / She speaks Chinese.",
+      "win": "Does 出现后，动词一定要还原。"
+    },
+    {
+      "id": "2-7-r3",
+      "cn": "他是你的老师吗？",
+      "tip": "be 动词直接提前，不用 do",
+      "punct": "?",
+      "groups": [
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "np2",
+          "label": "表语 NP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "Is",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "he",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "your",
+          "pos": "pronoun",
+          "role": "限定词",
+          "group": "np2"
+        },
+        {
+          "text": "teacher",
+          "pos": "noun",
+          "role": "表语",
+          "group": "np2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "Does",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "vp"
+        }
+      ],
+      "explain": "be 动词的疑问句最简单：把 is / are / am 直接提到句首，后面原样不动，不需要 do。因为 be 动词自己就能提前。",
+      "example": "Is he your teacher? / Are you a student?",
+      "win": "be 动词直接提前，不用 do。"
+    },
+    {
+      "id": "2-7-r4",
+      "cn": "你住在哪里？",
+      "tip": "疑问词 + 助动词 + 主语 + 动词原形",
+      "punct": "?",
+      "groups": [
+        {
+          "id": "q",
+          "label": "疑问词"
+        },
+        {
+          "id": "vp",
+          "label": "助动词"
+        },
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp2",
+          "label": "谓语 VP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "Where",
+          "pos": "adv",
+          "role": "疑问词",
+          "group": "q"
+        },
+        {
+          "text": "do",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "vp"
+        },
+        {
+          "text": "you",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "live",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "Does",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "vp"
+        }
+      ],
+      "explain": "特殊疑问句的顺序是：疑问词 + 助动词 + 主语 + 动词原形。主语是 you，所以助动词用 do。",
+      "example": "Where do you live? / Where does he live?",
+      "win": "疑问词开头时，后面还是「助动词 + 主语 + 动词」。"
+    },
+    {
+      "id": "2-7-r5",
+      "cn": "她喜欢音乐吗？",
+      "tip": "改错：Does 和 -s 不能同时出现",
+      "punct": "?",
+      "groups": [
+        {
+          "id": "vp",
+          "label": "助动词"
+        },
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp2",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "宾语 NP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "Does",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "vp"
+        },
+        {
+          "text": "she",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "like",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp2"
+        },
+        {
+          "text": "music",
+          "pos": "noun",
+          "role": "宾语",
+          "group": "np2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "likes",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp2"
+        }
+      ],
+      "prefill": [
+        "Does",
+        "she",
+        "likes",
+        "music"
+      ],
+      "explain": "用了 Does 之后，后面的动词要还原成原形 like，不能再加 s。三单的标志只能出现一次，它已经交给 Does 了。",
+      "example": "Does she like music? / She likes music.",
+      "win": "Does 和 -s 不能同时出现。"
+    }
+  ]
+}

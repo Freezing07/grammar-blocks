@@ -1,0 +1,457 @@
+{
+  "id": "4-9",
+  "topic": "从句 · Boss",
+  "emoji": "👑",
+  "boss": true,
+  "goal": "三大从句混着来 —— 限时挑战，先判断这是哪种从句，再摆积木",
+  "rounds": [
+    {
+      "id": "4-9-r1",
+      "cn": "你觉得他会来吗？",
+      "tip": "宾语从句",
+      "timeLimit": 45,
+      "punct": "?",
+      "groups": [
+        {
+          "id": "vp",
+          "label": "助动词"
+        },
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp2",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "cl",
+          "label": "宾语从句",
+          "clause": true,
+          "parent": "vp2"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "Do",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "vp"
+        },
+        {
+          "text": "you",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "think",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp2"
+        },
+        {
+          "text": "that",
+          "pos": "pronoun",
+          "role": "连接词",
+          "group": "cl"
+        },
+        {
+          "text": "he",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "cl"
+        },
+        {
+          "text": "will",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "cl"
+        },
+        {
+          "text": "come",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "cl"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "does",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "vp"
+        }
+      ],
+      "explain": "主句用 Do 提问，从句里用正常语序 that he will come，不再倒装。",
+      "example": "Do you think that he will come? / He will come.",
+      "win": "一个疑问句里只需要一次倒装。"
+    },
+    {
+      "id": "4-9-r2",
+      "cn": "给我打电话的女孩是我妹妹。",
+      "tip": "定语从句嵌在主语里面",
+      "timeLimit": 45,
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "rel",
+          "label": "定语从句",
+          "clause": true,
+          "parent": "np1"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "表语 NP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "The",
+          "pos": "article",
+          "role": "限定词",
+          "group": "np1"
+        },
+        {
+          "text": "girl",
+          "pos": "noun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "who",
+          "pos": "pronoun",
+          "role": "关系代词",
+          "group": "rel"
+        },
+        {
+          "text": "called",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "rel"
+        },
+        {
+          "text": "me",
+          "pos": "pronoun",
+          "role": "宾语",
+          "group": "rel"
+        },
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "my",
+          "pos": "pronoun",
+          "role": "限定词",
+          "group": "np2"
+        },
+        {
+          "text": "sister",
+          "pos": "noun",
+          "role": "表语",
+          "group": "np2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "which",
+          "pos": "pronoun",
+          "role": "关系代词",
+          "group": "rel"
+        }
+      ],
+      "explain": "先行词 the girl 是人，用 who。主句骨架是 The girl is my sister，定语从句 who called me 插在中间。",
+      "example": "The girl who called me is my sister. / The girl is my sister.",
+      "win": "从句插在主语和谓语中间。"
+    },
+    {
+      "id": "4-9-r3",
+      "cn": "因为在下雨，我们待在家里。",
+      "tip": "原因状语从句",
+      "timeLimit": 45,
+      "groups": [
+        {
+          "id": "main",
+          "label": "主句"
+        },
+        {
+          "id": "sub",
+          "label": "原因状语从句",
+          "clause": true
+        }
+      ],
+      "blocks": [
+        {
+          "text": "We",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "main"
+        },
+        {
+          "text": "stayed",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "main"
+        },
+        {
+          "text": "home",
+          "pos": "adv",
+          "role": "状语",
+          "group": "main"
+        },
+        {
+          "text": "because",
+          "pos": "conj",
+          "role": "连接词",
+          "group": "sub"
+        },
+        {
+          "text": "it",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "sub"
+        },
+        {
+          "text": "was",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "sub"
+        },
+        {
+          "text": "raining",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "sub"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "so",
+          "pos": "conj",
+          "role": "连接词",
+          "group": "sub"
+        }
+      ],
+      "explain": "because 引导原因，前后时态一致，从句用过去进行时表示「当时正在下」。",
+      "example": "We stayed home because it was raining. / It was raining, so we stayed home.",
+      "win": "because 和 so 只能留一个。"
+    },
+    {
+      "id": "4-9-r4",
+      "cn": "那就是我想要的。",
+      "tip": "表语从句",
+      "timeLimit": 40,
+      "groups": [
+        {
+          "id": "np1",
+          "label": "主语 NP"
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "cl",
+          "label": "表语从句",
+          "clause": true,
+          "parent": "vp"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "That",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "np1"
+        },
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "what",
+          "pos": "pronoun",
+          "role": "连接词",
+          "group": "cl"
+        },
+        {
+          "text": "I",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "cl"
+        },
+        {
+          "text": "want",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "cl"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "that",
+          "pos": "pronoun",
+          "role": "连接词",
+          "group": "cl"
+        }
+      ],
+      "explain": "be 动词后面是表语从句。这里用 what（= the thing that），意思是「我想要的东西」；用 that 就成了「那是我想要」——意思不完整。",
+      "example": "That is what I want. / That is the thing that I want.",
+      "win": "表语从句里 what 表示「……的东西」。"
+    },
+    {
+      "id": "4-9-r5",
+      "cn": "如果你不快点，我们就会迟到。",
+      "tip": "条件状语从句",
+      "timeLimit": 45,
+      "groups": [
+        {
+          "id": "main",
+          "label": "主句"
+        },
+        {
+          "id": "sub",
+          "label": "条件状语从句",
+          "clause": true
+        }
+      ],
+      "blocks": [
+        {
+          "text": "We",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "main"
+        },
+        {
+          "text": "will",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "main"
+        },
+        {
+          "text": "be",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "main"
+        },
+        {
+          "text": "late",
+          "pos": "adj",
+          "role": "表语",
+          "group": "main"
+        },
+        {
+          "text": "if",
+          "pos": "conj",
+          "role": "连接词",
+          "group": "sub"
+        },
+        {
+          "text": "you",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "sub"
+        },
+        {
+          "text": "don't",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "sub"
+        },
+        {
+          "text": "hurry",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "sub"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "doesn't",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "sub"
+        }
+      ],
+      "explain": "主将从现：主句 will be late，从句用一般现在时的否定 don't hurry。主语是 you，用 don't。",
+      "example": "We will be late if you don't hurry. / You don't hurry.",
+      "win": "从句里用现在时，主句用将来时。"
+    },
+    {
+      "id": "4-9-r6",
+      "cn": "他说的话让所有人都吃惊。",
+      "tip": "主语从句",
+      "timeLimit": 40,
+      "groups": [
+        {
+          "id": "cl",
+          "label": "主语从句",
+          "clause": true
+        },
+        {
+          "id": "vp",
+          "label": "谓语 VP"
+        },
+        {
+          "id": "np2",
+          "label": "宾语 NP"
+        }
+      ],
+      "blocks": [
+        {
+          "text": "What",
+          "pos": "pronoun",
+          "role": "连接词",
+          "group": "cl"
+        },
+        {
+          "text": "he",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "cl"
+        },
+        {
+          "text": "said",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "cl"
+        },
+        {
+          "text": "surprised",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "vp"
+        },
+        {
+          "text": "everyone",
+          "pos": "pronoun",
+          "role": "宾语",
+          "group": "np2"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "did",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "cl"
+        }
+      ],
+      "explain": "主语从句 What he said 整体当主语，从句里不倒装。主句谓语 surprised 用过去式，跟从句的 said 一致。",
+      "example": "What he said surprised everyone. / Everyone was surprised.",
+      "win": "从句当主语，主句照常接谓语。"
+    }
+  ]
+}

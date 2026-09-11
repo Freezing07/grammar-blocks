@@ -1,0 +1,359 @@
+{
+  "id": "4-7",
+  "topic": "原因状语从句",
+  "emoji": "🧐",
+  "goal": "because / as 说原因；because 和 so 不能同时出现",
+  "rounds": [
+    {
+      "id": "4-7-r1",
+      "cn": "因为下雨，我待在家里。",
+      "tip": "because 和 so 只能留一个",
+      "groups": [
+        {
+          "id": "main",
+          "label": "主句"
+        },
+        {
+          "id": "sub",
+          "label": "原因状语从句",
+          "clause": true
+        }
+      ],
+      "blocks": [
+        {
+          "text": "I",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "main"
+        },
+        {
+          "text": "stayed",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "main"
+        },
+        {
+          "text": "home",
+          "pos": "adv",
+          "role": "状语",
+          "group": "main"
+        },
+        {
+          "text": "because",
+          "pos": "conj",
+          "role": "连接词",
+          "group": "sub"
+        },
+        {
+          "text": "it",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "sub"
+        },
+        {
+          "text": "rained",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "sub"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "so",
+          "pos": "conj",
+          "role": "连接词",
+          "group": "sub"
+        }
+      ],
+      "explain": "because 引导原因，so 引导结果。一个句子里不能同时用 because 和 so —— 中文说「因为……所以……」，英语只要留一个。",
+      "example": "I stayed home because it rained. / It rained, so I stayed home.",
+      "win": "because 和 so 不能同时出现。"
+    },
+    {
+      "id": "4-7-r2",
+      "cn": "她生气是因为他说谎了。",
+      "tip": "从句动词也要跟着时态变",
+      "groups": [
+        {
+          "id": "main",
+          "label": "主句"
+        },
+        {
+          "id": "sub",
+          "label": "原因状语从句",
+          "clause": true
+        }
+      ],
+      "blocks": [
+        {
+          "text": "She",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "main"
+        },
+        {
+          "text": "was",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "main"
+        },
+        {
+          "text": "angry",
+          "pos": "adj",
+          "role": "表语",
+          "group": "main"
+        },
+        {
+          "text": "because",
+          "pos": "conj",
+          "role": "连接词",
+          "group": "sub"
+        },
+        {
+          "text": "he",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "sub"
+        },
+        {
+          "text": "lied",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "sub"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "lies",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "sub"
+        }
+      ],
+      "explain": "主句用过去时 was，从句也要用过去时。lie（说谎）的过去式是 lied。",
+      "example": "She was angry because he lied. / She is angry because he lies.",
+      "win": "两句的时态要配套。"
+    },
+    {
+      "id": "4-7-r3",
+      "cn": "因为在下雨，我们待在屋里。",
+      "tip": "as 也能表原因",
+      "groups": [
+        {
+          "id": "main",
+          "label": "主句"
+        },
+        {
+          "id": "sub",
+          "label": "原因状语从句",
+          "clause": true
+        }
+      ],
+      "blocks": [
+        {
+          "text": "We",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "main"
+        },
+        {
+          "text": "stayed",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "main"
+        },
+        {
+          "text": "inside",
+          "pos": "adv",
+          "role": "状语",
+          "group": "main"
+        },
+        {
+          "text": "as",
+          "pos": "conj",
+          "role": "连接词",
+          "group": "sub"
+        },
+        {
+          "text": "it",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "sub"
+        },
+        {
+          "text": "was",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "sub"
+        },
+        {
+          "text": "raining",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "sub"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "because",
+          "pos": "conj",
+          "role": "连接词",
+          "group": "sub"
+        }
+      ],
+      "explain": "as 也能引导原因，语气比 because 弱一些，通常表示「双方都知道的原因」。",
+      "example": "We stayed inside as it was raining. / We stayed inside because it was raining.",
+      "win": "as 表原因，语气更轻。"
+    },
+    {
+      "id": "4-7-r4",
+      "cn": "因为下雨，我待在家里。",
+      "tip": "改错：从句里的时态要一致",
+      "groups": [
+        {
+          "id": "main",
+          "label": "主句"
+        },
+        {
+          "id": "sub",
+          "label": "原因状语从句",
+          "clause": true
+        }
+      ],
+      "blocks": [
+        {
+          "text": "I",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "main"
+        },
+        {
+          "text": "stayed",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "main"
+        },
+        {
+          "text": "home",
+          "pos": "adv",
+          "role": "状语",
+          "group": "main"
+        },
+        {
+          "text": "because",
+          "pos": "conj",
+          "role": "连接词",
+          "group": "sub"
+        },
+        {
+          "text": "it",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "sub"
+        },
+        {
+          "text": "rained",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "sub"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "rain",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "sub"
+        },
+        {
+          "text": "so",
+          "pos": "conj",
+          "role": "连接词",
+          "group": "sub"
+        }
+      ],
+      "prefill": [
+        "I",
+        "stayed",
+        "home",
+        "because",
+        "it",
+        "rain"
+      ],
+      "explain": "从句里的动词也要用过去式 rained，跟主句保持一致。而且这里已经有 because，不能再加 so。",
+      "example": "I stayed home because it rained. / It rained, so I stayed home.",
+      "win": "主句过去，从句也过去。"
+    },
+    {
+      "id": "4-7-r5",
+      "cn": "他没来，因为他病了。",
+      "tip": "didn't 后面用原形，从句保持过去时",
+      "groups": [
+        {
+          "id": "main",
+          "label": "主句"
+        },
+        {
+          "id": "sub",
+          "label": "原因状语从句",
+          "clause": true
+        }
+      ],
+      "blocks": [
+        {
+          "text": "He",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "main"
+        },
+        {
+          "text": "didn't",
+          "pos": "verb",
+          "role": "助动词",
+          "group": "main"
+        },
+        {
+          "text": "come",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "main"
+        },
+        {
+          "text": "because",
+          "pos": "conj",
+          "role": "连接词",
+          "group": "sub"
+        },
+        {
+          "text": "he",
+          "pos": "pronoun",
+          "role": "主语",
+          "group": "sub"
+        },
+        {
+          "text": "was",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "sub"
+        },
+        {
+          "text": "ill",
+          "pos": "adj",
+          "role": "表语",
+          "group": "sub"
+        }
+      ],
+      "distractors": [
+        {
+          "text": "is",
+          "pos": "verb",
+          "role": "谓语",
+          "group": "sub"
+        }
+      ],
+      "explain": "主句用 didn't 表示过去否定，后面的动词还原成原形 come；从句也要用过去时 was。",
+      "example": "He didn't come because he was ill. / He was ill, so he didn't come.",
+      "win": "didn't 后面用原形，从句保持过去时。"
+    }
+  ]
+}

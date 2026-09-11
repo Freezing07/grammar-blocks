@@ -1,0 +1,122 @@
+{
+  "id": "7-5",
+  "topic": "对比论证",
+  "emoji": "⚖️",
+  "goal": "一方面 / 另一方面 / 权衡：让步转折的段落怎么搭",
+  "rounds": [
+    {
+      "id": "7-5-r1",
+      "mode": "order",
+      "cn": "把这几句话排成一段通顺的话",
+      "tip": "On the one hand 和 On the other hand 是成套的",
+      "blocks": [
+        {
+          "text": "Living in a city has both advantages and disadvantages.",
+          "role": "主题句"
+        },
+        {
+          "text": "On the one hand, it offers more job opportunities.",
+          "role": "一方面（好处）"
+        },
+        {
+          "text": "On the other hand, the cost of living is much higher.",
+          "role": "另一方面（坏处）"
+        },
+        {
+          "text": "In conclusion, it depends on what you value most.",
+          "role": "结论"
+        }
+      ],
+      "links": [
+        "一方面",
+        "另一方面",
+        "权衡"
+      ],
+      "distractors": [
+        {
+          "text": "My uncle has lived in the same city for thirty years.",
+          "role": "多余的一句"
+        }
+      ],
+      "explain": "主题句里说了「既有优点也有缺点」，后面就必须一段好处、一段坏处。On the one hand 和 On the other hand 是成套的，顺序固定。结论不能偏袒一边，所以用 it depends。",
+      "example": "主题 → On the one hand… → On the other hand… → In conclusion…",
+      "win": "说了两面，就得两面都写。"
+    },
+    {
+      "id": "7-5-r2",
+      "mode": "order",
+      "cn": "把这几句话排成一段通顺的话",
+      "tip": "先立论，再转折，最后给折中结论",
+      "blocks": [
+        {
+          "text": "Some people prefer to work from home.",
+          "role": "主题句"
+        },
+        {
+          "text": "They say it saves both time and money.",
+          "role": "支持理由"
+        },
+        {
+          "text": "However, others find it hard to stay focused at home.",
+          "role": "转折（反方）"
+        },
+        {
+          "text": "Therefore, the best choice depends on the person.",
+          "role": "结论"
+        }
+      ],
+      "links": [
+        "理由",
+        "转折",
+        "折中结论"
+      ],
+      "distractors": [
+        {
+          "text": "The company moved to a new office last year.",
+          "role": "多余的一句"
+        }
+      ],
+      "explain": "这一段的结构是「立论 → 转折 → 折中」：先给一方的理由，再用 However 引出反方，最后用 Therefore 给出平衡的结论。这也是议论文最常见的骨架。",
+      "example": "正面理由 → However 反方 → Therefore 折中",
+      "win": "However 一出现，段落就转到对面去了。"
+    },
+    {
+      "id": "7-5-r3",
+      "mode": "order",
+      "cn": "把这几句话排成一段通顺的话",
+      "tip": "两个「一方面」用不同的说法，避免重复",
+      "blocks": [
+        {
+          "text": "Both paper books and e-books have their fans.",
+          "role": "主题句"
+        },
+        {
+          "text": "Paper books are easier on the eyes.",
+          "role": "一方（纸质书）"
+        },
+        {
+          "text": "E-books, on the other hand, are lighter to carry.",
+          "role": "另一方（电子书）"
+        },
+        {
+          "text": "In the end, it is a matter of personal taste.",
+          "role": "结论"
+        }
+      ],
+      "links": [
+        "先讲纸质书",
+        "再讲电子书",
+        "结论"
+      ],
+      "distractors": [
+        {
+          "text": "I read three books last month.",
+          "role": "多余的一句"
+        }
+      ],
+      "explain": "对比段落里，两边要讲同一类事情才公平：这里一边讲「看着舒服」，一边讲「带着轻便」，都是使用感受。结论用 it is a matter of personal taste 收尾，不下死判断。",
+      "example": "主题 → 纸质书 → on the other hand 电子书 → In the end…",
+      "win": "对比要讲同一类事，才叫对比。"
+    }
+  ]
+}
