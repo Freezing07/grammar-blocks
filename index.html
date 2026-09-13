@@ -317,6 +317,8 @@ button{font-family:inherit;font-size:inherit;color:inherit;}
   border:1px solid rgba(110,168,255,.3);
 }
 .done.show{display:flex;animation:fbIn .4s;}
+/* .done 是 align-items:center 的纵向 flex，子元素会被压成内容宽度，所以撑满 */
+.done #doneWriting{width:100%;max-width:640px;text-align:left;}
 .done h2{margin:0;font-size:24px;}
 .done .big-stars{font-size:40px;letter-spacing:6px;color:var(--warn);}
 .done .stats{display:flex;gap:18px;flex-wrap:wrap;justify-content:center;font-size:14px;color:var(--text-soft);}
@@ -442,6 +444,49 @@ button{font-family:inherit;font-size:inherit;color:inherit;}
   transition:background .15s, border-color .15s;
 }
 .lv .lv-practice:hover{background:rgba(110,168,255,.26);border-color:rgba(110,168,255,.7);}
+/* 写作提示词：练习模式是「认出来」，写作是「写出来」，所以按钮颜色跟练习分开 */
+.lv .lv-writing{
+  display:block;width:calc(100% - 28px);margin:0 14px 13px;padding:7px 12px;
+  border-radius:10px;border:1px solid rgba(244,114,182,.42);
+  background:rgba(244,114,182,.12);color:#f7cfe4;
+  font-size:12.5px;font-weight:600;cursor:pointer;
+  transition:background .15s, border-color .15s;
+}
+.lv .lv-writing:hover{background:rgba(244,114,182,.24);border-color:rgba(244,114,182,.7);}
+.lv .lv-practice + .lv-writing{margin-top:-4px;}
+
+.wp-card{
+  margin-top:16px;padding:14px 16px;border-radius:14px;text-align:left;
+  border:1px solid rgba(244,114,182,.34);background:rgba(244,114,182,.07);
+}
+.wp-card h3{margin:0 0 4px;font-size:15px;color:#f7cfe4;}
+.wp-card .wp-why{margin:0 0 10px;font-size:12.5px;line-height:1.7;color:#c9cede;}
+.wp-text{
+  margin:0;padding:12px 13px;max-height:180px;overflow:auto;
+  border-radius:10px;border:1px solid rgba(255,255,255,.1);
+  background:rgba(0,0,0,.28);color:#e8ecf6;
+  font:12.5px/1.75 ui-monospace,Menlo,Consolas,monospace;
+  white-space:pre-wrap;word-break:break-word;
+}
+.wp-actions{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap;align-items:center;}
+.wp-actions .wp-note{font-size:12px;color:#9aa3b8;}
+
+/* 写作提示词弹窗（地图上的常驻入口用） */
+.wp-modal{
+  position:fixed;inset:0;z-index:60;display:none;
+  background:rgba(6,8,16,.72);backdrop-filter:blur(3px);
+  padding:24px;overflow:auto;
+}
+.wp-modal.show{display:flex;align-items:flex-start;justify-content:center;}
+.wp-modal-inner{
+  width:min(720px,100%);margin:auto;background:#141a26;
+  border:1px solid rgba(255,255,255,.12);border-radius:16px;
+  padding:18px 20px;box-shadow:0 24px 60px rgba(0,0,0,.5);
+}
+.wp-modal .wp-card{margin-top:12px;background:transparent;border:0;padding:0;}
+.wp-modal .wp-text{max-height:min(52vh,420px);}
+.wp-modal-head{display:flex;align-items:center;gap:10px;}
+.wp-modal-head h3{margin:0;font-size:16px;color:#f7cfe4;flex:1;}
 .lv.locked{opacity:.45;}
 .lv.locked .lv-play{cursor:not-allowed;}
 </style>
@@ -551,6 +596,7 @@ button{font-family:inherit;font-size:inherit;color:inherit;}
     <h2 id="doneTitle"></h2>
     <div class="stats" id="doneStats"></div>
     <p class="hint-text" id="doneNote"></p>
+    <div id="doneWriting"></div>
     <div class="actions" style="justify-content:center">
       <button class="btn ghost" id="btnReview" hidden>重练答错的句子</button>
       <button class="btn ghost" id="btnBackMap">返回地图</button>
@@ -565,6 +611,17 @@ button{font-family:inherit;font-size:inherit;color:inherit;}
 
 <div class="fly-layer" id="flyLayer"></div>
 <div class="toast" id="toast"></div>
+
+<!-- ============ 写作提示词弹窗（地图上的常驻入口） ============ -->
+<div class="wp-modal" id="wpModal">
+  <div class="wp-modal-inner">
+    <div class="wp-modal-head">
+      <h3 id="wpModalTitle">写作提示词</h3>
+      <button class="btn ghost small" id="btnWpClose">关闭</button>
+    </div>
+    <div id="wpModalBody"></div>
+  </div>
+</div>
 
 <!-- ============================================================
      关卡数据。故意放在 type="application/json" 里：
@@ -10034,7 +10091,9 @@ button{font-family:inherit;font-size:inherit;color:inherit;}
     treeGroups: $('treeGroups'), treeLines: $('treeLines'), treeCanvas: $('treeCanvas'),
     flowCard: $('flowCard'), flow: $('flow'),
     done: $('done'), doneStars: $('doneStars'), doneStats: $('doneStats'),
-    doneTitle: $('doneTitle'), doneNote: $('doneNote'),
+    doneTitle: $('doneTitle'), doneNote: $('doneNote'), doneWriting: $('doneWriting'),
+    wpModal: $('wpModal'), wpModalTitle: $('wpModalTitle'), wpModalBody: $('wpModalBody'),
+    btnWpClose: $('btnWpClose'),
     btnBackMap: $('btnBackMap'), btnNextLevel: $('btnNextLevel'), btnReview: $('btnReview')
   };
 
@@ -10263,6 +10322,16 @@ button{font-family:inherit;font-size:inherit;color:inherit;}
           pb.addEventListener('click', function () { startPractice(gi); });
           b.appendChild(pb);
         }
+        // 写作提示词：常驻入口，不要求做过练习 —— 想什么时候写都可以。
+        // 第七章（段落排序）没有提示词，这里就不会出现按钮。
+        if (unlocked && writingPromptOf(gi)) {
+          var wb = el('button', 'lv-writing');
+          wb.type = 'button';
+          wb.dataset.writing = lv.id;
+          wb.textContent = '✍️ 写作提示词 · 贴给 AI 练翻译';
+          wb.addEventListener('click', function () { openWritingModal(gi); });
+          b.appendChild(wb);
+        }
         grid.appendChild(b);
       });
       sec.appendChild(grid);
@@ -10286,6 +10355,180 @@ button{font-family:inherit;font-size:inherit;color:inherit;}
     'verb|不定式': 1, 'verb|动名词': 1, 'verb|现在分词': 1, 'verb|过去分词': 1,
     'verb|宾补': 1, 'verb|分词': 1
   };
+
+  /* ---------- 写作提示词 ----------
+     练习模式练的是「认出来」（给积木池、给错的块，你只要识别）；
+     自由写作练的是「写出来」。这一步挂不掉在应用里 —— 没有模型、没有批改。
+     所以这里只做一件事：生成一段针对本关语法点的提示词，
+     用户自己贴到任意 AI 对话里，由那边一句句出中文、批改、继续。
+     生成逻辑和 _p/prompt.js 是同一份，改一处要同步另一处。 */
+  function buildWritingPrompt(id, topic, goal, rules, mode, boss) {
+    var pair = mode === 'pair';
+    var unit = pair ? '组' : '句';
+    // 关卡主题里带「 · Boss」，对 AI 说「我在练 连词 · Boss」很怪，去掉
+    var name = String(topic || '').replace(/\s*·\s*Boss\s*$/, '');
+    var L = [];
+
+    L.push('你是一位耐心、友善的英语语法教练。我正在练一个语法点：' + name + '（' + id + ' 关）。');
+    L.push('我是初学者，说错了很正常，别让我紧张，也别催我。');
+    if (goal) L.push('这一关的目标：' + goal);
+    if (boss) L.push('这是整章的混合复习关：下面这些点会混着考。');
+    L.push('');
+
+    L.push('【这一关的规则】');
+    (rules || []).forEach(function (r) { L.push('- ' + r); });
+    L.push('');
+
+    L.push('【怎么带我练】');
+    if (pair) {
+      L.push('1. 一次只给我一组中文（两句，之间要有明确的逻辑关系），等我翻成两句英文。');
+      L.push('   不要一次给多组，也不要先示范。');
+    } else {
+      L.push('1. 一次只给我一句中文，等我翻成英文。不要一次给多句，也不要先示范。');
+    }
+    L.push('2. 在我给出答案之前，绝对不要透露英文答案，也不要给「这里该用' +
+      (pair ? '哪个衔接词' : '哪个词、哪个时态') + '」这类等于报答案的提示。');
+    L.push('3. 我交卷后按这个顺序回我，讲解用中文：');
+    if (pair) {
+      L.push('   ① 先说我哪里做对了；② 再说哪里要改、错在上面哪一条规则上；');
+      L.push('   ③ 给出正确的写法；④ 有没有更自然的说法（没有就说没有）。');
+      L.push('4. 重点盯这几件事：衔接词选得对不对、放的位置对不对、标点对不对。');
+      L.push('   尤其是句首衔接词后面的逗号，少一个意思就变了。');
+    } else {
+      L.push('   ① 先说我哪里做对了；② 再说哪里要改、错在上面哪一条规则上；');
+      L.push('   ③ 给出正确的写法；④ 有没有更自然的说法（没有就说没有）。');
+    }
+    var k = pair ? 5 : 4;
+    L.push(k++ + '. 如果我的译法和你想的不一样、但也是对的，要算对 ——');
+    L.push('   ' + (pair ? '一组中文' : '一句中文') + '常常有好几种合法译法，不要为了坚持一个标准答案而判错。');
+    L.push(k++ + '. 我说「不会」或「跳过」，就直接给答案并解释，然后出下一' + unit +
+      '，不要说「这很简单」。');
+    L.push('');
+
+    L.push('【说话的方式】');
+    L.push('- 用大白话、口语一点，别端着教科书那种架子。');
+    L.push('- 我答对了，具体夸一句我哪里做对了（指出是哪个词、哪条规则做对了），不要只说「很好」。');
+    L.push('- 我答错了，先肯定对的部分，再说哪里要改，别一上来就否定。');
+    L.push('- 非用语法术语不可的时候，紧跟一句人话解释。');
+    L.push('- 别说「显然」「很简单」「这你应该知道」这种让人泄气的话。');
+    L.push('- 表情符号一两个点缀就好，不要每句话都加。');
+    L.push('- 慢慢来没关系，我要的是真的懂，不是做得快。');
+    L.push('');
+
+    L.push('【出题的讲究】');
+    L.push('- 只考上面列出的规则，不要夹带我没练过的语法点（别的从句、完成时、虚拟语气等），也不要用生僻词。');
+    if (pair) {
+      L.push('- 你给的中文要能明确看出两句之间的关系（转折 / 因果 / 举例 / 让步 / 指代 / 总结），');
+      L.push('  不要给我两句各说各的、看不出关系的话。');
+    } else {
+      L.push('- 你给的中文要明确指向目标结构，不能让我猜你是想练什么。');
+      L.push('  （别给我一句用不用这个语法点都成立的句子。）');
+    }
+    L.push('- 如果某条规则跟当前这一' + unit + '无关，忽略它，不要硬套。');
+    if (boss) {
+      L.push('- 这是混合复习，所以轮着考上面这几条规则，不要连着出同一条；');
+      L.push('  但每一' + unit + '只考一个点，不要一句话里塞两个考点。');
+    } else if (pair) {
+      L.push('- 难度慢慢递进：先给关系直白的两句，后面再换衔接词的种类、换逻辑关系。');
+    } else {
+      L.push('- 难度慢慢递进：先直白的一句，后面再换主语、换时态、换句型（否定、疑问）。');
+    }
+    L.push('');
+
+    L.push('【节奏】');
+    L.push('出满 10 ' + unit + '就停下来，用中文总结：先说我进步的地方，再说我最常错的是哪一条规则、' +
+      '具体错在哪几' + unit + '上，然后问我要不要继续。');
+    L.push('过程中如果我总是错同一条规则，就多出考这条规则的句子，别不耐烦；');
+    L.push('如果我一直答对，就把难度往上加一点，别一直重复同样的难度。');
+    L.push('');
+    L.push('现在开始，出第一' + unit + '中文。');
+
+    return L.join('\n');
+  }
+
+  // 这一关的写作提示词；第七章（段落排序）没有 —— 那个语法点不是单句/两句能练的
+  function writingPromptOf(li) {
+    var lv = LEVELS[li];
+    if (!lv) return null;
+    if (String(lv.id).indexOf('7-') === 0) return null;
+    var p = (DATA.practice || {})[lv.id];
+    if (!p || !p.rules || !p.rules.length) return null;
+    var mode = String(lv.id).indexOf('6-') === 0 ? 'pair' : 'sentence';
+    return buildWritingPrompt(lv.id, lv.topic, lv.goal, p.rules, mode, lv.boss === true);
+  }
+
+  /* 复制。navigator.clipboard 在 file:// 或老浏览器里可能没有，
+     所以留一条选中 + execCommand 的老路；两条都不行就告诉用户手动复制。 */
+  function copyText(text, btn, okMsg) {
+    function done() {
+      toast(okMsg || '提示词已复制，去粘贴给 AI 吧');
+      if (btn) {
+        var old = btn.textContent;
+        btn.textContent = '✓ 已复制';
+        setTimeout(function () { btn.textContent = old; }, 1400);
+      }
+    }
+    function fallback() {
+      try {
+        var ta = document.createElement('textarea');
+        ta.value = text;
+        ta.setAttribute('readonly', '');
+        ta.style.position = 'fixed';
+        ta.style.left = '-9999px';
+        document.body.appendChild(ta);
+        ta.select();
+        var ok = document.execCommand && document.execCommand('copy');
+        document.body.removeChild(ta);
+        if (ok) { done(); return; }
+      } catch (e) { /* 落到下面的兜底 */ }
+      toast('复制失败，请手动选中提示词后按 Ctrl+C', '#fca5a5');
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(done, fallback);
+    } else {
+      fallback();
+    }
+  }
+
+  /* 写作卡片：结算页和弹窗共用同一份，避免两处各写一遍 */
+  function writingCard(li) {
+    var text = writingPromptOf(li);
+    if (!text) return null;
+    var lv = LEVELS[li];
+
+    var card = el('div', 'wp-card');
+    card.appendChild(el('h3', null, '✍️ 再往前一步：把它写出来'));
+    card.appendChild(el('p', 'wp-why',
+      '练习模式练的是「认出来」—— 积木在池子里、错的那一块也指给你了。' +
+      '可是写作的时候没人给你这些。下面这段提示词贴给任意 AI 对话（网页版、App 都行），' +
+      '它会一句句出中文、你翻成英文、它给你批改，专门练这一关的语法点。'));
+
+    var pre = el('pre', 'wp-text', text);
+    card.appendChild(pre);
+
+    var acts = el('div', 'wp-actions');
+    var copy = el('button', 'btn primary small', '📋 复制提示词');
+    copy.type = 'button';
+    copy.dataset.wpCopy = lv.id;
+    copy.addEventListener('click', function () { copyText(text, copy); });
+    acts.appendChild(copy);
+
+    var len = el('span', 'wp-note', text.length + ' 字 · 共 10 ' +
+      (String(lv.id).indexOf('6-') === 0 ? '组' : '句') + '，练完让它总结你常错的规则');
+    acts.appendChild(len);
+    card.appendChild(acts);
+    return card;
+  }
+
+  function openWritingModal(li) {
+    var card = writingCard(li);
+    if (!card) { toast('这一关没有写作提示词', '#fca5a5'); return; }
+    els.wpModalTitle.textContent = '✍️ ' + LEVELS[li].id + ' · ' + LEVELS[li].topic + ' 写作提示词';
+    els.wpModalBody.innerHTML = '';
+    els.wpModalBody.appendChild(card);
+    els.wpModal.classList.add('show');
+  }
+  function closeWritingModal() { els.wpModal.classList.remove('show'); }
 
   function expandPractice(lv) {
     var p = (DATA.practice || {})[lv.id];
@@ -11165,6 +11408,13 @@ button{font-family:inherit;font-size:inherit;color:inherit;}
     var bad = wrongInSession();
     state.lastWrong = bad;
 
+    // 结算页上的写作卡片：只有练习模式做完才给（闯关的例题太少，还没练熟）
+    els.doneWriting.innerHTML = '';
+    if (state.session === 'practice') {
+      var wcard = writingCard(state.li);
+      if (wcard) els.doneWriting.appendChild(wcard);
+    }
+
     if (state.session === 'practice') {
       var done = state.queue.length;
       els.doneStars.textContent = bad.length ? '💪' : '✅';
@@ -11246,6 +11496,14 @@ button{font-family:inherit;font-size:inherit;color:inherit;}
     if (state.session === 'pocket') showPocket();
     else showMap();
   });
+  // 写作提示词弹窗：点关闭按钮、点遮罩、按 Esc 都能关
+  els.btnWpClose.addEventListener('click', closeWritingModal);
+  els.wpModal.addEventListener('click', function (e) {
+    if (e.target === els.wpModal) closeWritingModal();
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && els.wpModal.classList.contains('show')) closeWritingModal();
+  });
   els.btnNextLevel.addEventListener('click', function () {
     if (state.li + 1 < LEVELS.length) startLevel(state.li + 1);
   });
@@ -11292,6 +11550,8 @@ button{font-family:inherit;font-size:inherit;color:inherit;}
     showMap: showMap, showPocket: showPocket, startLevel: startLevel, startRound: startRound,
     startSession: startSession, curNode: curNode,
     startPractice: startPractice, practiceRounds: practiceRounds,
+    writingPromptOf: writingPromptOf, writingCard: writingCard,
+    openWritingModal: openWritingModal, closeWritingModal: closeWritingModal,
     pocketList: pocketList, pocketCount: pocketCount,
     noteWrong: noteWrong, noteRight: noteRight,
     nextRound: nextRound, placeInto: placeInto, backToTray: backToTray,

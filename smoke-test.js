@@ -751,6 +751,9 @@ if (GB) {
 
     playLevel(i);
     check(GB.els.done.classList.contains('show'), `${L.id} 玩完后没有出现通关页`);
+    // 闯关（例题只有 5~6 句）不该给写作提示词 —— 那是练完之后才该出现的
+    check(GB.els.doneWriting.children.length === 0,
+      `${L.id}: 闯关通关页不该出现写作卡片（那是练习模式结算页的）`);
     const s = save().levels[L.id];
     check(s && s.cleared, `${L.id} 通关后没记到存档里`);
     check(s && s.stars >= 1 && s.stars <= 3, `${L.id} 的星级 ${s && s.stars} 不合法`);
@@ -987,6 +990,99 @@ if (GB) {
   GB.showMap();
   check(doc.querySelectorAll('#map .lv-practice').length >= 1,
     '通关之后地图卡片上应该出现练习按钮');
+
+  /* --- 写作提示词：内容、入口、弹窗 --- */
+  {
+    // 1. 前六章每关都有，第七章没有
+    let withWp = 0, ch7NoWp = 0;
+    GB.LEVELS.forEach((lv, i) => {
+      const t = GB.writingPromptOf(i);
+      if (t) {
+        withWp++;
+        check(t.indexOf(lv.id + ' 关') >= 0, `${lv.id}: 提示词里没有关卡号`);
+        check(t.indexOf('【这一关的规则】') >= 0, `${lv.id}: 提示词缺规则块`);
+        check(t.indexOf('【怎么带我练】') >= 0, `${lv.id}: 提示词缺带练说明`);
+        check(t.indexOf('【节奏】') >= 0, `${lv.id}: 提示词缺节奏说明`);
+        // 对初学者友好的语气要求 —— 这是特意加的，不能被改掉
+        check(t.indexOf('【说话的方式】') >= 0, `${lv.id}: 提示词缺「说话的方式」`);
+        check(t.indexOf('初学者') >= 0 && t.indexOf('别让我紧张') >= 0,
+          `${lv.id}: 开场没交代「我是初学者、别让我紧张」`);
+        check(t.indexOf('先说我哪里做对了') >= 0, `${lv.id}: 反馈顺序没有「先肯定再指错」`);
+        check(/别说「显然」「很简单」/.test(t), `${lv.id}: 缺「别说泄气话」这一条`);
+        check(/先说我进步的地方/.test(t), `${lv.id}: 总结没有「先夸进步」`);
+        check(/现在开始，出第一(句|组)中文。$/.test(t), `${lv.id}: 提示词结尾不对`);
+        check(t.indexOf('· Boss') < 0, `${lv.id}: 提示词里残留「· Boss」`);
+        // 这一关的每条规则都要出现在提示词里
+        const pdata = (DATA.practice || {})[lv.id];
+        check(!!pdata, `${lv.id}: 关卡数据里没有练习数据`);
+        if (pdata && pdata.rules) {
+          check(pdata.rules.length > 0, `${lv.id}: 有练习数据但没有 rules`);
+          pdata.rules.forEach((r, ri) => check(t.indexOf(r) >= 0,
+            `${lv.id}: 第 ${ri + 1} 条规则没进提示词`));
+        }
+        // Boss 关要说明是混合复习
+        if (lv.boss) check(t.indexOf('混合复习') >= 0, `${lv.id}(Boss): 没说明是混合复习`);
+        else check(t.indexOf('混合复习') < 0, `${lv.id}: 不该出现「混合复习」`);
+        // 第六章是跨句语法点，要用「组」而不是「句」
+        const wantPair = lv.id.indexOf('6-') === 0;
+        check(t.indexOf('一次只给我' + (wantPair ? '一组中文' : '一句中文')) >= 0,
+          `${lv.id}: 单句/两句形态不对`);
+      } else if (lv.id.indexOf('7-') === 0) {
+        ch7NoWp++;
+      } else {
+        errors.push(`${lv.id}: 前六章每关都该有写作提示词，这一关没有`);
+      }
+    });
+    check(withWp === 51, `有写作提示词的关卡应该是 51，实际 ${withWp}`);
+    check(ch7NoWp === 6, `第七章 6 关都不该有写作提示词，实际只有 ${ch7NoWp} 关没有`);
+
+    // 2. 内嵌的生成器和管线脚本必须给出完全一样的文本 ——
+    //    逻辑写了两份（index.html 一份、_p/prompt.js 一份），这里盯着它们别跑偏
+    const wpFile = path.join(__dirname, '_p', 'prompts-all.json');
+    if (fs.existsSync(wpFile)) {
+      const pipe = JSON.parse(fs.readFileSync(wpFile, 'utf8'));
+      let drift = [];
+      GB.LEVELS.forEach((lv, i) => {
+        const mine = GB.writingPromptOf(i);
+        const theirs = pipe[lv.id] && pipe[lv.id].text;
+        if (!mine && !theirs) return;
+        if (mine !== theirs) drift.push(lv.id);
+      });
+      check(drift.length === 0,
+        '内嵌提示词和 _p/prompts-all.json 对不上（跑一下 node _p/gen-prompts.js）：' +
+        drift.join('、'));
+    } else {
+      notes.push('没找到 _p/prompts-all.json，跳过「内嵌提示词 vs 管线」一致性对比');
+    }
+
+    // 3. 地图上的常驻入口
+    GB.showMap();
+    const wbtns = doc.querySelectorAll('#map .lv-writing');
+    check(wbtns.length === 51, `地图上写作按钮应该是 51 个，实际 ${wbtns.length}`);
+    check(!Array.prototype.some.call(wbtns, b => String(b.dataset.writing).indexOf('7-') === 0),
+      '第七章不该出现写作按钮');
+    const w1 = Array.prototype.find.call(wbtns, b => b.dataset.writing === '1-3');
+    check(!!w1, '1-3 的写作按钮没渲染出来');
+
+    // 4. 点开弹窗
+    const wIdx = GB.LEVELS.findIndex(x => x.id === '1-3');
+    GB.openWritingModal(wIdx);
+    check(GB.els.wpModal.classList.contains('show'), '点写作按钮没打开弹窗');
+    check(GB.els.wpModalBody.querySelectorAll('.wp-card').length === 1, '弹窗里没有写作卡片');
+    check(GB.els.wpModalBody.querySelector('.wp-text').textContent === GB.writingPromptOf(wIdx),
+      '弹窗里的提示词和生成的不一致');
+    check(GB.els.wpModalBody.querySelector('[data-wp-copy]').dataset.wpCopy === '1-3',
+      '弹窗里的复制按钮没带上关卡号');
+    check(GB.els.wpModalTitle.textContent.indexOf('1-3') >= 0, '弹窗标题没写关卡号');
+    GB.closeWritingModal();
+    check(!GB.els.wpModal.classList.contains('show'), '关闭之后弹窗还在');
+    // 第七章没有提示词，调用不该炸，也不该打开弹窗
+    const ch7Idx = GB.LEVELS.findIndex(x => x.id === '7-1');
+    GB.openWritingModal(ch7Idx);
+    check(!GB.els.wpModal.classList.contains('show'), '第七章不该能打开写作弹窗');
+    notes.push('写作提示词：51 关有、第七章 0 关，内嵌生成器与 _p/gen-prompts.js 输出逐字一致');
+  }
+
   const starsBefore = GB.levelSave('1-1').stars;
   GB.startPractice(pIdx);
   check(GB.state.session === 'practice', '没进入练习模式');
@@ -1020,6 +1116,31 @@ if (GB) {
     emptyNodes.map(n => n.querySelector('.tree-node').textContent).join('、'));
   check(GB.els.treeGroups.querySelectorAll('.leaf .block').length === looseRound.blocks.length,
     '跳过空分组之后积木数对不上');
+
+  /* --- 练习做完的结算页上要有写作提示词 --- */
+  {
+    // 每句要转两圈（填答 + 推进），所以上限按句数的三倍给
+    let guard = 0;
+    const cap = prs.length * 3 + 20;
+    while (!GB.els.done.classList.contains('show')) {
+      if (guard++ > cap) { errors.push('练习模式没跑到结算页'); break; }
+      if (GB.state.phase === 'tree') { GB.els.btnSubmit.click(); flush(); }
+      else playRound();
+    }
+    check(GB.els.done.classList.contains('show'), '练习做完之后没出现结算页');
+    check(/练习完成/.test(GB.els.doneTitle.textContent),
+      '练习结算页的标题不对：' + GB.els.doneTitle.textContent);
+    const cards = GB.els.doneWriting.querySelectorAll('.wp-card');
+    check(cards.length === 1, '练习结算页上应该有写作卡片');
+    const wpCard = cards[0];
+    if (wpCard) {
+      check(wpCard.querySelector('.wp-text').textContent === GB.writingPromptOf(looseLv),
+        '结算页里的提示词和生成的不一致');
+      check(!!wpCard.querySelector('[data-wp-copy]'), '结算页的写作卡片没有复制按钮');
+      check(/再往前一步/.test(wpCard.textContent), '结算页写作卡片的说明文案不对');
+    }
+    notes.push('练习结算页会给出针对本关语法点的写作提示词（含复制按钮）');
+  }
   GB.showMap();
 
   /* --- 错题本 --- */
